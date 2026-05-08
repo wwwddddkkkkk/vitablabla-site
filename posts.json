@@ -19,6 +19,20 @@
 
   "posts": [
     {
+      "slug": "modern-snacks-more-sensory",
+      "number": "015",
+      "title": "Why modern snacks are becoming more <em>sensory.</em>",
+      "cardTitle": "Why modern snacks are becoming more <em>sensory.</em>",
+      "excerpt": "A brand-house note on snack trends, texture, cooling finishes, fruit crunch, and why small food rituals are becoming more memorable.",
+      "date": "2026-05-08",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Snack Ideas", "Better-for-You"],
+      "crumbs": ["Snack Ideas", "Trend Notes"],
+      "cta": "frozili",
+      "related": ["slow-melt", "freeze-drying-strawberry", "better-for-you-words"]
+    },
+    {
       "slug": "slow-melt",
       "number": "014",
       "title": "The case for the slow-melt: how a single piece of candy can <em>reset a workday.</em>",
