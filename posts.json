@@ -19,6 +19,20 @@
 
   "posts": [
     {
+      "slug": "strange-pleasure-of-weird-cold-candy",
+      "number": "018",
+      "title": "The strange pleasure of <em>weird cold candy.</em>",
+      "cardTitle": "The strange pleasure of <em>weird cold candy.</em>",
+      "excerpt": "A sensory note on cooling candy, iced coffee flavor, summer sweets, and why a small cold finish can make candy feel more memorable.",
+      "date": "2026-05-08",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks"],
+      "crumbs": ["Frozili", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["why-iced-coffee-candy-works", "slow-melt", "five-things-cold"]
+    },
+    {
       "slug": "why-iced-coffee-candy-works",
       "number": "017",
       "title": "Why iced coffee candy works so well in <em>summer.</em>",
