@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "why-iced-coffee-candy-works",
+      "number": "017",
+      "title": "Why iced coffee candy works so well in <em>summer.</em>",
+      "cardTitle": "Why iced coffee candy works so well in <em>summer.</em>",
+      "excerpt": "A sensory note on iced coffee flavor, slow-melting rituals, and why cooling coffee candy feels cleaner than a mint on warm days.",
+      "date": "2026-05-08",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Frozili", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["cold-brew-tasting", "slow-melt", "five-things-cold"]
+    },
+    {
+      "slug": "freeze-dried-fruit-snack-mix",
+      "number": "016",
+      "title": "Freeze-dried fruit snack mix ideas for a <em>better handful.</em>",
+      "cardTitle": "Freeze-dried fruit snack mix ideas for a <em>better handful.</em>",
+      "excerpt": "Why freeze-dried fruit makes snack mixes stay crisp, bright, and travel-friendly — plus five simple mix patterns to copy all summer.",
+      "date": "2026-05-08",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "ugly-mango", "twelve-hour-flight"]
+    },
+    {
       "slug": "modern-snacks-more-sensory",
       "number": "015",
       "title": "Why modern snacks are becoming more <em>sensory.</em>",
