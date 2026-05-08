@@ -1,0 +1,176 @@
+{
+  "$schema": "Vitablabla post registry. To add a daily post: 1) duplicate posts/_template.html as posts/<your-slug>.html, write the body. 2) Add an entry to the top of the 'posts' array below. 3) Commit + push.",
+
+  "settings": {
+    "siteTitle": "The Vitablabla Journal",
+    "tagline": "Snack ideas, product stories, and everyday guides for modern cravings.",
+    "postsPerPage": 9
+  },
+
+  "categories": [
+    "Frozili",
+    "Coffee Candy",
+    "Refreshing Snacks",
+    "Freeze-Dried Fruit",
+    "Snack Ideas",
+    "Better-for-You",
+    "Travel & Work"
+  ],
+
+  "posts": [
+    {
+      "slug": "slow-melt",
+      "number": "014",
+      "title": "The case for the slow-melt: how a single piece of candy can <em>reset a workday.</em>",
+      "cardTitle": "The case for the <em>slow-melt.</em>",
+      "excerpt": "On chewing gum, mints, and the small rituals we reach for to mark time — plus why we built Frozili to be slow on purpose.",
+      "date": "2025-11-12",
+      "readTime": "6 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy"],
+      "crumbs": ["Frozili", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["cold-brew-tasting", "five-things-cold", "snack-drawer"]
+    },
+    {
+      "slug": "freeze-drying-strawberry",
+      "number": "013",
+      "title": "What freeze-drying does to a <em>strawberry.</em>",
+      "cardTitle": "What freeze-drying does to a <em>strawberry.</em>",
+      "excerpt": "A short, mostly cheerful explainer on sublimation, crunch, and color memory.",
+      "date": "2025-10-30",
+      "readTime": "4 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit"],
+      "crumbs": ["OhCrisp", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["ugly-mango", "how-ohcrisp-is-made", "one-brand-to-two"]
+    },
+    {
+      "slug": "snack-drawer",
+      "number": "012",
+      "title": "A snack drawer for people who don't <em>believe in snack drawers.</em>",
+      "cardTitle": "A snack drawer for people who don't <em>believe in snack drawers.</em>",
+      "excerpt": "Six things worth keeping at your desk, including a small reset for the 3 p.m. dip.",
+      "date": "2025-10-24",
+      "readTime": "3 min",
+      "color": "tb-sage",
+      "categories": ["Workday Snacks"],
+      "crumbs": ["Workday Snacks", "Notes"],
+      "cta": "frozili",
+      "related": ["three-pm-rotation", "twelve-hour-flight", "better-for-you-words"]
+    },
+    {
+      "slug": "cold-brew-tasting",
+      "number": "011",
+      "title": "Cold brew, in a candy: a tasting note from <em>our R&amp;D kitchen.</em>",
+      "cardTitle": "Cold brew, in a candy: a tasting note from <em>our R&amp;D kitchen.</em>",
+      "excerpt": "How we got the icy hit on the front of the tongue and the slow finish on the back.",
+      "date": "2025-10-18",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy"],
+      "crumbs": ["Frozili", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["slow-melt", "five-things-cold", "snack-drawer"]
+    },
+    {
+      "slug": "ugly-mango",
+      "number": "010",
+      "title": "The case for the <em>ugly mango.</em>",
+      "cardTitle": "The case for the <em>ugly mango.</em>",
+      "excerpt": "A field note from our supplier, plus a small love letter to imperfect produce.",
+      "date": "2025-10-12",
+      "readTime": "4 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit"],
+      "crumbs": ["OhCrisp", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "how-ohcrisp-is-made", "one-brand-to-two"]
+    },
+    {
+      "slug": "twelve-hour-flight",
+      "number": "009",
+      "title": "What we pack for a <em>12-hour flight.</em>",
+      "cardTitle": "What we pack for a <em>12-hour flight.</em>",
+      "excerpt": "A small, opinionated travel-snack manifesto from a team that flies a lot.",
+      "date": "2025-10-04",
+      "readTime": "7 min",
+      "color": "tb-sun",
+      "categories": ["Travel & Work"],
+      "crumbs": ["Travel & Work Snacks"],
+      "cta": "frozili",
+      "related": ["snack-drawer", "five-things-cold", "ugly-mango"]
+    },
+    {
+      "slug": "better-for-you-words",
+      "number": "008",
+      "title": "&ldquo;Healthy&rdquo; is the wrong word. Here's what we <em>mean instead.</em>",
+      "cardTitle": "&ldquo;Healthy&rdquo; is the wrong word. Here's what we <em>mean instead.</em>",
+      "excerpt": "Some thoughts on better-for-you, quietly, without the wellness sermon.",
+      "date": "2025-09-28",
+      "readTime": "5 min",
+      "color": "tb-cream",
+      "categories": ["Better-for-You"],
+      "crumbs": ["Better-for-You Snacks"],
+      "cta": "frozili",
+      "related": ["snack-drawer", "twelve-hour-flight", "three-pm-rotation"]
+    },
+    {
+      "slug": "five-things-cold",
+      "number": "007",
+      "title": "Five things that taste better <em>cold.</em>",
+      "cardTitle": "Five things that taste better <em>cold.</em>",
+      "excerpt": "Including one that surprised us in a blind tasting.",
+      "date": "2025-09-22",
+      "readTime": "3 min",
+      "color": "tb-ice",
+      "categories": ["Refreshing Snacks", "Frozili"],
+      "crumbs": ["Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["slow-melt", "cold-brew-tasting", "twelve-hour-flight"]
+    },
+    {
+      "slug": "one-brand-to-two",
+      "number": "006",
+      "title": "From one brand to two: how we <em>chose OhCrisp.</em>",
+      "cardTitle": "From one brand to two: how we <em>chose OhCrisp.</em>",
+      "excerpt": "A founder's note on going from one brand to two, and what changes when you do.",
+      "date": "2025-09-14",
+      "readTime": "8 min",
+      "color": "tb-violet",
+      "categories": ["Studio Notes"],
+      "crumbs": ["Studio Notes"],
+      "cta": "ohcrisp",
+      "related": ["how-ohcrisp-is-made", "freeze-drying-strawberry", "ugly-mango"]
+    },
+    {
+      "slug": "three-pm-rotation",
+      "number": "005",
+      "title": "The 3 p.m. snack rotation, <em>charted.</em>",
+      "cardTitle": "The 3 p.m. snack rotation, <em>charted.</em>",
+      "excerpt": "What our team actually reaches for between Slack messages.",
+      "date": "2025-09-06",
+      "readTime": "2 min",
+      "color": "tb-pop",
+      "categories": ["Workday Snacks"],
+      "crumbs": ["Workday Snacks"],
+      "cta": "frozili",
+      "related": ["snack-drawer", "twelve-hour-flight", "better-for-you-words"]
+    },
+    {
+      "slug": "how-ohcrisp-is-made",
+      "number": "OC",
+      "title": "How OhCrisp is made: a slow vacuum cycle, and an <em>honest piece of fruit.</em>",
+      "cardTitle": "How OhCrisp is <em>made.</em>",
+      "excerpt": "A slow vacuum cycle, an honest piece of fruit, and the case for the long way round.",
+      "date": "2025-10-02",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit"],
+      "crumbs": ["OhCrisp", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "ugly-mango", "one-brand-to-two"]
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OhCrisp — Crunchy freeze-dried fruit · Vitablabla</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  body { background: #FBEDEC; }
+  .nav { background: rgba(251,237,236,0.85); }
+  .topstrip { background: #5A2530; }
+
+  .oc-hero { padding: 56px 0 32px; }
+  .oc-hero h1 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: clamp(80px, 16vw, 240px); line-height: 0.9;
+    letter-spacing: -0.04em; margin: 0;
+    color: #5A2530; text-align: center;
+  }
+  .oc-hero h1 .ital { font-style: italic; color: var(--ohcrisp-melon); }
+  .oc-hero .tag-row { display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A2530; padding-bottom: 24px; border-bottom: 1px solid rgba(90,37,48,0.15); }
+
+  .oc-stage {
+    position: relative; height: 540px;
+    margin-top: -64px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .oc-stage .glow {
+    position: absolute; width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--ohcrisp-blush) 0%, transparent 60%);
+    filter: blur(20px);
+  }
+  /* Pouch package */
+  .pouch {
+    position: relative; width: 320px; height: 420px;
+    background: linear-gradient(160deg, #FBE4DD 0%, #F4CFD2 50%, #ECA08A 100%);
+    border-radius: 24px 24px 60px 60px / 24px 24px 32px 32px;
+    box-shadow: 0 60px 80px -30px rgba(90,37,48,0.4), inset 0 -20px 40px rgba(90,37,48,0.08), inset 0 4px 8px rgba(255,255,255,0.6);
+    transform: rotate(4deg);
+    padding: 36px 32px 32px;
+    display: flex; flex-direction: column; gap: 8px;
+    overflow: hidden;
+  }
+  .pouch::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 16px;
+    background: repeating-linear-gradient(90deg, rgba(90,37,48,0.12) 0 4px, transparent 4px 9px);
+  }
+  .pouch::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 60px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.4), transparent);
+  }
+  .pouch .p-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: #5A2530; }
+  .pouch .p-name { font-family: 'DM Serif Display', serif; font-size: 76px; line-height: 0.9; letter-spacing: -0.03em; color: #5A2530; margin-top: auto; }
+  .pouch .p-sub { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 22px; line-height: 1; color: var(--ohcrisp-melon); }
+  .pouch .p-foot { display: flex; justify-content: space-between; padding-top: 16px; border-top: 1px solid rgba(90,37,48,0.2); font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.16em; color: #5A2530; }
+
+  /* Floating fruit pieces */
+  .frt { position: absolute; border-radius: 50%; box-shadow: 0 20px 35px -10px rgba(90,37,48,0.3); }
+  .frt.r1 { width: 120px; height: 120px; top: 12%; left: 12%; background: radial-gradient(circle at 35% 30%, #FAE7A6, #E8B748); transform: rotate(15deg); }
+  .frt.r2 { width: 80px; height: 80px; bottom: 16%; left: 20%; background: radial-gradient(circle at 35% 30%, #F8DDE0, #E89AA1); transform: rotate(-10deg); }
+  .frt.r3 { width: 100px; height: 100px; top: 18%; right: 14%; background: radial-gradient(circle at 35% 30%, #FAD9BD, #E89A6F); transform: rotate(-20deg); }
+  .frt.r4 { width: 70px; height: 70px; bottom: 18%; right: 18%; background: radial-gradient(circle at 35% 30%, #F4CFD2, #C76974); transform: rotate(20deg); }
+
+  .oc-cta-bar { display: flex; justify-content: center; gap: 12px; padding: 32px 0; }
+  .oc-cta-bar .cta-pill { background: #5A2530; }
+  .oc-cta-bar .cta-pill:hover { background: #3F1820; }
+  .oc-cta-bar .cta-ghost { border-color: #5A2530; color: #5A2530; }
+  .oc-cta-bar .cta-ghost:hover { background: #5A2530; color: var(--ivory); }
+
+  .pitch { padding: 96px 0; }
+  .pitch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .pitch-grid h2 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: clamp(48px, 6vw, 88px); line-height: 0.98; letter-spacing: -0.02em; margin: 0; color: #5A2530; }
+  .pitch-grid h2 .ital { font-style: italic; }
+  .pitch-grid p { font-size: 19px; line-height: 1.55; color: #5A2530; }
+  .pitch-grid p + p { margin-top: 16px; }
+
+  .specs { background: #5A2530; color: #F4CFD2; padding: 80px 0; }
+  .specs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .spec { padding: 0 32px; border-left: 1px solid rgba(244,207,210,0.18); }
+  .spec:first-child { border-left: none; padding-left: 0; }
+  .spec .lbl { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244,207,210,0.6); margin-bottom: 16px; }
+  .spec .v { font-family: 'DM Serif Display', serif; font-size: 56px; line-height: 1; letter-spacing: -0.02em; color: #FBEDEC; }
+  .spec .v .ital { font-style: italic; color: var(--ohcrisp-blush); }
+  .spec .d { font-size: 14px; margin-top: 8px; opacity: 0.7; }
+
+  .flavors { padding: 96px 0; }
+  .flavors h2 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: clamp(48px, 6vw, 88px); line-height: 1; letter-spacing: -0.02em; margin: 0 0 48px; color: #5A2530; }
+  .flavors h2 .ital { font-style: italic; }
+  .flavors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .flavor {
+    border-radius: var(--r-lg); padding: 32px; aspect-ratio: 3/4;
+    display: flex; flex-direction: column; gap: 8px;
+    color: #5A2530; position: relative; overflow: hidden;
+    transition: transform .25s;
+  }
+  .flavor:hover { transform: translateY(-4px); }
+  .flavor.f1 { background: linear-gradient(165deg, #F8DDE0 0%, #E89AA1 100%); }
+  .flavor.f2 { background: linear-gradient(165deg, #FAE7A6 0%, #E8B748 100%); color: #5A3A0F; }
+  .flavor.f3 { background: linear-gradient(165deg, #FAD9BD 0%, #E89A6F 100%); color: #5A2A14; }
+  .flavor .num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; opacity: 0.7; }
+  .flavor .stage { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; }
+  .flavor .stack { position: relative; width: 60%; aspect-ratio: 1/1; }
+  .flavor .stack .piece { position: absolute; border-radius: 50%; box-shadow: 0 16px 32px -10px rgba(90,37,48,0.35); }
+  .flavor .stack .p1 { width: 70%; height: 70%; top: 5%; left: 5%; background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.4), transparent 70%), currentColor; opacity: 0.85; }
+  .flavor .stack .p2 { width: 50%; height: 50%; bottom: 8%; right: 8%; background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.5), transparent 70%), currentColor; opacity: 0.7; }
+  .flavor h3 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 32px; line-height: 1; margin: 0; }
+  .flavor h3 .ital { font-style: italic; }
+  .flavor .desc { font-size: 13px; opacity: 0.85; max-width: 28ch; }
+
+  .story-strip {
+    margin: 0 32px; border-radius: var(--r-xl); overflow: hidden;
+    display: grid; grid-template-columns: 1fr 1fr;
+    background: var(--ohcrisp-blush);
+  }
+  .story-strip .imgph { aspect-ratio: auto; height: 100%; min-height: 480px; border-radius: 0; }
+  .story-strip .text { padding: 64px; display: flex; flex-direction: column; gap: 16px; justify-content: center; color: #5A2530; }
+  .story-strip h2 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: clamp(40px, 5vw, 72px); line-height: 1; letter-spacing: -0.02em; margin: 0; }
+  .story-strip p { font-size: 17px; line-height: 1.55; color: #5A2530; margin: 0; }
+
+  @media (max-width: 900px) {
+    .pitch-grid, .specs-grid, .flavors-grid, .story-strip { grid-template-columns: 1fr !important; }
+    .spec { border-left: none; border-top: 1px solid rgba(244,207,210,0.18); padding: 16px 0 0; }
+    .spec:first-child { border-top: none; padding-top: 0; }
+    .story-strip { margin: 0 16px; }
+    .story-strip .text { padding: 32px; }
+    .story-strip .imgph { min-height: 240px; }
+    .oc-stage { height: 380px; }
+    .pouch { width: 220px; height: 300px; padding: 28px 24px 24px; }
+    .pouch .p-name { font-size: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topstrip">A Vitablabla brand · No. 02 · <a href="index.html">All brands</a></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="index.html#brands">Brands</a>
+      <a class="nav-link" href="about.html">About</a>
+    </div>
+    <a class="logo" href="index.html">vitablabla<span class="dot">.</span></a>
+    <div class="nav-right">
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="cta-pill" href="blog.html">Read Blog <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="oc-hero">
+  <div class="container">
+    <div class="tag-row">
+      <span>OhCrisp / Drop No. 02</span>
+      <span>Crunchy · Real fruit · Airy · 90hr cure</span>
+      <span>Sourced in Oaxaca</span>
+    </div>
+    <h1>oh<span class="ital">crisp.</span></h1>
+    <div class="oc-stage" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="frt r1"></div>
+      <div class="frt r2"></div>
+      <div class="frt r3"></div>
+      <div class="frt r4"></div>
+      <div class="pouch">
+        <div class="p-eyebrow">A Vitablabla product · 4 servings · 28g</div>
+        <div class="p-sub">Crunchy real</div>
+        <div class="p-name">ohcrisp</div>
+        <div class="p-sub">freeze-dried fruit.</div>
+        <div class="p-foot"><span>No. 02</span><span>O-001/2025</span></div>
+      </div>
+    </div>
+
+    <div class="oc-cta-bar">
+      <a class="cta-pill" href="https://www.ohcrisp.com" target="_blank" rel="noopener">Visit ohcrisp.com <span class="arrow">↗</span></a>
+      <a class="cta-ghost" href="https://www.ohcrisp.com" target="_blank" rel="noopener">See all flavors</a>
+    </div>
+  </div>
+</header>
+
+<section class="pitch">
+  <div class="container">
+    <div class="pitch-grid">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px;color:#5A2530">The story</div>
+        <h2>We love to travel — and we wanted every fruit, <span class="ital">everywhere.</span></h2>
+      </div>
+      <div>
+        <p>The brief was simple. We wanted to enjoy mango in a winter airport, lychee on a long drive, strawberries on a Tuesday morning meeting. We wanted color, real flavor, and a snack we could actually carry.</p>
+        <p>Freeze-drying turned out to be the answer. Slow, careful, and remarkably honest — it pulls every drop of water out and leaves the fruit's color, flavor, and a kind of airy crunch you cannot fake. Real fruit, lighter to carry, ready when you are.</p>
+        <p>That is OhCrisp. A small pouch, big crunch, and a brighter way to snack — wherever you happen to be that day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="specs">
+  <div class="container">
+    <div class="specs-grid">
+      <div class="spec"><div class="lbl">Fruit, full stop</div><div class="v">1 <span class="ital">ingredient</span></div><div class="d">No oil, no sugar, no anything else.</div></div>
+      <div class="spec"><div class="lbl">Per box</div><div class="v">19 <span class="ital">fruits</span></div><div class="d">Nineteen real fruits, no fillers, no flavorings.</div></div>
+      <div class="spec"><div class="lbl">Special mix</div><div class="v">8 <span class="ital">in 1</span></div><div class="d">An eight-fruit medley in every signature pouch.</div></div>
+      <div class="spec"><div class="lbl">Farm to dryer</div><div class="v">4 <span class="ital">hr</span></div><div class="d">Picked, sliced, and frozen — fast, then slow-cured.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="flavors">
+  <div class="container">
+    <div class="eyebrow" style="margin-bottom:24px;color:#5A2530">Three pouches / Drop 02</div>
+    <h2>Color, sealed in <span class="ital">midair.</span></h2>
+    <div class="flavors-grid">
+      <div class="flavor f1">
+        <div style="display:flex;justify-content:space-between"><span class="num">/ 01</span><span class="num">Strawberry · Hibiscus</span></div>
+        <div class="stage"><div class="stack"><div class="piece p1" style="color:#C76974"></div><div class="piece p2" style="color:#E89AA1"></div></div></div>
+        <h3>Strawberry <span class="ital">Pop</span></h3>
+        <p class="desc">Whole strawberries, hibiscus dust, electric pink color. Tart and bright.</p>
+      </div>
+      <div class="flavor f2">
+        <div style="display:flex;justify-content:space-between"><span class="num">/ 02</span><span class="num">Mango · Lime</span></div>
+        <div class="stage"><div class="stack"><div class="piece p1" style="color:#E8B748"></div><div class="piece p2" style="color:#FAE7A6"></div></div></div>
+        <h3>Mango <span class="ital">Glow</span></h3>
+        <p class="desc">Ataulfo mango with a whisper of lime zest. Sunny, slightly chewy edges.</p>
+      </div>
+      <div class="flavor f3">
+        <div style="display:flex;justify-content:space-between"><span class="num">/ 03</span><span class="num">Peach · Vanilla</span></div>
+        <div class="stage"><div class="stack"><div class="piece p1" style="color:#E89A6F"></div><div class="piece p2" style="color:#FAD9BD"></div></div></div>
+        <h3>Peach <span class="ital">Hum</span></h3>
+        <p class="desc">Yellow peach + vanilla pod. Soft sweetness, very satisfying snap.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="story-strip">
+    <div class="title-block tb-blush" style="border-radius:var(--r-xl); min-height:380px">
+      <div class="tb-top"><span class="tb-num">FIG. 01 — DRYER NOTES</span><span class="tb-num">2025</span></div>
+      <div class="tb-glyph" style="width:200px;height:200px;right:-50px;bottom:-50px;"></div>
+      <h3 class="tb-title" style="font-size:clamp(28px,3vw,44px)">Color, sealed in <span class="ital">midair.</span></h3>
+      <div class="tb-bottom"><span>Freeze-Dried Fruit</span><span>The slow way.</span></div>
+    </div>
+    <div class="text">
+      <div class="eyebrow" style="color:#5A2530">The story</div>
+      <h2>A slow vacuum, and an <span style="font-style:italic">honest piece</span> of fruit.</h2>
+      <p>OhCrisp is freeze-dried fruit, made the long way. Whole, ripe fruit goes in. Water comes out — slowly, under vacuum, with no heat to bruise the flavor.</p>
+      <p>What is left is the fruit, exactly as it was picked, with a kind of airy crunch you cannot fake. No oil. No sugar. No anything else.</p>
+      <a class="cta-ghost" href="post.html?slug=how-ohcrisp-is-made" style="align-self:flex-start;border-color:#5A2530;color:#5A2530;margin-top:8px">Read how it's made <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="italic">vita<br/>blabla.</span></div>
+        <p class="footer-tag">A playful premium snack brand house, building little moments worth talking about.</p>
+      </div>
+      <div><h4>Brands</h4><ul><li><a href="frozili.html">Frozili</a></li><li><a href="ohcrisp.html">OhCrisp</a></li><li><span style="color:var(--ink-mute)">More coming</span></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Elsewhere</h4><ul><li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Vitablabla, Inc.</span><span>Designed with care, for cravings.</span></div>
+  </div>
+</footer>
+
+</body>
+</html>

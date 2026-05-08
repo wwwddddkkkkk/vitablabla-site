@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Vitablabla Journal</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .blog-hero { padding: 64px 0 32px; }
+  .blog-hero h1 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: clamp(56px, 9vw, 144px); line-height: 0.95;
+    letter-spacing: -0.025em; margin: 0 0 24px;
+  }
+  .blog-hero h1 .ital { font-style: italic; color: var(--sage-deep); }
+  .blog-hero .sub { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; padding-top: 32px; border-top: 1px solid var(--line); margin-top: 24px; }
+  .blog-hero .sub p { margin: 0; font-size: 19px; color: var(--ink-soft); max-width: 56ch; }
+  .blog-hero .sub .search-wrap { display: flex; align-items: center; justify-content: flex-end; }
+  .search-bar {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: 999px; padding: 10px 18px; min-width: 320px;
+  }
+  .search-bar input { background: transparent; border: none; outline: none; flex: 1; font-family: inherit; font-size: 15px; color: var(--ink); }
+  .search-bar svg { color: var(--ink-mute); }
+
+  .cats {
+    position: sticky; top: 71px; z-index: 40;
+    background: rgba(244,238,224,0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line-soft);
+    padding: 16px 0;
+  }
+  .cats-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .chip {
+    padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line);
+    font-size: 13px; background: var(--paper); cursor: pointer; transition: all .15s;
+    font-family: inherit;
+  }
+  .chip:hover { background: var(--ivory-deep); }
+  .chip.active { background: var(--ink); color: var(--ivory); border-color: var(--ink); }
+
+  .articles { padding-bottom: 96px; }
+  .articles-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 32px; }
+  .articles-head h2 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 36px; margin: 0; }
+  .articles-head .count { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-mute); letter-spacing: 0.12em; text-transform: uppercase; }
+  .article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 24px; }
+  .article {
+    display: flex; flex-direction: column; gap: 14px;
+    cursor: pointer;
+  }
+  .article:hover .title-block { transform: translateY(-3px); }
+  .article .title-block { transition: transform .25s ease; }
+  .article h3 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: 26px; line-height: 1.1; letter-spacing: -0.01em; margin: 0;
+  }
+  .article p { margin: 0; font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+
+  .empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 64px 32px;
+    color: var(--ink-mute);
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px; font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .blog-hero .sub { grid-template-columns: 1fr; }
+    .blog-hero .sub .search-wrap { justify-content: flex-start; }
+    .article-grid { grid-template-columns: 1fr; }
+    .cats { top: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topstrip">New posts every week. <a href="post.html?slug=slow-melt">Read the latest →</a></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="index.html#brands">Brands</a>
+      <a class="nav-link" href="about.html">About</a>
+    </div>
+    <a class="logo" href="index.html">vitablabla<span class="dot">.</span></a>
+    <div class="nav-right">
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="cta-pill active" href="blog.html">Read Blog <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="blog-hero">
+  <div class="container">
+    <div class="eyebrow" style="margin-bottom:32px">The Journal &middot; Vol. 01</div>
+    <h1>The Vitablabla <span class="ital">Journal.</span></h1>
+    <div class="sub">
+      <p>Snack ideas, product stories, and everyday guides for modern cravings — from icy coffee candy and refreshing treats to freeze-dried fruit, travel snacks, and better little pick-me-ups.</p>
+      <div class="search-wrap">
+        <div class="search-bar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+          <input id="searchInput" placeholder="Search the journal — try 'travel snack'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="cats">
+  <div class="container">
+    <div class="cats-row" id="catsRow">
+      <button class="chip active" data-cat="">All</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="featuredSlot"></div>
+
+  <section class="articles">
+    <div class="articles-head">
+      <h2>Latest from the <span style="font-style:italic;color:var(--sage-deep)">journal</span></h2>
+      <span class="count" id="countLabel">— ARTICLES &middot; UPDATED WEEKLY</span>
+    </div>
+
+    <div class="article-grid" id="articleGrid"></div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="italic">vita<br/>blabla.</span></div>
+        <p class="footer-tag">A playful premium snack brand house, building little moments worth talking about.</p>
+      </div>
+      <div><h4>Brands</h4><ul><li><a href="frozili.html">Frozili</a></li><li><a href="ohcrisp.html">OhCrisp</a></li><li><span style="color:var(--ink-mute)">More coming</span></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Elsewhere</h4><ul><li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 Vitablabla, Inc.</span><span>Designed with care, for cravings.</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script>
+(async function () {
+  const reg = await VB.loadRegistry();
+  const allPosts = VB.sortByDateDesc(reg.posts || []);
+
+  // Build category chips from settings.
+  const chipsRoot = document.getElementById('catsRow');
+  (reg.categories || []).forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'chip';
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    chipsRoot.appendChild(btn);
+  });
+
+  let activeCat = '';
+  let searchTerm = '';
+
+  function matches(post) {
+    if (activeCat && !(post.categories || []).includes(activeCat)) return false;
+    if (searchTerm) {
+      const hay = [post.title, post.cardTitle, post.excerpt, (post.categories || []).join(' ')].join(' ').toLowerCase();
+      if (!hay.includes(searchTerm)) return false;
+    }
+    return true;
+  }
+
+  function render() {
+    const visible = allPosts.filter(matches);
+    const featSlot = document.getElementById('featuredSlot');
+    const grid = document.getElementById('articleGrid');
+    const count = document.getElementById('countLabel');
+
+    count.textContent = visible.length + ' ARTICLES · UPDATED WEEKLY';
+
+    if (visible.length === 0) {
+      featSlot.innerHTML = '';
+      grid.innerHTML = '<div class="empty">Nothing here yet. Try another category.</div>';
+      return;
+    }
+
+    // Featured = first match (when no filter, this is the latest post).
+    const featured = visible[0];
+    const primaryCat = (featured.categories && featured.categories[0]) || '';
+    featSlot.innerHTML = `
+      <div class="title-block hero ${featured.color || 'tb-sage'}" style="border-radius:var(--r-xl);margin-bottom:80px;margin-top:48px">
+        <div class="tb-top">
+          <span class="tb-num">No. ${featured.number} &middot; ${(featured.categories || []).join(' / ')}</span>
+          <span class="tb-num">${featured.readTime || ''} read &middot; ${VB.formatDateLong(featured.date)}</span>
+        </div>
+        <div class="tb-glyph" style="width:160px;height:160px;right:-40px;top:-40px;"></div>
+        <h2 class="tb-title">${(featured.title || '').replace(/<em>/g,'<span class="ital">').replace(/<\\/em>/g,'</span>')}</h2>
+        <div class="tb-bottom" style="margin-top:24px">
+          <a href="${VB.postURL(featured.slug)}" class="cta-pill" style="background:var(--ink);color:var(--ivory)">Read the article <span class="arrow">↗</span></a>
+          <span>The Vitablabla Journal</span>
+        </div>
+      </div>
+    `;
+
+    // Grid = the rest.
+    const rest = visible.slice(1);
+    grid.innerHTML = rest.length
+      ? rest.map(VB.cardHTML).join('')
+      : '<div class="empty">Just the featured one for now.</div>';
+  }
+
+  chipsRoot.addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    chipsRoot.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeCat = chip.dataset.cat || '';
+    render();
+  });
+
+  document.getElementById('searchInput').addEventListener('input', e => {
+    searchTerm = e.target.value.trim().toLowerCase();
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Loading… — Vitablabla Journal</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* Article hero */
+  .post-hero { padding: 32px 0 24px; }
+  .post-hero .crumbs { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 32px; }
+  .post-hero .crumbs a { text-decoration: underline; text-underline-offset: 4px; }
+  .post-hero h1 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: clamp(48px, 7vw, 108px); line-height: 0.98;
+    letter-spacing: -0.025em; margin: 0 0 32px;
+    max-width: 18ch;
+  }
+  .post-hero h1 em { font-style: italic; color: var(--sage-deep); }
+  .post-meta {
+    display: flex; gap: 32px; align-items: center; flex-wrap: wrap;
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-top: 8px;
+  }
+  .post-meta .item .lbl { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); display:block; margin-bottom: 4px;}
+  .post-meta .item .val { font-size: 14px; }
+  .post-meta .spacer { flex: 1; }
+
+  /* Article body */
+  .post-body {
+    max-width: 720px; margin: 0 auto; padding: 96px 32px 96px;
+    font-size: 19px; line-height: 1.7;
+    color: var(--ink-soft);
+  }
+  .post-body > * { margin: 0 0 24px; }
+  .post-body p { color: var(--ink-soft); }
+  .post-body h2 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: 40px; line-height: 1.05; letter-spacing: -0.015em;
+    color: var(--ink); margin: 56px 0 24px;
+  }
+  .post-body h2 .ital, .post-body h2 em { font-style: italic; color: var(--sage-deep); }
+  .post-body h3 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 28px; line-height: 1.1; color: var(--ink); margin: 40px 0 16px; }
+  .post-body a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  .post-body em { color: var(--ink); font-style: italic; }
+  .post-body strong { color: var(--ink); font-weight: 600; }
+  .post-body blockquote {
+    border-left: 3px solid var(--sage-deep);
+    padding: 8px 0 8px 32px;
+    margin: 32px 0;
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px; line-height: 1.25;
+    color: var(--ink); font-style: italic;
+  }
+  .post-body ul, .post-body ol { padding-left: 24px; }
+  .post-body li { margin-bottom: 8px; }
+  .post-body figure { margin: 40px 0; }
+  .post-body figcaption { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-top: 12px; text-align: center; }
+  .post-body .dropcap::first-letter {
+    font-family: 'DM Serif Display', serif;
+    font-size: 88px; line-height: 0.85;
+    float: left; padding: 6px 12px 0 0;
+    color: var(--sage-deep); font-style: italic;
+  }
+  .post-body .pull-quote {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px; line-height: 1.15;
+    color: var(--ink); font-style: italic;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 40px 0;
+    margin: 56px 0;
+  }
+
+  /* Related */
+  .related { padding: 128px 0 80px; border-top: 1px solid var(--line); margin-top: 64px; }
+  .related .related-head { display: flex; align-items: end; justify-content: space-between; margin-bottom: 64px; }
+  .related .related-head h2 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: clamp(48px, 6vw, 80px); line-height: 1; letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .related .related-head .meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px 32px; }
+  .related .article { display: flex; flex-direction: column; gap: 16px; cursor: pointer; }
+  .related .article p { margin: 0; font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+  .related .article:hover .title-block { transform: translateY(-3px); }
+
+  /* CTA bottom */
+  .post-cta {
+    margin: 32px;
+    border-radius: var(--r-xl);
+    padding: 64px;
+    display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 48px;
+    overflow: hidden; position: relative;
+  }
+  .post-cta::before {
+    content: ''; position: absolute; right: -10%; top: -40%;
+    width: 60%; height: 200%; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.4), transparent 70%);
+  }
+  .post-cta h2 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: clamp(36px, 5vw, 64px); line-height: 1; margin: 0; max-width: 16ch; position: relative; }
+  .post-cta em, .post-cta .ital { font-style: italic; }
+  .post-cta.frozili {
+    background: linear-gradient(160deg, var(--frozili-ice) 0%, var(--frozili-ice-deep) 100%);
+    color: var(--frozili-coffee);
+  }
+  .post-cta.ohcrisp {
+    background: linear-gradient(160deg, #F8DDE0 0%, #E89AA1 100%);
+    color: #5A2530;
+  }
+
+  /* Reading progress bar */
+  .progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; background: transparent; z-index: 100; }
+  .progress .bar { height: 100%; background: var(--sage-deep); width: 0%; transition: width .1s; }
+
+  /* Loading state */
+  #postRoot[data-state="loading"] .post-meta,
+  #postRoot[data-state="loading"] .post-body,
+  #postRoot[data-state="loading"] .post-cta,
+  #postRoot[data-state="loading"] .related { opacity: 0; }
+  #postRoot[data-state="loading"] .post-hero h1 { color: var(--ink-mute); }
+
+  #postRoot[data-state="missing"] .post-body { text-align: center; padding-top: 120px; }
+  #postRoot[data-state="missing"] .post-cta,
+  #postRoot[data-state="missing"] .related,
+  #postRoot[data-state="missing"] .post-meta { display: none; }
+
+  @media (max-width: 900px) {
+    .related-grid { grid-template-columns: 1fr; }
+    .post-cta { grid-template-columns: 1fr; padding: 32px; margin: 16px; }
+    .post-body { padding: 32px 24px 64px; font-size: 17px; }
+    .post-body h2 { font-size: 32px; }
+    .post-body .pull-quote { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress"><div class="bar" id="bar"></div></div>
+
+<div class="topstrip">The Vitablabla Journal &middot; Snack stories &amp; ideas &middot; <a href="blog.html">Back to all articles</a></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="index.html#brands">Brands</a>
+      <a class="nav-link" href="about.html">About</a>
+    </div>
+    <a class="logo" href="index.html">vitablabla<span class="dot">.</span></a>
+    <div class="nav-right">
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="cta-pill active" href="blog.html">Read Blog <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</nav>
+
+<div id="postRoot" data-state="loading">
+
+  <header class="post-hero">
+    <div class="container">
+      <div class="crumbs" id="crumbs"><a href="blog.html">Journal</a></div>
+      <h1 id="title">Loading post…</h1>
+
+      <div class="post-meta" id="meta">
+        <div class="item"><span class="lbl">Category</span><span class="val" id="metaCategory"></span></div>
+        <div class="item"><span class="lbl">Published</span><span class="val" id="metaDate"></span></div>
+        <div class="item"><span class="lbl">Read time</span><span class="val" id="metaRead"></span></div>
+        <div class="spacer"></div>
+        <div class="item"><span class="lbl">Share</span><span class="val">Instagram &middot; TikTok &middot; Copy link</span></div>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body" id="body"></article>
+
+  <section>
+    <div class="post-cta" id="cta">
+      <h2 id="ctaTitle"></h2>
+      <a class="cta-pill" id="ctaLink"><span id="ctaLabel">Visit</span> <span class="arrow">↗</span></a>
+    </div>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="related-head">
+        <h2>Keep <span style="font-style:italic;color:var(--sage-deep)">reading.</span></h2>
+        <span class="meta">Three more from the journal</span>
+      </div>
+      <div class="related-grid" id="related"></div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="italic">vita<br/>blabla.</span></div>
+        <p class="footer-tag">A playful premium snack brand house, building little moments worth talking about.</p>
+      </div>
+      <div><h4>Brands</h4><ul><li><a href="frozili.html">Frozili</a></li><li><a href="ohcrisp.html">OhCrisp</a></li><li><span style="color:var(--ink-mute)">More coming</span></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Elsewhere</h4><ul><li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 Vitablabla, Inc.</span><span>Designed with care, for cravings.</span></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script>
+(async function () {
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('slug');
+  const root = document.getElementById('postRoot');
+
+  if (!slug) {
+    root.dataset.state = 'missing';
+    document.getElementById('title').textContent = 'No post specified.';
+    document.getElementById('body').innerHTML = '<p>Try the <a href="blog.html">journal index</a>.</p>';
+    return;
+  }
+
+  let registry;
+  try {
+    registry = await fetch('posts.json', { cache: 'no-cache' }).then(r => r.json());
+  } catch (e) {
+    root.dataset.state = 'missing';
+    document.getElementById('title').textContent = 'Could not load posts.json.';
+    return;
+  }
+
+  const post = registry.posts.find(p => p.slug === slug);
+  if (!post) {
+    root.dataset.state = 'missing';
+    document.getElementById('title').textContent = 'Post not found.';
+    document.getElementById('body').innerHTML = '<p>This article may have moved. Browse the <a href="blog.html">journal</a>.</p>';
+    return;
+  }
+
+  // Title + meta
+  document.title = stripHTML(post.title) + ' — Vitablabla Journal';
+  document.getElementById('title').innerHTML = post.title;
+
+  // Crumbs
+  const crumbs = ['<a href="blog.html">Journal</a>'].concat(post.crumbs || []);
+  document.getElementById('crumbs').innerHTML = crumbs.join(' &nbsp;/&nbsp; ');
+
+  // Category tags
+  document.getElementById('metaCategory').innerHTML = (post.categories || [])
+    .map(c => `<span class="tag ${VB.tagClass(c)}">${c}</span>`).join(' ');
+  document.getElementById('metaDate').textContent = VB.formatDateLong(post.date);
+  document.getElementById('metaRead').textContent = (post.readTime || '').replace(/min$/, 'minutes').replace(/^(\d+) minutes/, (m, n) => n + ' minute' + (n === '1' ? '' : 's'));
+
+  // Body
+  let bodyHTML;
+  try {
+    bodyHTML = await fetch('posts/' + slug + '.html', { cache: 'no-cache' }).then(r => {
+      if (!r.ok) throw new Error('not found');
+      return r.text();
+    });
+  } catch (e) {
+    bodyHTML = '<p><em>Body content for this post is missing.</em> Add the file <code>posts/' + slug + '.html</code>.</p>';
+  }
+  document.getElementById('body').innerHTML = bodyHTML;
+
+  // CTA
+  const ctaEl = document.getElementById('cta');
+  const ctaTitle = document.getElementById('ctaTitle');
+  const ctaLink = document.getElementById('ctaLink');
+  const ctaLabel = document.getElementById('ctaLabel');
+  if (post.cta === 'ohcrisp') {
+    ctaEl.classList.add('ohcrisp');
+    ctaTitle.innerHTML = 'Try a pouch for <em>yourself.</em>';
+    ctaLink.href = 'https://www.ohcrisp.com';
+    ctaLink.target = '_blank';
+    ctaLink.rel = 'noopener';
+    ctaLink.style.background = '#5A2530';
+    ctaLink.style.color = '#FBEDEC';
+    ctaLabel.textContent = 'Visit ohcrisp.com';
+  } else {
+    ctaEl.classList.add('frozili');
+    ctaTitle.innerHTML = 'Try a slow-melt for <em>yourself.</em>';
+    ctaLink.href = 'frozili.html';
+    ctaLink.style.background = 'var(--frozili-coffee)';
+    ctaLink.style.color = 'var(--ivory)';
+    ctaLabel.textContent = 'Visit Frozili';
+  }
+
+  // Related
+  const relatedSlugs = (post.related && post.related.length)
+    ? post.related
+    : registry.posts.filter(p => p.slug !== post.slug).slice(0, 3).map(p => p.slug);
+  document.getElementById('related').innerHTML = relatedSlugs
+    .map(s => registry.posts.find(p => p.slug === s))
+    .filter(Boolean)
+    .slice(0, 3)
+    .map(VB.cardHTML)
+    .join('');
+
+  root.dataset.state = 'ready';
+
+  // Reading progress bar
+  const bar = document.getElementById('bar');
+  const article = document.querySelector('.post-body');
+  function update() {
+    const rect = article.getBoundingClientRect();
+    const top = window.scrollY + rect.top;
+    const height = rect.height;
+    const scrolled = window.scrollY - top + window.innerHeight * 0.4;
+    const pct = Math.max(0, Math.min(1, scrolled / height));
+    bar.style.width = (pct * 100) + '%';
+  }
+  document.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+function stripHTML(s) { const d = document.createElement('div'); d.innerHTML = s; return d.textContent || ''; }
+</script>
+</body>
+</html>

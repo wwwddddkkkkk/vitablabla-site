@@ -1,0 +1,48 @@
+<!--
+  POST BODY TEMPLATE — copy this to posts/<your-slug>.html and edit.
+  Then add a matching entry to the top of posts.json's "posts" array.
+
+  Available block types (use any subset, in any order):
+
+    <p class="dropcap">…</p>          ← first paragraph; gets the big drop-cap.
+    <p>Regular paragraph.</p>          ← can include <a>, <em>, <strong>.
+    <h2>Section heading <span class="ital">italic accent.</span></h2>
+    <h3>Sub-heading.</h3>
+    <blockquote>"Pull quote in serif italic."</blockquote>
+    <ol><li><strong>Lead-in.</strong> Body of point.</li></ol>
+    <ul><li>Bullet point.</li></ul>
+    <div class="pull-quote">"Centered, divider-bracketed pull quote."</div>
+
+  Decorative title-block figure (reuses the same color tones as cards):
+
+    <figure>
+      <div class="title-block tb-coffee" style="aspect-ratio:16/8">
+        <div class="tb-top"><span class="tb-num">FIG. 01</span><span class="tb-num">2026</span></div>
+        <div class="tb-glyph"></div>
+        <h3 class="tb-title" style="font-size:clamp(28px,3vw,44px)">Figure heading <span class="ital">in italic.</span></h3>
+        <div class="tb-bottom"><span>Caption left</span><span>Caption right</span></div>
+      </div>
+      <figcaption>Fig. 01 — explanatory caption beneath the block.</figcaption>
+    </figure>
+
+  Available tb-* color tones: tb-ice tb-coffee tb-blush tb-peach tb-sun tb-sage tb-violet tb-cream tb-pop
+-->
+
+<p class="dropcap">Open the post with a strong, specific image. The first paragraph automatically gets the dropcap because of the <code>dropcap</code> class.</p>
+
+<p>Second paragraph. Keep sentences short. Be playful and concrete. Link to other posts like <a href="post.html?slug=slow-melt">this</a>, or to brand pages like <a href="frozili.html">Frozili</a>.</p>
+
+<blockquote>"A short, taped-to-the-wall quote that captures the post's idea."</blockquote>
+
+<h2>First section heading, with an <span class="ital">italic accent.</span></h2>
+
+<p>Body copy. Use <em>em</em> for emphasis and <strong>strong</strong> for definitions. Numbers and percentages read well in <strong>bold</strong>.</p>
+
+<h3>Optional sub-heading.</h3>
+
+<ol>
+  <li><strong>Lead-in.</strong> Followed by the explanation.</li>
+  <li><strong>Lead-in.</strong> Keep these tight — three to six items max.</li>
+</ol>
+
+<p>Closing thought. Optional CTA link to a related post or brand page.</p>

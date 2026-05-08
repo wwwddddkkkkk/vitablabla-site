@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>About — Vitablabla</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .about-hero { padding: 64px 0 80px; }
+  .about-hero h1 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: clamp(56px, 8.5vw, 132px); line-height: 0.96;
+    letter-spacing: -0.025em; margin: 0 0 32px; max-width: 18ch;
+  }
+  .about-hero h1 .ital { font-style: italic; color: var(--sage-deep); }
+  .about-meta {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+    padding-top: 32px; border-top: 1px solid var(--line);
+  }
+  .about-meta .label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 8px; }
+
+  .feature-strip {
+    margin: 0 32px 96px;
+    border-radius: var(--r-xl);
+    aspect-ratio: 16/7;
+    background: linear-gradient(125deg, var(--frozili-ice) 0%, var(--ohcrisp-blush) 60%, var(--ohcrisp-sun) 100%);
+    position: relative; overflow: hidden;
+  }
+  .feature-strip .blob { filter: blur(60px); opacity: .6; }
+  .fs-b1 { width: 50%; height: 80%; background: var(--frozili-coffee); top: -20%; left: -10%; opacity: .3; }
+  .fs-b2 { width: 40%; height: 80%; background: var(--ohcrisp-melon); bottom: -20%; right: -5%; }
+  .fs-b3 { width: 30%; height: 60%; background: var(--sage); top: 20%; left: 35%; opacity: .35; }
+  .fs-overlay {
+    position: absolute; inset: 0;
+    display: flex; align-items: flex-end; justify-content: space-between;
+    padding: 32px 40px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  }
+
+  .story-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
+  .story-grid h2 {
+    font-family: 'DM Serif Display', serif; font-weight: 400;
+    font-size: clamp(36px, 4.5vw, 64px); line-height: 1.02;
+    letter-spacing: -0.02em; margin: 0;
+  }
+  .story-grid p { font-size: 19px; line-height: 1.55; color: var(--ink-soft); }
+  .story-grid p + p { margin-top: 20px; }
+  .story-grid .pull {
+    border-left: 3px solid var(--sage-deep);
+    padding: 8px 0 8px 24px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px; line-height: 1.2;
+    color: var(--ink); margin: 32px 0;
+    font-style: italic;
+  }
+
+  /* Values */
+  .values { background: var(--paper); padding: 96px 0; }
+  .values-head { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; margin-bottom: 64px; align-items: end; }
+  .values-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+  .value-card { background: var(--paper); padding: 32px 24px; min-height: 240px; display: flex; flex-direction: column; gap: 16px; }
+  .value-card .num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--ink-mute); }
+  .value-card h3 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 28px; line-height: 1.05; margin: 0; }
+  .value-card .ital { font-style: italic; color: var(--sage-deep); }
+  .value-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.5; margin: auto 0 0; }
+
+  /* People / founders */
+  .people { padding: 96px 0; }
+  .people-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 48px; }
+  .person .imgph { aspect-ratio: 4/5; border-radius: var(--r-md); margin-bottom: 16px; }
+  .person .name { font-family: 'DM Serif Display', serif; font-size: 28px; line-height: 1; margin: 0 0 6px; }
+  .person .role { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 10px; }
+  .person p { font-size: 15px; color: var(--ink-soft); line-height: 1.5; margin: 0; }
+
+  /* Numbers row */
+  .numbers {
+    margin: 0 32px;
+    background: var(--ink); color: var(--ivory);
+    border-radius: var(--r-xl);
+    padding: 64px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+  }
+  .numbers .stat { border-left: 1px solid rgba(244,238,224,0.2); padding-left: 24px; }
+  .numbers .stat:first-child { border-left: none; padding-left: 0; }
+  .numbers .v { font-family: 'DM Serif Display', serif; font-size: 64px; line-height: 1; letter-spacing: -0.02em; }
+  .numbers .v .ital { font-style: italic; color: var(--ohcrisp-blush); }
+  .numbers .l { font-size: 13px; color: rgba(244,238,224,0.6); margin-top: 8px; }
+
+  @media (max-width: 900px) {
+    .about-meta, .story-grid, .values-head, .people-grid, .values-grid, .numbers { grid-template-columns: 1fr !important; }
+    .values-grid { display: flex; flex-direction: column; }
+    .feature-strip { margin: 0 16px 64px; aspect-ratio: 4/3; }
+    .numbers { padding: 32px; margin: 0 16px; }
+    .numbers .stat { border-left: none; padding-left: 0; padding-top: 16px; border-top: 1px solid rgba(244,238,224,0.2); }
+    .numbers .stat:first-child { border-top: none; padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topstrip">A note from the founders is up on the journal. <a href="blog.html">Read it →</a></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="index.html#brands">Brands</a>
+      <a class="nav-link active" href="about.html">About</a>
+    </div>
+    <a class="logo" href="index.html">vitablabla<span class="dot">.</span></a>
+    <div class="nav-right">
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="cta-pill" href="blog.html">Read Blog <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="about-hero">
+  <div class="container">
+    <div class="eyebrow" style="margin-bottom:32px">About / Vitablabla</div>
+    <h1>We build playful premium snacks for <span class="ital">everyday little moments.</span></h1>
+    <div class="about-meta">
+      <div>
+        <div class="label">What we are</div>
+        <p style="margin:0;font-size:18px;color:var(--ink-soft);max-width:46ch">A modern snack brand house creating products that are easy to love and hard to forget.</p>
+      </div>
+      <div>
+        <div class="label">Where we're based</div>
+        <p style="margin:0;font-size:18px;color:var(--ink-soft);max-width:46ch">Started in a Yale kitchen during late-night study sessions. Now based in Jersey City, still a small studio with a shared belief that snacks deserve a little more thought.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="feature-strip" aria-hidden="true">
+  <div class="blob fs-b1"></div>
+  <div class="blob fs-b2"></div>
+  <div class="blob fs-b3"></div>
+  <div class="fs-overlay">
+    <span style="background:rgba(251,247,238,0.75);padding:8px 14px;border-radius:999px">Studio · started at Yale, now in Jersey City</span>
+    <span style="background:rgba(251,247,238,0.75);padding:8px 14px;border-radius:999px">Drops 1 — 5 / Snack House</span>
+  </div>
+</div>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="story-grid">
+      <h2>The short <span style="font-style:italic;color:var(--sage-deep)">version.</span></h2>
+      <div>
+        <p>Vitablabla is a modern snack brand house creating treats with distinct flavors, memorable textures, and strong visual identities.</p>
+        <div class="pull">"Our first product, Frozili, is an icy cool coffee candy: a slow-melting little reset with coffee flavor and icy freshness."</div>
+        <p>It was created for desk days, long drives, late nights, after meals, and all the small moments when you want something refreshing but don't want another drink.</p>
+        <p>Across every product we build, we care about one thing: making snacks feel more memorable. Icy, crunchy, colorful, slow-melting, surprising, soothing, or oddly satisfying — every Vitablabla brand starts with a sensory idea worth remembering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="container">
+    <div class="values-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px">What we care about</div>
+        <h2 class="h-section">Five small <span class="italic">non-negotiables.</span></h2>
+      </div>
+      <p class="lede">There are about a hundred ways to build a snack company. Here are the five rules that decide which one we're building.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <span class="num">/ 01</span>
+        <h3>Memorable <span class="ital">product ideas</span></h3>
+        <p>If a snack can't be described in one sensory sentence, it isn't ready yet.</p>
+      </div>
+      <div class="value-card">
+        <span class="num">/ 02</span>
+        <h3>Better everyday <span class="ital">moments</span></h3>
+        <p>We design for the 3 p.m. dip, the long flight, the 11 p.m. study session.</p>
+      </div>
+      <div class="value-card">
+        <span class="num">/ 03</span>
+        <h3>Playful but <span class="ital">premium</span></h3>
+        <p>Editorial design, real ingredients, and packaging that earns a second look.</p>
+      </div>
+      <div class="value-card">
+        <span class="num">/ 04</span>
+        <h3>Simple <span class="ital">ingredients</span></h3>
+        <p>Short labels, clear positioning, and nothing we wouldn't tell our friends about.</p>
+      </div>
+      <div class="value-card">
+        <span class="num">/ 05</span>
+        <h3>Worth <span class="ital">talking about</span></h3>
+        <p>Products people want to share — not because they have to, because they want to.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section-tight">
+  <div class="numbers">
+    <div class="stat">
+      <div class="v">2 <span class="ital">brands</span></div>
+      <div class="l">Live in 2025, with more sketched.</div>
+    </div>
+    <div class="stat">
+      <div class="v">All <span class="ital">50 states</span></div>
+      <div class="l">We ship across the U.S., from one tin to a case.</div>
+    </div>
+    <div class="stat">
+      <div class="v">∞ <span class="ital">tastings</span></div>
+      <div class="l">Small sensory sessions. We've stopped counting.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span class="italic">vita<br/>blabla.</span></div>
+        <p class="footer-tag">A playful premium snack brand house, building little moments worth talking about.</p>
+      </div>
+      <div><h4>Brands</h4><ul><li><a href="frozili.html">Frozili</a></li><li><a href="ohcrisp.html">OhCrisp</a></li><li><span style="color:var(--ink-mute)">More coming</span></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Elsewhere</h4><ul><li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Vitablabla, Inc.</span><span>Designed with care, for cravings.</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
