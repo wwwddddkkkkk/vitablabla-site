@@ -212,6 +212,7 @@
   .brand-card .desc { font-size: 15px; max-width: 32ch; opacity: 0.85; }
   .brand-card .visit {
     display: inline-flex; align-items: center; gap: 8px;
+    justify-content: center;
     padding: 12px 20px;
     border-radius: 999px;
     background: rgba(255,255,255,0.5);
@@ -358,6 +359,29 @@
     .hero-meta { grid-template-columns: 1fr; gap: 24px; }
     .hero-ctas { justify-content: flex-start; }
     .brands-head, .brands-grid, .philosophy-grid, .journal-grid, .cta-strip { grid-template-columns: 1fr !important; }
+    .brand-card {
+      aspect-ratio: auto;
+      min-height: 560px;
+      padding: 28px 24px;
+    }
+    .brand-card .stage {
+      min-height: 190px;
+    }
+    .brand-card-foot {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .brand-card h3 {
+      font-size: clamp(42px, 14vw, 56px);
+    }
+    .brand-card .desc {
+      max-width: none;
+    }
+    .brand-card .visit {
+      width: fit-content;
+      max-width: 100%;
+      white-space: nowrap;
+    }
     .brands-row-2 { grid-template-columns: 1fr; }
     .philosophy { padding: 56px 32px; margin: 0 16px; }
     .cta-strip { padding: 48px 32px; margin: 0 16px; }

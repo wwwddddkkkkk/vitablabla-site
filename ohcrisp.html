@@ -7,11 +7,11 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="stylesheet" href="styles.css" />
 <style>
-  body { background: #FBEDEC; }
+  body { background: #FBEDEC; overflow-x: hidden; }
   .nav { background: rgba(251,237,236,0.85); }
   .topstrip { background: #5A2530; }
 
-  .oc-hero { padding: 56px 0 32px; }
+  .oc-hero { padding: 56px 0 32px; overflow: hidden; }
   .oc-hero h1 {
     font-family: 'DM Serif Display', serif; font-weight: 400;
     font-size: clamp(80px, 16vw, 240px); line-height: 0.9;
@@ -19,12 +19,14 @@
     color: #5A2530; text-align: center;
   }
   .oc-hero h1 .ital { font-style: italic; color: var(--ohcrisp-melon); }
-  .oc-hero .tag-row { display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A2530; padding-bottom: 24px; border-bottom: 1px solid rgba(90,37,48,0.15); }
+  .oc-hero .tag-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5A2530; padding-bottom: 24px; border-bottom: 1px solid rgba(90,37,48,0.15); }
 
   .oc-stage {
     position: relative; height: 540px;
     margin-top: -64px;
     display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    max-width: 100%;
   }
   .oc-stage .glow {
     position: absolute; width: 600px; height: 600px;
@@ -63,7 +65,7 @@
   .frt.r3 { width: 100px; height: 100px; top: 18%; right: 14%; background: radial-gradient(circle at 35% 30%, #FAD9BD, #E89A6F); transform: rotate(-20deg); }
   .frt.r4 { width: 70px; height: 70px; bottom: 18%; right: 18%; background: radial-gradient(circle at 35% 30%, #F4CFD2, #C76974); transform: rotate(20deg); }
 
-  .oc-cta-bar { display: flex; justify-content: center; gap: 12px; padding: 32px 0; }
+  .oc-cta-bar { display: flex; justify-content: center; gap: 12px; padding: 32px 0; flex-wrap: wrap; }
   .oc-cta-bar .cta-pill { background: #5A2530; }
   .oc-cta-bar .cta-pill:hover { background: #3F1820; }
   .oc-cta-bar .cta-ghost { border-color: #5A2530; color: #5A2530; }
@@ -121,12 +123,21 @@
 
   @media (max-width: 900px) {
     .pitch-grid, .specs-grid, .flavors-grid, .story-strip { grid-template-columns: 1fr !important; }
+    .oc-hero { padding-top: 40px; }
+    .oc-hero h1 { font-size: clamp(68px, 22vw, 112px); }
+    .oc-hero .tag-row { justify-content: flex-start; line-height: 1.5; }
     .spec { border-left: none; border-top: 1px solid rgba(244,207,210,0.18); padding: 16px 0 0; }
     .spec:first-child { border-top: none; padding-top: 0; }
     .story-strip { margin: 0 16px; }
+    .story-strip .title-block { width: 100%; aspect-ratio: auto; }
     .story-strip .text { padding: 32px; }
     .story-strip .imgph { min-height: 240px; }
-    .oc-stage { height: 380px; }
+    .oc-stage { height: 380px; margin-top: 12px; }
+    .oc-stage .glow { width: 420px; height: 420px; }
+    .frt.r1 { left: 2%; }
+    .frt.r2 { left: 8%; }
+    .frt.r3 { right: 4%; }
+    .frt.r4 { right: 8%; }
     .pouch { width: 220px; height: 300px; padding: 28px 24px 24px; }
     .pouch .p-name { font-size: 56px; }
   }
@@ -156,7 +167,7 @@
     <div class="tag-row">
       <span>OhCrisp / Drop No. 02</span>
       <span>Crunchy · Real fruit · Airy · 90hr cure</span>
-      <span>Sourced in Oaxaca</span>
+      <span>Around the world</span>
     </div>
     <h1>oh<span class="ital">crisp.</span></h1>
     <div class="oc-stage" aria-hidden="true">

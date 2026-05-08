@@ -99,7 +99,30 @@ window.VB = (function () {
   }
 
   async function loadRegistry() {
-    return fetch('posts.json', { cache: 'no-cache' }).then(r => r.json());
+    try {
+      const response = await fetch('posts.json', { cache: 'no-cache' });
+      if (!response.ok) throw new Error('Could not load posts.json');
+      return response.json();
+    } catch (fetchError) {
+      return new Promise((resolve, reject) => {
+        const request = new XMLHttpRequest();
+        request.overrideMimeType('application/json');
+        request.open('GET', 'posts.json', true);
+        request.onload = () => {
+          if (request.status === 0 || (request.status >= 200 && request.status < 300)) {
+            try {
+              resolve(JSON.parse(request.responseText));
+            } catch (parseError) {
+              reject(parseError);
+            }
+          } else {
+            reject(fetchError);
+          }
+        };
+        request.onerror = () => reject(fetchError);
+        request.send();
+      });
+    }
   }
 
   return {

@@ -39,7 +39,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
 body {
   background: var(--ivory);
   color: var(--ink);
@@ -223,10 +223,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 @media (max-width: 900px) {
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .nav-left, .nav-right { display: none; }
   .nav-inner { grid-template-columns: 1fr auto; }
   .section { padding: 64px 0; }
+}
+
+@media (max-width: 600px) {
+  .container,
+  .container-narrow {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 /* ───────── Tag chip ───────── */
@@ -370,4 +383,3 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-radius: 50%;
   filter: blur(6px);
 }
-

@@ -149,7 +149,19 @@
 <script src="site.js"></script>
 <script>
 (async function () {
-  const reg = await VB.loadRegistry();
+  const gridRoot = document.getElementById('articleGrid');
+  const countRoot = document.getElementById('countLabel');
+  let reg;
+
+  try {
+    reg = await VB.loadRegistry();
+  } catch (e) {
+    console.error('Could not load posts:', e);
+    countRoot.textContent = '0 ARTICLES';
+    gridRoot.innerHTML = '<div class="empty">The journal could not load right now. Please refresh the page.</div>';
+    return;
+  }
+
   const allPosts = VB.sortByDateDesc(reg.posts || []);
 
   // Build category chips from settings.
@@ -198,7 +210,7 @@
           <span class="tb-num">${featured.readTime || ''} read &middot; ${VB.formatDateLong(featured.date)}</span>
         </div>
         <div class="tb-glyph" style="width:160px;height:160px;right:-40px;top:-40px;"></div>
-        <h2 class="tb-title">${(featured.title || '').replace(/<em>/g,'<span class="ital">').replace(/<\\/em>/g,'</span>')}</h2>
+        <h2 class="tb-title">${(featured.title || '').replace(/<em>/g,'<span class="ital">').replace(/<\/em>/g,'</span>')}</h2>
         <div class="tb-bottom" style="margin-top:24px">
           <a href="${VB.postURL(featured.slug)}" class="cta-pill" style="background:var(--ink);color:var(--ivory)">Read the article <span class="arrow">↗</span></a>
           <span>The Vitablabla Journal</span>

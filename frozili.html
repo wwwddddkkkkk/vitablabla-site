@@ -21,7 +21,7 @@
     text-align: center;
   }
   .fz-hero h1 .ital { font-style: italic; color: var(--frozili-ice-deep); }
-  .fz-hero .tag-row { display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--frozili-coffee); padding-bottom: 24px; border-bottom: 1px solid rgba(74,46,30,0.15); }
+  .fz-hero .tag-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--frozili-coffee); padding-bottom: 24px; border-bottom: 1px solid rgba(74,46,30,0.15); }
 
   .fz-stage {
     position: relative;
@@ -147,12 +147,20 @@
 
   @media (max-width: 900px) {
     .pitch-grid, .specs-grid, .flavors-grid, .story-strip { grid-template-columns: 1fr !important; }
+    .fz-hero { padding-top: 40px; }
+    .fz-hero h1 { font-size: clamp(68px, 22vw, 112px); margin-top: 20px; }
+    .fz-hero .tag-row { justify-content: flex-start; line-height: 1.5; }
     .spec { border-left: none; border-top: 1px solid rgba(233,217,194,0.15); padding: 16px 0 0; }
     .spec:first-child { border-top: none; padding-top: 0; }
     .story-strip { margin: 0 16px; }
     .story-strip .text { padding: 32px; }
     .story-strip .imgph.ice { min-height: 240px; }
-    .fz-stage { height: 380px; }
+    .fz-stage { height: 380px; margin-top: -18px; overflow: hidden; max-width: 100%; }
+    .fz-stage .glow { width: 420px; height: 420px; }
+    .c1 { left: 4%; }
+    .c2 { left: 9%; }
+    .c3 { right: 5%; }
+    .c4 { right: 9%; }
     .tin { width: 220px; height: 300px; padding: 24px; }
     .tin .tin-name { font-size: 56px; }
   }
