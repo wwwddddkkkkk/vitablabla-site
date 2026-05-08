@@ -551,11 +551,24 @@
 <section class="section-tight">
   <div class="cta-strip">
     <h2>Get a tiny snack <span class="italic">letter</span> in your inbox.</h2>
-    <form class="subscribe-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Sent ✓'">
-      <input type="email" placeholder="you@somewhere.com" required />
+    <form class="subscribe-form" onsubmit="return subSubmit(event)">
+      <input type="email" id="subEmail" placeholder="you@somewhere.com" required />
       <button type="submit">Subscribe</button>
     </form>
   </div>
+  <script>
+  function subSubmit(e) {
+    e.preventDefault();
+    const email = document.getElementById('subEmail').value || '';
+    const subject = encodeURIComponent('Subscribe to Vitablabla');
+    const body = encodeURIComponent(
+      'Please add this email to the Vitablabla newsletter:\n\n' + email + '\n'
+    );
+    window.location.href = 'mailto:info@vitablabla.com?subject=' + subject + '&body=' + body;
+    e.target.querySelector('button').textContent = 'Opening email…';
+    return false;
+  }
+  </script>
 </section>
 
 <!-- ============== FOOTER ============== -->
@@ -585,7 +598,7 @@
       <div>
         <h4>Elsewhere</h4>
         <ul>
-          <li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.pinterest.com/vitablabla/" target="_blank" rel="noopener">Pinterest</a></li>
           <li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li>
         </ul>
       </div>
