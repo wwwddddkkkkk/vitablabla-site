@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="planet" x1="14" y1="10" x2="50" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE8F1"/>
+      <stop offset="0.5" stop-color="#F7C7FF"/>
+      <stop offset="1" stop-color="#BDEBFF"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="6" y1="36" x2="58" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD66B"/>
+      <stop offset="0.5" stop-color="#FF9EDB"/>
+      <stop offset="1" stop-color="#9DEBFF"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="21" fill="url(#planet)"/>
+  <path d="M12 38C17 29 30 23 44 22C55 21 61 25 57 31C53 38 39 43 25 43C15 43 8 42 12 38Z"
+        fill="none" stroke="url(#ring)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M11 38C16 31 29 26 43 25C51 24.5 56 26 57 29"
+        fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.75"/>
+  <circle cx="24" cy="23" r="3.2" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="40" cy="36" r="2.4" fill="#FFFFFF" opacity="0.55"/>
+</svg>
