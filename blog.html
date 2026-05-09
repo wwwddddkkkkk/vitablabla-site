@@ -36,7 +36,7 @@
   .chip {
     padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line);
     font-size: 13px; background: var(--paper); cursor: pointer; transition: all .15s;
-    font-family: inherit;
+    font-family: inherit; color: var(--ink); appearance: none; -webkit-appearance: none;
   }
   .chip:hover { background: var(--ivory-deep); }
   .chip.active { background: var(--ink); color: var(--ivory); border-color: var(--ink); }
@@ -70,8 +70,33 @@
   @media (max-width: 900px) {
     .blog-hero .sub { grid-template-columns: 1fr; }
     .blog-hero .sub .search-wrap { justify-content: flex-start; }
+    .search-bar { min-width: 0; width: 100%; }
     .article-grid { grid-template-columns: 1fr; }
     .cats { top: 0; }
+    .chip { color: var(--ink); }
+    .chip.active { color: var(--ivory); }
+    #featuredSlot .title-block.hero {
+      aspect-ratio: auto;
+      min-height: 420px;
+      padding: 28px 24px;
+      margin-top: 32px !important;
+      margin-bottom: 48px !important;
+    }
+    #featuredSlot .title-block.hero .tb-title {
+      font-size: clamp(40px, 12vw, 56px);
+      max-width: none;
+      margin-top: 48px;
+    }
+    #featuredSlot .title-block.hero .tb-bottom {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 14px;
+    }
+    #featuredSlot .title-block.hero .cta-pill {
+      min-height: 44px;
+      max-width: 100%;
+      white-space: nowrap;
+    }
   }
 </style>
 </head>
