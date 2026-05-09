@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "candy-for-dry-throat-moments",
+      "number": "020",
+      "title": "Candy for dry throat moments: a slow melt that feels <em>clean.</em>",
+      "cardTitle": "Candy for dry throat moments: a slow melt that feels <em>clean.</em>",
+      "excerpt": "A practical, sensory guide to coffee candy for dry throat moments — why slow-melting cooling candy can feel gentler than a sharp mint.",
+      "date": "2026-05-09",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Frozili", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["slow-melt", "why-iced-coffee-candy-works", "strange-pleasure-of-weird-cold-candy"]
+    },
+    {
+      "slug": "freeze-dried-fruit-yogurt-toppings",
+      "number": "019",
+      "title": "Freeze-dried fruit as yogurt bowl toppings: the crunch that stays <em>bright.</em>",
+      "cardTitle": "Freeze-dried fruit as yogurt bowl toppings: the crunch that stays <em>bright.</em>",
+      "excerpt": "How freeze-dried fruit works as yogurt bowl toppings and smoothie bowl toppings — plus simple pairings that keep breakfast crisp.",
+      "date": "2026-05-09",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-snack-mix", "ugly-mango"]
+    },
+    {
       "slug": "strange-pleasure-of-weird-cold-candy",
       "number": "018",
       "title": "The strange pleasure of <em>weird cold candy.</em>",
