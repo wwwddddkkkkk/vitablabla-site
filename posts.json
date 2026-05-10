@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "mint-alternative-for-coffee-lovers",
+      "number": "022",
+      "title": "A mint alternative for coffee lovers: the pocket candy that feels like a <em>reset.</em>",
+      "cardTitle": "A mint alternative for coffee lovers: the pocket candy that feels like a <em>reset.</em>",
+      "excerpt": "A sensory guide to mint alternatives for coffee lovers — why slow-melting coffee candy can be the cleanest non-gum refresher before meetings and after lunch.",
+      "date": "2026-05-10",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Frozili", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["slow-melt", "why-iced-coffee-candy-works", "three-pm-rotation"]
+    },
+    {
+      "slug": "fruit-snacks-for-adults-freeze-dried-fruit",
+      "number": "021",
+      "title": "Fruit snacks for adults: why freeze-dried fruit feels playful, not <em>childish.</em>",
+      "cardTitle": "Fruit snacks for adults: why freeze-dried fruit feels playful, not <em>childish.</em>",
+      "excerpt": "A practical, editorial guide to fruit snacks for adults — why freeze-dried fruit reads more grown-up, and three formats that fit real workday routines.",
+      "date": "2026-05-10",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-snack-mix", "snack-drawer", "ugly-mango"]
+    },
+    {
       "slug": "candy-for-dry-throat-moments",
       "number": "020",
       "title": "Candy for dry throat moments: a slow melt that feels <em>clean.</em>",
