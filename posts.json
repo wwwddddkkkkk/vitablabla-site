@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "snack-vs-reset",
+      "number": "024",
+      "title": "The difference between a snack and a reset: why cooling candy is a <em>workday ritual.</em>",
+      "cardTitle": "The difference between a snack and a reset: why cooling candy is a <em>workday ritual.</em>",
+      "excerpt": "A calm guide to the workday reset: why slow-melting cooling candy can feel like a pocket-sized ritual — more refreshing than gum, softer than mint, and easier than another coffee.",
+      "date": "2026-05-11",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks", "Workday Snacks"],
+      "crumbs": ["Workday Snacks", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["slow-melt", "three-pm-rotation", "candy-for-dry-throat-moments"]
+    },
+    {
+      "slug": "fruit-crunch-vs-chewy-snacks",
+      "number": "023",
+      "title": "Why fruit crunch feels better than chewy snacks: a note on texture and <em>clean sweetness.</em>",
+      "cardTitle": "Why fruit crunch feels better than chewy snacks: a note on texture and <em>clean sweetness.</em>",
+      "excerpt": "Why freeze-dried fruit crunch feels more satisfying than chewy snacks — a sensory note on tidy sweetness, texture, and the clean finish that makes fruit snacks feel more adult.",
+      "date": "2026-05-11",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-snack-mix", "ugly-mango"]
+    },
+    {
       "slug": "mint-alternative-for-coffee-lovers",
       "number": "022",
       "title": "A mint alternative for coffee lovers: the pocket candy that feels like a <em>reset.</em>",
