@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-long-drives",
+      "number": "026",
+      "title": "Coffee candy for long drives: the pocket ritual that keeps you <em>steady.</em>",
+      "cardTitle": "Coffee candy for long drives: the pocket ritual that keeps you <em>steady.</em>",
+      "excerpt": "A sensory guide to coffee candy for long drives — why slow-melting iced coffee candy with a cooling finish feels cleaner than gum or mints in dry car air.",
+      "date": "2026-05-12",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["slow-melt", "why-iced-coffee-candy-works", "snack-vs-reset"]
+    },
+    {
+      "slug": "freeze-dried-fruit-oatmeal-toppings",
+      "number": "025",
+      "title": "Freeze-dried fruit oatmeal toppings: the breakfast crunch that stays <em>bright.</em>",
+      "cardTitle": "Freeze-dried fruit oatmeal toppings: the breakfast crunch that stays <em>bright.</em>",
+      "excerpt": "How freeze-dried fruit works as oatmeal toppings — a simple, adult breakfast upgrade that keeps texture crisp and flavor clean.",
+      "date": "2026-05-12",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
+      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-snack-mix", "freeze-drying-strawberry"]
+    },
+    {
       "slug": "snack-vs-reset",
       "number": "024",
       "title": "The difference between a snack and a reset: why cooling candy is a <em>workday ritual.</em>",
