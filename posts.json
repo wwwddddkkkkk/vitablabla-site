@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "adult-candy-coffee-cooling-finish",
+      "number": "028",
+      "title": "Adult candy, reimagined: coffee candy with a cooling finish that feels <em>clean.</em>",
+      "cardTitle": "Adult candy, reimagined: coffee candy with a cooling finish that feels <em>clean.</em>",
+      "excerpt": "A guide to adult candy — why coffee flavored candy with a cooling finish feels balanced, workday-friendly, and cleaner than gum or mints.",
+      "date": "2026-05-13",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["mint-alternative-for-coffee-lovers", "slow-melt", "why-iced-coffee-candy-works"]
+    },
+    {
+      "slug": "what-makes-freeze-dried-fruit-feel-premium",
+      "number": "027",
+      "title": "What makes freeze-dried fruit feel premium? Color, crunch, and the quiet luxury of <em>clean texture.</em>",
+      "cardTitle": "What makes freeze-dried fruit feel premium? Color, crunch, and the quiet luxury of <em>clean texture.</em>",
+      "excerpt": "What makes freeze-dried fruit feel premium: crisp sound, bright color, no stickiness — and why that clean crunch is why adults keep it in rotation.",
+      "date": "2026-05-13",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
+      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-snack-mix", "ugly-mango"]
+    },
+    {
       "slug": "coffee-candy-for-long-drives",
       "number": "026",
       "title": "Coffee candy for long drives: the pocket ritual that keeps you <em>steady.</em>",
