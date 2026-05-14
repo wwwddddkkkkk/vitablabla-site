@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "pocket-coffee-candy",
+      "number": "030",
+      "title": "Pocket coffee candy: the non-gum refresher that edits a <em>workday.</em>",
+      "cardTitle": "Pocket coffee candy: the non-gum refresher that edits a <em>workday.</em>",
+      "excerpt": "A sensory guide to pocket coffee candy — why slow-melting cooling candy is a clean non-gum refresher for calls, commutes, and mid-afternoon resets.",
+      "date": "2026-05-14",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["slow-melt", "why-iced-coffee-candy-works", "coffee-candy-for-long-drives"]
+    },
+    {
+      "slug": "freeze-dried-fruit-ice-cream-topping",
+      "number": "029",
+      "title": "Freeze-dried fruit ice cream topping: the crunch that keeps dessert <em>bright.</em>",
+      "cardTitle": "Freeze-dried fruit ice cream topping: the crunch that keeps dessert <em>bright.</em>",
+      "excerpt": "How to use freeze-dried fruit as an ice cream topping — crisp texture pairings, timing tips, and why the snap makes dessert feel more designed.",
+      "date": "2026-05-14",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-oatmeal-toppings"]
+    },
+    {
       "slug": "adult-candy-coffee-cooling-finish",
       "number": "028",
       "title": "Adult candy, reimagined: coffee candy with a cooling finish that feels <em>clean.</em>",
