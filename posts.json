@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "weird-cold-candy",
+      "number": "034",
+      "title": "The strange pleasure of weird cold candy: why cooling candy feels like <em>punctuation.</em>",
+      "cardTitle": "The strange pleasure of weird cold candy: why cooling candy feels like <em>punctuation.</em>",
+      "excerpt": "Why weird cold candy feels so satisfying — a sensory guide to cooling candy, iced coffee candy, and the clean, quiet finish of a slow melt.",
+      "date": "2026-05-16",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["pocket-coffee-candy", "slow-melt", "why-iced-coffee-candy-works"]
+    },
+    {
+      "slug": "colorful-snacks-better-routines",
+      "number": "033",
+      "title": "Colorful snacks, better routines: why freeze-dried fruit makes habits feel <em>easy.</em>",
+      "cardTitle": "Colorful snacks, better routines: why freeze-dried fruit makes habits feel <em>easy.</em>",
+      "excerpt": "A calm guide to colorful snacks — how freeze-dried fruit makes healthy sweet snacks feel joyful, repeatable, and tidy enough for real workdays.",
+      "date": "2026-05-16",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
+      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "cta": "ohcrisp",
+      "related": ["what-makes-freeze-dried-fruit-feel-premium", "freeze-dried-fruit-snack-mix", "snack-drawer"]
+    },
+    {
       "slug": "workday-pick-me-up-candy",
       "number": "032",
       "title": "Workday pick-me-up candy: iced coffee candy that resets a <em>meeting.</em>",
