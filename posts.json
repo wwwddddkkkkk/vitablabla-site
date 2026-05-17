@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "cooling-candy-for-summer",
+      "number": "036",
+      "title": "Cooling candy for summer: iced coffee candy that feels like <em>shade.</em>",
+      "cardTitle": "Cooling candy for summer: iced coffee candy that feels like <em>shade.</em>",
+      "excerpt": "A sensory guide to cooling candy for summer — why slow-melting iced coffee candy with a clean finish feels like portable shade between errands, meetings, and heat.",
+      "date": "2026-05-17",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["weird-cold-candy", "pocket-coffee-candy", "slow-melt"]
+    },
+    {
+      "slug": "snack-boards-freeze-dried-fruit",
+      "number": "035",
+      "title": "Snack board ideas with freeze-dried fruit: the crunch that keeps bites <em>bright.</em>",
+      "cardTitle": "Snack boards with freeze-dried fruit: the crunch that keeps bites <em>bright.</em>",
+      "excerpt": "How to use freeze-dried fruit on snack boards — tidy sweetness, crisp texture, and simple pairings that make adult snack board ideas feel designed.",
+      "date": "2026-05-17",
+      "readTime": "5 min",
+      "color": "tb-cream",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-snack-mix", "what-makes-freeze-dried-fruit-feel-premium", "freeze-dried-fruit-ice-cream-topping"]
+    },
+    {
       "slug": "weird-cold-candy",
       "number": "034",
       "title": "The strange pleasure of weird cold candy: why cooling candy feels like <em>punctuation.</em>",
