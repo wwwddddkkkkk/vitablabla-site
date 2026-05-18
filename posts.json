@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "non-gum-refresher-after-lunch",
+      "number": "038",
+      "title": "Non-gum refresher after lunch: cooling coffee candy for a <em>clean finish.</em>",
+      "cardTitle": "Non-gum refresher after lunch: cooling coffee candy for a <em>clean finish.</em>",
+      "excerpt": "A practical, sensory guide to non-gum refreshers — why slow-melting cooling coffee candy can feel cleaner than mints or gum between lunch and meetings.",
+      "date": "2026-05-18",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["snack-vs-reset", "slow-melt", "mint-alternative-for-coffee-lovers"]
+    },
+    {
+      "slug": "healthy-sweet-snack-at-night",
+      "number": "037",
+      "title": "Healthy sweet snack at night: freeze-dried fruit crunch for the <em>quiet craving.</em>",
+      "cardTitle": "Healthy sweet snack at night: freeze-dried fruit for the <em>quiet craving.</em>",
+      "excerpt": "A calm guide to healthy sweet snacks at night — why freeze-dried fruit feels like a clean, crunchy treat for reading, unwinding, and late-day sweetness without mess.",
+      "date": "2026-05-18",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
+      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "cta": "ohcrisp",
+      "related": ["fruit-snacks-for-adults-freeze-dried-fruit", "colorful-snacks-better-routines", "freeze-dried-fruit-yogurt-toppings"]
+    },
+    {
       "slug": "cooling-candy-for-summer",
       "number": "036",
       "title": "Cooling candy for summer: iced coffee candy that feels like <em>shade.</em>",
