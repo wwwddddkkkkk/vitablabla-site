@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "smoothie-bowl-toppings-freeze-dried-fruit",
+      "number": "040",
+      "title": "Smoothie bowl toppings: freeze-dried fruit crunch that makes mornings feel <em>bright.</em>",
+      "cardTitle": "Smoothie bowl toppings: freeze-dried fruit crunch for <em>bright mornings.</em>",
+      "excerpt": "A sensory, practical guide to smoothie bowl toppings — why freeze-dried fruit adds clean crunch, vivid color, and a tidy finish to cold breakfast bowls.",
+      "date": "2026-05-19",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-oatmeal-toppings"]
+    },
+    {
+      "slug": "coffee-breath-freshening-candy",
+      "number": "039",
+      "title": "Breath freshening candy for coffee breath: a cooling finish that feels <em>clean.</em>",
+      "cardTitle": "Breath freshening candy for coffee breath: a <em>clean finish.</em>",
+      "excerpt": "A calm guide to breath freshening candy after coffee — why slow-melting cooling coffee candy can feel cleaner than gum or mints when you want a quiet reset.",
+      "date": "2026-05-19",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["non-gum-refresher-after-lunch", "pocket-coffee-candy", "slow-melt"]
+    },
+    {
       "slug": "non-gum-refresher-after-lunch",
       "number": "038",
       "title": "Non-gum refresher after lunch: cooling coffee candy for a <em>clean finish.</em>",
