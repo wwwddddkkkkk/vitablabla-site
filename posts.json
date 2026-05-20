@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "shelf-stable-fruit-snacks",
+      "number": "042",
+      "title": "Shelf-stable fruit snacks: freeze-dried fruit that stays <em>itself.</em>",
+      "cardTitle": "Shelf-stable fruit snacks: freeze-dried fruit that stays <em>crisp.</em>",
+      "excerpt": "A practical, sensory guide to shelf-stable fruit snacks — why freeze-dried fruit stays crisp, travels cleanly, and makes desk-drawer sweetness feel more designed.",
+      "date": "2026-05-20",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
+      "crumbs": ["Freeze-Dried Fruit", "Travel & Work"],
+      "cta": "ohcrisp",
+      "related": ["twelve-hour-flight", "lunchbox-snacks-freeze-dried-fruit", "freeze-dried-fruit-snack-mix"]
+    },
+    {
+      "slug": "coffee-flavored-candy-after-dinner",
+      "number": "041",
+      "title": "Coffee flavored candy after dinner: a cooling finish that feels <em>clean.</em>",
+      "cardTitle": "Coffee flavored candy after dinner: a <em>clean finish.</em>",
+      "excerpt": "A calm guide to coffee flavored candy after dinner — why a slow-melting iced coffee candy with a cooling finish can feel like a quiet digestif, not dessert.",
+      "date": "2026-05-20",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["cold-brew-tasting", "slow-melt", "pocket-coffee-candy"]
+    },
+    {
       "slug": "smoothie-bowl-toppings-freeze-dried-fruit",
       "number": "040",
       "title": "Smoothie bowl toppings: freeze-dried fruit crunch that makes mornings feel <em>bright.</em>",
