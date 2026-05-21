@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-dessert-toppings",
+      "number": "044",
+      "title": "Dessert toppings that stay crisp: freeze-dried fruit for chocolate and <em>clean crunch.</em>",
+      "cardTitle": "Dessert toppings that stay crisp: freeze-dried fruit for <em>clean crunch.</em>",
+      "excerpt": "A practical guide to dessert toppings with freeze-dried fruit — how to add bright color, crisp texture, and a clean finish to brownies, cookies, and ice cream.",
+      "date": "2026-05-21",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-ice-cream-topping", "what-makes-freeze-dried-fruit-feel-premium", "freeze-drying-strawberry"]
+    },
+    {
+      "slug": "refreshing-candy-without-mint",
+      "number": "043",
+      "title": "Refreshing candy without mint: a cooling coffee finish that feels <em>clean.</em>",
+      "cardTitle": "Refreshing candy without mint: a cooling finish that feels <em>clean.</em>",
+      "excerpt": "A calm guide to refreshing candy without mint — why slow-melting cooling coffee candy can feel cleaner than peppermint when you want a quiet reset.",
+      "date": "2026-05-21",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["mint-alternative-for-coffee-lovers", "slow-melt", "cold-brew-tasting"]
+    },
+    {
       "slug": "shelf-stable-fruit-snacks",
       "number": "042",
       "title": "Shelf-stable fruit snacks: freeze-dried fruit that stays <em>itself.</em>",
