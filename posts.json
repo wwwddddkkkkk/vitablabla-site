@@ -19,6 +19,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-pancake-toppings",
+      "number": "046",
+      "title": "Pancake toppings with freeze-dried fruit: breakfast crunch that feels <em>bright.</em>",
+      "cardTitle": "Pancake toppings with freeze-dried fruit: breakfast crunch that feels <em>bright.</em>",
+      "excerpt": "A practical guide to pancake toppings with freeze-dried fruit — how to add bright color and crisp texture that stays lively against syrup and soft stacks.",
+      "date": "2026-05-22",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-oatmeal-toppings", "freeze-dried-fruit-yogurt-toppings", "smoothie-bowl-toppings-freeze-dried-fruit"]
+    },
+    {
+      "slug": "how-to-store-coffee-candy-in-summer",
+      "number": "045",
+      "title": "How to store coffee candy in summer: keep the slow melt <em>clean.</em>",
+      "cardTitle": "Store coffee candy in summer: keep the slow melt <em>clean.</em>",
+      "excerpt": "A practical guide to how to store coffee candy in summer — simple habits that keep iced coffee candy cool, consistent, and never accidentally sticky.",
+      "date": "2026-05-22",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["cooling-candy-for-summer", "pocket-coffee-candy", "slow-melt"]
+    },
+    {
       "slug": "freeze-dried-fruit-dessert-toppings",
       "number": "044",
       "title": "Dessert toppings that stay crisp: freeze-dried fruit for chocolate and <em>clean crunch.</em>",
