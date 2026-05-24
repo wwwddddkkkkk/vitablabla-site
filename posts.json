@@ -11,6 +11,7 @@
     "Frozili",
     "Coffee Candy",
     "Refreshing Snacks",
+    "OhCrisp",
     "Freeze-Dried Fruit",
     "Snack Ideas",
     "Better-for-You",
@@ -18,6 +19,34 @@
   ],
 
   "posts": [
+    {
+      "slug": "freeze-dried-fruit-salad-topping",
+      "number": "050",
+      "title": "Freeze-dried fruit salad topping: crunch that makes greens feel <em>awake.</em>",
+      "cardTitle": "Freeze-dried fruit salad topping: crunch that feels <em>awake.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit salad topping — how OhCrisp-style fruit crunch adds bright color and crisp contrast without turning salad soggy.",
+      "date": "2026-05-24",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["shelf-stable-fruit-snacks", "snack-boards-freeze-dried-fruit", "what-makes-freeze-dried-fruit-feel-premium"]
+    },
+    {
+      "slug": "coffee-candy-after-spicy-food",
+      "number": "049",
+      "title": "Coffee candy after spicy food: a slow-melt reset with a <em>cool finish.</em>",
+      "cardTitle": "Coffee candy after spicy food: a slow-melt reset with a <em>cool finish.</em>",
+      "excerpt": "A calm guide to coffee candy after spicy food — why slow-melting cooling coffee candy like Frozili can feel cleaner than mint when you want a quiet reset.",
+      "date": "2026-05-24",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["slow-melt", "weird-cold-candy", "mint-alternative-for-coffee-lovers"]
+    },
     {
       "slug": "how-to-store-freeze-dried-fruit-after-opening",
       "number": "048",
