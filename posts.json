@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-mocktail-garnish",
+      "number": "052",
+      "title": "Freeze-dried fruit mocktail garnish: a crisp finish that feels <em>intentional.</em>",
+      "cardTitle": "Freeze-dried fruit mocktail garnish: a crisp finish that feels <em>intentional.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit mocktail garnish — how OhCrisp-style fruit crunch adds bright color, aroma, and a dry finishing texture that won’t water down your drink.",
+      "date": "2026-05-25",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["snack-boards-freeze-dried-fruit", "freeze-dried-fruit-dessert-toppings", "colorful-snacks-better-routines"]
+    },
+    {
+      "slug": "coffee-flavor-grown-up-candy",
+      "number": "051",
+      "title": "Coffee flavor grown-up candy: sweetness with edges and a <em>clean finish.</em>",
+      "cardTitle": "Coffee flavor grown-up candy: sweetness with edges and a <em>clean finish.</em>",
+      "excerpt": "A calm guide to coffee flavor grown-up candy — why slow-melting coffee candy like Frozili can taste toasted, quietly sweet, and more like a ritual than a dessert.",
+      "date": "2026-05-25",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["slow-melt", "cold-brew-tasting", "coffee-flavored-candy-after-dinner"]
+    },
+    {
       "slug": "freeze-dried-fruit-salad-topping",
       "number": "050",
       "title": "Freeze-dried fruit salad topping: crunch that makes greens feel <em>awake.</em>",
