@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-for-hiking",
+      "number": "054",
+      "title": "Freeze-dried fruit for hiking: light crunch, clean sweetness, and a bag that stays <em>tidy.</em>",
+      "cardTitle": "Freeze-dried fruit for hiking: light crunch, clean sweetness, and a bag that stays <em>tidy.</em>",
+      "excerpt": "A sensory, practical guide to freeze-dried fruit for hiking — why OhCrisp-style fruit crunch stays light, non-messy, and bright on trail, plus easy packing and handful-mix ideas.",
+      "date": "2026-05-26",
+      "readTime": "6 min",
+      "color": "tb-sun",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
+      "crumbs": ["Travel & Work Snacks", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["twelve-hour-flight", "freeze-dried-fruit-snack-mix", "shelf-stable-fruit-snacks"]
+    },
+    {
+      "slug": "coffee-candy-with-sparkling-water",
+      "number": "053",
+      "title": "Coffee candy with sparkling water: an espresso-soda ritual with a <em>clean finish.</em>",
+      "cardTitle": "Coffee candy with sparkling water: an espresso-soda ritual with a <em>clean finish.</em>",
+      "excerpt": "A small workday ritual: coffee candy with sparkling water. How Frozili-style icy coffee candy and carbonation sharpen sweetness, plus simple variations and a non-gum refresh lane.",
+      "date": "2026-05-26",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["non-gum-refresher-after-lunch", "weird-cold-candy", "slow-melt"]
+    },
+    {
       "slug": "freeze-dried-fruit-mocktail-garnish",
       "number": "052",
       "title": "Freeze-dried fruit mocktail garnish: a crisp finish that feels <em>intentional.</em>",
