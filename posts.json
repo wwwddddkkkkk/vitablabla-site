@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-sparkling-water",
+      "number": "056",
+      "title": "Freeze-dried fruit in sparkling water: a crisp fruit-soda ritual with a <em>snackable finish.</em>",
+      "cardTitle": "Freeze-dried fruit in sparkling water: a crisp fruit-soda ritual with a <em>snackable finish.</em>",
+      "excerpt": "A sensory, practical guide to freeze-dried fruit in sparkling water — how OhCrisp-style fruit adds aroma, bright color, and a crunch you can eat between sips without turning your drink syrupy.",
+      "date": "2026-05-27",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Refreshing Snacks"],
+      "crumbs": ["Refreshing Snacks", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-mocktail-garnish", "shelf-stable-fruit-snacks", "colorful-snacks-better-routines"]
+    },
+    {
+      "slug": "coffee-candy-for-air-conditioned-offices",
+      "number": "055",
+      "title": "Coffee candy for air-conditioned offices: a slow-melt reset with a <em>clean finish.</em>",
+      "cardTitle": "Coffee candy for air-conditioned offices: a slow-melt reset with a <em>clean finish.</em>",
+      "excerpt": "A calm workday guide to coffee candy for over-air-conditioned offices — why Frozili-style iced coffee candy feels like a small reset in dry indoor air, plus simple pairing and desk storage tips.",
+      "date": "2026-05-27",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["snack-vs-reset", "candy-for-dry-throat-moments", "how-to-store-coffee-candy-in-summer"]
+    },
+    {
       "slug": "freeze-dried-fruit-for-hiking",
       "number": "054",
       "title": "Freeze-dried fruit for hiking: light crunch, clean sweetness, and a bag that stays <em>tidy.</em>",
