@@ -11,7 +11,7 @@ window.VB = (function () {
     'Travel & Work': 'travel',
     'Travel & Work Snacks': 'travel',
     'Workday Snacks': 'work',
-    'Studio Notes': 'work',
+    'Taste Notes': 'work',
     'Notes': 'work',
     'Better-for-You': 'bfu',
     'Snack Ideas': 'work'
