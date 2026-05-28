@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-with-nut-butter",
+      "number": "058",
+      "title": "Freeze-dried fruit with nut butter: crunchy-creamy snack logic that feels <em>intentional.</em>",
+      "cardTitle": "Freeze-dried fruit with nut butter: crunchy-creamy snack logic that feels <em>intentional.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit with nut butter — the crunchy-creamy pairing that makes healthy sweet snacks feel finished, tidy, and easy to repeat at home or at a desk.",
+      "date": "2026-05-28",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-snack-mix", "what-makes-freeze-dried-fruit-feel-premium", "shelf-stable-fruit-snacks"]
+    },
+    {
+      "slug": "coffee-hard-candy-vs-slow-melt",
+      "number": "057",
+      "title": "Coffee hard candy vs slow-melt: which feels more refreshing — and why the <em>pace</em> matters.",
+      "cardTitle": "Coffee hard candy vs slow-melt: which feels more refreshing — and why the <em>pace</em> matters.",
+      "excerpt": "A calm comparison of coffee hard candy vs slow-melting coffee candy — how texture, pacing, and a cooling finish change the “refreshing candy” feeling, especially at work or on the go.",
+      "date": "2026-05-28",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["slow-melt", "workday-pick-me-up-candy", "why-iced-coffee-candy-works"]
+    },
+    {
       "slug": "freeze-dried-fruit-sparkling-water",
       "number": "056",
       "title": "Freeze-dried fruit in sparkling water: a crisp fruit-soda ritual with a <em>snackable finish.</em>",
