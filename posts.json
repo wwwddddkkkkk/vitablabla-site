@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-granola",
+      "number": "060",
+      "title": "Freeze-dried fruit in granola: how to keep the crunch bright, not <em>dusty.</em>",
+      "cardTitle": "Freeze-dried fruit in granola: how to keep the crunch bright, not <em>dusty.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit in granola — how to add real fruit crunch to cereal bowls without sogginess, randomness, or that “fruit dust” feeling.",
+      "date": "2026-05-29",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-oatmeal-toppings", "smoothie-bowl-toppings-freeze-dried-fruit", "how-to-store-freeze-dried-fruit-after-opening"]
+    },
+    {
+      "slug": "coffee-candy-for-conferences",
+      "number": "059",
+      "title": "Coffee candy for conferences: the pocket reset between <em>sessions.</em>",
+      "cardTitle": "Coffee candy for conferences: the pocket reset between <em>sessions.</em>",
+      "excerpt": "A calm, useful guide to coffee candy for conferences — when to use slow-melting iced coffee candy as a non-gum refresher, what to pack, and how to keep the finish clean during long days.",
+      "date": "2026-05-29",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["pocket-coffee-candy", "non-gum-refresher-after-lunch", "how-to-store-coffee-candy-in-summer"]
+    },
+    {
       "slug": "freeze-dried-fruit-with-nut-butter",
       "number": "058",
       "title": "Freeze-dried fruit with nut butter: crunchy-creamy snack logic that feels <em>intentional.</em>",
