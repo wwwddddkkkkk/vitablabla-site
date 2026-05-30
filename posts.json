@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "beach-bag-snacks-freeze-dried-fruit",
+      "number": "062",
+      "title": "Beach bag snacks for adults: freeze-dried fruit that stays crisp in the <em>heat.</em>",
+      "cardTitle": "Beach bag snacks for adults: freeze-dried fruit that stays crisp in the <em>heat.</em>",
+      "excerpt": "A practical, sensory guide to beach bag snacks for adults — why freeze-dried fruit stays tidy in warm weather, how to keep the crunch loud, and what to pair with it for an easy, travel-friendly handful.",
+      "date": "2026-05-30",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["shelf-stable-fruit-snacks", "freeze-dried-fruit-for-hiking", "how-to-store-freeze-dried-fruit-after-opening"]
+    },
+    {
+      "slug": "coffee-candy-for-commutes",
+      "number": "061",
+      "title": "Coffee candy for commutes: the slow-melt reset between <em>stops.</em>",
+      "cardTitle": "Coffee candy for commutes: the slow-melt reset between <em>stops.</em>",
+      "excerpt": "A calm, useful guide to coffee candy for commutes — when to use slow-melting iced coffee candy as pocket candy, how to time it between stops, and why a cooling finish works as a non-gum refresher on dry, on-the-go mornings.",
+      "date": "2026-05-30",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["pocket-coffee-candy", "slow-melt", "non-gum-refresher-after-lunch"]
+    },
+    {
       "slug": "freeze-dried-fruit-granola",
       "number": "060",
       "title": "Freeze-dried fruit in granola: how to keep the crunch bright, not <em>dusty.</em>",
