@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "freeze-dried-fruit-in-iced-tea",
+      "number": "064",
+      "title": "Freeze-dried fruit in iced tea: a bright summer glass with a <em>snackable finish.</em>",
+      "cardTitle": "Freeze-dried fruit in iced tea: a bright summer glass with a <em>snackable finish.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit in iced tea — how to add aroma and color without making tea taste candied, the best tea pairings, and how to keep the crunch loud in summer.",
+      "date": "2026-05-31",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Refreshing Snacks"],
+      "crumbs": ["Refreshing Snacks", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-sparkling-water", "freeze-dried-fruit-mocktail-garnish", "how-to-store-freeze-dried-fruit-after-opening"]
+    },
+    {
+      "slug": "skip-second-coffee-iced-coffee-candy",
+      "number": "063",
+      "title": "Skip the second coffee: iced coffee candy as the 3 p.m. <em>clean-finish reset.</em>",
+      "cardTitle": "Skip the second coffee: iced coffee candy as the 3 p.m. <em>clean-finish reset.</em>",
+      "excerpt": "A calm, useful guide to skipping a second coffee — how slow-melting iced coffee candy creates a 3 p.m. boundary, why pacing matters, and how a cooling finish feels refreshing without mint.",
+      "date": "2026-05-31",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["three-pm-rotation", "slow-melt", "refreshing-candy-without-mint"]
+    },
+    {
       "slug": "beach-bag-snacks-freeze-dried-fruit",
       "number": "062",
       "title": "Beach bag snacks for adults: freeze-dried fruit that stays crisp in the <em>heat.</em>",
