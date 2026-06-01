@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "road-trip-snacks-freeze-dried-fruit",
+      "number": "066",
+      "title": "Road trip snacks for adults: freeze-dried fruit that stays crisp in the <em>cupholder.</em>",
+      "cardTitle": "Road trip snacks for adults: freeze-dried fruit that stays crisp in the <em>cupholder.</em>",
+      "excerpt": "A practical, sensory guide to road trip snacks for adults — why freeze-dried fruit stays tidy in warm cars, what flavors travel best, and how to keep the crunch loud between stops.",
+      "date": "2026-06-01",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["shelf-stable-fruit-snacks", "twelve-hour-flight", "beach-bag-snacks-freeze-dried-fruit"]
+    },
+    {
+      "slug": "coffee-candy-for-meetings",
+      "number": "065",
+      "title": "Coffee candy for meetings: a non-gum refresher with a <em>quiet finish.</em>",
+      "cardTitle": "Coffee candy for meetings: a non-gum refresher with a <em>quiet finish.</em>",
+      "excerpt": "A calm guide to meeting-friendly coffee candy — why slow-melting iced coffee candy beats gum, how to pace it before/during/after calls, and how a cooling finish feels refreshing without mint.",
+      "date": "2026-06-01",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["non-gum-refresher-after-lunch", "slow-melt", "how-to-store-coffee-candy-in-summer"]
+    },
+    {
       "slug": "freeze-dried-fruit-in-iced-tea",
       "number": "064",
       "title": "Freeze-dried fruit in iced tea: a bright summer glass with a <em>snackable finish.</em>",
