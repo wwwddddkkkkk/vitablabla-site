@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "cottage-cheese-bowl-toppings-freeze-dried-fruit",
+      "number": "068",
+      "title": "Cottage cheese bowl toppings: freeze-dried fruit for crunch that stays <em>bright.</em>",
+      "cardTitle": "Cottage cheese bowl toppings: freeze-dried fruit for crunch that stays <em>bright.</em>",
+      "excerpt": "A practical, sensory guide to cottage cheese bowl toppings — why freeze-dried fruit adds bright crunch without puddles, which flavors work best, and how to keep soft bowls from feeling flat.",
+      "date": "2026-06-02",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-yogurt-toppings", "smoothie-bowl-toppings-freeze-dried-fruit", "freeze-dried-fruit-oatmeal-toppings"]
+    },
+    {
+      "slug": "coffee-candy-for-networking-events",
+      "number": "067",
+      "title": "Coffee candy for networking events: a non-gum refresher with a <em>clean finish.</em>",
+      "cardTitle": "Coffee candy for networking events: a non-gum refresher with a <em>clean finish.</em>",
+      "excerpt": "A calm guide to coffee candy for networking events — why slow-melting iced coffee candy beats gum in crowded rooms, when to use one piece, and how a cooling finish feels clean without mint.",
+      "date": "2026-06-02",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-candy-for-conferences", "non-gum-refresher-after-lunch", "refreshing-candy-without-mint"]
+    },
+    {
       "slug": "road-trip-snacks-freeze-dried-fruit",
       "number": "066",
       "title": "Road trip snacks for adults: freeze-dried fruit that stays crisp in the <em>cupholder.</em>",
