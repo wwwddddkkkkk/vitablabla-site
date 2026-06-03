@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "picnic-snacks-freeze-dried-fruit",
+      "number": "070",
+      "title": "Picnic snacks for adults: freeze-dried fruit that keeps the blanket <em>bright.</em>",
+      "cardTitle": "Picnic snacks for adults: freeze-dried fruit that keeps the blanket <em>bright.</em>",
+      "excerpt": "A practical, sensory guide to picnic snacks for adults — why freeze-dried fruit stays crisp outdoors, which pairings work best on a blanket, and how to keep sweet bites tidy in warm weather.",
+      "date": "2026-06-03",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["snack-boards-freeze-dried-fruit", "shelf-stable-fruit-snacks", "beach-bag-snacks-freeze-dried-fruit"]
+    },
+    {
+      "slug": "coffee-candy-for-after-lunch-walks",
+      "number": "069",
+      "title": "Coffee candy for after-lunch walks: the slow-melt reset between <em>tasks.</em>",
+      "cardTitle": "Coffee candy for after-lunch walks: the slow-melt reset between <em>tasks.</em>",
+      "excerpt": "A calm guide to coffee candy for after-lunch walks — why slow-melting iced coffee candy works as a non-gum refresher, how it paces a midday reset, and why the cooling finish feels cleaner than mint outdoors.",
+      "date": "2026-06-03",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["non-gum-refresher-after-lunch", "snack-vs-reset", "slow-melt"]
+    },
+    {
       "slug": "cottage-cheese-bowl-toppings-freeze-dried-fruit",
       "number": "068",
       "title": "Cottage cheese bowl toppings: freeze-dried fruit for crunch that stays <em>bright.</em>",
