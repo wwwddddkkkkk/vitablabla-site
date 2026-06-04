@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "alternatives-to-basic-mints",
+      "number": "072",
+      "title": "Alternatives to basic mints: why coffee candy feels softer, slower, and more <em>adult.</em>",
+      "cardTitle": "Alternatives to basic mints: why coffee candy feels softer, slower, and more <em>adult.</em>",
+      "excerpt": "A calm guide to alternatives to basic mints — why coffee candy works as a mint alternative, what adults want from a non-gum refresher, and how a cooling finish feels cleaner than sharp menthol.",
+      "date": "2026-06-04",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["mint-alternative-for-coffee-lovers", "refreshing-candy-without-mint", "non-gum-refresher-after-lunch"]
+    },
+    {
+      "slug": "freeze-dried-fruit-bowl-topping-staple",
+      "number": "071",
+      "title": "How freeze-dried fruit became a bowl topping staple: crunch, color, and the modern <em>breakfast eye.</em>",
+      "cardTitle": "How freeze-dried fruit became a bowl topping staple: crunch, color, and the modern <em>breakfast eye.</em>",
+      "excerpt": "A practical, sensory guide to how freeze-dried fruit became a bowl topping staple — why real fruit crunch works on yogurt, oatmeal, and smoothie bowls, and why adults keep repeating the habit.",
+      "date": "2026-06-04",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["smoothie-bowl-toppings-freeze-dried-fruit", "freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-oatmeal-toppings"]
+    },
+    {
       "slug": "picnic-snacks-freeze-dried-fruit",
       "number": "070",
       "title": "Picnic snacks for adults: freeze-dried fruit that keeps the blanket <em>bright.</em>",
