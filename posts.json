@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-summer-weddings",
+      "number": "074",
+      "title": "Coffee candy for summer weddings: the quiet reset between champagne, cake, and <em>heat.</em>",
+      "cardTitle": "Coffee candy for summer weddings: the quiet reset between champagne, cake, and <em>heat.</em>",
+      "excerpt": "A calm, search-friendly guide to coffee candy for summer weddings — why a non-gum refresher works in formal heat, when to use one piece, and how a cooling finish feels cleaner than mint between events.",
+      "date": "2026-06-05",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-breath-freshening-candy", "non-gum-refresher-after-lunch", "coffee-candy-for-networking-events"]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-hotel-breakfast",
+      "number": "073",
+      "title": "Freeze-dried fruit for hotel breakfast: a travel morning with more crunch, color, and <em>intent.</em>",
+      "cardTitle": "Freeze-dried fruit for hotel breakfast: a travel morning with more crunch, color, and <em>intent.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit for hotel breakfast — how to upgrade yogurt and oatmeal with real fruit crunch, and why travel-friendly fruit snacks make buffet mornings feel brighter.",
+      "date": "2026-06-05",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-yogurt-toppings", "shelf-stable-fruit-snacks", "twelve-hour-flight"]
+    },
+    {
       "slug": "alternatives-to-basic-mints",
       "number": "072",
       "title": "Alternatives to basic mints: why coffee candy feels softer, slower, and more <em>adult.</em>",
