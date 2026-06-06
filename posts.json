@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "what-makes-a-small-treat-feel-workday-friendly",
+      "number": "076",
+      "title": "What makes a small treat feel workday-friendly? Coffee candy, quiet flavor, and a <em>clean finish.</em>",
+      "cardTitle": "What makes a small treat feel workday-friendly? Coffee candy, quiet flavor, and a <em>clean finish.</em>",
+      "excerpt": "A calm guide to what makes a small treat feel workday-friendly — why coffee candy works as a workday pick me up, how slow melt changes pacing, and why a cooling finish feels cleaner than louder sweets.",
+      "date": "2026-06-06",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["workday-pick-me-up-candy", "snack-vs-reset", "coffee-candy-for-air-conditioned-offices"]
+    },
+    {
+      "slug": "healthy-snacks-should-still-feel-fun",
+      "number": "075",
+      "title": "Healthy snacks should still feel fun: freeze-dried fruit, color, and the case for <em>joyful crunch.</em>",
+      "cardTitle": "Healthy snacks should still feel fun: freeze-dried fruit, color, and the case for <em>joyful crunch.</em>",
+      "excerpt": "A practical, sensory guide to healthy snacks that still feel fun — why freeze-dried fruit keeps healthy sweet snacks bright, crunchy, and easy to repeat when better-for-you habits need real pleasure.",
+      "date": "2026-06-06",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
+      "crumbs": ["Better-for-You", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["colorful-snacks-better-routines", "fruit-snacks-for-adults-freeze-dried-fruit", "what-makes-freeze-dried-fruit-feel-premium"]
+    },
+    {
       "slug": "coffee-candy-for-summer-weddings",
       "number": "074",
       "title": "Coffee candy for summer weddings: the quiet reset between champagne, cake, and <em>heat.</em>",
