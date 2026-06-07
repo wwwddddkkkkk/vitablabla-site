@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-airplane-cabins",
+      "number": "078",
+      "title": "Coffee candy for airplane cabins: a slow-melt reset for <em>dry travel air.</em>",
+      "cardTitle": "Coffee candy for airplane cabins: a slow-melt reset for <em>dry travel air.</em>",
+      "excerpt": "A calm, useful guide to coffee candy for airplane cabins — why slow-melting iced coffee candy works as a non-gum refresher in dry travel air, when to use one piece, and how a cooling finish feels cleaner than mint at 30,000 feet.",
+      "date": "2026-06-07",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["candy-for-dry-throat-moments", "coffee-candy-for-long-drives", "twelve-hour-flight"]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-yogurt-bark",
+      "number": "077",
+      "title": "Freeze-dried fruit for yogurt bark: summer dessert toppings with <em>clean crunch.</em>",
+      "cardTitle": "Freeze-dried fruit for yogurt bark: summer dessert toppings with <em>clean crunch.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit for yogurt bark — why real fruit crunch works better than soft toppings, which pairings stay bright, and how to build a freezer dessert that still feels tidy.",
+      "date": "2026-06-07",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-ice-cream-topping", "freeze-dried-fruit-yogurt-toppings"]
+    },
+    {
       "slug": "what-makes-a-small-treat-feel-workday-friendly",
       "number": "076",
       "title": "What makes a small treat feel workday-friendly? Coffee candy, quiet flavor, and a <em>clean finish.</em>",
