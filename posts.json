@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-summer-errands",
+      "number": "080",
+      "title": "Coffee candy for summer errands: the pocket reset that feels like <em>shade.</em>",
+      "cardTitle": "Coffee candy for summer errands: the pocket reset that feels like <em>shade.</em>",
+      "excerpt": "A calm, search-friendly guide to coffee candy for summer errands — why slow-melting iced coffee candy works as refreshing pocket candy, when to use one piece between stops, and how a cooling finish feels cleaner than mint in hot afternoons.",
+      "date": "2026-06-08",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": ["Frozili", "Refreshing Snacks", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Refreshing Snacks"],
+      "cta": "frozili",
+      "related": ["cooling-candy-for-summer", "pocket-coffee-candy", "coffee-candy-for-commutes"]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-overnight-oats",
+      "number": "079",
+      "title": "Freeze-dried fruit for overnight oats: bright toppings with real <em>morning crunch.</em>",
+      "cardTitle": "Freeze-dried fruit for overnight oats: bright toppings with real <em>morning crunch.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit for overnight oats — why real fruit crunch works better than soft toppings, which pairings stay bright, and how to keep a make-ahead breakfast from feeling flat.",
+      "date": "2026-06-08",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-oatmeal-toppings", "freeze-dried-fruit-yogurt-toppings", "smoothie-bowl-toppings-freeze-dried-fruit"]
+    },
+    {
       "slug": "coffee-candy-for-airplane-cabins",
       "number": "078",
       "title": "Coffee candy for airplane cabins: a slow-melt reset for <em>dry travel air.</em>",
