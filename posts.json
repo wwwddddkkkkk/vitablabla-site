@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-movie-theaters",
+      "number": "082",
+      "title": "Coffee candy for movie theaters: a quiet non-gum refresher with a <em>cool finish.</em>",
+      "cardTitle": "Coffee candy for movie theaters: a quiet non-gum refresher with a <em>cool finish.</em>",
+      "excerpt": "A calm, search-friendly guide to coffee candy for movie theaters — why slow-melting iced coffee candy works as a non-gum refresher in dark rooms, when to use one piece, and how a cooling finish feels cleaner than mint beside popcorn.",
+      "date": "2026-06-09",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["alternatives-to-basic-mints", "slow-melt", "pocket-coffee-candy"]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-ricotta-toast",
+      "number": "081",
+      "title": "Freeze-dried fruit for ricotta toast: bright breakfast toppings with real <em>crunch.</em>",
+      "cardTitle": "Freeze-dried fruit for ricotta toast: bright breakfast toppings with real <em>crunch.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit for ricotta toast — why real fruit crunch works better than jammy toppings, which pairings stay bright, and how to make a simple breakfast feel more finished.",
+      "date": "2026-06-09",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-for-overnight-oats", "freeze-dried-fruit-bowl-topping-staple"]
+    },
+    {
       "slug": "coffee-candy-for-summer-errands",
       "number": "080",
       "title": "Coffee candy for summer errands: the pocket reset that feels like <em>shade.</em>",
