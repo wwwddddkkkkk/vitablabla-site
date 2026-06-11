@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-presentations",
+      "number": "086",
+      "title": "Coffee candy for presentations: a non-gum refresher before the first <em>slide.</em>",
+      "cardTitle": "Coffee candy for presentations: a non-gum refresher before the first <em>slide.</em>",
+      "excerpt": "A calm, search-friendly guide to coffee candy for presentations — why slow-melting iced coffee candy works as a non-gum refresher before speaking, when to use one piece, and how a cooling finish feels cleaner than mint in presentation rooms.",
+      "date": "2026-06-11",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-candy-for-job-interviews", "coffee-candy-for-meetings", "candy-for-dry-throat-moments"]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-yogurt-parfaits",
+      "number": "085",
+      "title": "Freeze-dried fruit for yogurt parfaits: the bright layer that keeps breakfast from going <em>soft.</em>",
+      "cardTitle": "Freeze-dried fruit for yogurt parfaits: the bright layer that keeps breakfast from going <em>soft.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit for yogurt parfaits — why real fruit crunch works better than soggy layers, which pairings stay bright, and how to make a simple yogurt jar feel more finished.",
+      "date": "2026-06-11",
+      "readTime": "5 min",
+      "color": "tb-cream",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-for-overnight-oats", "freeze-dried-fruit-bowl-topping-staple"]
+    },
+    {
       "slug": "coffee-candy-for-job-interviews",
       "number": "084",
       "title": "Coffee candy for job interviews: a non-gum refresher for the quiet minute before <em>hello.</em>",
