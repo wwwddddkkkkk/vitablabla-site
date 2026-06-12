@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-airport-gates",
+      "number": "088",
+      "title": "Coffee candy for airport gates: a quiet reset before <em>boarding.</em>",
+      "cardTitle": "Coffee candy for airport gates: a quiet reset before <em>boarding.</em>",
+      "excerpt": "A calm, search-friendly guide to coffee candy for airport gates — why slow-melting iced coffee candy works as a non-gum refresher in dry travel air, when to use one piece before boarding, and how a cooling finish feels cleaner than mint while waiting.",
+      "date": "2026-06-12",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-candy-for-airplane-cabins", "pocket-coffee-candy", "candy-for-dry-throat-moments"]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-cereal",
+      "number": "087",
+      "title": "Freeze-dried fruit for cereal: the bright crunch that keeps breakfast from feeling <em>boxed.</em>",
+      "cardTitle": "Freeze-dried fruit for cereal: the bright crunch that keeps breakfast from feeling <em>boxed.</em>",
+      "excerpt": "A practical, sensory guide to freeze-dried fruit for cereal — why real fruit crunch works better than sugary add-ons, which pairings stay bright, and how to make a simple breakfast bowl feel more intentional.",
+      "date": "2026-06-12",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-granola", "freeze-dried-fruit-for-yogurt-parfaits", "freeze-dried-fruit-bowl-topping-staple"]
+    },
+    {
       "slug": "coffee-candy-for-presentations",
       "number": "086",
       "title": "Coffee candy for presentations: a non-gum refresher before the first <em>slide.</em>",
