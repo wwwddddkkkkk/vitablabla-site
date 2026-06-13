@@ -20,6 +20,34 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-waiting-rooms",
+      "number": "090",
+      "title": "Coffee candy for waiting rooms: a quiet non-gum refresher before your name gets <em>called.</em>",
+      "cardTitle": "Coffee candy for waiting rooms: a quiet non-gum refresher before your name gets <em>called.</em>",
+      "excerpt": "A calm, search-friendly guide to coffee candy for waiting rooms — why slow-melting iced coffee candy works as a non-gum refresher in dry indoor air, when to use one piece, and how a cooling finish feels cleaner than mint while you wait.",
+      "date": "2026-06-13",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-candy-for-air-conditioned-offices", "candy-for-dry-throat-moments", "alternatives-to-basic-mints"]
+    },
+    {
+      "slug": "crunchy-fruit-snack-vs-chewy-fruit-snack",
+      "number": "089",
+      "title": "Crunchy fruit snack vs chewy fruit snack: why freeze-dried fruit feels more <em>awake.</em>",
+      "cardTitle": "Crunchy fruit snack vs chewy fruit snack: why freeze-dried fruit feels more <em>awake.</em>",
+      "excerpt": "A practical, sensory guide to crunchy fruit snacks vs chewy ones — why freeze-dried fruit feels cleaner, brighter, and more adult, and how it turns a healthy sweet snack into something easier to repeat.",
+      "date": "2026-06-13",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
+      "crumbs": ["Better-for-You", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["fruit-snacks-for-adults-freeze-dried-fruit", "healthy-snacks-should-still-feel-fun", "what-makes-freeze-dried-fruit-feel-premium"]
+    },
+    {
       "slug": "coffee-candy-for-airport-gates",
       "number": "088",
       "title": "Coffee candy for airport gates: a quiet reset before <em>boarding.</em>",
