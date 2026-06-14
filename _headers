@@ -1,0 +1,6 @@
+# Cloudflare Pages headers.
+# Headless article body fragments are fetched by post.html to render an article.
+# Let crawlers fetch them (needed for JS rendering) but keep the bare fragment
+# URLs out of the search index so they don't compete as thin duplicate pages.
+/posts/*
+  X-Robots-Tag: noindex

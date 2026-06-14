@@ -20,6 +20,28 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-long-video-calls",
+      "number": "093",
+      "title": "Coffee candy for long video calls: a quiet non-gum refresher between <em>meetings.</em>",
+      "cardTitle": "Coffee candy for long video calls: a quiet reset between <em>meetings.</em>",
+      "excerpt": "A search-friendly guide to coffee candy for video calls — why slow-melting iced coffee candy is a discreet, non-gum refresher between back-to-back meetings, and how its cooling finish resets your focus on camera.",
+      "date": "2026-06-14",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-candy-for-presentations", "coffee-candy-for-meetings", "refreshing-candy-without-mint"],
+      "primaryKeyword": "coffee candy for video calls",
+      "secondaryKeywords": ["iced coffee candy", "non gum refresher", "coffee candy for meetings", "workday pick me up", "mint alternative"],
+      "dateModified": "2026-06-14",
+      "faqs": [
+        { "q": "Is coffee candy a good non-gum option for video calls?", "a": "Yes. It melts quietly with no chewing, crinkling, or cup in frame, so it refreshes your mouth without being visible or audible to other people on the call." },
+        { "q": "Will coffee candy keep me alert like a real coffee?", "a": "It is a flavor-and-refresh moment, not a caffeine delivery system. The coffee taste and cooling finish help you feel reset, but it is meant as a small ritual between calls rather than a replacement for your coffee." },
+        { "q": "Why choose coffee candy over mints during meetings?", "a": "Mint can feel harsh when you are already stimulated by screen time. Iced coffee candy lands softer — coffee first, then a cooling note that cleans up the aftertaste — which many people find more comfortable on long calls." }
+      ]
+    },
+    {
       "slug": "coffee-candy-for-hotel-lobbies",
       "number": "092",
       "title": "Coffee candy for hotel lobbies: a quiet reset between check-in and the next <em>plan.</em>",
