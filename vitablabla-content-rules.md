@@ -282,7 +282,8 @@ If a new category is needed, add it to the top-level `categories` array in `post
 Each article should include **2–4 internal links** that feel like editorial references, not forced SEO links.
 
 - Link from descriptive phrases ("coffee candy for airport gates"), never "click here."
-- Link to 1 brand page (`frozili.html` or `ohcrisp.html`) and 1–3 related posts (`post.html?slug=<slug>`).
+- Use **root-relative** paths with a leading slash: `/frozili.html`, `/ohcrisp.html`, `/post.html?slug=<slug>`. These resolve correctly both inside the reader view and when an AI crawler fetches the raw body fragment directly.
+- Link to 1 brand page and 1–3 related posts.
 - Prefer linking the two `related` slugs from `posts.json` somewhere in the body so the link graph and the metadata agree.
 - Confirm every `post.html?slug=...` target actually exists before publishing.
 

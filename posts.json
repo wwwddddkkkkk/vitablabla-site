@@ -20,6 +20,28 @@
 
   "posts": [
     {
+      "slug": "texture-is-the-new-flavor",
+      "number": "094",
+      "title": "Texture is the new flavor: why snack brands now compete on <em>crunch.</em>",
+      "cardTitle": "Texture is the new flavor: why snacks compete on <em>crunch.</em>",
+      "excerpt": "An analysis of the snack trend where texture beats taste — why crunch and slow-melt mouthfeel now sell better-for-you snacks, and what it means for how brands design format and feeling.",
+      "date": "2026-06-14",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Snack Ideas", "Better-for-You"],
+      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "cta": "ohcrisp",
+      "related": ["crunchy-fruit-snack-vs-chewy-fruit-snack", "what-makes-freeze-dried-fruit-feel-premium", "slow-melt"],
+      "primaryKeyword": "texture is the new flavor",
+      "secondaryKeywords": ["snack texture trend", "mouthfeel in snacks", "sensory snacking", "premium snacks", "better-for-you snacks", "snack trends 2026"],
+      "dateModified": "2026-06-14",
+      "faqs": [
+        { "q": "Is \"texture is the new flavor\" actually a real snack trend?", "a": "Yes. As flavor innovation plateaued, brands increasingly compete on mouthfeel — crunch, airiness, and slow melt — because texture is what makes a snack memorable and is harder to copy than a flavor." },
+        { "q": "Why does crunch make a snack feel healthier or more fun?", "a": "A loud, fresh crunch signals lightness and energy, so a simple or better-for-you snack can feel like a treat without heaviness. The sound and snap do a lot of the fun work that sugar or fat used to do." },
+        { "q": "What is the difference between crunch and slow-melt textures?", "a": "Crunch is fast and lively and reads as bright and playful. A slow melt is unhurried and calming, stretching a small moment into a ritual. Brands choose one based on the feeling they want to sell." }
+      ]
+    },
+    {
       "slug": "coffee-candy-for-long-video-calls",
       "number": "093",
       "title": "Coffee candy for long video calls: a quiet non-gum refresher between <em>meetings.</em>",
