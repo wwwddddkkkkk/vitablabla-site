@@ -20,6 +20,73 @@
 
   "posts": [
     {
+      "slug": "the-afternoon-snack-is-a-reset-not-a-meal",
+      "number": "097",
+      "title": "The afternoon snack is a reset, not a meal: the science of the <em>3 p.m.</em> dip.",
+      "cardTitle": "The afternoon snack is a reset, not a meal: the <em>3 p.m.</em> dip.",
+      "excerpt": "An analysis of why the afternoon snack is a reset, not a meal — 70% of people snack at 3 p.m. to reset attention, and why light texture beats a heavy bite.",
+      "date": "2026-06-15",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": ["Snack Ideas", "Better-for-You"],
+      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "cta": "frozili",
+      "related": ["texture-is-the-new-flavor", "healthy-snacks-should-still-feel-fun", "crunchy-fruit-snack-vs-chewy-fruit-snack"],
+      "primaryKeyword": "afternoon snack reset",
+      "secondaryKeywords": ["3 p.m. slump snack", "why we snack in the afternoon", "reset snack", "afternoon snacking statistics", "snack pick-me-up", "better-for-you snacks"],
+      "dateModified": "2026-06-15",
+      "chart": { "type": "bar", "labels": ["Afternoon", "Evening"], "values": [70, 52], "unit": "%", "source": "Mondelez State of Snacking, 2024", "highlight": 0 },
+      "faqs": [
+        { "q": "Why do so many people snack in the afternoon?", "a": "Natural alertness dips in the early afternoon while dinner is still hours away, so people reach for a snack to reset attention rather than to satisfy real hunger. Mondelez's 2024 State of Snacking study found 70% of consumers snack in the afternoon, the busiest window of the day." },
+        { "q": "What makes a good reset snack instead of a meal?", "a": "A reset snack is small, sensory, and bounded — light enough not to weigh you down, with a clear edge like crunch or a cooling finish that gives the break a defined start and stop. The goal is to change the moment, not to eat a fourth meal." },
+        { "q": "Is afternoon snacking actually a bad habit?", "a": "Not inherently. Research frames it as a near-universal pick-me-up, and a light, intentional snack can sharpen focus. The thing to watch is whether you are resetting with something light or drifting into heavy grazing that adds a slump of its own." }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-popcorn",
+      "number": "096",
+      "title": "Freeze-dried fruit for popcorn: the sweet-and-salty <em>movie-night</em> upgrade.",
+      "cardTitle": "Freeze-dried fruit for popcorn: a sweet-salty <em>movie-night</em> mix.",
+      "excerpt": "A practical guide to freeze-dried fruit for popcorn — why real fruit crunch turns a salty bowl into a sweet-and-salty mix without sogginess, and which pairings land best.",
+      "date": "2026-06-15",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-snack-mix", "shelf-stable-fruit-snacks"],
+      "primaryKeyword": "freeze-dried fruit for popcorn",
+      "secondaryKeywords": ["sweet and salty popcorn", "popcorn toppings", "movie night snacks", "crunchy fruit snack", "freeze dried fruit snacks", "snack mix ideas"],
+      "dateModified": "2026-06-15",
+      "faqs": [
+        { "q": "Does freeze-dried fruit make popcorn soggy?", "a": "No, as long as you add it last. Freeze-dried fruit has almost no moisture, so it keeps its crunch — but it absorbs steam quickly, so toss it through warm (not steaming) popcorn just before serving." },
+        { "q": "What freeze-dried fruit is best for popcorn?", "a": "Tart fruits like strawberry, raspberry, and mango work best because their acidity cuts the salt rather than doubling the sweetness. Crush larger pieces lightly so they distribute through the bowl instead of sinking to the bottom." },
+        { "q": "Is fruit-and-popcorn a healthy snack?", "a": "It is a better-for-you upgrade to a snack you already eat: air-popped popcorn plus real fruit, with no added syrup or candy. It adds color and flavor complexity, which often means you are satisfied with a smaller bowl." }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-night-shifts",
+      "number": "095",
+      "title": "Coffee candy for night shifts: a quiet reset for the <em>3 a.m.</em> lull.",
+      "cardTitle": "Coffee candy for night shifts: a reset for the <em>3 a.m.</em> lull.",
+      "excerpt": "A calm guide to coffee candy for night shifts — why slow-melting iced coffee candy resets the 3 a.m. lull without the caffeine that wrecks your morning sleep.",
+      "date": "2026-06-15",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-candy-for-commutes", "candy-for-dry-throat-moments", "slow-melt"],
+      "primaryKeyword": "coffee candy for night shifts",
+      "secondaryKeywords": ["night shift snack", "iced coffee candy", "non gum refresher", "workday pick me up", "mint alternative", "slow melting candy"],
+      "dateModified": "2026-06-15",
+      "faqs": [
+        { "q": "Does coffee candy have enough caffeine to keep me awake on a night shift?", "a": "No — treat it as a taste-and-refresh moment, not a caffeine source. The coffee flavor and cooling finish help you feel reset, but it is meant to punctuate the shift rather than replace your coffee or an actual stimulant." },
+        { "q": "Will coffee candy at 3 a.m. wreck my sleep when I get home?", "a": "Because it is about flavor and a cooling finish rather than delivering caffeine, a piece is far less likely to interfere with morning sleep than another full cup of coffee. It gives you the ritual of a coffee pause without adding to your sleep debt." },
+        { "q": "Why choose coffee candy over mints or gum during a night shift?", "a": "Mint can feel harsh in a quiet room when you are already tired, and gum is restless and audible. Slow-melting iced coffee candy lands softer — coffee first, then a clean cooling finish — and it stays discreet during quiet, focused work." }
+      ]
+    },
+    {
       "slug": "texture-is-the-new-flavor",
       "number": "094",
       "title": "Texture is the new flavor: why snack brands now compete on <em>crunch.</em>",
