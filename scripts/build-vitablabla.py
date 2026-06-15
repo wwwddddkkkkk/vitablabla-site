@@ -116,6 +116,15 @@ def validate(data):
         for field in SEO_FIELDS:
             if not p.get(field):
                 warn(f"[{label}] missing SEO/GEO field: {field}")
+        chart = p.get("chart")
+        if chart:
+            if not chart.get("values"):
+                err(f"[{label}] chart present but has no 'values'.")
+            if not chart.get("source"):
+                err(f"[{label}] chart must cite a 'source' (no charts without a real source).")
+            if chart.get("labels") and len(chart["labels"]) != len(chart.get("values", [])):
+                err(f"[{label}] chart 'labels' and 'values' length mismatch.")
+
         faqs = p.get("faqs")
         if faqs:
             if not isinstance(faqs, list):

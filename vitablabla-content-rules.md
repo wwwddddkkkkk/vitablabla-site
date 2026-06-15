@@ -221,7 +221,7 @@ Every post gets one original, on-brand illustration in its `figure` — no stock
 Default workflow — use the generator:
 
 ```
-python3 scripts/illustration.py <theme> <tb-color> <slug>
+python3 scripts/illustration.py <theme> <tb-color> <slug> [data.json]
 ```
 
 - `theme`: `frozili`, `ohcrisp`, or `trend`.
@@ -229,6 +229,30 @@ python3 scripts/illustration.py <theme> <tb-color> <slug>
 - `slug`: the post slug (makes the layout deterministic).
 
 Paste its `<figure>` output into the body and rewrite the `figcaption` to fit the article. Keep the inline `<svg>` in the body file so the image ships inside the HTML (good for non-JS AI crawlers).
+
+What each theme draws:
+
+- `frozili` / `ohcrisp` → a centred product motif (coffee/ice, fruit/bowl) in the palette.
+- `trend` → a clean **abstract editorial graphic** (arcs / dot-grid / strata). It is intentionally NOT a chart, because a chart shape implies data.
+
+### Charts: only with real, sourced data
+
+Draw an analysis **chart only when the post genuinely cites real figures from a named source.** Never fabricate numbers or draw a chart-shaped graphic to look analytical — that misleads readers and AI engines.
+
+When you do have real, sourced data, add a `chart` object to the post's `posts.json` entry and the generator renders a true labelled chart (axis, value labels, and a visible "Source: …" line):
+
+```json
+"chart": {
+  "type": "bar",            // "bar" or "line"
+  "labels": ["2019", "2021", "2023", "2025"],
+  "values": [18, 27, 41, 58],
+  "unit": "%",
+  "source": "Mintel, 2025",
+  "highlight": 3             // optional: index of the bar to emphasise
+}
+```
+
+Rules for charting: the figures must come from a real, citable source you actually found (e.g. via web search); cite that same source in the article body too; and the `figcaption` should describe the data, not overstate it. If you cannot source real numbers, use the abstract trend graphic and keep the analysis qualitative.
 
 Hybrid rule: this branded SVG is the default for every post. Only drop in a **real photo** when a literal product or scene shot genuinely adds something the illustration can't (e.g. a specific recipe or packaging shot). If you do, it must be **copyright-free** — original, or from a free-license library (Unsplash / Pexels / Pixabay), saved under `assets/photos/` with the source noted; add `alt` text. When in doubt, draw it, don't borrow it.
 

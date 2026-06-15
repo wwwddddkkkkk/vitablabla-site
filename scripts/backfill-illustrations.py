@@ -42,7 +42,8 @@ def main():
             skipped.append(slug + " (no file)")
             continue
         html = open(path, encoding="utf-8").read()
-        art = illustration.svg(theme=theme_for(p), color=p.get("color", "tb-sage"), seed=slug)
+        art = illustration.svg(theme=theme_for(p), color=p.get("color", "tb-sage"),
+                               seed=slug, data=p.get("chart"))
         new_div = '<div class="post-illustration">' + art + '</div>'
         if "post-illustration" in html:
             # regenerate the existing illustration (e.g. centering / style update)

@@ -123,92 +123,121 @@ def _panel(ink):
             f'fill="#FBF7EE" opacity="0.72" stroke="{ink}" stroke-width="1.5" stroke-opacity="0.5"/>')
 
 
-def _chart_bars(ink, accent):
+def _esc(t):
+    return (str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+            .replace('"', "&quot;"))
+
+
+def _src_line(source, ink):
+    if not source:
+        return ""
+    s = source if str(source).lower().startswith("source") else "Source: " + str(source)
+    return (f'<text x="{PANEL[0]}" y="234" font-family="JetBrains Mono, monospace" '
+            f'font-size="10" fill="{ink}" opacity="0.6">{_esc(s[:64])}</text>')
+
+
+def chart_from_data(data, ink, accent):
+    """Render a REAL chart from supplied data with axis + value labels + source.
+
+    data = {
+      "type": "bar" | "line",
+      "labels": [...], "values": [...],
+      "unit": "%" (optional), "source": "...", "highlight": last index (optional)
+    }
+    """
+    ctype = data.get("type", "bar")
+    labels = [str(x) for x in data.get("labels", [])]
+    values = [float(v) for v in data.get("values", [])]
+    unit = data.get("unit", "")
+    src = data.get("source", "")
+    n = len(values)
+    if n == 0:
+        return _panel(ink) + _src_line(src, ink)
+    hi = data.get("highlight", n - 1)
     x0, y0, x1, y1 = PANEL
-    base = y1 - 22
-    left = x0 + 26
-    right = x1 - 26
-    n = 5
-    gap = 14
-    bw = (right - left - gap * (n - 1)) / n
-    heights = [0.30, 0.44, 0.55, 0.72, 0.95]
-    out = [f'<line x1="{left-8}" y1="{base}" x2="{right+8}" y2="{base}" stroke="{ink}" stroke-width="1.5"/>']
-    for i, h in enumerate(heights):
-        bx = left + i * (bw + gap)
-        bh = (base - (y0 + 26)) * h
-        fill = accent if i == n - 1 else ink
-        op = "1" if i == n - 1 else "0.30"
-        out.append(f'<rect x="{bx:.0f}" y="{base-bh:.0f}" width="{bw:.0f}" height="{bh:.0f}" rx="3" fill="{fill}" opacity="{op}"/>')
-    # rising trend arrow across the tops
-    y_for = lambda h: base - (base - (y0 + 26)) * h - 8
-    pts = " ".join(f"{left + i*(bw+gap) + bw/2:.0f},{y_for(h):.0f}" for i, h in enumerate(heights))
-    out.append(f'<polyline points="{pts}" fill="none" stroke="{accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 5"/>')
+    plot_l, plot_r = x0 + 30, x1 - 18
+    plot_t, plot_b = y0 + 24, y1 - 24
+    vmax = max(values) or 1.0
+    LBL = ('font-family="JetBrains Mono, monospace" font-size="11" '
+           f'fill="{ink}" text-anchor="middle"')
+    VAL = ('font-family="JetBrains Mono, monospace" font-size="11" '
+           f'fill="{accent}" text-anchor="middle" font-weight="500"')
+    out = [_panel(ink)]
+
+    def fmt(v):
+        t = (f"{v:.0f}" if abs(v - round(v)) < 0.05 else f"{v:.1f}")
+        return t + unit
+
+    if ctype == "line":
+        xs = [plot_l + (plot_r - plot_l) * i / (n - 1 or 1) for i in range(n)]
+        ys = [plot_b - (plot_b - plot_t) * (v / vmax) for v in values]
+        out.append(f'<line x1="{plot_l}" y1="{plot_b}" x2="{plot_r}" y2="{plot_b}" stroke="{ink}" stroke-width="1.5" opacity="0.5"/>')
+        area = f'M {xs[0]:.0f} {plot_b} ' + " ".join(f"L {x:.0f} {y:.0f}" for x, y in zip(xs, ys)) + f' L {xs[-1]:.0f} {plot_b} Z'
+        out.append(f'<path d="{area}" fill="{accent}" opacity="0.14"/>')
+        out.append('<path d="M ' + " L ".join(f"{x:.0f} {y:.0f}" for x, y in zip(xs, ys)) + f'" fill="none" stroke="{accent}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>')
+        for i, (x, y, v) in enumerate(zip(xs, ys, values)):
+            out.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="4" fill="{accent}"/>')
+            if i == 0 or i == n - 1:
+                out.append(f'<text x="{x:.0f}" y="{y-8:.0f}" {VAL}>{fmt(v)}</text>')
+            out.append(f'<text x="{x:.0f}" y="{plot_b+16:.0f}" {LBL}>{_esc(labels[i] if i < len(labels) else "")}</text>')
+    else:  # bar
+        gap = 12
+        bw = (plot_r - plot_l - gap * (n - 1)) / n
+        out.append(f'<line x1="{plot_l-6}" y1="{plot_b}" x2="{plot_r+6}" y2="{plot_b}" stroke="{ink}" stroke-width="1.5"/>')
+        for i, v in enumerate(values):
+            bx = plot_l + i * (bw + gap)
+            bh = (plot_b - plot_t) * (v / vmax)
+            fill = accent if i == hi else ink
+            op = "1" if i == hi else "0.32"
+            out.append(f'<rect x="{bx:.0f}" y="{plot_b-bh:.0f}" width="{bw:.0f}" height="{bh:.0f}" rx="3" fill="{fill}" opacity="{op}"/>')
+            out.append(f'<text x="{bx+bw/2:.0f}" y="{plot_b-bh-6:.0f}" {VAL}>{fmt(v)}</text>')
+            out.append(f'<text x="{bx+bw/2:.0f}" y="{plot_b+16:.0f}" {LBL}>{_esc(labels[i] if i < len(labels) else "")}</text>')
+    out.append(_src_line(src, ink))
     return "".join(out)
 
 
-def _chart_line(ink, accent):
-    x0, y0, x1, y1 = PANEL
-    bx0, by0, bx1, by1 = x0 + 24, y0 + 22, x1 - 22, y1 - 24
-    out = [f'<line x1="{bx0}" y1="{by0}" x2="{bx0}" y2="{by1}" stroke="{ink}" stroke-width="1.5" opacity="0.6"/>',
-           f'<line x1="{bx0}" y1="{by1}" x2="{bx1}" y2="{by1}" stroke="{ink}" stroke-width="1.5" opacity="0.6"/>']
-    ys = [0.25, 0.20, 0.42, 0.38, 0.62, 0.80, 0.96]
-    n = len(ys)
-    xs = [bx0 + (bx1 - bx0) * i / (n - 1) for i in range(n)]
-    pys = [by1 - (by1 - by0) * v for v in ys]
-    area = f'M {xs[0]:.0f} {by1} ' + " ".join(f"L {x:.0f} {y:.0f}" for x, y in zip(xs, pys)) + f' L {xs[-1]:.0f} {by1} Z'
-    out.append(f'<path d="{area}" fill="{accent}" opacity="0.16"/>')
-    line = "M " + " L ".join(f"{x:.0f} {y:.0f}" for x, y in zip(xs, pys))
-    out.append(f'<path d="{line}" fill="none" stroke="{accent}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>')
-    out.append(f'<circle cx="{xs[-1]:.0f}" cy="{pys[-1]:.0f}" r="5.5" fill="{accent}" stroke="#FBF7EE" stroke-width="2"/>')
+# ── Abstract editorial motifs for data-LESS trend pieces (not charts) ──
+def _abstract_arcs(ink, accent):
+    return (f'<g transform="translate({CX},{CY})">'
+            f'<circle r="58" fill="none" stroke="{ink}" stroke-width="2" opacity="0.25"/>'
+            f'<circle r="40" fill="none" stroke="{ink}" stroke-width="2" opacity="0.35"/>'
+            f'<path d="M-58 0 A58 58 0 0 1 0 -58" fill="none" stroke="{accent}" stroke-width="6" stroke-linecap="round"/>'
+            f'<path d="M0 40 A40 40 0 0 1 40 0" fill="none" stroke="{accent}" stroke-width="6" stroke-linecap="round"/>'
+            f'<circle r="14" fill="{accent}" opacity="0.85"/></g>')
+
+
+def _abstract_grid(ink, accent):
+    cells = []
+    cols, rows = 6, 4
+    gw, gh = 30, 30
+    ox = CX - (cols - 1) * gw / 2
+    oy = CY - (rows - 1) * gh / 2
+    for r in range(rows):
+        for c in range(cols):
+            on_diag = (c >= r + 2)
+            fill = accent if on_diag else ink
+            op = "0.9" if on_diag else "0.22"
+            cells.append(f'<circle cx="{ox+c*gw:.0f}" cy="{oy+r*gh:.0f}" r="5.5" fill="{fill}" opacity="{op}"/>')
+    return "<g>" + "".join(cells) + "</g>"
+
+
+def _abstract_strata(ink, accent):
+    out = ["<g>"]
+    widths = [0.45, 0.62, 0.80, 1.0]
+    for i, w in enumerate(widths):
+        y = CY - 48 + i * 30
+        ww = 240 * w
+        fill = accent if i == len(widths) - 1 else ink
+        op = "0.95" if i == len(widths) - 1 else "0.22"
+        out.append(f'<rect x="{CX-ww/2:.0f}" y="{y}" width="{ww:.0f}" height="16" rx="8" fill="{fill}" opacity="{op}"/>')
+    out.append("</g>")
     return "".join(out)
-
-
-def _chart_quadrant(ink, accent):
-    x0, y0, x1, y1 = PANEL
-    cx = (x0 + x1) / 2
-    cy = (y0 + y1) / 2
-    out = [f'<line x1="{x0+22}" y1="{cy:.0f}" x2="{x1-22}" y2="{cy:.0f}" stroke="{ink}" stroke-width="1.5" opacity="0.55"/>',
-           f'<line x1="{cx:.0f}" y1="{y0+18}" x2="{cx:.0f}" y2="{y1-18}" stroke="{ink}" stroke-width="1.5" opacity="0.55"/>']
-    dots = [(-0.5, 0.45, 0.30, 6), (0.45, 0.40, 0.30, 6), (-0.4, -0.4, 0.30, 6), (0.55, -0.5, 1.0, 10)]
-    for dx, dy, op, r in dots:
-        px = cx + dx * (x1 - x0) / 2 * 0.7
-        py = cy - dy * (y1 - y0) / 2 * 0.7
-        out.append(f'<circle cx="{px:.0f}" cy="{py:.0f}" r="{r}" fill="{accent}" opacity="{op}"/>')
-    return "".join(out)
-
-
-def _chart_donut(ink, accent):
-    x0, y0, x1, y1 = PANEL
-    cx = (x0 + x1) / 2
-    cy = (y0 + y1) / 2
-    r = 52
-    import math
-    frac = 0.62
-    a = -90 + 360 * frac
-    rad = math.radians(a)
-    ex = cx + r * math.cos(math.radians(-90)) + 0
-    # base ring
-    out = [f'<circle cx="{cx:.0f}" cy="{cy:.0f}" r="{r}" fill="none" stroke="{ink}" stroke-width="16" opacity="0.22"/>']
-    x_start = cx + r * math.cos(math.radians(-90))
-    y_start = cy + r * math.sin(math.radians(-90))
-    x_end = cx + r * math.cos(rad)
-    y_end = cy + r * math.sin(rad)
-    large = 1 if frac > 0.5 else 0
-    out.append(f'<path d="M {x_start:.1f} {y_start:.1f} A {r} {r} 0 {large} 1 {x_end:.1f} {y_end:.1f}" fill="none" stroke="{accent}" stroke-width="16" stroke-linecap="butt"/>')
-    out.append(f'<circle cx="{cx:.0f}" cy="{cy:.0f}" r="{r-26}" fill="#FBF7EE" opacity="0.5"/>')
-    return "".join(out)
-
-
-def _trend_chart(name, ink, accent):
-    body = {"bars": _chart_bars, "line": _chart_line,
-            "quadrant": _chart_quadrant, "donut": _chart_donut}[name](ink, accent)
-    return _panel(ink) + body
 
 
 THEMES = {
     "frozili": ["iced_cup", "candy", "beans"],
     "ohcrisp": ["strawberry", "orange_wheel", "berries", "bowl"],
-    "trend":   ["bars", "line", "quadrant", "donut"],
+    "trend":   ["arcs", "grid", "strata"],
 }
 
 
@@ -216,8 +245,12 @@ CX, CY = 200, 125  # fixed centre -> uniform margins
 
 
 def _draw_primary(name, ink, accent, s):
-    if name in ("bars", "line", "quadrant", "donut"):
-        return _trend_chart(name, ink, accent)
+    if name == "arcs":
+        return _abstract_arcs(ink, accent)
+    if name == "grid":
+        return _abstract_grid(ink, accent)
+    if name == "strata":
+        return _abstract_strata(ink, accent)
     if name == "iced_cup":
         return _iced_cup(CX, CY, ink, accent, s)
     if name == "candy":
@@ -235,12 +268,18 @@ def _draw_primary(name, ink, accent, s):
     return ""
 
 
-def svg(theme="trend", color="tb-sage", seed="seed"):
+def svg(theme="trend", color="tb-sage", seed="seed", data=None):
+    """Render an illustration.
+
+    If `data` is provided (real, sourced figures), render an actual labeled
+    chart. Otherwise render the themed motif: product motifs for frozili/ohcrisp,
+    and an abstract editorial graphic (NOT a fake chart) for trend.
+    """
     top, bottom, ink, accent = PALETTE.get(color, PALETTE["tb-sage"])
     rng = _rng(seed + color + theme)
     motifs = THEMES.get(theme, THEMES["trend"])
     primary = motifs[int(next(rng) * len(motifs)) % len(motifs)]
-    is_chart = primary in ("bars", "line", "quadrant", "donut")
+    is_data_chart = bool(data and data.get("values"))
     s = _g(rng, 0.98, 1.06)
 
     gid = "g" + hashlib.md5((seed + color).encode()).hexdigest()[:8]
@@ -252,17 +291,17 @@ def svg(theme="trend", color="tb-sage", seed="seed"):
         f'<stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs>',
         f'<rect width="{W}" height="{H}" fill="url(#{gid})"/>',
     ]
-    # Product motifs sit on a soft gradient with one symmetric highlight.
-    # Charts sit directly on the gradient inside their own panel (cleaner).
-    if not is_chart:
+    if is_data_chart:
+        parts.append(chart_from_data(data, ink, accent))
+    else:
         parts.append(f'<circle cx="{W//2}" cy="-20" r="120" fill="#ffffff" opacity="0.18"/>')
-    parts.append(_draw_primary(primary, ink, accent, s))
+        parts.append(_draw_primary(primary, ink, accent, s))
     parts.append('</svg>')
     return "".join(parts)
 
 
-def figure_html(theme, color, seed, caption, fig_no="FIG. 01"):
-    art = svg(theme=theme, color=color, seed=seed)
+def figure_html(theme, color, seed, caption, fig_no="FIG. 01", data=None):
+    art = svg(theme=theme, color=color, seed=seed, data=data)
     return (
         '<figure>\n'
         f'  <div class="post-illustration">{art}</div>\n'
@@ -273,7 +312,15 @@ def figure_html(theme, color, seed, caption, fig_no="FIG. 01"):
 
 if __name__ == "__main__":
     import sys
+    import json as _json
     t = sys.argv[1] if len(sys.argv) > 1 else "frozili"
     c = sys.argv[2] if len(sys.argv) > 2 else "tb-ice"
     s = sys.argv[3] if len(sys.argv) > 3 else "demo"
-    print(figure_html(t, c, s, "Fig. 01 — demo"))
+    # Optional 4th arg: inline JSON or a path to a JSON file with real chart data.
+    data = None
+    if len(sys.argv) > 4:
+        raw = sys.argv[4]
+        if os.path.exists(raw):
+            raw = open(raw, encoding="utf-8").read()
+        data = _json.loads(raw)
+    print(figure_html(t, c, s, "Fig. 01 — demo", data=data))
