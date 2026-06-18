@@ -20,6 +20,147 @@
 
   "posts": [
     {
+      "slug": "snacking-as-a-love-language",
+      "number": "103",
+      "title": "Snacking is a love language: how a shared bite became a way to <em>connect</em>.",
+      "cardTitle": "Snacking is a love language: the shared bite that says <em>I thought of you</em>.",
+      "excerpt": "An analysis of snacking as a love language — why 71% of consumers say sharing snacks is how they show care, and what makes a snack the perfect small gesture.",
+      "date": "2026-06-17",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Snack Ideas", "Better-for-You"],
+      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "cta": "ohcrisp",
+      "related": ["little-treat-culture-is-self-care", "snack-boards-freeze-dried-fruit", "healthy-snacks-should-still-feel-fun"],
+      "primaryKeyword": "snacking as a love language",
+      "secondaryKeywords": ["sharing snacks", "snacking to connect", "snacks as a gift", "social snacking", "state of snacking", "shareable snacks"],
+      "dateModified": "2026-06-17",
+      "chart": {
+        "type": "bar",
+        "labels": ["Love language", "To connect", "Easy to share"],
+        "values": [71, 64, 93],
+        "unit": "%",
+        "source": "Mondelez State of Snacking, 2025",
+        "highlight": 0
+      },
+      "faqs": [
+        { "q": "Is snacking really a love language?", "a": "For most consumers, yes, at least in how they describe it. In Mondelez International's 2025 State of Snacking report, 71% of global consumers agreed that sharing snacks with others is my love language, reflecting how often people use a shared snack as a small, everyday way to show care." },
+        { "q": "Why do people share snacks instead of meals to connect?", "a": "A snack is a low-stakes offer. It can be accepted in seconds or declined without awkwardness, and it requires no occasion or commitment, which makes it an easy way to create a moment of connection even between people who are not especially close." },
+        { "q": "What makes a snack good for sharing?", "a": "Shareable snacks are easy to pass, easy to portion, and pleasant to set out, think communal bowls, pick-at boards, and individually offered pieces. Colourful, pick-at foods work especially well because they look generous and invite several hands at once." }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-waffles",
+      "number": "102",
+      "title": "Freeze-dried fruit for waffles: the topping that <em>keeps the crunch</em>.",
+      "cardTitle": "Freeze-dried fruit for waffles: a topping that stays <em>crisp</em>.",
+      "excerpt": "A bright guide to freeze-dried fruit for waffles — why it adds real-fruit flavour and a second crunch without the moisture that turns a crisp waffle soggy.",
+      "date": "2026-06-17",
+      "readTime": "4 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-pancake-toppings", "fruit-crunch-vs-chewy-snacks", "freeze-dried-fruit-ice-cream-topping"],
+      "primaryKeyword": "freeze-dried fruit for waffles",
+      "secondaryKeywords": ["waffle toppings", "crunchy waffle toppings", "freeze dried fruit toppings", "breakfast toppings", "real fruit crunch", "fruit on waffles"],
+      "dateModified": "2026-06-17",
+      "faqs": [
+        { "q": "Can you put freeze-dried fruit on waffles?", "a": "Yes, and it is one of the best waffle toppings precisely because it stays crisp. Scatter the pieces over the waffle after it comes off the iron; the dry fruit adds real-fruit flavour and crunch without releasing moisture into the crust." },
+        { "q": "Why use freeze-dried fruit instead of fresh on waffles?", "a": "Fresh fruit is mostly water and makes a waffle soggy, while freeze-dried fruit has the water removed, so it concentrates the flavour and preserves the waffle's crispness. On a food defined by its texture, that keeps the crunch intact." },
+        { "q": "When should you add freeze-dried fruit to a waffle?", "a": "Add it last, right before serving. If you scatter it on while the waffle is freshly hot and then leave it, residual steam can slowly soften it, so topping it just as you sit down keeps the crunch at its peak." }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-camping",
+      "number": "101",
+      "title": "Coffee candy for camping: the morning coffee ritual you can <em>pocket</em>.",
+      "cardTitle": "Coffee candy for camping: coffee flavour, <em>no kit</em>.",
+      "excerpt": "A field guide to coffee candy for camping — why a slow-melting iced coffee candy gives you coffee flavour and a cooling finish with nothing to boil, pack, or wash.",
+      "date": "2026-06-17",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-candy-for-long-drives", "slow-melt", "coffee-candy-for-airplane-cabins"],
+      "primaryKeyword": "coffee candy for camping",
+      "secondaryKeywords": ["camping coffee", "travel coffee candy", "iced coffee candy", "trail snacks", "shelf-stable coffee", "no-brew coffee"],
+      "dateModified": "2026-06-17",
+      "faqs": [
+        { "q": "Is coffee candy a good camping snack?", "a": "Yes. Coffee candy is lightweight, shelf-stable, and needs no water, fire, or cleanup, so it delivers coffee flavour and a refreshing finish in conditions where brewing a real cup is impractical, like early starts, mid-hike, or anywhere off-grid." },
+        { "q": "Does coffee candy give you caffeine on the trail?", "a": "Treat it as a flavour-and-refresh moment rather than a reliable caffeine source. The coffee taste and cooling finish help you feel reset, which is useful in the late afternoon or evening when you want the ritual of coffee without the caffeine that could keep you awake in the tent." },
+        { "q": "Will coffee candy melt or spoil in a hot pack?", "a": "A slow-melting hard candy holds up to heat far better than chocolate and stays stable across a multi-day trip. Keep the wrapper on until you eat it and stash the tin somewhere dry, and it will travel through summer heat and changing altitude without trouble." }
+      ]
+    },
+    {
+      "slug": "little-treat-culture-is-self-care",
+      "number": "100",
+      "title": "Little treat culture is self-care: why a tiny indulgence does <em>big</em> emotional work.",
+      "cardTitle": "Little treat culture is self-care: the small reward that does <em>big</em> work.",
+      "excerpt": "An analysis of little treat culture as self-care — why 62% of Americans call small indulgences part of their self-care routine, and what makes a tiny treat genuinely restorative.",
+      "date": "2026-06-16",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": ["Snack Ideas", "Better-for-You"],
+      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "cta": "frozili",
+      "related": ["the-afternoon-snack-is-a-reset-not-a-meal", "snack-vs-reset", "healthy-snacks-should-still-feel-fun"],
+      "primaryKeyword": "little treat culture",
+      "secondaryKeywords": ["little treat self-care", "small indulgences", "treat yourself culture", "snacking as self-care", "little treat trend", "reward snacking"],
+      "dateModified": "2026-06-16",
+      "chart": { "type": "bar", "labels": ["Quality of life", "Self-care routine"], "values": [73, 62], "unit": "%", "source": "Circana, 2025", "highlight": 1 },
+      "faqs": [
+        { "q": "What is little treat culture?", "a": "Little treat culture is the habit of buying yourself a small, affordable indulgence — a cookie, a specialty coffee, a single piece of candy — to brighten an ordinary day. It went mainstream on social media and, per Circana's 2025 research, most people now frame it as self-care and stress relief rather than simple snacking." },
+        { "q": "Is little treat culture actually healthy?", "a": "It can be, because the defining feature is smallness. A bounded, intentional treat can genuinely lift mood without much downside; the thing to watch is whether the 'little' stays little. Treats designed to end cleanly — a set portion, a single piece — make the habit easier to keep healthy." },
+        { "q": "Why do people call a snack self-care?", "a": "Because the motivation is emotional, not nutritional. Surveys find people use small treats to reward effort and cope with stress, so the snack works as a tiny, controllable good moment in a busy day. The food is the vehicle; the reset is the actual point." }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-rice-cakes",
+      "number": "099",
+      "title": "Freeze-dried fruit for rice cakes: crunchy-on-crunchy that never goes <em>soft.</em>",
+      "cardTitle": "Freeze-dried fruit for rice cakes: crunch on crunch that stays <em>crisp.</em>",
+      "excerpt": "A practical guide to freeze-dried fruit for rice cakes — why real fruit crunch turns a plain rice cake into a bright, crunchy-on-crunchy snack without sogginess, and which pairings work best.",
+      "date": "2026-06-16",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-with-nut-butter", "shelf-stable-fruit-snacks", "freeze-dried-fruit-snack-mix"],
+      "primaryKeyword": "freeze-dried fruit for rice cakes",
+      "secondaryKeywords": ["rice cake toppings", "crunchy fruit snack", "freeze dried fruit snacks", "healthy desk snack", "rice cake snack ideas", "shelf-stable fruit snacks"],
+      "dateModified": "2026-06-16",
+      "faqs": [
+        { "q": "Does freeze-dried fruit get soggy on a rice cake?", "a": "No, as long as you add it last. Freeze-dried fruit holds almost no moisture, so on its own it stays crisp. It will slowly absorb moisture from a wet spread, so press it lightly into the topping just before eating rather than hours ahead." },
+        { "q": "What is the best freeze-dried fruit for rice cakes?", "a": "Tart fruits like strawberry, raspberry, and mango work best because their acidity balances a creamy base, while banana is the friendliest match for nut butter. Crush larger pieces lightly so they sit flat and don't tumble off the cake." },
+        { "q": "Is a rice cake with freeze-dried fruit a healthy snack?", "a": "It can be a solid better-for-you option: a light base, a protein or healthy-fat spread, and real fruit with no added syrup. It adds color, crunch, and flavor complexity, which often makes a simple snack satisfying enough that you don't need much else." }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-working-from-home",
+      "number": "098",
+      "title": "Coffee candy for working from home: a desk-side reset between <em>tasks.</em>",
+      "cardTitle": "Coffee candy for working from home: a quiet reset between <em>tasks.</em>",
+      "excerpt": "A calm guide to coffee candy for working from home — why slow-melting iced coffee candy gives a remote workday a clean reset without a fourth coffee or a wandering kitchen trip.",
+      "date": "2026-06-16",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
+      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["what-makes-a-small-treat-feel-workday-friendly", "slow-melt", "coffee-candy-for-after-lunch-walks"],
+      "primaryKeyword": "coffee candy for working from home",
+      "secondaryKeywords": ["work from home snack", "iced coffee candy", "non gum refresher", "workday pick me up", "remote work break", "slow melting candy"],
+      "dateModified": "2026-06-16",
+      "faqs": [
+        { "q": "Is coffee candy a good work-from-home snack?", "a": "Yes, because it works as a reset rather than a snack. It satisfies the urge to take a break and change the moment without sending you to the kitchen, so it suits remote work where the fridge is always a few steps away." },
+        { "q": "Will coffee candy keep me awake like real coffee?", "a": "Treat it as a flavor-and-refresh moment, not a caffeine source. The coffee taste and cooling finish help you feel reset, which makes it useful in the late afternoon when you want the ritual of coffee without the caffeine that could disrupt your sleep." },
+        { "q": "How do I use coffee candy to structure a remote day?", "a": "Use one piece to mark transitions — between calls, at the 3 p.m. dip, or to close the day. Because a slow-melting candy lasts a minute or two, it gives an otherwise shapeless work-from-home schedule a clear, bounded pause without interrupting your focus for long." }
+      ]
+    },
+    {
       "slug": "the-afternoon-snack-is-a-reset-not-a-meal",
       "number": "097",
       "title": "The afternoon snack is a reset, not a meal: the science of the <em>3 p.m.</em> dip.",
