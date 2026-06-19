@@ -20,6 +20,80 @@
 
   "posts": [
     {
+      "slug": "coffee-candy-for-first-dates",
+      "number": "104",
+      "title": "Coffee candy for first dates: a discreet non-gum refresher before <em>hello.</em>",
+      "cardTitle": "Coffee candy for first dates: a quiet refresher before <em>hello.</em>",
+      "excerpt": "A calm guide to coffee candy for first dates — why slow-melting iced coffee candy is a discreet non-gum refresher that steadies your nerves and resets your breath without the sharpness of mint.",
+      "date": "2026-06-18",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
+      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "cta": "frozili",
+      "related": ["coffee-breath-freshening-candy", "alternatives-to-basic-mints", "mint-alternative-for-coffee-lovers"],
+      "primaryKeyword": "coffee candy for first dates",
+      "secondaryKeywords": ["non gum refresher", "iced coffee candy", "mint alternative", "breath freshening candy", "discreet breath freshener", "date night candy"],
+      "dateModified": "2026-06-18",
+      "faqs": [
+        { "q": "Is coffee candy a good idea before a first date?", "a": "Yes. It refreshes your breath discreetly with a grown-up coffee flavour and a cool finish, and unlike gum there is nothing to chew or dispose of once the conversation starts. Take one piece on the way in and let it melt so you arrive with a clean finish rather than obvious candy." },
+        { "q": "Does coffee candy actually freshen your breath?", "a": "It cleans up the aftertaste of a previous coffee or meal and leaves a cool, tidy finish, which is what most people mean by fresher. It is best thought of as a pleasant reset rather than a clinical breath treatment, so for very strong odours pair it with the usual brushing beforehand." },
+        { "q": "Why choose coffee candy over mints for a date?", "a": "Mint can feel sharp and a little clinical, almost like an apology for your breath, while coffee candy reads as part of the cafe setting — warm and unbothered. It refreshes without signalling that you were anxious about it, which is exactly the impression you want at a first meeting." }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-cupcakes",
+      "number": "105",
+      "title": "Freeze-dried fruit for cupcakes: bright crunch that won't <em>bleed</em> into the frosting.",
+      "cardTitle": "Freeze-dried fruit for cupcakes: real-fruit crunch on <em>frosting.</em>",
+      "excerpt": "A practical guide to freeze-dried fruit for cupcakes — why real fruit crunch adds colour and flavour to frosting without the moisture that makes fresh berries weep, and which pairings work best.",
+      "date": "2026-06-18",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
+      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "cta": "ohcrisp",
+      "related": ["freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-ice-cream-topping", "freeze-dried-fruit-for-yogurt-bark"],
+      "primaryKeyword": "freeze-dried fruit for cupcakes",
+      "secondaryKeywords": ["cupcake toppings", "freeze dried fruit decorations", "real fruit crunch", "frosting toppings", "freeze dried fruit dessert topping", "party snack ideas"],
+      "dateModified": "2026-06-18",
+      "faqs": [
+        { "q": "Can you put freeze-dried fruit on cupcakes?", "a": "Yes, and it is one of the best fruit toppings for frosting precisely because it stays crisp. Scatter or press the pieces onto buttercream just before serving; the dry fruit adds real-fruit flavour, colour, and crunch without the moisture that makes fresh berries bleed and slide." },
+        { "q": "Will freeze-dried fruit get soggy on frosting?", "a": "Only slowly, and only if you add it too early. The fruit gradually draws moisture from the frosting it touches, so cupcakes topped hours ahead can soften at the contact points. Keep the fruit sealed and add it in the final stretch before serving to keep the crunch at its peak." },
+        { "q": "What is the best freeze-dried fruit for cupcakes?", "a": "Tart fruits like strawberry and raspberry are the most versatile because their acidity balances sweet frosting, with raspberry especially good on chocolate. Mango and pineapple suit coconut or citrus cakes, and banana is the friendliest match for peanut-butter frosting. Crush larger pieces lightly so they sit flat and distribute evenly." }
+      ]
+    },
+    {
+      "slug": "snackification-snacks-replacing-meals",
+      "number": "106",
+      "title": "Snackification: why the day is quietly turning from three meals into <em>many small bites.</em>",
+      "cardTitle": "Snackification: how three meals became <em>many small bites.</em>",
+      "excerpt": "An analysis of snackification — why 62% of consumers now prefer many small meals to a few large ones, and what the shift from meals to snacks means for how we eat.",
+      "date": "2026-06-18",
+      "readTime": "5 min",
+      "color": "tb-cream",
+      "categories": ["Snack Ideas", "Better-for-You"],
+      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "cta": "ohcrisp",
+      "related": ["the-afternoon-snack-is-a-reset-not-a-meal", "little-treat-culture-is-self-care", "snacking-as-a-love-language"],
+      "primaryKeyword": "snackification",
+      "secondaryKeywords": ["snacks replacing meals", "grazing instead of meals", "state of snacking", "small meals trend", "snacking statistics", "snacking instead of meals"],
+      "dateModified": "2026-06-18",
+      "chart": {
+        "type": "bar",
+        "labels": ["Snacks > meals", "Small meals", "Cant live w/o"],
+        "values": [58, 62, 66],
+        "unit": "%",
+        "source": "Mondelez State of Snacking, 2024",
+        "highlight": 1
+      },
+      "faqs": [
+        { "q": "What is snackification?", "a": "Snackification is the shift away from three fixed meals toward a day made up of smaller, more frequent bites. In Mondelez International's State of Snacking research, 62% of consumers said they prefer many small meals over a few large ones, reflecting how widely the habit has spread." },
+        { "q": "Are people really replacing meals with snacks?", "a": "Often they are blurring the line rather than fully swapping. Mondelez found 58% of consumers look forward to snacks more than meals and 66% say they couldn't live without snacks, which points to snacks taking on roles meals used to fill — especially as flexible schedules break up the traditional eating day." },
+        { "q": "Is snackification unhealthy?", "a": "Not inherently. Grazing on small, intentional, better-for-you bites can suit a flexible day and help with portion control; the risk is drifting into constant unstructured grazing on heavy or sugary snacks. The healthier version of snackification leans on defined portions and real ingredients rather than mindless nibbling." }
+      ]
+    },
+    {
       "slug": "snacking-as-a-love-language",
       "number": "103",
       "title": "Snacking is a love language: how a shared bite became a way to <em>connect</em>.",
