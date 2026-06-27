@@ -17,6 +17,7 @@ Usage (as a module):
 """
 
 import hashlib
+import os
 
 # tb-* tones -> (gradient top, gradient bottom, ink/foreground, accent)
 PALETTE = {

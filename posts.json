@@ -1,12 +1,10 @@
 {
   "$schema": "Vitablabla post registry. To add a daily post: 1) duplicate posts/_template.html as posts/<your-slug>.html, write the body. 2) Add an entry to the top of the 'posts' array below. 3) Commit + push.",
-
   "settings": {
     "siteTitle": "The Vitablabla Journal",
     "tagline": "Product stories, taste notes, and everyday guides for specific cravings.",
     "postsPerPage": 9
   },
-
   "categories": [
     "Frozili",
     "Coffee Candy",
@@ -17,8 +15,787 @@
     "Better-for-You",
     "Travel & Work"
   ],
-
   "posts": [
+    {
+      "slug": "coffee-candy-for-early-mornings",
+      "number": "125",
+      "title": "Coffee candy for <em>early mornings</em>: flavour before the first cup.",
+      "cardTitle": "Coffee candy for <em>early mornings</em>.",
+      "excerpt": "Why a slow-melting coffee candy fits the quiet minutes before your first brew — coffee flavour with a cooling finish for early mornings, no cup required.",
+      "date": "2026-06-26",
+      "readTime": "4 min",
+      "color": "tb-coffee",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "related": [
+        "coffee-candy-for-night-shifts",
+        "coffee-candy-for-commutes",
+        "skip-second-coffee-iced-coffee-candy"
+      ],
+      "primaryKeyword": "coffee candy for early mornings",
+      "secondaryKeywords": [
+        "slow-melting coffee candy",
+        "morning coffee ritual",
+        "iced coffee candy",
+        "coffee flavour with a cooling finish",
+        "workday pick me up",
+        "before first coffee"
+      ],
+      "dateModified": "2026-06-26",
+      "faqs": [
+        {
+          "q": "Is coffee candy a good idea first thing in the morning?",
+          "a": "Yes, as a bridge rather than a substitute. A piece of coffee candy gives you the taste and small ritual of coffee in the minutes before your first cup is brewed, so an early morning starts with flavour instead of an empty wait. It pairs with your real coffee rather than replacing it."
+        },
+        {
+          "q": "Does coffee candy actually wake you up?",
+          "a": "It's better thought of as a sensory cue than a caffeine hit. The coffee flavour and cooling finish of an icy coffee candy act as a small wake-up signal - a refreshing nudge that the day has started - while your brewed cup does the heavier lifting."
+        },
+        {
+          "q": "How long does a piece of slow-melting coffee candy last?",
+          "a": "A slow-melt coffee candy is designed to dissolve gradually rather than be chewed, so a single piece can last several unhurried minutes - roughly long enough to cover the brew time of a pour-over or the first stretch of a morning commute."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-cookies",
+      "number": "126",
+      "title": "Freeze-dried fruit for <em>cookies</em>: real berry flavour, no soggy dough.",
+      "cardTitle": "Freeze-dried fruit for <em>cookies</em>.",
+      "excerpt": "How freeze-dried fruit bakes real berry flavour and colour into cookies without the moisture that makes dough spread or go soggy — crush it, fold it, or scatter on top.",
+      "date": "2026-06-26",
+      "readTime": "4 min",
+      "color": "tb-blush",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-for-muffins",
+        "freeze-dried-fruit-for-cupcakes",
+        "freeze-dried-fruit-for-scones"
+      ],
+      "primaryKeyword": "freeze-dried fruit for cookies",
+      "secondaryKeywords": [
+        "baking with freeze-dried fruit",
+        "freeze-dried raspberry cookies",
+        "freeze-dried strawberry shortbread",
+        "how to bake with freeze-dried fruit",
+        "real fruit crunch",
+        "fruit cookie flavour"
+      ],
+      "dateModified": "2026-06-26",
+      "faqs": [
+        {
+          "q": "Can you bake with freeze-dried fruit in cookies?",
+          "a": "Yes - freeze-dried fruit is one of the best fruits to bake into cookies. Because it contains almost no water, it adds concentrated fruit flavour and colour without making the dough spread or turn soggy, and it holds its colour through the oven. You can crush it into the dough or fold in whole pieces."
+        },
+        {
+          "q": "Do you need to rehydrate freeze-dried fruit before adding it to dough?",
+          "a": "No. For cookies you want the fruit dry, so add it straight in - rehydrating would reintroduce the water that makes dough spread and go soggy. Crush it to a powder for even flavour and colour, or leave it in pieces for bright bursts."
+        },
+        {
+          "q": "Will freeze-dried fruit make my cookies soggy?",
+          "a": "No, and that's its main advantage over fresh fruit. With nearly all the moisture removed, freeze-dried fruit keeps cookies crisp and evenly baked while still delivering real berry flavour - the opposite of what fresh berries do to dough."
+        }
+      ]
+    },
+    {
+      "slug": "the-rise-of-the-snack-swap",
+      "number": "127",
+      "title": "The rise of the <em>snack swap</em>: why we trade up instead of cutting out.",
+      "cardTitle": "The rise of the <em>snack swap</em>.",
+      "excerpt": "Why the modern snack swap is about substitution, not subtraction — keeping the ritual and upgrading the object, and how 'better-for-you' became 'better-instead-of.'",
+      "date": "2026-06-26",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "cta": "frozili",
+      "related": [
+        "skip-second-coffee-iced-coffee-candy",
+        "the-quiet-decline-of-chewing-gum",
+        "alternatives-to-basic-mints"
+      ],
+      "primaryKeyword": "snack swaps",
+      "secondaryKeywords": [
+        "healthy snack swaps",
+        "better-for-you snacking",
+        "habit substitution",
+        "how to swap snacks",
+        "snacking behaviour trend",
+        "better-instead-of"
+      ],
+      "dateModified": "2026-06-26",
+      "faqs": [
+        {
+          "q": "What is a snack swap?",
+          "a": "A snack swap is replacing an existing habit with a smaller or more deliberate alternative rather than cutting it out entirely. Instead of quitting the second coffee or the afternoon candy bar, you keep the moment and change what fills it - substitution rather than subtraction."
+        },
+        {
+          "q": "Why are snack swaps more effective than just cutting snacks out?",
+          "a": "Because habits are built around a cue and a small reward, not just the food itself. Removing the object leaves the craving and the ritual unsatisfied, while a swap keeps the timing and gesture intact and changes only what you reach for - which is far easier to sustain than going without."
+        },
+        {
+          "q": "What makes a snack swap actually stick?",
+          "a": "The lasting swaps keep the same trigger, deliver comparable pleasure, and are at least as easy to grab as what they replace. A good swap also has a clear 'instead' - a specific moment it's meant to fill - so it has a job rather than being one more thing to add."
+        }
+      ]
+    },
+    {
+      "slug": "how-cold-coffee-took-over",
+      "number": "124",
+      "title": "How cold coffee took over the cup: inside the <em>chilled</em> coffee boom.",
+      "cardTitle": "How cold coffee took over the cup: the <em>chilled</em> boom.",
+      "excerpt": "An analysis of the rise of cold coffee — why 32% of Americans now drink cold brew, frozen, or nitro coffee weekly, and what the chill says about modern taste.",
+      "date": "2026-06-25",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "cta": "frozili",
+      "related": [
+        "why-iced-coffee-candy-works",
+        "skip-second-coffee-iced-coffee-candy",
+        "the-quiet-decline-of-chewing-gum"
+      ],
+      "primaryKeyword": "the rise of cold coffee",
+      "secondaryKeywords": [
+        "cold coffee trend",
+        "why is cold coffee so popular",
+        "cold brew statistics",
+        "iced coffee vs hot coffee",
+        "cold coffee consumption",
+        "cold brew popularity"
+      ],
+      "dateModified": "2026-06-25",
+      "chart": {
+        "type": "bar",
+        "labels": [
+          "Cold brew",
+          "Frozen/blend",
+          "Nitro"
+        ],
+        "values": [
+          21,
+          19,
+          6
+        ],
+        "unit": "%",
+        "source": "NCA National Coffee Data Trends, Fall 2025",
+        "highlight": 0
+      },
+      "faqs": [
+        {
+          "q": "Is cold coffee really more popular now?",
+          "a": "Yes. In the National Coffee Association's Fall 2025 National Coffee Data Trends report, 32% of Americans said they had a cold brew, frozen or blended, or nitro coffee within the past week, with cold brew the most common at 21%. Cold formats have grown from a seasonal novelty into a mainstream, year-round category, led by younger drinkers."
+        },
+        {
+          "q": "Why do people prefer iced or cold brew coffee?",
+          "a": "Cold brewing lowers perceived bitterness, so the drink tastes smoother and is easy to customise with milk and flavour. An iced cup is also made to be sipped slowly without turning acrid as it cools, and a sealed cold coffee travels well - a combination of smoothness, slowness, and portability that suits modern routines."
+        },
+        {
+          "q": "Is cold coffee just a summer trend?",
+          "a": "No longer. While hot weather still boosts cold-coffee sales, the NCA's data shows cold and iced formats are now consumed year-round, especially by Gen Z and millennials who choose them by preference rather than temperature. The growth of ready-to-drink and drive-through options has made cold coffee a default rather than a seasonal treat."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-scones",
+      "number": "123",
+      "title": "Freeze-dried fruit for scones: a cream-tea finish that won't <em>weep.</em>",
+      "cardTitle": "Freeze-dried fruit for scones: a cream-tea finish that <em>holds.</em>",
+      "excerpt": "A practical guide to freeze-dried fruit for scones — why real fruit crunch finishes a cream tea with colour and flavour without the moisture that makes fresh berries bleed into the cream.",
+      "date": "2026-06-25",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
+      "cta": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-for-pavlova",
+        "freeze-dried-fruit-for-cupcakes",
+        "freeze-dried-fruit-dessert-toppings"
+      ],
+      "primaryKeyword": "freeze-dried fruit for scones",
+      "secondaryKeywords": [
+        "scone toppings",
+        "cream tea toppings",
+        "freeze dried fruit baking",
+        "real fruit crunch",
+        "freeze dried fruit dessert topping",
+        "scones with berries"
+      ],
+      "dateModified": "2026-06-25",
+      "faqs": [
+        {
+          "q": "Can you put freeze-dried fruit on scones?",
+          "a": "Yes, and it is one of the best toppings for a cream tea precisely because it stays dry. Press or scatter the pieces onto clotted cream just before serving; the fruit adds real-fruit flavour, saturated colour, and crunch without the moisture that makes fresh berries weep into the cream and stain it."
+        },
+        {
+          "q": "Can you bake freeze-dried fruit into scone dough?",
+          "a": "You can, and it behaves better than fresh fruit inside the dough. Crush it to a powder and fold it into the dry ingredients to flavour and tint the crumb without adding liquid that would affect the rise. Save whole pieces for the top, where the crunch survives, since pieces baked into the dough soften."
+        },
+        {
+          "q": "What is the best freeze-dried fruit for scones?",
+          "a": "Tart fruits work best because their acidity balances rich clotted cream and butter. Raspberry and strawberry are the cream-tea classics, blackcurrant and blueberry suit lemon or plain scones, and mango or pineapple give a brighter tropical version. Crush larger pieces lightly so they sit flat and scatter evenly."
+        }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-music-festivals",
+      "number": "122",
+      "title": "Coffee candy for music festivals: a pocket reset between <em>sets.</em>",
+      "cardTitle": "Coffee candy for music festivals: a reset between <em>sets.</em>",
+      "excerpt": "A field guide to coffee candy for festivals — why a slow-melting iced coffee candy beats the coffee-truck queue, with no cup to carry, spill, or lose your spot for.",
+      "date": "2026-06-25",
+      "readTime": "4 min",
+      "color": "tb-violet",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
+      "cta": "frozili",
+      "related": [
+        "coffee-candy-for-commutes",
+        "coffee-candy-with-sparkling-water",
+        "coffee-candy-for-summer-errands"
+      ],
+      "primaryKeyword": "coffee candy for festivals",
+      "secondaryKeywords": [
+        "festival snack",
+        "iced coffee candy",
+        "non gum refresher",
+        "music festival pick me up",
+        "pocket candy",
+        "slow melting candy"
+      ],
+      "dateModified": "2026-06-25",
+      "faqs": [
+        {
+          "q": "Is coffee candy good to bring to a music festival?",
+          "a": "Yes. It gives you coffee flavour and a cooling finish with nothing to carry, queue for, or spill, which suits a crowded field where the coffee truck is a long walk and your spot near the stage is worth keeping. It is pocketable, needs no fridge, and survives a day in a bag better than a cup ever could."
+        },
+        {
+          "q": "Will coffee candy keep me awake for the headliner?",
+          "a": "It is better thought of as a flavour-and-refresh cue than a caffeine hit. A single slow-melting piece gives the alert, grown-up taste of coffee without a full cup's load, so it can sharpen a flagging late afternoon without guaranteeing a wired, sleepless drive home afterward."
+        },
+        {
+          "q": "Why choose coffee candy over an energy drink at a festival?",
+          "a": "Energy drinks are warm, sweet, and gone in a few gulps, and an open can is awkward in a packed crowd. A slow-melting coffee candy is quiet and hands-free, melts over several minutes, and finishes clean rather than sticky - a calmer reset for a long day on your feet."
+        }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-heatwaves",
+      "number": "119",
+      "title": "Coffee candy for heatwaves: the cup, when it's <em>too hot to drink.</em>",
+      "cardTitle": "Coffee candy for heatwaves: when it's <em>too hot to drink.</em>",
+      "excerpt": "On the hottest days, coffee candy for hot weather beats a brewed cup: real coffee flavour and a cooling finish, with no heat and no melting ice.",
+      "date": "2026-06-23",
+      "readTime": "4 min",
+      "color": "tb-ice",
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Refreshing Snacks"
+      ],
+      "cta": "frozili",
+      "related": [
+        "cooling-candy-for-summer",
+        "coffee-candy-with-sparkling-water",
+        "coffee-candy-for-summer-errands"
+      ],
+      "primaryKeyword": "coffee candy for hot weather",
+      "secondaryKeywords": [
+        "coffee candy heatwave",
+        "cooling coffee candy",
+        "iced coffee candy summer",
+        "coffee candy vs iced coffee",
+        "hot weather coffee alternative",
+        "summer coffee candy"
+      ],
+      "dateModified": "2026-06-23",
+      "faqs": [
+        {
+          "q": "Is coffee candy good in hot weather?",
+          "a": "Yes - it is arguably better suited to a heatwave than a brewed drink. A slow-melting iced coffee candy gives you the coffee flavour and a cooling finish without adding heat to your body the way a hot cup does, and without the watery letdown of iced coffee that melts in the sun. It is also pocketable and needs no fridge, which suits hot commutes and outdoor errands."
+        },
+        {
+          "q": "Is coffee candy better than iced coffee on a hot day?",
+          "a": "For convenience and consistency, often yes. Iced coffee dilutes and turns sour as its ice melts, while a coffee candy has no ice to lose, doesn't water down, and travels without spilling. Iced coffee still wins if you specifically want a long, cold drink; the candy wins when you want the coffee taste and a cool finish in something you can carry."
+        },
+        {
+          "q": "Will coffee candy cool you down?",
+          "a": "It delivers a cooling sensation and a cleaner finish rather than actually lowering your body temperature. The relief is mostly sensory - a cool, refreshing coffee note instead of a hot one - so it pairs best with water for real heat. Think of it as the pleasant, low-effort version of a coffee break for days when a hot drink is unappealing."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-popsicles",
+      "number": "120",
+      "title": "Freeze-dried fruit for popsicles: real fruit that <em>survives the freeze.</em>",
+      "cardTitle": "Freeze-dried fruit for popsicles: fruit that <em>survives the freeze.</em>",
+      "excerpt": "Freeze-dried fruit for popsicles adds concentrated flavour and colour that won't turn icy or sink - the easy fix for homemade ice pops that taste flat.",
+      "date": "2026-06-23",
+      "readTime": "4 min",
+      "color": "tb-blush",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-ice-cream-topping",
+        "freeze-dried-fruit-in-iced-tea",
+        "freeze-dried-fruit-mocktail-garnish"
+      ],
+      "primaryKeyword": "freeze-dried fruit for popsicles",
+      "secondaryKeywords": [
+        "freeze-dried fruit ice pops",
+        "homemade popsicles freeze-dried fruit",
+        "fruit popsicles real fruit",
+        "freeze-dried fruit in ice lollies",
+        "summer popsicle toppings",
+        "freeze-dried strawberry popsicles"
+      ],
+      "dateModified": "2026-06-23",
+      "faqs": [
+        {
+          "q": "Can you put freeze-dried fruit in popsicles?",
+          "a": "Yes, and it solves the two biggest problems with homemade pops. Freeze-dried fruit adds concentrated flavour and colour without the extra water that makes fresh fruit freeze into hard, icy chips. Powder some into the liquid base to flavour the whole pop and drop whole pieces into the mould for visible fruit and bursts of taste."
+        },
+        {
+          "q": "Is freeze-dried fruit better than fresh fruit in ice pops?",
+          "a": "For flavour and texture, usually yes. Fresh fruit dilutes the mix and freezes hard, while freeze-dried fruit concentrates the flavour and keeps a tender bite because it carries almost no water. It also stays suspended in the mould instead of sinking, so the fruit is spread evenly through the pop rather than clustered at the bottom."
+        },
+        {
+          "q": "Will the fruit stay crunchy in a frozen popsicle?",
+          "a": "It keeps more texture than fresh fruit, but it does soften somewhat as it rehydrates in the liquid before freezing. To preserve the most crunch, freeze the moulds promptly rather than letting the mix sit, and press a little extra crushed freeze-dried fruit onto the surface just before serving for a final snap."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-goes-mainstream",
+      "number": "121",
+      "title": "From astronaut food to snack drawer: how <em>freeze-dried fruit went mainstream.</em>",
+      "cardTitle": "How freeze-dried fruit <em>went mainstream.</em>",
+      "excerpt": "An analysis of why freeze-dried fruit went mainstream: a market growing 6.4% a year toward $55B by 2030, driven by convenience, clean labels, and texture.",
+      "date": "2026-06-23",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "cta": "ohcrisp",
+      "related": [
+        "what-makes-freeze-dried-fruit-feel-premium",
+        "shelf-stable-fruit-snacks",
+        "fruit-snacks-for-adults-freeze-dried-fruit"
+      ],
+      "primaryKeyword": "why freeze-dried fruit went mainstream",
+      "secondaryKeywords": [
+        "freeze-dried fruit market",
+        "freeze-dried fruit trend",
+        "freeze-dried fruit popularity",
+        "why is freeze-dried fruit popular",
+        "freeze-dried fruit market size",
+        "freeze-dried snack growth"
+      ],
+      "dateModified": "2026-06-23",
+      "chart": {
+        "type": "bar",
+        "labels": [
+          "2023",
+          "2024",
+          "2030"
+        ],
+        "values": [
+          35.7,
+          38.08,
+          55.21
+        ],
+        "unit": "B",
+        "source": "Grand View Research, 2024",
+        "highlight": 2
+      },
+      "faqs": [
+        {
+          "q": "Why is freeze-dried fruit so popular now?",
+          "a": "It hits several modern preferences at once: it is convenient and shelf-stable, it is usually just fruit with no added sugar, and its crunchy texture is genuinely enjoyable and photogenic. Grand View Research valued the global freeze-dried fruits and vegetables market at about USD 35.7 billion in 2023 and projects USD 55.21 billion by 2030, a 6.4% annual growth rate - the sign of a habit settling in rather than a passing fad."
+        },
+        {
+          "q": "How big is the freeze-dried fruit market?",
+          "a": "The global freeze-dried fruits and vegetables market was worth roughly USD 35.7 billion in 2023, about USD 38.1 billion in 2024, and is forecast to reach USD 55.21 billion by 2030, according to Grand View Research. Freeze-dried fruit specifically made up about 72.6% of that market in 2023, making it the dominant share of the category."
+        },
+        {
+          "q": "Is freeze-dried fruit actually healthy?",
+          "a": "It is essentially just fruit with the water removed, so it keeps most of the original vitamins, minerals, and fibre and typically needs no added sugar or preservatives. It is more concentrated than fresh fruit, so portions are smaller, but as a whole-food snack it compares well to most packaged options. Pairing it with water or a protein source makes it a more balanced snack."
+        }
+      ]
+    },
+    {
+      "slug": "the-quiet-decline-of-chewing-gum",
+      "number": "118",
+      "title": "The quiet decline of chewing gum: why the checkout rack is <em>thinning.</em>",
+      "cardTitle": "The quiet decline of chewing gum: why the rack is <em>thinning.</em>",
+      "excerpt": "An analysis of the decline of chewing gum — why U.S. gum unit sales fell about 32% from 2018 to 2023, and which calmer refreshers are taking its place.",
+      "date": "2026-06-22",
+      "readTime": "5 min",
+      "color": "tb-cream",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "cta": "frozili",
+      "related": [
+        "alternatives-to-basic-mints",
+        "non-gum-refresher-after-lunch",
+        "refreshing-candy-without-mint"
+      ],
+      "primaryKeyword": "decline of chewing gum",
+      "secondaryKeywords": [
+        "why are gum sales declining",
+        "chewing gum sales decline",
+        "gum alternatives",
+        "is chewing gum dying",
+        "gum vs mints",
+        "snack industry trends"
+      ],
+      "dateModified": "2026-06-22",
+      "chart": {
+        "type": "bar",
+        "labels": [
+          "2018",
+          "2023"
+        ],
+        "values": [
+          100,
+          68
+        ],
+        "unit": "",
+        "source": "Circana, via AP/Fortune 2024",
+        "highlight": 1
+      },
+      "faqs": [
+        {
+          "q": "Is chewing gum really in decline?",
+          "a": "Yes. U.S. chewing gum unit sales fell about 32% between 2018 and 2023, after dropping nearly a third in 2020 alone, according to Circana. Global volumes are down too, and dollar sales have recovered mainly because packs cost more, not because more people are chewing."
+        },
+        {
+          "q": "Why are people chewing less gum?",
+          "a": "Several forces overlap: masking during the pandemic made bad breath a private worry, impulse-buy foot traffic moved online, and many consumers now avoid both sugar and artificial sweeteners. Younger buyers also favour novelty candies like sour gummies over gum, so the category is not being replenished by the next generation."
+        },
+        {
+          "q": "What are people choosing instead of gum?",
+          "a": "The job gum did — a quick mouth reset and a small pause — is migrating to mints and lozenges, sour and novelty candies, functional formats sold around focus and calm, and slow-melting hard candies. Many of these are quieter and litter-free, suggesting people increasingly prefer something that dissolves to something they have to chew."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-energy-balls",
+      "number": "117",
+      "title": "Freeze-dried fruit for energy balls: real crunch in a soft, <em>beige</em> snack.",
+      "cardTitle": "Freeze-dried fruit for energy balls: bright crunch in a <em>no-bake</em> ball.",
+      "excerpt": "A practical guide to freeze-dried fruit for energy balls — crush it to a powder to flavour the mix, and keep whole pieces for the outside, where the real fruit crunch survives.",
+      "date": "2026-06-22",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
+      "cta": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-with-nut-butter",
+        "freeze-dried-fruit-snack-mix",
+        "freeze-dried-fruit-for-hiking"
+      ],
+      "primaryKeyword": "freeze-dried fruit for energy balls",
+      "secondaryKeywords": [
+        "energy ball recipe",
+        "freeze dried fruit baking",
+        "real fruit crunch",
+        "bliss balls",
+        "protein balls",
+        "no-bake snack ideas"
+      ],
+      "dateModified": "2026-06-22",
+      "faqs": [
+        {
+          "q": "Can you put freeze-dried fruit in energy balls?",
+          "a": "Yes, and it is one of the best ways to flavour them. Crush the fruit to a powder and work it into the base so it flavours and colours the whole mix without adding moisture, then roll the finished balls in larger pieces for crunch. Whole pieces left inside the wet base will gradually soften, so the powder-inside, pieces-outside split keeps both flavour and texture."
+        },
+        {
+          "q": "Will freeze-dried fruit make energy balls soggy?",
+          "a": "Not if you keep it dry until the end. Freeze-dried fruit holds almost no moisture on its own, so it won't loosen the mix the way fresh fruit or jam does. It will slowly absorb moisture from a sticky base, so apply the crunchy outer coating to already-chilled balls and eat them within a few days for the best texture."
+        },
+        {
+          "q": "What is the best freeze-dried fruit for energy balls?",
+          "a": "Tart fruits like raspberry and strawberry are the most versatile because their acidity balances sweet dates and rich nut butter, with raspberry especially good against cacao. Mango suits coconut-and-cashew balls, and banana is the friendliest match for peanut butter. Powder the fruit for the inside and keep coarser pieces for the crust."
+        }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-jet-lag",
+      "number": "116",
+      "title": "Coffee candy for jet lag: a small reset on the wrong <em>clock.</em>",
+      "cardTitle": "Coffee candy for jet lag: a reset on the wrong <em>clock.</em>",
+      "excerpt": "A calm guide to coffee candy for jet lag — why a slow-melting iced coffee candy nudges you onto local time with the ritual of a reset coffee, minus a full late-day caffeine dose.",
+      "date": "2026-06-22",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
+      "cta": "frozili",
+      "related": [
+        "coffee-candy-for-airplane-cabins",
+        "twelve-hour-flight",
+        "slow-melt"
+      ],
+      "primaryKeyword": "coffee candy for jet lag",
+      "secondaryKeywords": [
+        "jet lag tips",
+        "travel coffee candy",
+        "iced coffee candy",
+        "non gum refresher",
+        "long-haul flight snack",
+        "slow melting candy"
+      ],
+      "dateModified": "2026-06-22",
+      "faqs": [
+        {
+          "q": "Does coffee candy help with jet lag?",
+          "a": "It helps with the experience of jet lag more than the underlying clock shift. A slow-melting coffee candy gives you the flavour and ritual of a reset coffee at a small caffeine dose, which can nudge you toward local time and ease the arrival-day slump, but the real fixes remain daylight, meal timing, and a sensible bedtime."
+        },
+        {
+          "q": "Will coffee candy keep me awake after a long flight?",
+          "a": "Far less than a full cup would. Because a single piece is about flavour and a cooling finish rather than a heavy caffeine load, an afternoon piece is much less likely to push your first night's sleep out of reach than an airport-sized coffee at the same hour."
+        },
+        {
+          "q": "When should I have coffee candy when crossing time zones?",
+          "a": "Use it to reinforce local mornings and early afternoons, and avoid it in the local evening. A piece on landing or with the next day's breakfast signals 'this is the new clock,' while keeping the late hours candy-free protects the sleep you are trying to win back."
+        }
+      ]
+    },
+    {
+      "slug": "the-sound-of-snacking",
+      "number": "115",
+      "title": "The sound of snacking: why a loud bite tastes <em>fresher.</em>",
+      "cardTitle": "The sound of snacking: why crunch tastes <em>fresher.</em>",
+      "excerpt": "An analysis of the sound of snacking — why we judge freshness and quality by the noise a bite makes, from Charles Spence's sonic-chip study to why crunch satisfies.",
+      "date": "2026-06-21",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "cta": "ohcrisp",
+      "related": [
+        "texture-is-the-new-flavor",
+        "fruit-crunch-vs-chewy-snacks",
+        "modern-snacks-more-sensory"
+      ],
+      "primaryKeyword": "the sound of snacking",
+      "secondaryKeywords": [
+        "why crunchy snacks are satisfying",
+        "sound and taste",
+        "crunch and freshness",
+        "Charles Spence sonic chip",
+        "sensory snacking",
+        "texture as flavour"
+      ],
+      "dateModified": "2026-06-21",
+      "faqs": [
+        {
+          "q": "Does the sound of a snack really affect how it tastes?",
+          "a": "Yes. Research by Charles Spence found that making the crunch of a potato chip louder and higher-pitched led people to rate the same chip as fresher and crisper, while muffling the sound made it seem stale. The bite's noise shapes perceived freshness and quality before flavour is even considered."
+        },
+        {
+          "q": "Why do crunchy snacks feel more satisfying?",
+          "a": "Because the brain treats a loud, sharp snap as a signal of freshness, learned from the fact that crisp foods are usually fresh and soft ones usually aren't. A snack you can hear reads as more alive and higher quality, so crunch delivers a small hit of satisfaction that silent, chewy textures don't."
+        },
+        {
+          "q": "Are quiet snacks worse than loud ones?",
+          "a": "No — sound is a design choice, not a ranking. A slow-melting candy is meant to be silent, trading crunch for a long, calm finish, while a crisp snack uses noise to announce its freshness. The best snacks choose their register on purpose rather than always chasing volume."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-cheesecake",
+      "number": "114",
+      "title": "Freeze-dried fruit for cheesecake: bright crunch that won't <em>weep.</em>",
+      "cardTitle": "Freeze-dried fruit for cheesecake: real-fruit crunch on <em>top.</em>",
+      "excerpt": "A practical guide to freeze-dried fruit for cheesecake — why real fruit crunch finishes a slice with colour and flavour without the moisture that makes fresh berries bleed, and which pairings work best.",
+      "date": "2026-06-21",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
+      "cta": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-dessert-toppings",
+        "freeze-dried-fruit-for-cupcakes",
+        "freeze-dried-fruit-for-pavlova"
+      ],
+      "primaryKeyword": "freeze-dried fruit for cheesecake",
+      "secondaryKeywords": [
+        "cheesecake toppings",
+        "freeze dried fruit dessert topping",
+        "real fruit crunch",
+        "cheesecake decoration",
+        "no-bake cheesecake topping",
+        "baking with freeze dried fruit"
+      ],
+      "dateModified": "2026-06-21",
+      "faqs": [
+        {
+          "q": "Can you put freeze-dried fruit on cheesecake?",
+          "a": "Yes, and it's one of the best toppings precisely because it stays dry. Scatter or press the pieces onto the set surface just before serving; the fruit adds real flavour, colour, and crunch without the moisture that makes fresh berries bleed and coulis run across a pale cheesecake top."
+        },
+        {
+          "q": "When should I add freeze-dried fruit to a cheesecake?",
+          "a": "Right before serving, not when you store it. On a cold, set surface the crunch holds well, but sitting for hours on damp cream will gradually soften the pieces, so the latest possible moment keeps the texture crisp and the colour sharp."
+        },
+        {
+          "q": "What is the best freeze-dried fruit for cheesecake?",
+          "a": "Tart berries like raspberry and strawberry are the most versatile because their acidity balances the sweet, rich filling. Blueberry suits lemon cheesecakes, raspberry pairs beautifully with chocolate, and mango or pineapple lifts coconut and tropical versions."
+        }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-the-gym-bag",
+      "number": "113",
+      "title": "Coffee candy for the gym bag: a quiet starting gun for the <em>session.</em>",
+      "cardTitle": "Coffee candy for the gym bag: a starting gun for the <em>session.</em>",
+      "excerpt": "A calm guide to coffee candy for the gym — why a slow-melting iced coffee candy gives the lift and ritual of a pre-workout coffee without a sloshing cup or a late caffeine spike.",
+      "date": "2026-06-21",
+      "readTime": "4 min",
+      "color": "tb-ice",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
+      "cta": "frozili",
+      "related": [
+        "coffee-candy-for-after-lunch-walks",
+        "candy-for-dry-throat-moments",
+        "slow-melt"
+      ],
+      "primaryKeyword": "coffee candy for the gym",
+      "secondaryKeywords": [
+        "pre-workout coffee candy",
+        "gym bag snack",
+        "iced coffee candy",
+        "non gum refresher",
+        "workout pick me up",
+        "slow melting candy"
+      ],
+      "dateModified": "2026-06-21",
+      "faqs": [
+        {
+          "q": "Is coffee candy a good pre-workout pick-me-up?",
+          "a": "For the cue and the flavour, yes; for a big caffeine load, no. A slow-melting coffee candy gives you the familiar coffee taste and a clean, alert finish without a sloshing cup or a stomach full of liquid, which makes it a tidy starting signal before a lift or a run rather than a true pre-workout supplement."
+        },
+        {
+          "q": "Will coffee candy upset my stomach during exercise?",
+          "a": "It is gentler than a full cup of coffee because there's no large volume of hot liquid landing right before you move. A single piece is light on the stomach, so it tends to sit better than a pre-workout drink during jumping, bending, or running."
+        },
+        {
+          "q": "Should I avoid coffee candy before an evening workout?",
+          "a": "If you're sensitive to caffeine, keep it to earlier sessions and rely on the workout itself for late-evening energy. Even a small coffee cue at 9 p.m. can disturb a light sleeper, so treat an evening piece as optional rather than routine."
+        }
+      ]
+    },
     {
       "slug": "permissible-indulgence-snacks-that-feel-allowed",
       "number": "112",
@@ -28,17 +805,43 @@
       "date": "2026-06-20",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["Snack Ideas", "Better-for-You"],
-      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["little-treat-culture-is-self-care", "healthy-snacks-should-still-feel-fun", "texture-is-the-new-flavor"],
+      "related": [
+        "little-treat-culture-is-self-care",
+        "healthy-snacks-should-still-feel-fun",
+        "texture-is-the-new-flavor"
+      ],
       "primaryKeyword": "permissible indulgence",
-      "secondaryKeywords": ["permissible indulgence snacks", "better-for-you snacks", "guilt-free snacking", "treat that feels allowed", "snack permission", "snack trends 2026"],
+      "secondaryKeywords": [
+        "permissible indulgence snacks",
+        "better-for-you snacks",
+        "guilt-free snacking",
+        "treat that feels allowed",
+        "snack permission",
+        "snack trends 2026"
+      ],
       "dateModified": "2026-06-20",
       "faqs": [
-        { "q": "What is permissible indulgence in snacking?", "a": "Permissible indulgence is a snack designed to deliver real pleasure while giving the eater an easy reason to say yes — through a controlled portion, a recognisable ingredient, an appealing format, or a clear occasion. It is a treat and a reasonable choice at the same time, rather than pleasure traded away for virtue." },
-        { "q": "Why are permissible-indulgence snacks growing so fast?", "a": "Because permission is a more durable basis for a habit than guilt. Snacks built on restriction ask people to give something up and tend to get abandoned, while snacks that keep the pleasure and add a justification get reached for again. Leading better-for-you products win on taste and texture first, then offer a clean reason to enjoy them." },
-        { "q": "Is permissible indulgence just marketing for junk food?", "a": "Not necessarily. The permission can be genuine — a real-fruit ingredient or a single-piece portion is a substantive reason, not just a slogan. The concept becomes hollow only when the reason is purely cosmetic, so the honest version of permissible indulgence pairs real pleasure with a real, defensible reason to enjoy it." }
+        {
+          "q": "What is permissible indulgence in snacking?",
+          "a": "Permissible indulgence is a snack designed to deliver real pleasure while giving the eater an easy reason to say yes — through a controlled portion, a recognisable ingredient, an appealing format, or a clear occasion. It is a treat and a reasonable choice at the same time, rather than pleasure traded away for virtue."
+        },
+        {
+          "q": "Why are permissible-indulgence snacks growing so fast?",
+          "a": "Because permission is a more durable basis for a habit than guilt. Snacks built on restriction ask people to give something up and tend to get abandoned, while snacks that keep the pleasure and add a justification get reached for again. Leading better-for-you products win on taste and texture first, then offer a clean reason to enjoy them."
+        },
+        {
+          "q": "Is permissible indulgence just marketing for junk food?",
+          "a": "Not necessarily. The permission can be genuine — a real-fruit ingredient or a single-piece portion is a substantive reason, not just a slogan. The concept becomes hollow only when the reason is purely cosmetic, so the honest version of permissible indulgence pairs real pleasure with a real, defensible reason to enjoy it."
+        }
       ]
     },
     {
@@ -50,17 +853,44 @@
       "date": "2026-06-20",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-for-cupcakes", "freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-for-cereal"],
+      "related": [
+        "freeze-dried-fruit-for-cupcakes",
+        "freeze-dried-fruit-dessert-toppings",
+        "freeze-dried-fruit-for-cereal"
+      ],
       "primaryKeyword": "freeze-dried fruit for muffins",
-      "secondaryKeywords": ["muffin toppings", "freeze dried fruit baking", "real fruit crunch", "muffin decorations", "freeze dried fruit dessert topping", "baking with freeze dried fruit"],
+      "secondaryKeywords": [
+        "muffin toppings",
+        "freeze dried fruit baking",
+        "real fruit crunch",
+        "muffin decorations",
+        "freeze dried fruit dessert topping",
+        "baking with freeze dried fruit"
+      ],
       "dateModified": "2026-06-20",
       "faqs": [
-        { "q": "Can you put freeze-dried fruit on muffins?", "a": "Yes, and it is one of the best ways to finish a muffin top precisely because it stays crisp. Press or scatter the pieces onto a glaze or buttered top just before serving; the dry fruit adds real-fruit flavour, colour, and crunch without the moisture that makes fresh berries sink and bleed into the crumb." },
-        { "q": "Can you bake freeze-dried fruit into muffin batter?", "a": "You can, but it behaves differently inside the batter than on top. Whole pieces will rehydrate in the wet mix and lose their crunch, so for through-and-through flavour it is better to crush the fruit to a powder and fold it into the dry ingredients, which tints and flavours the crumb without adding liquid. Save whole pieces for the top, where the crunch survives." },
-        { "q": "What is the best freeze-dried fruit for muffins?", "a": "Tart fruits like raspberry and strawberry are the most versatile because their acidity balances sweet batter, with raspberry especially good on lemon or chocolate muffins. Mango and pineapple suit coconut or citrus crumbs, and banana is the friendliest match for chocolate-chip or peanut-butter muffins. Crush larger pieces lightly so they sit flat and distribute evenly." }
+        {
+          "q": "Can you put freeze-dried fruit on muffins?",
+          "a": "Yes, and it is one of the best ways to finish a muffin top precisely because it stays crisp. Press or scatter the pieces onto a glaze or buttered top just before serving; the dry fruit adds real-fruit flavour, colour, and crunch without the moisture that makes fresh berries sink and bleed into the crumb."
+        },
+        {
+          "q": "Can you bake freeze-dried fruit into muffin batter?",
+          "a": "You can, but it behaves differently inside the batter than on top. Whole pieces will rehydrate in the wet mix and lose their crunch, so for through-and-through flavour it is better to crush the fruit to a powder and fold it into the dry ingredients, which tints and flavours the crumb without adding liquid. Save whole pieces for the top, where the crunch survives."
+        },
+        {
+          "q": "What is the best freeze-dried fruit for muffins?",
+          "a": "Tart fruits like raspberry and strawberry are the most versatile because their acidity balances sweet batter, with raspberry especially good on lemon or chocolate muffins. Mango and pineapple suit coconut or citrus crumbs, and banana is the friendliest match for chocolate-chip or peanut-butter muffins. Crush larger pieces lightly so they sit flat and distribute evenly."
+        }
       ]
     },
     {
@@ -72,17 +902,44 @@
       "date": "2026-06-20",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-after-lunch-walks", "candy-for-dry-throat-moments", "slow-melt"],
+      "related": [
+        "coffee-candy-for-after-lunch-walks",
+        "candy-for-dry-throat-moments",
+        "slow-melt"
+      ],
       "primaryKeyword": "coffee candy for museum days",
-      "secondaryKeywords": ["museum snack", "iced coffee candy", "non gum refresher", "candy for dry throat", "mint alternative", "slow melting candy"],
+      "secondaryKeywords": [
+        "museum snack",
+        "iced coffee candy",
+        "non gum refresher",
+        "candy for dry throat",
+        "mint alternative",
+        "slow melting candy"
+      ],
       "dateModified": "2026-06-20",
       "faqs": [
-        { "q": "Is coffee candy a good pick-me-up for a long museum day?", "a": "Yes. It delivers coffee flavour and a cooling finish without leaving the galleries, queuing at the café, or carrying a cup past the no-drinks line, which suits the standing, walking, and low-light reading that make museum days quietly tiring." },
-        { "q": "Can you eat coffee candy inside a museum?", "a": "A wrapped, slow-melting hard candy is about as discreet as it gets — no noise, no crumbs, and no open drink. Policies vary, so check the cloakroom signs, but a single quiet piece on a bench between rooms is far less conspicuous than a snack or a cup." },
-        { "q": "Why choose coffee candy over a café coffee on a gallery visit?", "a": "A café coffee means leaving the room, joining a queue, and carrying a cup you cannot bring back into the collection. Coffee candy gives you the flavour and a clean cooling finish in your pocket, so you keep your place in front of the art instead of trading it for a drink." }
+        {
+          "q": "Is coffee candy a good pick-me-up for a long museum day?",
+          "a": "Yes. It delivers coffee flavour and a cooling finish without leaving the galleries, queuing at the café, or carrying a cup past the no-drinks line, which suits the standing, walking, and low-light reading that make museum days quietly tiring."
+        },
+        {
+          "q": "Can you eat coffee candy inside a museum?",
+          "a": "A wrapped, slow-melting hard candy is about as discreet as it gets — no noise, no crumbs, and no open drink. Policies vary, so check the cloakroom signs, but a single quiet piece on a bench between rooms is far less conspicuous than a snack or a cup."
+        },
+        {
+          "q": "Why choose coffee candy over a café coffee on a gallery visit?",
+          "a": "A café coffee means leaving the room, joining a queue, and carrying a cup you cannot bring back into the collection. Coffee candy gives you the flavour and a clean cooling finish in your pocket, so you keep your place in front of the art instead of trading it for a drink."
+        }
       ]
     },
     {
@@ -94,17 +951,44 @@
       "date": "2026-06-19",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-after-lunch-walks", "non-gum-refresher-after-lunch", "slow-melt"],
+      "related": [
+        "coffee-candy-for-after-lunch-walks",
+        "non-gum-refresher-after-lunch",
+        "slow-melt"
+      ],
       "primaryKeyword": "coffee candy for school pickup",
-      "secondaryKeywords": ["school run snack", "iced coffee candy", "non gum refresher", "afternoon pick me up", "mint alternative", "slow melting candy"],
+      "secondaryKeywords": [
+        "school run snack",
+        "iced coffee candy",
+        "non gum refresher",
+        "afternoon pick me up",
+        "mint alternative",
+        "slow melting candy"
+      ],
       "dateModified": "2026-06-19",
       "faqs": [
-        { "q": "Is coffee candy a good pick-me-up for the school pickup line?", "a": "Yes. It delivers coffee flavour and a cooling finish with no cup to spill, no queue to join, and no cleanup, which suits a few parked minutes in the car when making or buying a real coffee isn't practical." },
-        { "q": "Will coffee candy keep me awake at night if I have one at three?", "a": "Treat it as a flavour-and-refresh moment rather than a caffeine source. The coffee taste and cool finish help you feel reset, so a mid-afternoon piece is far less likely to disturb your evening sleep than a second full cup of coffee." },
-        { "q": "Why choose coffee candy over gum or mints on the school run?", "a": "Gum is restless and easy to drop in a busy car, and mint can feel sharp at the end of a tiring day. Slow-melting iced coffee candy is quiet and hands-free — coffee first, then a clean cooling finish — so it refreshes without chewing, crinkling, or a strong menthol hit before the kids pile in." }
+        {
+          "q": "Is coffee candy a good pick-me-up for the school pickup line?",
+          "a": "Yes. It delivers coffee flavour and a cooling finish with no cup to spill, no queue to join, and no cleanup, which suits a few parked minutes in the car when making or buying a real coffee isn't practical."
+        },
+        {
+          "q": "Will coffee candy keep me awake at night if I have one at three?",
+          "a": "Treat it as a flavour-and-refresh moment rather than a caffeine source. The coffee taste and cool finish help you feel reset, so a mid-afternoon piece is far less likely to disturb your evening sleep than a second full cup of coffee."
+        },
+        {
+          "q": "Why choose coffee candy over gum or mints on the school run?",
+          "a": "Gum is restless and easy to drop in a busy car, and mint can feel sharp at the end of a tiring day. Slow-melting iced coffee candy is quiet and hands-free — coffee first, then a clean cooling finish — so it refreshes without chewing, crinkling, or a strong menthol hit before the kids pile in."
+        }
       ]
     },
     {
@@ -116,17 +1000,44 @@
       "date": "2026-06-19",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-for-yogurt-bark", "freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-for-cupcakes"],
+      "related": [
+        "freeze-dried-fruit-for-yogurt-bark",
+        "freeze-dried-fruit-dessert-toppings",
+        "freeze-dried-fruit-for-cupcakes"
+      ],
       "primaryKeyword": "freeze-dried fruit for pavlova",
-      "secondaryKeywords": ["pavlova toppings", "freeze dried fruit decorations", "real fruit crunch", "meringue toppings", "freeze dried fruit dessert topping", "summer dessert ideas"],
+      "secondaryKeywords": [
+        "pavlova toppings",
+        "freeze dried fruit decorations",
+        "real fruit crunch",
+        "meringue toppings",
+        "freeze dried fruit dessert topping",
+        "summer dessert ideas"
+      ],
       "dateModified": "2026-06-19",
       "faqs": [
-        { "q": "Can you put freeze-dried fruit on a pavlova?", "a": "Yes, and it is one of the best fruit toppings for one precisely because it stays crisp. Scatter or lightly crush the pieces over the cream just before serving; the dry fruit adds real-fruit flavour, colour, and crunch without the moisture that makes fresh berries weep and soften the meringue." },
-        { "q": "Will freeze-dried fruit go soggy on cream?", "a": "Only slowly, and only if you add it early. The fruit gradually draws moisture from the cream it touches, so a pavlova topped an hour ahead will soften at the contact points. Keep the fruit sealed and add it in the final minute before serving to keep the crunch at its peak." },
-        { "q": "What is the best freeze-dried fruit for pavlova?", "a": "Tart fruits like strawberry, raspberry, and passionfruit work best because their acidity balances the sweet meringue and rich cream, with mango excellent on a tropical pavlova and banana suited to chocolate or caramel versions. Crush larger pieces lightly so they sit flat and scatter evenly." }
+        {
+          "q": "Can you put freeze-dried fruit on a pavlova?",
+          "a": "Yes, and it is one of the best fruit toppings for one precisely because it stays crisp. Scatter or lightly crush the pieces over the cream just before serving; the dry fruit adds real-fruit flavour, colour, and crunch without the moisture that makes fresh berries weep and soften the meringue."
+        },
+        {
+          "q": "Will freeze-dried fruit go soggy on cream?",
+          "a": "Only slowly, and only if you add it early. The fruit gradually draws moisture from the cream it touches, so a pavlova topped an hour ahead will soften at the contact points. Keep the fruit sealed and add it in the final minute before serving to keep the crunch at its peak."
+        },
+        {
+          "q": "What is the best freeze-dried fruit for pavlova?",
+          "a": "Tart fruits like strawberry, raspberry, and passionfruit work best because their acidity balances the sweet meringue and rich cream, with mango excellent on a tropical pavlova and banana suited to chocolate or caramel versions. Crush larger pieces lightly so they sit flat and scatter evenly."
+        }
       ]
     },
     {
@@ -138,17 +1049,43 @@
       "date": "2026-06-19",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Snack Ideas", "Travel & Work"],
-      "crumbs": ["Snack Ideas", "Travel & Work"],
+      "categories": [
+        "Snack Ideas",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Travel & Work"
+      ],
       "cta": "frozili",
-      "related": ["the-afternoon-snack-is-a-reset-not-a-meal", "snack-drawer", "workday-pick-me-up-candy"],
+      "related": [
+        "the-afternoon-snack-is-a-reset-not-a-meal",
+        "snack-drawer",
+        "workday-pick-me-up-candy"
+      ],
       "primaryKeyword": "taxonomy of desk snackers",
-      "secondaryKeywords": ["desk snacking", "snacking at work", "office snack habits", "workday snacks", "stress snacking", "afternoon snacking"],
+      "secondaryKeywords": [
+        "desk snacking",
+        "snacking at work",
+        "office snack habits",
+        "workday snacks",
+        "stress snacking",
+        "afternoon snacking"
+      ],
       "dateModified": "2026-06-19",
       "faqs": [
-        { "q": "Why do people snack at their desk in the afternoon?", "a": "Usually for a reset rather than for hunger. Natural alertness dips in the early afternoon, and a small snack offers a quick, low-effort way to step out of a task and back into it — the pause does the work, and the food is mostly the excuse to take it." },
-        { "q": "What does the type of desk snack say about someone?", "a": "More about their working style than their appetite. People under deadline pressure tend to reach for loud crunch as a release, while those trying to focus prefer something slow that stretches a single moment, so the snack drawer quietly records how the day is going." },
-        { "q": "What makes a good desk snack for work?", "a": "One that ends cleanly. A set portion, a single piece, or a slow-melting candy gives the break a clear start and stop, which resets focus without sliding into all-afternoon grazing the way an open, bottomless bag tends to." }
+        {
+          "q": "Why do people snack at their desk in the afternoon?",
+          "a": "Usually for a reset rather than for hunger. Natural alertness dips in the early afternoon, and a small snack offers a quick, low-effort way to step out of a task and back into it — the pause does the work, and the food is mostly the excuse to take it."
+        },
+        {
+          "q": "What does the type of desk snack say about someone?",
+          "a": "More about their working style than their appetite. People under deadline pressure tend to reach for loud crunch as a release, while those trying to focus prefer something slow that stretches a single moment, so the snack drawer quietly records how the day is going."
+        },
+        {
+          "q": "What makes a good desk snack for work?",
+          "a": "One that ends cleanly. A set portion, a single piece, or a slow-melting candy gives the break a clear start and stop, which resets focus without sliding into all-afternoon grazing the way an open, bottomless bag tends to."
+        }
       ]
     },
     {
@@ -160,17 +1097,44 @@
       "date": "2026-06-18",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-breath-freshening-candy", "alternatives-to-basic-mints", "mint-alternative-for-coffee-lovers"],
+      "related": [
+        "coffee-breath-freshening-candy",
+        "alternatives-to-basic-mints",
+        "mint-alternative-for-coffee-lovers"
+      ],
       "primaryKeyword": "coffee candy for first dates",
-      "secondaryKeywords": ["non gum refresher", "iced coffee candy", "mint alternative", "breath freshening candy", "discreet breath freshener", "date night candy"],
+      "secondaryKeywords": [
+        "non gum refresher",
+        "iced coffee candy",
+        "mint alternative",
+        "breath freshening candy",
+        "discreet breath freshener",
+        "date night candy"
+      ],
       "dateModified": "2026-06-18",
       "faqs": [
-        { "q": "Is coffee candy a good idea before a first date?", "a": "Yes. It refreshes your breath discreetly with a grown-up coffee flavour and a cool finish, and unlike gum there is nothing to chew or dispose of once the conversation starts. Take one piece on the way in and let it melt so you arrive with a clean finish rather than obvious candy." },
-        { "q": "Does coffee candy actually freshen your breath?", "a": "It cleans up the aftertaste of a previous coffee or meal and leaves a cool, tidy finish, which is what most people mean by fresher. It is best thought of as a pleasant reset rather than a clinical breath treatment, so for very strong odours pair it with the usual brushing beforehand." },
-        { "q": "Why choose coffee candy over mints for a date?", "a": "Mint can feel sharp and a little clinical, almost like an apology for your breath, while coffee candy reads as part of the cafe setting — warm and unbothered. It refreshes without signalling that you were anxious about it, which is exactly the impression you want at a first meeting." }
+        {
+          "q": "Is coffee candy a good idea before a first date?",
+          "a": "Yes. It refreshes your breath discreetly with a grown-up coffee flavour and a cool finish, and unlike gum there is nothing to chew or dispose of once the conversation starts. Take one piece on the way in and let it melt so you arrive with a clean finish rather than obvious candy."
+        },
+        {
+          "q": "Does coffee candy actually freshen your breath?",
+          "a": "It cleans up the aftertaste of a previous coffee or meal and leaves a cool, tidy finish, which is what most people mean by fresher. It is best thought of as a pleasant reset rather than a clinical breath treatment, so for very strong odours pair it with the usual brushing beforehand."
+        },
+        {
+          "q": "Why choose coffee candy over mints for a date?",
+          "a": "Mint can feel sharp and a little clinical, almost like an apology for your breath, while coffee candy reads as part of the cafe setting — warm and unbothered. It refreshes without signalling that you were anxious about it, which is exactly the impression you want at a first meeting."
+        }
       ]
     },
     {
@@ -182,17 +1146,44 @@
       "date": "2026-06-18",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-ice-cream-topping", "freeze-dried-fruit-for-yogurt-bark"],
+      "related": [
+        "freeze-dried-fruit-dessert-toppings",
+        "freeze-dried-fruit-ice-cream-topping",
+        "freeze-dried-fruit-for-yogurt-bark"
+      ],
       "primaryKeyword": "freeze-dried fruit for cupcakes",
-      "secondaryKeywords": ["cupcake toppings", "freeze dried fruit decorations", "real fruit crunch", "frosting toppings", "freeze dried fruit dessert topping", "party snack ideas"],
+      "secondaryKeywords": [
+        "cupcake toppings",
+        "freeze dried fruit decorations",
+        "real fruit crunch",
+        "frosting toppings",
+        "freeze dried fruit dessert topping",
+        "party snack ideas"
+      ],
       "dateModified": "2026-06-18",
       "faqs": [
-        { "q": "Can you put freeze-dried fruit on cupcakes?", "a": "Yes, and it is one of the best fruit toppings for frosting precisely because it stays crisp. Scatter or press the pieces onto buttercream just before serving; the dry fruit adds real-fruit flavour, colour, and crunch without the moisture that makes fresh berries bleed and slide." },
-        { "q": "Will freeze-dried fruit get soggy on frosting?", "a": "Only slowly, and only if you add it too early. The fruit gradually draws moisture from the frosting it touches, so cupcakes topped hours ahead can soften at the contact points. Keep the fruit sealed and add it in the final stretch before serving to keep the crunch at its peak." },
-        { "q": "What is the best freeze-dried fruit for cupcakes?", "a": "Tart fruits like strawberry and raspberry are the most versatile because their acidity balances sweet frosting, with raspberry especially good on chocolate. Mango and pineapple suit coconut or citrus cakes, and banana is the friendliest match for peanut-butter frosting. Crush larger pieces lightly so they sit flat and distribute evenly." }
+        {
+          "q": "Can you put freeze-dried fruit on cupcakes?",
+          "a": "Yes, and it is one of the best fruit toppings for frosting precisely because it stays crisp. Scatter or press the pieces onto buttercream just before serving; the dry fruit adds real-fruit flavour, colour, and crunch without the moisture that makes fresh berries bleed and slide."
+        },
+        {
+          "q": "Will freeze-dried fruit get soggy on frosting?",
+          "a": "Only slowly, and only if you add it too early. The fruit gradually draws moisture from the frosting it touches, so cupcakes topped hours ahead can soften at the contact points. Keep the fruit sealed and add it in the final stretch before serving to keep the crunch at its peak."
+        },
+        {
+          "q": "What is the best freeze-dried fruit for cupcakes?",
+          "a": "Tart fruits like strawberry and raspberry are the most versatile because their acidity balances sweet frosting, with raspberry especially good on chocolate. Mango and pineapple suit coconut or citrus cakes, and banana is the friendliest match for peanut-butter frosting. Crush larger pieces lightly so they sit flat and distribute evenly."
+        }
       ]
     },
     {
@@ -204,25 +1195,59 @@
       "date": "2026-06-18",
       "readTime": "5 min",
       "color": "tb-cream",
-      "categories": ["Snack Ideas", "Better-for-You"],
-      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["the-afternoon-snack-is-a-reset-not-a-meal", "little-treat-culture-is-self-care", "snacking-as-a-love-language"],
+      "related": [
+        "the-afternoon-snack-is-a-reset-not-a-meal",
+        "little-treat-culture-is-self-care",
+        "snacking-as-a-love-language"
+      ],
       "primaryKeyword": "snackification",
-      "secondaryKeywords": ["snacks replacing meals", "grazing instead of meals", "state of snacking", "small meals trend", "snacking statistics", "snacking instead of meals"],
+      "secondaryKeywords": [
+        "snacks replacing meals",
+        "grazing instead of meals",
+        "state of snacking",
+        "small meals trend",
+        "snacking statistics",
+        "snacking instead of meals"
+      ],
       "dateModified": "2026-06-18",
       "chart": {
         "type": "bar",
-        "labels": ["Snacks > meals", "Small meals", "Cant live w/o"],
-        "values": [58, 62, 66],
+        "labels": [
+          "Snacks > meals",
+          "Small meals",
+          "Cant live w/o"
+        ],
+        "values": [
+          58,
+          62,
+          66
+        ],
         "unit": "%",
         "source": "Mondelez State of Snacking, 2024",
         "highlight": 1
       },
       "faqs": [
-        { "q": "What is snackification?", "a": "Snackification is the shift away from three fixed meals toward a day made up of smaller, more frequent bites. In Mondelez International's State of Snacking research, 62% of consumers said they prefer many small meals over a few large ones, reflecting how widely the habit has spread." },
-        { "q": "Are people really replacing meals with snacks?", "a": "Often they are blurring the line rather than fully swapping. Mondelez found 58% of consumers look forward to snacks more than meals and 66% say they couldn't live without snacks, which points to snacks taking on roles meals used to fill — especially as flexible schedules break up the traditional eating day." },
-        { "q": "Is snackification unhealthy?", "a": "Not inherently. Grazing on small, intentional, better-for-you bites can suit a flexible day and help with portion control; the risk is drifting into constant unstructured grazing on heavy or sugary snacks. The healthier version of snackification leans on defined portions and real ingredients rather than mindless nibbling." }
+        {
+          "q": "What is snackification?",
+          "a": "Snackification is the shift away from three fixed meals toward a day made up of smaller, more frequent bites. In Mondelez International's State of Snacking research, 62% of consumers said they prefer many small meals over a few large ones, reflecting how widely the habit has spread."
+        },
+        {
+          "q": "Are people really replacing meals with snacks?",
+          "a": "Often they are blurring the line rather than fully swapping. Mondelez found 58% of consumers look forward to snacks more than meals and 66% say they couldn't live without snacks, which points to snacks taking on roles meals used to fill — especially as flexible schedules break up the traditional eating day."
+        },
+        {
+          "q": "Is snackification unhealthy?",
+          "a": "Not inherently. Grazing on small, intentional, better-for-you bites can suit a flexible day and help with portion control; the risk is drifting into constant unstructured grazing on heavy or sugary snacks. The healthier version of snackification leans on defined portions and real ingredients rather than mindless nibbling."
+        }
       ]
     },
     {
@@ -234,25 +1259,59 @@
       "date": "2026-06-17",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Snack Ideas", "Better-for-You"],
-      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["little-treat-culture-is-self-care", "snack-boards-freeze-dried-fruit", "healthy-snacks-should-still-feel-fun"],
+      "related": [
+        "little-treat-culture-is-self-care",
+        "snack-boards-freeze-dried-fruit",
+        "healthy-snacks-should-still-feel-fun"
+      ],
       "primaryKeyword": "snacking as a love language",
-      "secondaryKeywords": ["sharing snacks", "snacking to connect", "snacks as a gift", "social snacking", "state of snacking", "shareable snacks"],
+      "secondaryKeywords": [
+        "sharing snacks",
+        "snacking to connect",
+        "snacks as a gift",
+        "social snacking",
+        "state of snacking",
+        "shareable snacks"
+      ],
       "dateModified": "2026-06-17",
       "chart": {
         "type": "bar",
-        "labels": ["Love language", "To connect", "Easy to share"],
-        "values": [71, 64, 93],
+        "labels": [
+          "Love language",
+          "To connect",
+          "Easy to share"
+        ],
+        "values": [
+          71,
+          64,
+          93
+        ],
         "unit": "%",
         "source": "Mondelez State of Snacking, 2025",
         "highlight": 0
       },
       "faqs": [
-        { "q": "Is snacking really a love language?", "a": "For most consumers, yes, at least in how they describe it. In Mondelez International's 2025 State of Snacking report, 71% of global consumers agreed that sharing snacks with others is my love language, reflecting how often people use a shared snack as a small, everyday way to show care." },
-        { "q": "Why do people share snacks instead of meals to connect?", "a": "A snack is a low-stakes offer. It can be accepted in seconds or declined without awkwardness, and it requires no occasion or commitment, which makes it an easy way to create a moment of connection even between people who are not especially close." },
-        { "q": "What makes a snack good for sharing?", "a": "Shareable snacks are easy to pass, easy to portion, and pleasant to set out, think communal bowls, pick-at boards, and individually offered pieces. Colourful, pick-at foods work especially well because they look generous and invite several hands at once." }
+        {
+          "q": "Is snacking really a love language?",
+          "a": "For most consumers, yes, at least in how they describe it. In Mondelez International's 2025 State of Snacking report, 71% of global consumers agreed that sharing snacks with others is my love language, reflecting how often people use a shared snack as a small, everyday way to show care."
+        },
+        {
+          "q": "Why do people share snacks instead of meals to connect?",
+          "a": "A snack is a low-stakes offer. It can be accepted in seconds or declined without awkwardness, and it requires no occasion or commitment, which makes it an easy way to create a moment of connection even between people who are not especially close."
+        },
+        {
+          "q": "What makes a snack good for sharing?",
+          "a": "Shareable snacks are easy to pass, easy to portion, and pleasant to set out, think communal bowls, pick-at boards, and individually offered pieces. Colourful, pick-at foods work especially well because they look generous and invite several hands at once."
+        }
       ]
     },
     {
@@ -264,17 +1323,44 @@
       "date": "2026-06-17",
       "readTime": "4 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-pancake-toppings", "fruit-crunch-vs-chewy-snacks", "freeze-dried-fruit-ice-cream-topping"],
+      "related": [
+        "freeze-dried-fruit-pancake-toppings",
+        "fruit-crunch-vs-chewy-snacks",
+        "freeze-dried-fruit-ice-cream-topping"
+      ],
       "primaryKeyword": "freeze-dried fruit for waffles",
-      "secondaryKeywords": ["waffle toppings", "crunchy waffle toppings", "freeze dried fruit toppings", "breakfast toppings", "real fruit crunch", "fruit on waffles"],
+      "secondaryKeywords": [
+        "waffle toppings",
+        "crunchy waffle toppings",
+        "freeze dried fruit toppings",
+        "breakfast toppings",
+        "real fruit crunch",
+        "fruit on waffles"
+      ],
       "dateModified": "2026-06-17",
       "faqs": [
-        { "q": "Can you put freeze-dried fruit on waffles?", "a": "Yes, and it is one of the best waffle toppings precisely because it stays crisp. Scatter the pieces over the waffle after it comes off the iron; the dry fruit adds real-fruit flavour and crunch without releasing moisture into the crust." },
-        { "q": "Why use freeze-dried fruit instead of fresh on waffles?", "a": "Fresh fruit is mostly water and makes a waffle soggy, while freeze-dried fruit has the water removed, so it concentrates the flavour and preserves the waffle's crispness. On a food defined by its texture, that keeps the crunch intact." },
-        { "q": "When should you add freeze-dried fruit to a waffle?", "a": "Add it last, right before serving. If you scatter it on while the waffle is freshly hot and then leave it, residual steam can slowly soften it, so topping it just as you sit down keeps the crunch at its peak." }
+        {
+          "q": "Can you put freeze-dried fruit on waffles?",
+          "a": "Yes, and it is one of the best waffle toppings precisely because it stays crisp. Scatter the pieces over the waffle after it comes off the iron; the dry fruit adds real-fruit flavour and crunch without releasing moisture into the crust."
+        },
+        {
+          "q": "Why use freeze-dried fruit instead of fresh on waffles?",
+          "a": "Fresh fruit is mostly water and makes a waffle soggy, while freeze-dried fruit has the water removed, so it concentrates the flavour and preserves the waffle's crispness. On a food defined by its texture, that keeps the crunch intact."
+        },
+        {
+          "q": "When should you add freeze-dried fruit to a waffle?",
+          "a": "Add it last, right before serving. If you scatter it on while the waffle is freshly hot and then leave it, residual steam can slowly soften it, so topping it just as you sit down keeps the crunch at its peak."
+        }
       ]
     },
     {
@@ -286,17 +1372,44 @@
       "date": "2026-06-17",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-long-drives", "slow-melt", "coffee-candy-for-airplane-cabins"],
+      "related": [
+        "coffee-candy-for-long-drives",
+        "slow-melt",
+        "coffee-candy-for-airplane-cabins"
+      ],
       "primaryKeyword": "coffee candy for camping",
-      "secondaryKeywords": ["camping coffee", "travel coffee candy", "iced coffee candy", "trail snacks", "shelf-stable coffee", "no-brew coffee"],
+      "secondaryKeywords": [
+        "camping coffee",
+        "travel coffee candy",
+        "iced coffee candy",
+        "trail snacks",
+        "shelf-stable coffee",
+        "no-brew coffee"
+      ],
       "dateModified": "2026-06-17",
       "faqs": [
-        { "q": "Is coffee candy a good camping snack?", "a": "Yes. Coffee candy is lightweight, shelf-stable, and needs no water, fire, or cleanup, so it delivers coffee flavour and a refreshing finish in conditions where brewing a real cup is impractical, like early starts, mid-hike, or anywhere off-grid." },
-        { "q": "Does coffee candy give you caffeine on the trail?", "a": "Treat it as a flavour-and-refresh moment rather than a reliable caffeine source. The coffee taste and cooling finish help you feel reset, which is useful in the late afternoon or evening when you want the ritual of coffee without the caffeine that could keep you awake in the tent." },
-        { "q": "Will coffee candy melt or spoil in a hot pack?", "a": "A slow-melting hard candy holds up to heat far better than chocolate and stays stable across a multi-day trip. Keep the wrapper on until you eat it and stash the tin somewhere dry, and it will travel through summer heat and changing altitude without trouble." }
+        {
+          "q": "Is coffee candy a good camping snack?",
+          "a": "Yes. Coffee candy is lightweight, shelf-stable, and needs no water, fire, or cleanup, so it delivers coffee flavour and a refreshing finish in conditions where brewing a real cup is impractical, like early starts, mid-hike, or anywhere off-grid."
+        },
+        {
+          "q": "Does coffee candy give you caffeine on the trail?",
+          "a": "Treat it as a flavour-and-refresh moment rather than a reliable caffeine source. The coffee taste and cooling finish help you feel reset, which is useful in the late afternoon or evening when you want the ritual of coffee without the caffeine that could keep you awake in the tent."
+        },
+        {
+          "q": "Will coffee candy melt or spoil in a hot pack?",
+          "a": "A slow-melting hard candy holds up to heat far better than chocolate and stays stable across a multi-day trip. Keep the wrapper on until you eat it and stash the tin somewhere dry, and it will travel through summer heat and changing altitude without trouble."
+        }
       ]
     },
     {
@@ -308,18 +1421,57 @@
       "date": "2026-06-16",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Snack Ideas", "Better-for-You"],
-      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
       "cta": "frozili",
-      "related": ["the-afternoon-snack-is-a-reset-not-a-meal", "snack-vs-reset", "healthy-snacks-should-still-feel-fun"],
+      "related": [
+        "the-afternoon-snack-is-a-reset-not-a-meal",
+        "snack-vs-reset",
+        "healthy-snacks-should-still-feel-fun"
+      ],
       "primaryKeyword": "little treat culture",
-      "secondaryKeywords": ["little treat self-care", "small indulgences", "treat yourself culture", "snacking as self-care", "little treat trend", "reward snacking"],
+      "secondaryKeywords": [
+        "little treat self-care",
+        "small indulgences",
+        "treat yourself culture",
+        "snacking as self-care",
+        "little treat trend",
+        "reward snacking"
+      ],
       "dateModified": "2026-06-16",
-      "chart": { "type": "bar", "labels": ["Quality of life", "Self-care routine"], "values": [73, 62], "unit": "%", "source": "Circana, 2025", "highlight": 1 },
+      "chart": {
+        "type": "bar",
+        "labels": [
+          "Quality of life",
+          "Self-care routine"
+        ],
+        "values": [
+          73,
+          62
+        ],
+        "unit": "%",
+        "source": "Circana, 2025",
+        "highlight": 1
+      },
       "faqs": [
-        { "q": "What is little treat culture?", "a": "Little treat culture is the habit of buying yourself a small, affordable indulgence — a cookie, a specialty coffee, a single piece of candy — to brighten an ordinary day. It went mainstream on social media and, per Circana's 2025 research, most people now frame it as self-care and stress relief rather than simple snacking." },
-        { "q": "Is little treat culture actually healthy?", "a": "It can be, because the defining feature is smallness. A bounded, intentional treat can genuinely lift mood without much downside; the thing to watch is whether the 'little' stays little. Treats designed to end cleanly — a set portion, a single piece — make the habit easier to keep healthy." },
-        { "q": "Why do people call a snack self-care?", "a": "Because the motivation is emotional, not nutritional. Surveys find people use small treats to reward effort and cope with stress, so the snack works as a tiny, controllable good moment in a busy day. The food is the vehicle; the reset is the actual point." }
+        {
+          "q": "What is little treat culture?",
+          "a": "Little treat culture is the habit of buying yourself a small, affordable indulgence — a cookie, a specialty coffee, a single piece of candy — to brighten an ordinary day. It went mainstream on social media and, per Circana's 2025 research, most people now frame it as self-care and stress relief rather than simple snacking."
+        },
+        {
+          "q": "Is little treat culture actually healthy?",
+          "a": "It can be, because the defining feature is smallness. A bounded, intentional treat can genuinely lift mood without much downside; the thing to watch is whether the 'little' stays little. Treats designed to end cleanly — a set portion, a single piece — make the habit easier to keep healthy."
+        },
+        {
+          "q": "Why do people call a snack self-care?",
+          "a": "Because the motivation is emotional, not nutritional. Surveys find people use small treats to reward effort and cope with stress, so the snack works as a tiny, controllable good moment in a busy day. The food is the vehicle; the reset is the actual point."
+        }
       ]
     },
     {
@@ -331,17 +1483,44 @@
       "date": "2026-06-16",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-with-nut-butter", "shelf-stable-fruit-snacks", "freeze-dried-fruit-snack-mix"],
+      "related": [
+        "freeze-dried-fruit-with-nut-butter",
+        "shelf-stable-fruit-snacks",
+        "freeze-dried-fruit-snack-mix"
+      ],
       "primaryKeyword": "freeze-dried fruit for rice cakes",
-      "secondaryKeywords": ["rice cake toppings", "crunchy fruit snack", "freeze dried fruit snacks", "healthy desk snack", "rice cake snack ideas", "shelf-stable fruit snacks"],
+      "secondaryKeywords": [
+        "rice cake toppings",
+        "crunchy fruit snack",
+        "freeze dried fruit snacks",
+        "healthy desk snack",
+        "rice cake snack ideas",
+        "shelf-stable fruit snacks"
+      ],
       "dateModified": "2026-06-16",
       "faqs": [
-        { "q": "Does freeze-dried fruit get soggy on a rice cake?", "a": "No, as long as you add it last. Freeze-dried fruit holds almost no moisture, so on its own it stays crisp. It will slowly absorb moisture from a wet spread, so press it lightly into the topping just before eating rather than hours ahead." },
-        { "q": "What is the best freeze-dried fruit for rice cakes?", "a": "Tart fruits like strawberry, raspberry, and mango work best because their acidity balances a creamy base, while banana is the friendliest match for nut butter. Crush larger pieces lightly so they sit flat and don't tumble off the cake." },
-        { "q": "Is a rice cake with freeze-dried fruit a healthy snack?", "a": "It can be a solid better-for-you option: a light base, a protein or healthy-fat spread, and real fruit with no added syrup. It adds color, crunch, and flavor complexity, which often makes a simple snack satisfying enough that you don't need much else." }
+        {
+          "q": "Does freeze-dried fruit get soggy on a rice cake?",
+          "a": "No, as long as you add it last. Freeze-dried fruit holds almost no moisture, so on its own it stays crisp. It will slowly absorb moisture from a wet spread, so press it lightly into the topping just before eating rather than hours ahead."
+        },
+        {
+          "q": "What is the best freeze-dried fruit for rice cakes?",
+          "a": "Tart fruits like strawberry, raspberry, and mango work best because their acidity balances a creamy base, while banana is the friendliest match for nut butter. Crush larger pieces lightly so they sit flat and don't tumble off the cake."
+        },
+        {
+          "q": "Is a rice cake with freeze-dried fruit a healthy snack?",
+          "a": "It can be a solid better-for-you option: a light base, a protein or healthy-fat spread, and real fruit with no added syrup. It adds color, crunch, and flavor complexity, which often makes a simple snack satisfying enough that you don't need much else."
+        }
       ]
     },
     {
@@ -353,17 +1532,44 @@
       "date": "2026-06-16",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["what-makes-a-small-treat-feel-workday-friendly", "slow-melt", "coffee-candy-for-after-lunch-walks"],
+      "related": [
+        "what-makes-a-small-treat-feel-workday-friendly",
+        "slow-melt",
+        "coffee-candy-for-after-lunch-walks"
+      ],
       "primaryKeyword": "coffee candy for working from home",
-      "secondaryKeywords": ["work from home snack", "iced coffee candy", "non gum refresher", "workday pick me up", "remote work break", "slow melting candy"],
+      "secondaryKeywords": [
+        "work from home snack",
+        "iced coffee candy",
+        "non gum refresher",
+        "workday pick me up",
+        "remote work break",
+        "slow melting candy"
+      ],
       "dateModified": "2026-06-16",
       "faqs": [
-        { "q": "Is coffee candy a good work-from-home snack?", "a": "Yes, because it works as a reset rather than a snack. It satisfies the urge to take a break and change the moment without sending you to the kitchen, so it suits remote work where the fridge is always a few steps away." },
-        { "q": "Will coffee candy keep me awake like real coffee?", "a": "Treat it as a flavor-and-refresh moment, not a caffeine source. The coffee taste and cooling finish help you feel reset, which makes it useful in the late afternoon when you want the ritual of coffee without the caffeine that could disrupt your sleep." },
-        { "q": "How do I use coffee candy to structure a remote day?", "a": "Use one piece to mark transitions — between calls, at the 3 p.m. dip, or to close the day. Because a slow-melting candy lasts a minute or two, it gives an otherwise shapeless work-from-home schedule a clear, bounded pause without interrupting your focus for long." }
+        {
+          "q": "Is coffee candy a good work-from-home snack?",
+          "a": "Yes, because it works as a reset rather than a snack. It satisfies the urge to take a break and change the moment without sending you to the kitchen, so it suits remote work where the fridge is always a few steps away."
+        },
+        {
+          "q": "Will coffee candy keep me awake like real coffee?",
+          "a": "Treat it as a flavor-and-refresh moment, not a caffeine source. The coffee taste and cooling finish help you feel reset, which makes it useful in the late afternoon when you want the ritual of coffee without the caffeine that could disrupt your sleep."
+        },
+        {
+          "q": "How do I use coffee candy to structure a remote day?",
+          "a": "Use one piece to mark transitions — between calls, at the 3 p.m. dip, or to close the day. Because a slow-melting candy lasts a minute or two, it gives an otherwise shapeless work-from-home schedule a clear, bounded pause without interrupting your focus for long."
+        }
       ]
     },
     {
@@ -375,18 +1581,57 @@
       "date": "2026-06-15",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["Snack Ideas", "Better-for-You"],
-      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
       "cta": "frozili",
-      "related": ["texture-is-the-new-flavor", "healthy-snacks-should-still-feel-fun", "crunchy-fruit-snack-vs-chewy-fruit-snack"],
+      "related": [
+        "texture-is-the-new-flavor",
+        "healthy-snacks-should-still-feel-fun",
+        "crunchy-fruit-snack-vs-chewy-fruit-snack"
+      ],
       "primaryKeyword": "afternoon snack reset",
-      "secondaryKeywords": ["3 p.m. slump snack", "why we snack in the afternoon", "reset snack", "afternoon snacking statistics", "snack pick-me-up", "better-for-you snacks"],
+      "secondaryKeywords": [
+        "3 p.m. slump snack",
+        "why we snack in the afternoon",
+        "reset snack",
+        "afternoon snacking statistics",
+        "snack pick-me-up",
+        "better-for-you snacks"
+      ],
       "dateModified": "2026-06-15",
-      "chart": { "type": "bar", "labels": ["Afternoon", "Evening"], "values": [70, 52], "unit": "%", "source": "Mondelez State of Snacking, 2024", "highlight": 0 },
+      "chart": {
+        "type": "bar",
+        "labels": [
+          "Afternoon",
+          "Evening"
+        ],
+        "values": [
+          70,
+          52
+        ],
+        "unit": "%",
+        "source": "Mondelez State of Snacking, 2024",
+        "highlight": 0
+      },
       "faqs": [
-        { "q": "Why do so many people snack in the afternoon?", "a": "Natural alertness dips in the early afternoon while dinner is still hours away, so people reach for a snack to reset attention rather than to satisfy real hunger. Mondelez's 2024 State of Snacking study found 70% of consumers snack in the afternoon, the busiest window of the day." },
-        { "q": "What makes a good reset snack instead of a meal?", "a": "A reset snack is small, sensory, and bounded — light enough not to weigh you down, with a clear edge like crunch or a cooling finish that gives the break a defined start and stop. The goal is to change the moment, not to eat a fourth meal." },
-        { "q": "Is afternoon snacking actually a bad habit?", "a": "Not inherently. Research frames it as a near-universal pick-me-up, and a light, intentional snack can sharpen focus. The thing to watch is whether you are resetting with something light or drifting into heavy grazing that adds a slump of its own." }
+        {
+          "q": "Why do so many people snack in the afternoon?",
+          "a": "Natural alertness dips in the early afternoon while dinner is still hours away, so people reach for a snack to reset attention rather than to satisfy real hunger. Mondelez's 2024 State of Snacking study found 70% of consumers snack in the afternoon, the busiest window of the day."
+        },
+        {
+          "q": "What makes a good reset snack instead of a meal?",
+          "a": "A reset snack is small, sensory, and bounded — light enough not to weigh you down, with a clear edge like crunch or a cooling finish that gives the break a defined start and stop. The goal is to change the moment, not to eat a fourth meal."
+        },
+        {
+          "q": "Is afternoon snacking actually a bad habit?",
+          "a": "Not inherently. Research frames it as a near-universal pick-me-up, and a light, intentional snack can sharpen focus. The thing to watch is whether you are resetting with something light or drifting into heavy grazing that adds a slump of its own."
+        }
       ]
     },
     {
@@ -398,17 +1643,44 @@
       "date": "2026-06-15",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-snack-mix", "shelf-stable-fruit-snacks"],
+      "related": [
+        "freeze-dried-fruit-dessert-toppings",
+        "freeze-dried-fruit-snack-mix",
+        "shelf-stable-fruit-snacks"
+      ],
       "primaryKeyword": "freeze-dried fruit for popcorn",
-      "secondaryKeywords": ["sweet and salty popcorn", "popcorn toppings", "movie night snacks", "crunchy fruit snack", "freeze dried fruit snacks", "snack mix ideas"],
+      "secondaryKeywords": [
+        "sweet and salty popcorn",
+        "popcorn toppings",
+        "movie night snacks",
+        "crunchy fruit snack",
+        "freeze dried fruit snacks",
+        "snack mix ideas"
+      ],
       "dateModified": "2026-06-15",
       "faqs": [
-        { "q": "Does freeze-dried fruit make popcorn soggy?", "a": "No, as long as you add it last. Freeze-dried fruit has almost no moisture, so it keeps its crunch — but it absorbs steam quickly, so toss it through warm (not steaming) popcorn just before serving." },
-        { "q": "What freeze-dried fruit is best for popcorn?", "a": "Tart fruits like strawberry, raspberry, and mango work best because their acidity cuts the salt rather than doubling the sweetness. Crush larger pieces lightly so they distribute through the bowl instead of sinking to the bottom." },
-        { "q": "Is fruit-and-popcorn a healthy snack?", "a": "It is a better-for-you upgrade to a snack you already eat: air-popped popcorn plus real fruit, with no added syrup or candy. It adds color and flavor complexity, which often means you are satisfied with a smaller bowl." }
+        {
+          "q": "Does freeze-dried fruit make popcorn soggy?",
+          "a": "No, as long as you add it last. Freeze-dried fruit has almost no moisture, so it keeps its crunch — but it absorbs steam quickly, so toss it through warm (not steaming) popcorn just before serving."
+        },
+        {
+          "q": "What freeze-dried fruit is best for popcorn?",
+          "a": "Tart fruits like strawberry, raspberry, and mango work best because their acidity cuts the salt rather than doubling the sweetness. Crush larger pieces lightly so they distribute through the bowl instead of sinking to the bottom."
+        },
+        {
+          "q": "Is fruit-and-popcorn a healthy snack?",
+          "a": "It is a better-for-you upgrade to a snack you already eat: air-popped popcorn plus real fruit, with no added syrup or candy. It adds color and flavor complexity, which often means you are satisfied with a smaller bowl."
+        }
       ]
     },
     {
@@ -420,17 +1692,44 @@
       "date": "2026-06-15",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-commutes", "candy-for-dry-throat-moments", "slow-melt"],
+      "related": [
+        "coffee-candy-for-commutes",
+        "candy-for-dry-throat-moments",
+        "slow-melt"
+      ],
       "primaryKeyword": "coffee candy for night shifts",
-      "secondaryKeywords": ["night shift snack", "iced coffee candy", "non gum refresher", "workday pick me up", "mint alternative", "slow melting candy"],
+      "secondaryKeywords": [
+        "night shift snack",
+        "iced coffee candy",
+        "non gum refresher",
+        "workday pick me up",
+        "mint alternative",
+        "slow melting candy"
+      ],
       "dateModified": "2026-06-15",
       "faqs": [
-        { "q": "Does coffee candy have enough caffeine to keep me awake on a night shift?", "a": "No — treat it as a taste-and-refresh moment, not a caffeine source. The coffee flavor and cooling finish help you feel reset, but it is meant to punctuate the shift rather than replace your coffee or an actual stimulant." },
-        { "q": "Will coffee candy at 3 a.m. wreck my sleep when I get home?", "a": "Because it is about flavor and a cooling finish rather than delivering caffeine, a piece is far less likely to interfere with morning sleep than another full cup of coffee. It gives you the ritual of a coffee pause without adding to your sleep debt." },
-        { "q": "Why choose coffee candy over mints or gum during a night shift?", "a": "Mint can feel harsh in a quiet room when you are already tired, and gum is restless and audible. Slow-melting iced coffee candy lands softer — coffee first, then a clean cooling finish — and it stays discreet during quiet, focused work." }
+        {
+          "q": "Does coffee candy have enough caffeine to keep me awake on a night shift?",
+          "a": "No — treat it as a taste-and-refresh moment, not a caffeine source. The coffee flavor and cooling finish help you feel reset, but it is meant to punctuate the shift rather than replace your coffee or an actual stimulant."
+        },
+        {
+          "q": "Will coffee candy at 3 a.m. wreck my sleep when I get home?",
+          "a": "Because it is about flavor and a cooling finish rather than delivering caffeine, a piece is far less likely to interfere with morning sleep than another full cup of coffee. It gives you the ritual of a coffee pause without adding to your sleep debt."
+        },
+        {
+          "q": "Why choose coffee candy over mints or gum during a night shift?",
+          "a": "Mint can feel harsh in a quiet room when you are already tired, and gum is restless and audible. Slow-melting iced coffee candy lands softer — coffee first, then a clean cooling finish — and it stays discreet during quiet, focused work."
+        }
       ]
     },
     {
@@ -442,17 +1741,43 @@
       "date": "2026-06-14",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Snack Ideas", "Better-for-You"],
-      "crumbs": ["Snack Ideas", "Better-for-You"],
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["crunchy-fruit-snack-vs-chewy-fruit-snack", "what-makes-freeze-dried-fruit-feel-premium", "slow-melt"],
+      "related": [
+        "crunchy-fruit-snack-vs-chewy-fruit-snack",
+        "what-makes-freeze-dried-fruit-feel-premium",
+        "slow-melt"
+      ],
       "primaryKeyword": "texture is the new flavor",
-      "secondaryKeywords": ["snack texture trend", "mouthfeel in snacks", "sensory snacking", "premium snacks", "better-for-you snacks", "snack trends 2026"],
+      "secondaryKeywords": [
+        "snack texture trend",
+        "mouthfeel in snacks",
+        "sensory snacking",
+        "premium snacks",
+        "better-for-you snacks",
+        "snack trends 2026"
+      ],
       "dateModified": "2026-06-14",
       "faqs": [
-        { "q": "Is \"texture is the new flavor\" actually a real snack trend?", "a": "Yes. As flavor innovation plateaued, brands increasingly compete on mouthfeel — crunch, airiness, and slow melt — because texture is what makes a snack memorable and is harder to copy than a flavor." },
-        { "q": "Why does crunch make a snack feel healthier or more fun?", "a": "A loud, fresh crunch signals lightness and energy, so a simple or better-for-you snack can feel like a treat without heaviness. The sound and snap do a lot of the fun work that sugar or fat used to do." },
-        { "q": "What is the difference between crunch and slow-melt textures?", "a": "Crunch is fast and lively and reads as bright and playful. A slow melt is unhurried and calming, stretching a small moment into a ritual. Brands choose one based on the feeling they want to sell." }
+        {
+          "q": "Is \"texture is the new flavor\" actually a real snack trend?",
+          "a": "Yes. As flavor innovation plateaued, brands increasingly compete on mouthfeel — crunch, airiness, and slow melt — because texture is what makes a snack memorable and is harder to copy than a flavor."
+        },
+        {
+          "q": "Why does crunch make a snack feel healthier or more fun?",
+          "a": "A loud, fresh crunch signals lightness and energy, so a simple or better-for-you snack can feel like a treat without heaviness. The sound and snap do a lot of the fun work that sugar or fat used to do."
+        },
+        {
+          "q": "What is the difference between crunch and slow-melt textures?",
+          "a": "Crunch is fast and lively and reads as bright and playful. A slow melt is unhurried and calming, stretching a small moment into a ritual. Brands choose one based on the feeling they want to sell."
+        }
       ]
     },
     {
@@ -464,17 +1789,43 @@
       "date": "2026-06-14",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-presentations", "coffee-candy-for-meetings", "refreshing-candy-without-mint"],
+      "related": [
+        "coffee-candy-for-presentations",
+        "coffee-candy-for-meetings",
+        "refreshing-candy-without-mint"
+      ],
       "primaryKeyword": "coffee candy for video calls",
-      "secondaryKeywords": ["iced coffee candy", "non gum refresher", "coffee candy for meetings", "workday pick me up", "mint alternative"],
+      "secondaryKeywords": [
+        "iced coffee candy",
+        "non gum refresher",
+        "coffee candy for meetings",
+        "workday pick me up",
+        "mint alternative"
+      ],
       "dateModified": "2026-06-14",
       "faqs": [
-        { "q": "Is coffee candy a good non-gum option for video calls?", "a": "Yes. It melts quietly with no chewing, crinkling, or cup in frame, so it refreshes your mouth without being visible or audible to other people on the call." },
-        { "q": "Will coffee candy keep me alert like a real coffee?", "a": "It is a flavor-and-refresh moment, not a caffeine delivery system. The coffee taste and cooling finish help you feel reset, but it is meant as a small ritual between calls rather than a replacement for your coffee." },
-        { "q": "Why choose coffee candy over mints during meetings?", "a": "Mint can feel harsh when you are already stimulated by screen time. Iced coffee candy lands softer — coffee first, then a cooling note that cleans up the aftertaste — which many people find more comfortable on long calls." }
+        {
+          "q": "Is coffee candy a good non-gum option for video calls?",
+          "a": "Yes. It melts quietly with no chewing, crinkling, or cup in frame, so it refreshes your mouth without being visible or audible to other people on the call."
+        },
+        {
+          "q": "Will coffee candy keep me alert like a real coffee?",
+          "a": "It is a flavor-and-refresh moment, not a caffeine delivery system. The coffee taste and cooling finish help you feel reset, but it is meant as a small ritual between calls rather than a replacement for your coffee."
+        },
+        {
+          "q": "Why choose coffee candy over mints during meetings?",
+          "a": "Mint can feel harsh when you are already stimulated by screen time. Iced coffee candy lands softer — coffee first, then a cooling note that cleans up the aftertaste — which many people find more comfortable on long calls."
+        }
       ]
     },
     {
@@ -486,10 +1837,21 @@
       "date": "2026-06-14",
       "readTime": "5 min",
       "color": "tb-cream",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-airport-gates", "coffee-candy-for-airplane-cabins", "pocket-coffee-candy"]
+      "related": [
+        "coffee-candy-for-airport-gates",
+        "coffee-candy-for-airplane-cabins",
+        "pocket-coffee-candy"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-cream-cheese-toast",
@@ -500,10 +1862,21 @@
       "date": "2026-06-14",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-for-ricotta-toast", "freeze-dried-fruit-for-cereal", "freeze-dried-fruit-for-yogurt-parfaits"]
+      "related": [
+        "freeze-dried-fruit-for-ricotta-toast",
+        "freeze-dried-fruit-for-cereal",
+        "freeze-dried-fruit-for-yogurt-parfaits"
+      ]
     },
     {
       "slug": "coffee-candy-for-waiting-rooms",
@@ -514,10 +1887,21 @@
       "date": "2026-06-13",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-air-conditioned-offices", "candy-for-dry-throat-moments", "alternatives-to-basic-mints"]
+      "related": [
+        "coffee-candy-for-air-conditioned-offices",
+        "candy-for-dry-throat-moments",
+        "alternatives-to-basic-mints"
+      ]
     },
     {
       "slug": "crunchy-fruit-snack-vs-chewy-fruit-snack",
@@ -528,10 +1912,21 @@
       "date": "2026-06-13",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
-      "crumbs": ["Better-for-You", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Better-for-You",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["fruit-snacks-for-adults-freeze-dried-fruit", "healthy-snacks-should-still-feel-fun", "what-makes-freeze-dried-fruit-feel-premium"]
+      "related": [
+        "fruit-snacks-for-adults-freeze-dried-fruit",
+        "healthy-snacks-should-still-feel-fun",
+        "what-makes-freeze-dried-fruit-feel-premium"
+      ]
     },
     {
       "slug": "coffee-candy-for-airport-gates",
@@ -542,10 +1937,21 @@
       "date": "2026-06-12",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-airplane-cabins", "pocket-coffee-candy", "candy-for-dry-throat-moments"]
+      "related": [
+        "coffee-candy-for-airplane-cabins",
+        "pocket-coffee-candy",
+        "candy-for-dry-throat-moments"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-cereal",
@@ -556,10 +1962,21 @@
       "date": "2026-06-12",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-granola", "freeze-dried-fruit-for-yogurt-parfaits", "freeze-dried-fruit-bowl-topping-staple"]
+      "related": [
+        "freeze-dried-fruit-granola",
+        "freeze-dried-fruit-for-yogurt-parfaits",
+        "freeze-dried-fruit-bowl-topping-staple"
+      ]
     },
     {
       "slug": "coffee-candy-for-presentations",
@@ -570,10 +1987,21 @@
       "date": "2026-06-11",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-job-interviews", "coffee-candy-for-meetings", "candy-for-dry-throat-moments"]
+      "related": [
+        "coffee-candy-for-job-interviews",
+        "coffee-candy-for-meetings",
+        "candy-for-dry-throat-moments"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-yogurt-parfaits",
@@ -584,10 +2012,21 @@
       "date": "2026-06-11",
       "readTime": "5 min",
       "color": "tb-cream",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-for-overnight-oats", "freeze-dried-fruit-bowl-topping-staple"]
+      "related": [
+        "freeze-dried-fruit-yogurt-toppings",
+        "freeze-dried-fruit-for-overnight-oats",
+        "freeze-dried-fruit-bowl-topping-staple"
+      ]
     },
     {
       "slug": "coffee-candy-for-job-interviews",
@@ -598,10 +2037,21 @@
       "date": "2026-06-10",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-meetings", "alternatives-to-basic-mints", "what-makes-a-small-treat-feel-workday-friendly"]
+      "related": [
+        "coffee-candy-for-meetings",
+        "alternatives-to-basic-mints",
+        "what-makes-a-small-treat-feel-workday-friendly"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-chia-pudding",
@@ -612,10 +2062,21 @@
       "date": "2026-06-10",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-for-overnight-oats", "freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-bowl-topping-staple"]
+      "related": [
+        "freeze-dried-fruit-for-overnight-oats",
+        "freeze-dried-fruit-yogurt-toppings",
+        "freeze-dried-fruit-bowl-topping-staple"
+      ]
     },
     {
       "slug": "coffee-candy-for-movie-theaters",
@@ -626,10 +2087,21 @@
       "date": "2026-06-09",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["alternatives-to-basic-mints", "slow-melt", "pocket-coffee-candy"]
+      "related": [
+        "alternatives-to-basic-mints",
+        "slow-melt",
+        "pocket-coffee-candy"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-ricotta-toast",
@@ -640,10 +2112,21 @@
       "date": "2026-06-09",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-for-overnight-oats", "freeze-dried-fruit-bowl-topping-staple"]
+      "related": [
+        "freeze-dried-fruit-yogurt-toppings",
+        "freeze-dried-fruit-for-overnight-oats",
+        "freeze-dried-fruit-bowl-topping-staple"
+      ]
     },
     {
       "slug": "coffee-candy-for-summer-errands",
@@ -654,10 +2137,21 @@
       "date": "2026-06-08",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["Frozili", "Refreshing Snacks", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["cooling-candy-for-summer", "pocket-coffee-candy", "coffee-candy-for-commutes"]
+      "related": [
+        "cooling-candy-for-summer",
+        "pocket-coffee-candy",
+        "coffee-candy-for-commutes"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-overnight-oats",
@@ -668,10 +2162,21 @@
       "date": "2026-06-08",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-oatmeal-toppings", "freeze-dried-fruit-yogurt-toppings", "smoothie-bowl-toppings-freeze-dried-fruit"]
+      "related": [
+        "freeze-dried-fruit-oatmeal-toppings",
+        "freeze-dried-fruit-yogurt-toppings",
+        "smoothie-bowl-toppings-freeze-dried-fruit"
+      ]
     },
     {
       "slug": "coffee-candy-for-airplane-cabins",
@@ -682,10 +2187,21 @@
       "date": "2026-06-07",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["candy-for-dry-throat-moments", "coffee-candy-for-long-drives", "twelve-hour-flight"]
+      "related": [
+        "candy-for-dry-throat-moments",
+        "coffee-candy-for-long-drives",
+        "twelve-hour-flight"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-yogurt-bark",
@@ -696,10 +2212,21 @@
       "date": "2026-06-07",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-dessert-toppings", "freeze-dried-fruit-ice-cream-topping", "freeze-dried-fruit-yogurt-toppings"]
+      "related": [
+        "freeze-dried-fruit-dessert-toppings",
+        "freeze-dried-fruit-ice-cream-topping",
+        "freeze-dried-fruit-yogurt-toppings"
+      ]
     },
     {
       "slug": "what-makes-a-small-treat-feel-workday-friendly",
@@ -710,10 +2237,21 @@
       "date": "2026-06-06",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["workday-pick-me-up-candy", "snack-vs-reset", "coffee-candy-for-air-conditioned-offices"]
+      "related": [
+        "workday-pick-me-up-candy",
+        "snack-vs-reset",
+        "coffee-candy-for-air-conditioned-offices"
+      ]
     },
     {
       "slug": "healthy-snacks-should-still-feel-fun",
@@ -724,10 +2262,21 @@
       "date": "2026-06-06",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
-      "crumbs": ["Better-for-You", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Better-for-You",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["colorful-snacks-better-routines", "fruit-snacks-for-adults-freeze-dried-fruit", "what-makes-freeze-dried-fruit-feel-premium"]
+      "related": [
+        "colorful-snacks-better-routines",
+        "fruit-snacks-for-adults-freeze-dried-fruit",
+        "what-makes-freeze-dried-fruit-feel-premium"
+      ]
     },
     {
       "slug": "coffee-candy-for-summer-weddings",
@@ -738,10 +2287,21 @@
       "date": "2026-06-05",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-breath-freshening-candy", "non-gum-refresher-after-lunch", "coffee-candy-for-networking-events"]
+      "related": [
+        "coffee-breath-freshening-candy",
+        "non-gum-refresher-after-lunch",
+        "coffee-candy-for-networking-events"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-hotel-breakfast",
@@ -752,10 +2312,21 @@
       "date": "2026-06-05",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-yogurt-toppings", "shelf-stable-fruit-snacks", "twelve-hour-flight"]
+      "related": [
+        "freeze-dried-fruit-yogurt-toppings",
+        "shelf-stable-fruit-snacks",
+        "twelve-hour-flight"
+      ]
     },
     {
       "slug": "alternatives-to-basic-mints",
@@ -766,10 +2337,21 @@
       "date": "2026-06-04",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["mint-alternative-for-coffee-lovers", "refreshing-candy-without-mint", "non-gum-refresher-after-lunch"]
+      "related": [
+        "mint-alternative-for-coffee-lovers",
+        "refreshing-candy-without-mint",
+        "non-gum-refresher-after-lunch"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-bowl-topping-staple",
@@ -780,10 +2362,21 @@
       "date": "2026-06-04",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["smoothie-bowl-toppings-freeze-dried-fruit", "freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-oatmeal-toppings"]
+      "related": [
+        "smoothie-bowl-toppings-freeze-dried-fruit",
+        "freeze-dried-fruit-yogurt-toppings",
+        "freeze-dried-fruit-oatmeal-toppings"
+      ]
     },
     {
       "slug": "picnic-snacks-freeze-dried-fruit",
@@ -794,10 +2387,21 @@
       "date": "2026-06-03",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["snack-boards-freeze-dried-fruit", "shelf-stable-fruit-snacks", "beach-bag-snacks-freeze-dried-fruit"]
+      "related": [
+        "snack-boards-freeze-dried-fruit",
+        "shelf-stable-fruit-snacks",
+        "beach-bag-snacks-freeze-dried-fruit"
+      ]
     },
     {
       "slug": "coffee-candy-for-after-lunch-walks",
@@ -808,10 +2412,21 @@
       "date": "2026-06-03",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["non-gum-refresher-after-lunch", "snack-vs-reset", "slow-melt"]
+      "related": [
+        "non-gum-refresher-after-lunch",
+        "snack-vs-reset",
+        "slow-melt"
+      ]
     },
     {
       "slug": "cottage-cheese-bowl-toppings-freeze-dried-fruit",
@@ -822,10 +2437,21 @@
       "date": "2026-06-02",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-yogurt-toppings", "smoothie-bowl-toppings-freeze-dried-fruit", "freeze-dried-fruit-oatmeal-toppings"]
+      "related": [
+        "freeze-dried-fruit-yogurt-toppings",
+        "smoothie-bowl-toppings-freeze-dried-fruit",
+        "freeze-dried-fruit-oatmeal-toppings"
+      ]
     },
     {
       "slug": "coffee-candy-for-networking-events",
@@ -836,10 +2462,21 @@
       "date": "2026-06-02",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["coffee-candy-for-conferences", "non-gum-refresher-after-lunch", "refreshing-candy-without-mint"]
+      "related": [
+        "coffee-candy-for-conferences",
+        "non-gum-refresher-after-lunch",
+        "refreshing-candy-without-mint"
+      ]
     },
     {
       "slug": "road-trip-snacks-freeze-dried-fruit",
@@ -850,10 +2487,21 @@
       "date": "2026-06-01",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["shelf-stable-fruit-snacks", "twelve-hour-flight", "beach-bag-snacks-freeze-dried-fruit"]
+      "related": [
+        "shelf-stable-fruit-snacks",
+        "twelve-hour-flight",
+        "beach-bag-snacks-freeze-dried-fruit"
+      ]
     },
     {
       "slug": "coffee-candy-for-meetings",
@@ -864,10 +2512,21 @@
       "date": "2026-06-01",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["non-gum-refresher-after-lunch", "slow-melt", "how-to-store-coffee-candy-in-summer"]
+      "related": [
+        "non-gum-refresher-after-lunch",
+        "slow-melt",
+        "how-to-store-coffee-candy-in-summer"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-in-iced-tea",
@@ -878,10 +2537,21 @@
       "date": "2026-05-31",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Refreshing Snacks"],
-      "crumbs": ["Refreshing Snacks", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-sparkling-water", "freeze-dried-fruit-mocktail-garnish", "how-to-store-freeze-dried-fruit-after-opening"]
+      "related": [
+        "freeze-dried-fruit-sparkling-water",
+        "freeze-dried-fruit-mocktail-garnish",
+        "how-to-store-freeze-dried-fruit-after-opening"
+      ]
     },
     {
       "slug": "skip-second-coffee-iced-coffee-candy",
@@ -892,10 +2562,21 @@
       "date": "2026-05-31",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["three-pm-rotation", "slow-melt", "refreshing-candy-without-mint"]
+      "related": [
+        "three-pm-rotation",
+        "slow-melt",
+        "refreshing-candy-without-mint"
+      ]
     },
     {
       "slug": "beach-bag-snacks-freeze-dried-fruit",
@@ -906,10 +2587,21 @@
       "date": "2026-05-30",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["shelf-stable-fruit-snacks", "freeze-dried-fruit-for-hiking", "how-to-store-freeze-dried-fruit-after-opening"]
+      "related": [
+        "shelf-stable-fruit-snacks",
+        "freeze-dried-fruit-for-hiking",
+        "how-to-store-freeze-dried-fruit-after-opening"
+      ]
     },
     {
       "slug": "coffee-candy-for-commutes",
@@ -920,10 +2612,21 @@
       "date": "2026-05-30",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["pocket-coffee-candy", "slow-melt", "non-gum-refresher-after-lunch"]
+      "related": [
+        "pocket-coffee-candy",
+        "slow-melt",
+        "non-gum-refresher-after-lunch"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-granola",
@@ -934,10 +2637,21 @@
       "date": "2026-05-29",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-oatmeal-toppings", "smoothie-bowl-toppings-freeze-dried-fruit", "how-to-store-freeze-dried-fruit-after-opening"]
+      "related": [
+        "freeze-dried-fruit-oatmeal-toppings",
+        "smoothie-bowl-toppings-freeze-dried-fruit",
+        "how-to-store-freeze-dried-fruit-after-opening"
+      ]
     },
     {
       "slug": "coffee-candy-for-conferences",
@@ -948,10 +2662,21 @@
       "date": "2026-05-29",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["pocket-coffee-candy", "non-gum-refresher-after-lunch", "how-to-store-coffee-candy-in-summer"]
+      "related": [
+        "pocket-coffee-candy",
+        "non-gum-refresher-after-lunch",
+        "how-to-store-coffee-candy-in-summer"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-with-nut-butter",
@@ -962,10 +2687,21 @@
       "date": "2026-05-28",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Snack Ideas", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-snack-mix", "what-makes-freeze-dried-fruit-feel-premium", "shelf-stable-fruit-snacks"]
+      "related": [
+        "freeze-dried-fruit-snack-mix",
+        "what-makes-freeze-dried-fruit-feel-premium",
+        "shelf-stable-fruit-snacks"
+      ]
     },
     {
       "slug": "coffee-hard-candy-vs-slow-melt",
@@ -976,10 +2712,21 @@
       "date": "2026-05-28",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "workday-pick-me-up-candy", "why-iced-coffee-candy-works"]
+      "related": [
+        "slow-melt",
+        "workday-pick-me-up-candy",
+        "why-iced-coffee-candy-works"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-sparkling-water",
@@ -990,10 +2737,21 @@
       "date": "2026-05-27",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Refreshing Snacks"],
-      "crumbs": ["Refreshing Snacks", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-mocktail-garnish", "shelf-stable-fruit-snacks", "colorful-snacks-better-routines"]
+      "related": [
+        "freeze-dried-fruit-mocktail-garnish",
+        "shelf-stable-fruit-snacks",
+        "colorful-snacks-better-routines"
+      ]
     },
     {
       "slug": "coffee-candy-for-air-conditioned-offices",
@@ -1004,10 +2762,21 @@
       "date": "2026-05-27",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["snack-vs-reset", "candy-for-dry-throat-moments", "how-to-store-coffee-candy-in-summer"]
+      "related": [
+        "snack-vs-reset",
+        "candy-for-dry-throat-moments",
+        "how-to-store-coffee-candy-in-summer"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-for-hiking",
@@ -1018,10 +2787,21 @@
       "date": "2026-05-26",
       "readTime": "6 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
-      "crumbs": ["Travel & Work Snacks", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work Snacks",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["twelve-hour-flight", "freeze-dried-fruit-snack-mix", "shelf-stable-fruit-snacks"]
+      "related": [
+        "twelve-hour-flight",
+        "freeze-dried-fruit-snack-mix",
+        "shelf-stable-fruit-snacks"
+      ]
     },
     {
       "slug": "coffee-candy-with-sparkling-water",
@@ -1032,10 +2812,21 @@
       "date": "2026-05-26",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["non-gum-refresher-after-lunch", "weird-cold-candy", "slow-melt"]
+      "related": [
+        "non-gum-refresher-after-lunch",
+        "weird-cold-candy",
+        "slow-melt"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-mocktail-garnish",
@@ -1046,10 +2837,21 @@
       "date": "2026-05-25",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["snack-boards-freeze-dried-fruit", "freeze-dried-fruit-dessert-toppings", "colorful-snacks-better-routines"]
+      "related": [
+        "snack-boards-freeze-dried-fruit",
+        "freeze-dried-fruit-dessert-toppings",
+        "colorful-snacks-better-routines"
+      ]
     },
     {
       "slug": "coffee-flavor-grown-up-candy",
@@ -1060,10 +2862,21 @@
       "date": "2026-05-25",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "cold-brew-tasting", "coffee-flavored-candy-after-dinner"]
+      "related": [
+        "slow-melt",
+        "cold-brew-tasting",
+        "coffee-flavored-candy-after-dinner"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-salad-topping",
@@ -1074,10 +2887,21 @@
       "date": "2026-05-24",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["shelf-stable-fruit-snacks", "snack-boards-freeze-dried-fruit", "what-makes-freeze-dried-fruit-feel-premium"]
+      "related": [
+        "shelf-stable-fruit-snacks",
+        "snack-boards-freeze-dried-fruit",
+        "what-makes-freeze-dried-fruit-feel-premium"
+      ]
     },
     {
       "slug": "coffee-candy-after-spicy-food",
@@ -1088,10 +2912,21 @@
       "date": "2026-05-24",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "weird-cold-candy", "mint-alternative-for-coffee-lovers"]
+      "related": [
+        "slow-melt",
+        "weird-cold-candy",
+        "mint-alternative-for-coffee-lovers"
+      ]
     },
     {
       "slug": "how-to-store-freeze-dried-fruit-after-opening",
@@ -1102,10 +2937,21 @@
       "date": "2026-05-23",
       "readTime": "5 min",
       "color": "tb-cream",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["shelf-stable-fruit-snacks", "freeze-dried-fruit-oatmeal-toppings", "freeze-dried-fruit-yogurt-toppings"]
+      "related": [
+        "shelf-stable-fruit-snacks",
+        "freeze-dried-fruit-oatmeal-toppings",
+        "freeze-dried-fruit-yogurt-toppings"
+      ]
     },
     {
       "slug": "coffee-candy-for-studying",
@@ -1116,10 +2962,21 @@
       "date": "2026-05-23",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "snack-vs-reset", "pocket-coffee-candy"]
+      "related": [
+        "slow-melt",
+        "snack-vs-reset",
+        "pocket-coffee-candy"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-pancake-toppings",
@@ -1130,10 +2987,21 @@
       "date": "2026-05-22",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-oatmeal-toppings", "freeze-dried-fruit-yogurt-toppings", "smoothie-bowl-toppings-freeze-dried-fruit"]
+      "related": [
+        "freeze-dried-fruit-oatmeal-toppings",
+        "freeze-dried-fruit-yogurt-toppings",
+        "smoothie-bowl-toppings-freeze-dried-fruit"
+      ]
     },
     {
       "slug": "how-to-store-coffee-candy-in-summer",
@@ -1144,10 +3012,21 @@
       "date": "2026-05-22",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["cooling-candy-for-summer", "pocket-coffee-candy", "slow-melt"]
+      "related": [
+        "cooling-candy-for-summer",
+        "pocket-coffee-candy",
+        "slow-melt"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-dessert-toppings",
@@ -1158,10 +3037,21 @@
       "date": "2026-05-21",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-ice-cream-topping", "what-makes-freeze-dried-fruit-feel-premium", "freeze-drying-strawberry"]
+      "related": [
+        "freeze-dried-fruit-ice-cream-topping",
+        "what-makes-freeze-dried-fruit-feel-premium",
+        "freeze-drying-strawberry"
+      ]
     },
     {
       "slug": "refreshing-candy-without-mint",
@@ -1172,10 +3062,21 @@
       "date": "2026-05-21",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["mint-alternative-for-coffee-lovers", "slow-melt", "cold-brew-tasting"]
+      "related": [
+        "mint-alternative-for-coffee-lovers",
+        "slow-melt",
+        "cold-brew-tasting"
+      ]
     },
     {
       "slug": "shelf-stable-fruit-snacks",
@@ -1186,10 +3087,21 @@
       "date": "2026-05-20",
       "readTime": "5 min",
       "color": "tb-sage",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Travel & Work"],
-      "crumbs": ["Freeze-Dried Fruit", "Travel & Work"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Travel & Work"
+      ],
       "cta": "ohcrisp",
-      "related": ["twelve-hour-flight", "lunchbox-snacks-freeze-dried-fruit", "freeze-dried-fruit-snack-mix"]
+      "related": [
+        "twelve-hour-flight",
+        "lunchbox-snacks-freeze-dried-fruit",
+        "freeze-dried-fruit-snack-mix"
+      ]
     },
     {
       "slug": "coffee-flavored-candy-after-dinner",
@@ -1200,10 +3112,21 @@
       "date": "2026-05-20",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["cold-brew-tasting", "slow-melt", "pocket-coffee-candy"]
+      "related": [
+        "cold-brew-tasting",
+        "slow-melt",
+        "pocket-coffee-candy"
+      ]
     },
     {
       "slug": "smoothie-bowl-toppings-freeze-dried-fruit",
@@ -1214,10 +3137,21 @@
       "date": "2026-05-19",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-oatmeal-toppings"]
+      "related": [
+        "freeze-drying-strawberry",
+        "freeze-dried-fruit-yogurt-toppings",
+        "freeze-dried-fruit-oatmeal-toppings"
+      ]
     },
     {
       "slug": "coffee-breath-freshening-candy",
@@ -1228,10 +3162,21 @@
       "date": "2026-05-19",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["non-gum-refresher-after-lunch", "pocket-coffee-candy", "slow-melt"]
+      "related": [
+        "non-gum-refresher-after-lunch",
+        "pocket-coffee-candy",
+        "slow-melt"
+      ]
     },
     {
       "slug": "non-gum-refresher-after-lunch",
@@ -1242,10 +3187,21 @@
       "date": "2026-05-18",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["snack-vs-reset", "slow-melt", "mint-alternative-for-coffee-lovers"]
+      "related": [
+        "snack-vs-reset",
+        "slow-melt",
+        "mint-alternative-for-coffee-lovers"
+      ]
     },
     {
       "slug": "healthy-sweet-snack-at-night",
@@ -1256,10 +3212,21 @@
       "date": "2026-05-18",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
-      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["fruit-snacks-for-adults-freeze-dried-fruit", "colorful-snacks-better-routines", "freeze-dried-fruit-yogurt-toppings"]
+      "related": [
+        "fruit-snacks-for-adults-freeze-dried-fruit",
+        "colorful-snacks-better-routines",
+        "freeze-dried-fruit-yogurt-toppings"
+      ]
     },
     {
       "slug": "cooling-candy-for-summer",
@@ -1270,10 +3237,21 @@
       "date": "2026-05-17",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["weird-cold-candy", "pocket-coffee-candy", "slow-melt"]
+      "related": [
+        "weird-cold-candy",
+        "pocket-coffee-candy",
+        "slow-melt"
+      ]
     },
     {
       "slug": "snack-boards-freeze-dried-fruit",
@@ -1284,10 +3262,21 @@
       "date": "2026-05-17",
       "readTime": "5 min",
       "color": "tb-cream",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-snack-mix", "what-makes-freeze-dried-fruit-feel-premium", "freeze-dried-fruit-ice-cream-topping"]
+      "related": [
+        "freeze-dried-fruit-snack-mix",
+        "what-makes-freeze-dried-fruit-feel-premium",
+        "freeze-dried-fruit-ice-cream-topping"
+      ]
     },
     {
       "slug": "weird-cold-candy",
@@ -1298,10 +3287,21 @@
       "date": "2026-05-16",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks", "Coffee Candy"],
-      "crumbs": ["Refreshing Snacks", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Refreshing Snacks",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["pocket-coffee-candy", "slow-melt", "why-iced-coffee-candy-works"]
+      "related": [
+        "pocket-coffee-candy",
+        "slow-melt",
+        "why-iced-coffee-candy-works"
+      ]
     },
     {
       "slug": "colorful-snacks-better-routines",
@@ -1312,10 +3312,21 @@
       "date": "2026-05-16",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
-      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["what-makes-freeze-dried-fruit-feel-premium", "freeze-dried-fruit-snack-mix", "snack-drawer"]
+      "related": [
+        "what-makes-freeze-dried-fruit-feel-premium",
+        "freeze-dried-fruit-snack-mix",
+        "snack-drawer"
+      ]
     },
     {
       "slug": "workday-pick-me-up-candy",
@@ -1326,10 +3337,21 @@
       "date": "2026-05-15",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "snack-vs-reset", "pocket-coffee-candy"]
+      "related": [
+        "slow-melt",
+        "snack-vs-reset",
+        "pocket-coffee-candy"
+      ]
     },
     {
       "slug": "lunchbox-snacks-freeze-dried-fruit",
@@ -1340,10 +3362,21 @@
       "date": "2026-05-15",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["fruit-snacks-for-adults-freeze-dried-fruit", "what-makes-freeze-dried-fruit-feel-premium", "freeze-dried-fruit-snack-mix"]
+      "related": [
+        "fruit-snacks-for-adults-freeze-dried-fruit",
+        "what-makes-freeze-dried-fruit-feel-premium",
+        "freeze-dried-fruit-snack-mix"
+      ]
     },
     {
       "slug": "pocket-coffee-candy",
@@ -1354,10 +3387,21 @@
       "date": "2026-05-14",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "why-iced-coffee-candy-works", "coffee-candy-for-long-drives"]
+      "related": [
+        "slow-melt",
+        "why-iced-coffee-candy-works",
+        "coffee-candy-for-long-drives"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-ice-cream-topping",
@@ -1368,10 +3412,21 @@
       "date": "2026-05-14",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-oatmeal-toppings"]
+      "related": [
+        "freeze-drying-strawberry",
+        "freeze-dried-fruit-yogurt-toppings",
+        "freeze-dried-fruit-oatmeal-toppings"
+      ]
     },
     {
       "slug": "adult-candy-coffee-cooling-finish",
@@ -1382,10 +3437,21 @@
       "date": "2026-05-13",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Coffee Candy", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["mint-alternative-for-coffee-lovers", "slow-melt", "why-iced-coffee-candy-works"]
+      "related": [
+        "mint-alternative-for-coffee-lovers",
+        "slow-melt",
+        "why-iced-coffee-candy-works"
+      ]
     },
     {
       "slug": "what-makes-freeze-dried-fruit-feel-premium",
@@ -1396,10 +3462,21 @@
       "date": "2026-05-13",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
-      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-snack-mix", "ugly-mango"]
+      "related": [
+        "freeze-drying-strawberry",
+        "freeze-dried-fruit-snack-mix",
+        "ugly-mango"
+      ]
     },
     {
       "slug": "coffee-candy-for-long-drives",
@@ -1410,10 +3487,21 @@
       "date": "2026-05-12",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Travel & Work"],
-      "crumbs": ["Travel & Work", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "why-iced-coffee-candy-works", "snack-vs-reset"]
+      "related": [
+        "slow-melt",
+        "why-iced-coffee-candy-works",
+        "snack-vs-reset"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-oatmeal-toppings",
@@ -1424,10 +3512,21 @@
       "date": "2026-05-12",
       "readTime": "5 min",
       "color": "tb-sun",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Better-for-You"],
-      "crumbs": ["Freeze-Dried Fruit", "Better-for-You"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-yogurt-toppings", "freeze-dried-fruit-snack-mix", "freeze-drying-strawberry"]
+      "related": [
+        "freeze-dried-fruit-yogurt-toppings",
+        "freeze-dried-fruit-snack-mix",
+        "freeze-drying-strawberry"
+      ]
     },
     {
       "slug": "snack-vs-reset",
@@ -1438,10 +3537,21 @@
       "date": "2026-05-11",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks", "Workday Snacks"],
-      "crumbs": ["Workday Snacks", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks",
+        "Workday Snacks"
+      ],
+      "crumbs": [
+        "Workday Snacks",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "three-pm-rotation", "candy-for-dry-throat-moments"]
+      "related": [
+        "slow-melt",
+        "three-pm-rotation",
+        "candy-for-dry-throat-moments"
+      ]
     },
     {
       "slug": "fruit-crunch-vs-chewy-snacks",
@@ -1452,10 +3562,21 @@
       "date": "2026-05-11",
       "readTime": "5 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-snack-mix", "ugly-mango"]
+      "related": [
+        "freeze-drying-strawberry",
+        "freeze-dried-fruit-snack-mix",
+        "ugly-mango"
+      ]
     },
     {
       "slug": "mint-alternative-for-coffee-lovers",
@@ -1466,10 +3587,21 @@
       "date": "2026-05-10",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Frozili", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "why-iced-coffee-candy-works", "three-pm-rotation"]
+      "related": [
+        "slow-melt",
+        "why-iced-coffee-candy-works",
+        "three-pm-rotation"
+      ]
     },
     {
       "slug": "fruit-snacks-for-adults-freeze-dried-fruit",
@@ -1480,10 +3612,21 @@
       "date": "2026-05-10",
       "readTime": "5 min",
       "color": "tb-pop",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-dried-fruit-snack-mix", "snack-drawer", "ugly-mango"]
+      "related": [
+        "freeze-dried-fruit-snack-mix",
+        "snack-drawer",
+        "ugly-mango"
+      ]
     },
     {
       "slug": "candy-for-dry-throat-moments",
@@ -1494,10 +3637,21 @@
       "date": "2026-05-09",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Frozili", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "why-iced-coffee-candy-works", "strange-pleasure-of-weird-cold-candy"]
+      "related": [
+        "slow-melt",
+        "why-iced-coffee-candy-works",
+        "strange-pleasure-of-weird-cold-candy"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-yogurt-toppings",
@@ -1508,10 +3662,21 @@
       "date": "2026-05-09",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "freeze-dried-fruit-snack-mix", "ugly-mango"]
+      "related": [
+        "freeze-drying-strawberry",
+        "freeze-dried-fruit-snack-mix",
+        "ugly-mango"
+      ]
     },
     {
       "slug": "strange-pleasure-of-weird-cold-candy",
@@ -1522,10 +3687,20 @@
       "date": "2026-05-08",
       "readTime": "5 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Refreshing Snacks"],
-      "crumbs": ["Frozili", "Refreshing Snacks"],
+      "categories": [
+        "Frozili",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["why-iced-coffee-candy-works", "slow-melt", "five-things-cold"]
+      "related": [
+        "why-iced-coffee-candy-works",
+        "slow-melt",
+        "five-things-cold"
+      ]
     },
     {
       "slug": "why-iced-coffee-candy-works",
@@ -1536,10 +3711,21 @@
       "date": "2026-05-08",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy", "Refreshing Snacks"],
-      "crumbs": ["Frozili", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["cold-brew-tasting", "slow-melt", "five-things-cold"]
+      "related": [
+        "cold-brew-tasting",
+        "slow-melt",
+        "five-things-cold"
+      ]
     },
     {
       "slug": "freeze-dried-fruit-snack-mix",
@@ -1550,10 +3736,21 @@
       "date": "2026-05-08",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit", "Snack Ideas"],
-      "crumbs": ["Freeze-Dried Fruit", "Snack Ideas"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "ugly-mango", "twelve-hour-flight"]
+      "related": [
+        "freeze-drying-strawberry",
+        "ugly-mango",
+        "twelve-hour-flight"
+      ]
     },
     {
       "slug": "modern-snacks-more-sensory",
@@ -1564,10 +3761,20 @@
       "date": "2026-05-08",
       "readTime": "5 min",
       "color": "tb-violet",
-      "categories": ["Snack Ideas", "Better-for-You"],
-      "crumbs": ["Snack Ideas", "Trend Notes"],
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Trend Notes"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "freeze-drying-strawberry", "better-for-you-words"]
+      "related": [
+        "slow-melt",
+        "freeze-drying-strawberry",
+        "better-for-you-words"
+      ]
     },
     {
       "slug": "slow-melt",
@@ -1578,10 +3785,20 @@
       "date": "2025-11-12",
       "readTime": "6 min",
       "color": "tb-ice",
-      "categories": ["Frozili", "Coffee Candy"],
-      "crumbs": ["Frozili", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["cold-brew-tasting", "five-things-cold", "snack-drawer"]
+      "related": [
+        "cold-brew-tasting",
+        "five-things-cold",
+        "snack-drawer"
+      ]
     },
     {
       "slug": "freeze-drying-strawberry",
@@ -1592,10 +3809,20 @@
       "date": "2025-10-30",
       "readTime": "4 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit"],
-      "crumbs": ["OhCrisp", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["ugly-mango", "how-ohcrisp-is-made", "one-brand-to-two"]
+      "related": [
+        "ugly-mango",
+        "how-ohcrisp-is-made",
+        "one-brand-to-two"
+      ]
     },
     {
       "slug": "snack-drawer",
@@ -1606,10 +3833,19 @@
       "date": "2025-10-24",
       "readTime": "3 min",
       "color": "tb-sage",
-      "categories": ["Workday Snacks"],
-      "crumbs": ["Workday Snacks", "Notes"],
+      "categories": [
+        "Workday Snacks"
+      ],
+      "crumbs": [
+        "Workday Snacks",
+        "Notes"
+      ],
       "cta": "frozili",
-      "related": ["three-pm-rotation", "twelve-hour-flight", "better-for-you-words"]
+      "related": [
+        "three-pm-rotation",
+        "twelve-hour-flight",
+        "better-for-you-words"
+      ]
     },
     {
       "slug": "cold-brew-tasting",
@@ -1620,10 +3856,20 @@
       "date": "2025-10-18",
       "readTime": "5 min",
       "color": "tb-coffee",
-      "categories": ["Frozili", "Coffee Candy"],
-      "crumbs": ["Frozili", "Coffee Candy"],
+      "categories": [
+        "Frozili",
+        "Coffee Candy"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "five-things-cold", "snack-drawer"]
+      "related": [
+        "slow-melt",
+        "five-things-cold",
+        "snack-drawer"
+      ]
     },
     {
       "slug": "ugly-mango",
@@ -1634,10 +3880,20 @@
       "date": "2025-10-12",
       "readTime": "4 min",
       "color": "tb-peach",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit"],
-      "crumbs": ["OhCrisp", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "how-ohcrisp-is-made", "one-brand-to-two"]
+      "related": [
+        "freeze-drying-strawberry",
+        "how-ohcrisp-is-made",
+        "one-brand-to-two"
+      ]
     },
     {
       "slug": "twelve-hour-flight",
@@ -1648,10 +3904,18 @@
       "date": "2025-10-04",
       "readTime": "7 min",
       "color": "tb-sun",
-      "categories": ["Travel & Work"],
-      "crumbs": ["Travel & Work Snacks"],
+      "categories": [
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Travel & Work Snacks"
+      ],
       "cta": "frozili",
-      "related": ["snack-drawer", "five-things-cold", "ugly-mango"]
+      "related": [
+        "snack-drawer",
+        "five-things-cold",
+        "ugly-mango"
+      ]
     },
     {
       "slug": "better-for-you-words",
@@ -1662,10 +3926,18 @@
       "date": "2025-09-28",
       "readTime": "5 min",
       "color": "tb-cream",
-      "categories": ["Better-for-You"],
-      "crumbs": ["Better-for-You Snacks"],
+      "categories": [
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Better-for-You Snacks"
+      ],
       "cta": "frozili",
-      "related": ["snack-drawer", "twelve-hour-flight", "three-pm-rotation"]
+      "related": [
+        "snack-drawer",
+        "twelve-hour-flight",
+        "three-pm-rotation"
+      ]
     },
     {
       "slug": "five-things-cold",
@@ -1676,10 +3948,19 @@
       "date": "2025-09-22",
       "readTime": "3 min",
       "color": "tb-ice",
-      "categories": ["Refreshing Snacks", "Frozili"],
-      "crumbs": ["Refreshing Snacks"],
+      "categories": [
+        "Refreshing Snacks",
+        "Frozili"
+      ],
+      "crumbs": [
+        "Refreshing Snacks"
+      ],
       "cta": "frozili",
-      "related": ["slow-melt", "cold-brew-tasting", "twelve-hour-flight"]
+      "related": [
+        "slow-melt",
+        "cold-brew-tasting",
+        "twelve-hour-flight"
+      ]
     },
     {
       "slug": "one-brand-to-two",
@@ -1690,10 +3971,18 @@
       "date": "2025-09-14",
       "readTime": "8 min",
       "color": "tb-violet",
-      "categories": ["Taste Notes"],
-      "crumbs": ["Taste Notes"],
+      "categories": [
+        "Taste Notes"
+      ],
+      "crumbs": [
+        "Taste Notes"
+      ],
       "cta": "ohcrisp",
-      "related": ["how-ohcrisp-is-made", "freeze-drying-strawberry", "ugly-mango"]
+      "related": [
+        "how-ohcrisp-is-made",
+        "freeze-drying-strawberry",
+        "ugly-mango"
+      ]
     },
     {
       "slug": "three-pm-rotation",
@@ -1704,10 +3993,18 @@
       "date": "2025-09-06",
       "readTime": "2 min",
       "color": "tb-pop",
-      "categories": ["Workday Snacks"],
-      "crumbs": ["Workday Snacks"],
+      "categories": [
+        "Workday Snacks"
+      ],
+      "crumbs": [
+        "Workday Snacks"
+      ],
       "cta": "frozili",
-      "related": ["snack-drawer", "twelve-hour-flight", "better-for-you-words"]
+      "related": [
+        "snack-drawer",
+        "twelve-hour-flight",
+        "better-for-you-words"
+      ]
     },
     {
       "slug": "how-ohcrisp-is-made",
@@ -1718,10 +4015,20 @@
       "date": "2025-10-02",
       "readTime": "5 min",
       "color": "tb-blush",
-      "categories": ["OhCrisp", "Freeze-Dried Fruit"],
-      "crumbs": ["OhCrisp", "Freeze-Dried Fruit"],
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit"
+      ],
       "cta": "ohcrisp",
-      "related": ["freeze-drying-strawberry", "ugly-mango", "one-brand-to-two"]
+      "related": [
+        "freeze-drying-strawberry",
+        "ugly-mango",
+        "one-brand-to-two"
+      ]
     }
   ]
 }
