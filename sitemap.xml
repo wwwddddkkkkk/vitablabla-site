@@ -2,33 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vitablabla.com/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vitablabla.com/blog</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://vitablabla.com/frozili</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vitablabla.com/ohcrisp</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vitablabla.com/about</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://vitablabla.com/contact</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vitablabla.com/post.html?slug=the-comfort-flavor-comeback</loc>
+    <lastmod>2026-07-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vitablabla.com/post.html?slug=freeze-dried-fruit-for-lemonade</loc>
+    <lastmod>2026-07-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vitablabla.com/post.html?slug=coffee-candy-for-baseball-games</loc>
+    <lastmod>2026-07-03</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://vitablabla.com/post.html?slug=snacks-as-souvenirs</loc>
