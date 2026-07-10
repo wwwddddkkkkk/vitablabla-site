@@ -17,6 +17,176 @@
   ],
   "posts": [
     {
+      "slug": "why-gas-station-snacks-got-good",
+      "number": "166",
+      "title": "Why <em>gas station snacks</em> got good.",
+      "cardTitle": "Why gas station snacks got good.",
+      "excerpt": "Why gas station snacks got good: convenience stores stopped treating snacks as a captive-audience afterthought as shoppers began seeking better-for-you options.",
+      "date": "2026-07-10",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "trend",
+      "related": [
+        "the-grown-up-candy-aisle",
+        "road-trip-snacks-freeze-dried-fruit",
+        "the-emergency-snack"
+      ],
+      "primaryKeyword": "why gas station snacks got good",
+      "secondaryKeywords": [
+        "convenience store snacks",
+        "better-for-you snacks c-store",
+        "premium convenience snacks",
+        "road trip snacks",
+        "healthy gas station snacks"
+      ],
+      "dateModified": "2026-07-10",
+      "chart": {
+        "type": "bar",
+        "labels": [
+          "Natural/organic",
+          "Clean label",
+          "Non-GMO",
+          "Vegan/veg",
+          "Gluten/nut-free"
+        ],
+        "values": [
+          50,
+          48,
+          43,
+          31,
+          28
+        ],
+        "unit": "%",
+        "source": "Acosta Group Convenience Store Shopper Insights, 2025",
+        "highlight": 0
+      },
+      "faqs": [
+        {
+          "q": "Why did convenience store snacks get better?",
+          "a": "Because the shopper changed. The Acosta Group's 2025 report found nearly two-thirds of c-store consumers now look for products with health benefits at least some of the time, so stores can no longer rely on a captive audience buying whatever is on the shelf — they have to compete on quality, which pushed better-for-you and single-serve snacks onto the counter."
+        },
+        {
+          "q": "What makes a good gas station snack?",
+          "a": "A good convenience snack is one you'd choose even if you weren't stuck: shelf-stable so it survives a hot car, single-serve and openable with one hand, and offering a real reset or texture rather than just sugar. Things like freeze-dried fruit and slow-melt coffee candy fit those rules well."
+        },
+        {
+          "q": "Are healthier snacks really selling at convenience stores?",
+          "a": "Increasingly, yes. According to Acosta Group's 2025 data, half of c-store shoppers look for natural or organic options at least some of the time and 48% look for clean-label products, which is why retailers have expanded better-for-you selections well beyond the old candy-and-soda wall."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-strawberry-shortcake",
+      "number": "165",
+      "title": "Freeze-dried fruit for <em>strawberry shortcake</em>.",
+      "cardTitle": "Freeze-dried fruit for shortcake.",
+      "excerpt": "Freeze-dried fruit for strawberry shortcake adds a crisp, concentrated berry crunch that fresh macerated fruit can't, fixing the dessert's one soft flaw.",
+      "date": "2026-07-10",
+      "readTime": "4 min",
+      "color": "tb-pop",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-dessert-toppings",
+        "freeze-dried-fruit-for-pavlova",
+        "freeze-dried-fruit-for-cupcakes"
+      ],
+      "primaryKeyword": "freeze-dried fruit for strawberry shortcake",
+      "secondaryKeywords": [
+        "freeze-dried strawberries dessert",
+        "crunchy topping for shortcake",
+        "strawberry shortcake upgrade",
+        "freeze-dried fruit sugar",
+        "summer dessert toppings"
+      ],
+      "dateModified": "2026-07-10",
+      "faqs": [
+        {
+          "q": "Can you use freeze-dried strawberries in strawberry shortcake?",
+          "a": "Yes, and they solve the dessert's main weakness. Scatter freeze-dried strawberries over the cream at the last minute for a crisp, dry crunch and a concentrated berry flavor that stays distinct instead of melting into the soft biscuit and macerated fruit."
+        },
+        {
+          "q": "Will freeze-dried fruit go soggy on a shortcake?",
+          "a": "Only if you add it too early or bury it in the wet layers. Keep it dry until serving and place it on top of the cream rather than under it; added at the end, it holds its crunch through the meal. Crushed into the biscuit dough it also stays intense without adding moisture."
+        },
+        {
+          "q": "Does freeze-dried fruit taste different from fresh strawberries?",
+          "a": "Yes — it tastes more concentrated. Freeze-drying removes the water and leaves the flavor behind, so freeze-dried strawberries read as sharper and more intensely of strawberry than fresh macerated berries, which are diluted by their own syrup."
+        }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-theme-parks",
+      "number": "164",
+      "title": "Coffee candy for <em>theme parks</em>.",
+      "cardTitle": "Coffee candy for theme parks.",
+      "excerpt": "Coffee candy for theme parks: a slow-melting, cooling candy gives a hands-free reset for long days of walking, waiting in line, and heat.",
+      "date": "2026-07-10",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "frozili",
+      "related": [
+        "coffee-candy-for-music-festivals",
+        "coffee-candy-for-heatwaves",
+        "coffee-candy-for-summer-errands"
+      ],
+      "primaryKeyword": "coffee candy for theme parks",
+      "secondaryKeywords": [
+        "candy for a theme park day",
+        "snacks for waiting in line",
+        "cooling candy for hot days",
+        "hands-free snack for walking",
+        "slow-melting candy for heat"
+      ],
+      "dateModified": "2026-07-10",
+      "faqs": [
+        {
+          "q": "Is coffee candy good for a theme park day?",
+          "a": "Yes. A slow-melting coffee candy suits a park day because it gives a hands-free, low-mess reset you can have while walking or waiting in line, it survives hours in a hot bag, and its cooling finish stretches relief across a long queue instead of vanishing like a cold drink."
+        },
+        {
+          "q": "Why not just drink more iced coffee at the park?",
+          "a": "Iced coffee is great but it needs a hand, a stop, and often a line of its own, and it's gone in a few minutes. A pocket candy delivers a similar coffee lift and cooling note slowly, without stopping, and without adding another cup to carry through crowds."
+        },
+        {
+          "q": "Does coffee candy replace meals or water on a hot day?",
+          "a": "No. It's a small reset, not a snack replacement — you still need real meals and plenty of water in the heat. Coffee candy just fills the in-between moments, like a long queue or the post-lunch slump, that a full meal or a drink doesn't address."
+        }
+      ]
+    },
+    {
       "slug": "coffee-candy-for-lake-days",
       "number": "161",
       "title": "Coffee candy for <em>lake days</em>.",
