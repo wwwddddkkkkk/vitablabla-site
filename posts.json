@@ -17,6 +17,164 @@
   ],
   "posts": [
     {
+      "slug": "the-3pm-snack-rhythm",
+      "number": "184",
+      "title": "The 3pm snack is about <em>rhythm</em>, not hunger.",
+      "cardTitle": "The 3pm snack is about rhythm.",
+      "excerpt": "Why we snack at 3pm: the afternoon dip is a rhythm in the day, not real hunger. What the craving is actually asking for — and how to answer it well.",
+      "date": "2026-07-17",
+      "readTime": "5 min",
+      "color": "tb-sun",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "trend",
+      "related": [
+        "the-snack-as-a-timer",
+        "coffee-candy-for-summer-evenings",
+        "everything-is-a-topping-now"
+      ],
+      "primaryKeyword": "why we snack at 3pm",
+      "secondaryKeywords": [
+        "the 3pm snack",
+        "afternoon snack",
+        "afternoon slump snack",
+        "best snack for the afternoon dip",
+        "spontaneous snacking"
+      ],
+      "dateModified": "2026-07-17",
+      "chart": {
+        "type": "bar",
+        "labels": ["Morning", "Afternoon", "Evening", "Late-night"],
+        "values": [34, 27, 17, 1],
+        "unit": "%",
+        "source": "IFIC Spotlight Survey, 2024",
+        "highlight": 1
+      },
+      "faqs": [
+        {
+          "q": "Why do we snack at 3pm?",
+          "a": "The mid-afternoon dip is mostly a rhythm in the day rather than true hunger — energy and focus sag a few hours after lunch, and a snack becomes a small reset. Because most afternoon snacking is spontaneous, people tend to reach for whatever is closest rather than what they actually planned."
+        },
+        {
+          "q": "Is the afternoon a healthy time to snack?",
+          "a": "People tend to rate their afternoon snacks fairly well: in the IFIC's 2024 survey the net healthy rating was +27 for the afternoon, behind morning (+34) but well above late-night (+1). The afternoon is a moment most people want to feel good about, which makes it a good time to choose something sensory and portion-defined."
+        },
+        {
+          "q": "What is the best snack for the afternoon slump?",
+          "a": "The best afternoon snack is small, flavourful, and satisfying without being a meal, since the dip is asking for a reset rather than fuel. Sensory options with a strong taste or a real crunch tend to break the slump better than heavy snacks that sit until dinner."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-charcuterie-boards",
+      "number": "183",
+      "title": "Freeze-dried fruit for <em>charcuterie boards</em>.",
+      "cardTitle": "Freeze-dried fruit for charcuterie boards.",
+      "excerpt": "Freeze-dried fruit adds real crunch and bright colour to a charcuterie board — and holds its shape for hours without weeping juice like fresh fruit does.",
+      "date": "2026-07-17",
+      "readTime": "4 min",
+      "color": "tb-peach",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "everything-is-a-topping-now",
+        "freeze-dried-fruit-for-party-favors",
+        "freeze-dried-fruit-for-frosting"
+      ],
+      "primaryKeyword": "freeze-dried fruit for charcuterie boards",
+      "secondaryKeywords": [
+        "freeze-dried fruit on a cheese board",
+        "charcuterie board fruit",
+        "crunchy fruit for snack boards",
+        "how to style a charcuterie board",
+        "shelf-stable fruit for boards"
+      ],
+      "dateModified": "2026-07-17",
+      "faqs": [
+        {
+          "q": "Is freeze-dried fruit good on a charcuterie board?",
+          "a": "Yes. Freeze-dried fruit adds bright colour and a crisp crunch to a board built mostly from soft cheeses and meats, and it holds its shape at room temperature for hours. Unlike fresh fruit, it will not weep juice or brown while the board sits out."
+        },
+        {
+          "q": "Which freeze-dried fruits work best with cheese?",
+          "a": "Freeze-dried strawberry and raspberry pair well with creamy cheeses like brie and goat cheese, while mango and apple suit sharper cheddars. Cluster each fruit near the cheese it flatters rather than scattering it evenly across the board."
+        },
+        {
+          "q": "Will freeze-dried fruit go soggy on a board?",
+          "a": "Not for a long stretch. Because the moisture is already removed, freeze-dried fruit stays crunchy far longer than fresh fruit. Add it to the board last and keep loose pieces in a small bowl to protect the crunch until serving."
+        }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-red-eye-flights",
+      "number": "182",
+      "title": "Coffee candy for <em>red-eye flights</em>.",
+      "cardTitle": "Coffee candy for red-eye flights.",
+      "excerpt": "Coffee candy for red-eye flights: the roasted, cooling flavour of coffee without the caffeine that wrecks the little sleep an overnight flight offers.",
+      "date": "2026-07-17",
+      "readTime": "4 min",
+      "color": "tb-ice",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "frozili",
+      "related": [
+        "coffee-candy-for-early-mornings",
+        "coffee-candy-for-summer-evenings",
+        "the-snack-as-a-timer"
+      ],
+      "primaryKeyword": "coffee candy for red-eye flights",
+      "secondaryKeywords": [
+        "coffee candy for flights",
+        "overnight flight snack",
+        "travel candy for planes",
+        "coffee flavour without caffeine",
+        "candy for dry cabin air"
+      ],
+      "dateModified": "2026-07-17",
+      "faqs": [
+        {
+          "q": "Is coffee candy good for red-eye and overnight flights?",
+          "a": "Yes. Coffee candy gives you coffee's roasted, cooling flavour without brewing a cup, so it suits an overnight flight where real coffee would ruin the little sleep available. It is a small taste ritual rather than a caffeine hit, which is exactly what a red-eye calls for."
+        },
+        {
+          "q": "Will coffee candy keep me awake on a flight?",
+          "a": "A slow-melting coffee candy like Frozili is built around flavour and a cooling finish, not caffeine. It is designed as a taste ritual, so it lets you enjoy the coffee note in the dark without adding to an already short night."
+        },
+        {
+          "q": "Does a slow-melt candy help with dry cabin air?",
+          "a": "It can help. Aircraft cabins are very dry, and a slow-dissolving candy keeps the mouth working while leaving a clean, cool coffee finish. It is a pleasant way to cut through cabin dryness on a long overnight leg."
+        }
+      ]
+    },
+    {
       "slug": "why-we-hide-our-best-snacks",
       "number": "181",
       "title": "Why we <em>hide</em> our best snacks.",
