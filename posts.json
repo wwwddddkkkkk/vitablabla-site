@@ -17,6 +17,159 @@
   ],
   "posts": [
     {
+      "slug": "the-two-snack-person",
+      "number": "199",
+      "title": "The <em>two-snack</em> person.",
+      "cardTitle": "The two-snack person.",
+      "excerpt": "The two-snack person carries a pair on purpose: hunger and mood are different problems, so they pack one snack for the body and one for the head.",
+      "date": "2026-07-24",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "trend",
+      "related": [
+        "the-snack-you-eat-standing-up",
+        "everything-is-a-topping-now",
+        "why-we-hide-our-best-snacks"
+      ],
+      "primaryKeyword": "the two-snack person",
+      "secondaryKeywords": [
+        "two snacks",
+        "snacking habits",
+        "snack pairing",
+        "snack psychology",
+        "texture contrast snacks",
+        "snack kit"
+      ],
+      "dateModified": "2026-07-24",
+      "faqs": [
+        {
+          "q": "Why do some people always carry two snacks?",
+          "a": "Because hunger and mood are separate problems. A two-snack person packs one snack to handle real hunger and another to handle the afternoon — the slump, the boredom, the need for a small pause — since a single snack rarely does both jobs well."
+        },
+        {
+          "q": "What makes a good two-snack pairing?",
+          "a": "Contrast and different roles. Pick one filling, hunger-shaped snack and one smaller, more sensory one, and make sure they differ in texture — a crunch with a melt, or a chew with a sip — so the second still feels like a treat rather than more of the same."
+        },
+        {
+          "q": "Isn't carrying two snacks just eating more?",
+          "a": "Not necessarily. Carrying two can mean eating less overall, because you can answer the exact need that shows up instead of over-eating one snack trying to reach a feeling it was never going to deliver."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-iced-tea",
+      "number": "198",
+      "title": "Freeze-dried fruit for <em>iced tea</em>.",
+      "cardTitle": "Freeze-dried fruit for iced tea.",
+      "excerpt": "Freeze-dried fruit for iced tea flavours and garnishes a cold glass in one move — the pieces float, rehydrate, and release real fruit flavour with no muddling or dilution.",
+      "date": "2026-07-24",
+      "readTime": "4 min",
+      "color": "tb-peach",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-for-strawberry-matcha",
+        "freeze-dried-fruit-for-summer-camp",
+        "freeze-dried-fruit-powder"
+      ],
+      "primaryKeyword": "freeze-dried fruit for iced tea",
+      "secondaryKeywords": [
+        "freeze-dried fruit",
+        "iced tea garnish",
+        "fruit infused iced tea",
+        "freeze dried fruit drinks",
+        "fruit tea ideas",
+        "real fruit crunch"
+      ],
+      "dateModified": "2026-07-24",
+      "faqs": [
+        {
+          "q": "How do you use freeze-dried fruit in iced tea?",
+          "a": "Drop a small handful of pieces straight into the cold glass or pitcher and wait a few minutes. The fruit floats, rehydrates, and releases colour and flavour into the tea, doubling as an edible garnish — no muddling, cutting, or straining needed."
+        },
+        {
+          "q": "Does freeze-dried fruit make iced tea sweet?",
+          "a": "It adds gentle, natural fruit sweetness and aroma rather than the sharp sugar hit of syrup. For unsweetened tea it's a light lift; if you want it sweeter, use more fruit or add your usual sweetener separately."
+        },
+        {
+          "q": "Is freeze-dried fruit better than fresh fruit for drinks?",
+          "a": "For infusing a cold drink, often yes. Fresh fruit is already full of water so it mostly dilutes, while freeze-dried fruit rehydrates by pulling in the tea, trading concentrated flavour for liquid and leaving a soft, snackable piece at the bottom."
+        }
+      ]
+    },
+    {
+      "slug": "coffee-candy-for-museums",
+      "number": "197",
+      "title": "Coffee candy for <em>museums</em>.",
+      "cardTitle": "Coffee candy for museums.",
+      "excerpt": "Coffee candy for museums is the quiet, crumb-free way to beat the gallery slump — a slow-melting icy coffee refresh you can have standing in front of a painting.",
+      "date": "2026-07-24",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "frozili",
+      "related": [
+        "coffee-candy-for-walking-tours",
+        "coffee-candy-for-rooftop-bars",
+        "the-snack-you-eat-standing-up"
+      ],
+      "primaryKeyword": "coffee candy for museums",
+      "secondaryKeywords": [
+        "coffee candy",
+        "icy coffee candy",
+        "museum snacks",
+        "quiet snacks",
+        "slow melting candy",
+        "gallery pick me up"
+      ],
+      "dateModified": "2026-07-24",
+      "faqs": [
+        {
+          "q": "Is coffee candy a good snack for museums?",
+          "a": "Yes — it's one of the few snacks suited to a gallery. Coffee candy is quiet, leaves no crumbs, and needs no table or café stop, so you can have a small refresh while standing in front of a painting without breaking your focus or the room's hush."
+        },
+        {
+          "q": "Why coffee flavour instead of mints or gum?",
+          "a": "The mid-museum slump is really a focus dip, and coffee is the flavour we link with attention. Icy coffee candy gives that association plus a cooling finish, without the chewing motion of gum — a calmer, more discreet fit for a quiet gallery."
+        },
+        {
+          "q": "Won't eating anything in a museum be a problem?",
+          "a": "Most museums ban food and drink because of mess and smell, not a single slow-melting candy held quietly in your mouth. Because there's no wrapper noise, crunch, or crumbs, coffee candy is about as low-impact as a refresh gets. When in doubt, check the specific museum's rules."
+        }
+      ]
+    },
+    {
       "slug": "why-we-snack-differently-on-vacation",
       "number": "196",
       "title": "Why we snack differently <em>on vacation</em>.",
