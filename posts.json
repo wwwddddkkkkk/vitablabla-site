@@ -17,6 +17,173 @@
   ],
   "posts": [
     {
+      "slug": "coffee-candy-for-picnics",
+      "number": "200",
+      "title": "Coffee candy for <em>picnics</em>.",
+      "cardTitle": "Coffee candy for picnics.",
+      "excerpt": "Coffee candy for picnics is the after-lunch coffee a basket can't carry: a slow-melting refresh with a cooling finish, no thermos or fire required.",
+      "date": "2026-07-26",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "frozili",
+      "related": [
+        "coffee-candy-for-the-beach",
+        "coffee-candy-for-backyard-barbecues",
+        "coffee-candy-for-lake-days"
+      ],
+      "primaryKeyword": "coffee candy for picnics",
+      "secondaryKeywords": [
+        "picnic snacks",
+        "after-lunch coffee",
+        "iced coffee candy",
+        "outdoor snacks",
+        "slow-melting candy",
+        "no-mess picnic treat"
+      ],
+      "dateModified": "2026-07-26",
+      "faqs": [
+        {
+          "q": "Is coffee candy good for a picnic?",
+          "a": "Yes — it's an easy way to add the after-lunch coffee a basket can't otherwise carry. Coffee candy needs no thermos, fire, or clean-up, packs flat, and gives you the flavour and a small lift of coffee right on the blanket, so the picnic can stretch past the meal."
+        },
+        {
+          "q": "Why bring coffee candy instead of a flask of coffee?",
+          "a": "A flask is heavy, takes up basket space, and usually goes lukewarm before you want it. Slow-melt coffee candy stays ready for hours, weighs almost nothing, and gives everyone a small coffee moment without carrying or pouring liquid on the grass."
+        },
+        {
+          "q": "Will coffee candy hold up on a hot afternoon outside?",
+          "a": "Frozili is a slow-melting hard candy rather than chocolate, so it copes with warm weather far better than most treats. Kept in its tin in a shaded corner of the basket instead of on a sun-baked blanket, it stays firm and ready when the after-lunch lull arrives."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-ice-cream",
+      "number": "201",
+      "title": "Freeze-dried fruit for <em>ice cream</em>.",
+      "cardTitle": "Freeze-dried fruit for ice cream.",
+      "excerpt": "Freeze-dried fruit for ice cream adds real crunch and bright flavour to a smooth scoop, and stays crisp on the cold instead of melting into slush like fresh fruit.",
+      "date": "2026-07-26",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-for-milkshakes",
+        "freeze-dried-fruit-for-sorbet",
+        "freeze-dried-fruit-for-strawberry-shortcake"
+      ],
+      "primaryKeyword": "freeze-dried fruit for ice cream",
+      "secondaryKeywords": [
+        "ice cream toppings",
+        "crunchy ice cream topping",
+        "sundae toppings",
+        "dessert toppings",
+        "freeze-dried strawberries",
+        "real fruit crunch"
+      ],
+      "dateModified": "2026-07-26",
+      "faqs": [
+        {
+          "q": "Is freeze-dried fruit good on ice cream?",
+          "a": "Yes — it's one of the better ice-cream toppings for texture. Because freeze-dried fruit holds almost no moisture, it stays crunchy on a cold scoop instead of freezing hard or going soggy like fresh fruit, and its concentrated flavour cuts through sweet, rich ice cream."
+        },
+        {
+          "q": "Why doesn't freeze-dried fruit get soggy on ice cream?",
+          "a": "Fresh fruit is mostly water, so it freezes into hard, wet pieces against cold ice cream. Freeze-drying removes that water, leaving a light, brittle piece that shatters under the spoon and keeps its crunch far longer on top of a scoop."
+        },
+        {
+          "q": "How do you use freeze-dried fruit on ice cream?",
+          "a": "Scatter whole pieces on top for big bites of crunch, roughly crush them for an even fruit-flecked coating, or grind to a powder to tint and flavour soft-serve without syrup. You can also fold crushed pieces into a homemade base before churning and the crunch survives the freeze."
+        }
+      ]
+    },
+    {
+      "slug": "the-quiet-boom-in-freeze-dried-fruit",
+      "number": "202",
+      "title": "The quiet <em>boom</em> in freeze-dried fruit.",
+      "cardTitle": "The quiet boom in freeze-dried fruit.",
+      "excerpt": "Freeze-dried fruit is booming — roughly a $5.4B global market in 2025, forecast near $9.8B by 2034 — because it beats fresh fruit on shelf life, mess, and crunch.",
+      "date": "2026-07-26",
+      "readTime": "5 min",
+      "color": "tb-peach",
+      "categories": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Freeze-Dried Fruit",
+        "Better-for-You"
+      ],
+      "cta": "ohcrisp",
+      "theme": "trend",
+      "related": [
+        "everything-is-a-topping-now",
+        "snacks-as-souvenirs",
+        "why-snacks-keep-getting-smaller"
+      ],
+      "primaryKeyword": "why freeze-dried fruit is booming",
+      "secondaryKeywords": [
+        "freeze-dried fruit market",
+        "freeze-dried fruit trend",
+        "freeze-dried fruit market size",
+        "snack trends 2025",
+        "better-for-you snacks",
+        "texture as flavour"
+      ],
+      "dateModified": "2026-07-26",
+      "chart": {
+        "type": "bar",
+        "labels": [
+          "2025",
+          "2034"
+        ],
+        "values": [
+          5.45,
+          9.81
+        ],
+        "unit": "B",
+        "source": "Market Research Future, 2025",
+        "highlight": 1
+      },
+      "faqs": [
+        {
+          "q": "Why is freeze-dried fruit becoming so popular?",
+          "a": "Because it fixes the two biggest drawbacks of fresh fruit: it lasts for months without a fridge and it isn't messy, while keeping real fruit flavour and adding crunch. That convenience, plus a clean one-ingredient label, has pushed the global freeze-dried fruit market to roughly $5.4 billion in 2025, according to Market Research Future."
+        },
+        {
+          "q": "How big is the freeze-dried fruit market?",
+          "a": "Market Research Future estimated the global freeze-dried fruit market at about $5.4 billion in 2025, with forecasts pointing toward roughly $9.8 billion by 2034 — a mid-single-digit annual growth rate. The 2034 figure is a projection, so it should be read as a forecast rather than a confirmed total."
+        },
+        {
+          "q": "Is freeze-dried fruit actually healthy?",
+          "a": "Freeze-dried fruit is usually just fruit with the water removed, so it keeps most of the original nutrients and needs no added sugar to taste sweet. It is still concentrated and easy to eat quickly, so portion size matters, but as a snack it's a reasonable stand-in for fresh fruit when a fridge isn't nearby."
+        }
+      ]
+    },
+    {
       "slug": "the-two-snack-person",
       "number": "199",
       "title": "The <em>two-snack</em> person.",
