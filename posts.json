@@ -17,6 +17,157 @@
   ],
   "posts": [
     {
+      "slug": "coffee-candy-for-concerts",
+      "number": "203",
+      "title": "Coffee candy for <em>concerts</em>.",
+      "cardTitle": "Coffee candy for concerts.",
+      "excerpt": "Coffee candy for concerts is a hands-free, spill-proof refresh for the wait between sets: coffee flavour and a cooling finish, no bar queue required.",
+      "date": "2026-07-27",
+      "readTime": "5 min",
+      "color": "tb-ice",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "frozili",
+      "related": [
+        "coffee-candy-for-the-theatre",
+        "coffee-candy-for-conferences",
+        "coffee-candy-for-summer-weddings"
+      ],
+      "primaryKeyword": "coffee candy for concerts",
+      "secondaryKeywords": [
+        "concert snacks",
+        "gig snacks",
+        "hands-free coffee",
+        "iced coffee candy",
+        "slow-melting candy",
+        "refreshing candy"
+      ],
+      "dateModified": "2026-07-27",
+      "faqs": [
+        {
+          "q": "Is coffee candy good to bring to a concert?",
+          "a": "Yes — it's a hands-free, spill-proof way to get the coffee flavour and small lift a late, standing show asks for, without leaving to queue at the bar. A slim tin clears most clear-bag policies, rides in a pocket through the crowd, and needs no free hand, so it never costs you your spot at the rail."
+        },
+        {
+          "q": "Why not just buy a coffee or drink at the venue?",
+          "a": "Venue lines are long and pricey, and leaving to buy something usually means losing a good spot on the floor. Slow-melt coffee candy stays in your pocket, gives you the flavour and a gentle lift between sets, and asks for nothing but a moment — no queue, no cup, no giving up your place."
+        },
+        {
+          "q": "How long does a piece last during a show?",
+          "a": "Frozili is a slow-melting hard candy, so one piece lasts roughly the length of a soundcheck — enough to bridge the wait between the openers and the main act. It dissolves quietly on its own, with no chewing and no wrapper to drop in a dark, crowded room."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-acai-bowls",
+      "number": "204",
+      "title": "Freeze-dried fruit for <em>açaí bowls</em>.",
+      "cardTitle": "Freeze-dried fruit for açaí bowls.",
+      "excerpt": "Freeze-dried fruit for açaí bowls keeps its crunch and colour all the way down, where fresh berries thaw and bleed into the melting purple base.",
+      "date": "2026-07-27",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "smoothie-bowl-toppings-freeze-dried-fruit",
+        "freeze-dried-fruit-for-frozen-yogurt",
+        "freeze-dried-fruit-for-trail-mix"
+      ],
+      "primaryKeyword": "freeze-dried fruit for açaí bowls",
+      "secondaryKeywords": [
+        "açaí bowl toppings",
+        "smoothie bowl toppings",
+        "crunchy fruit topping",
+        "breakfast bowl",
+        "freeze-dried strawberries",
+        "shelf-stable fruit"
+      ],
+      "dateModified": "2026-07-27",
+      "faqs": [
+        {
+          "q": "Is freeze-dried fruit good on an açaí bowl?",
+          "a": "Yes — it holds its crunch and colour on a cold, wet açaí base where fresh berries thaw and bleed. Because freeze-dried fruit has no water, it stays crisp from the first spoonful to the last, adding the texture and bright fruit flavour that make a bowl feel like a dish you chew rather than drink."
+        },
+        {
+          "q": "Why use freeze-dried fruit instead of fresh fruit on açaí?",
+          "a": "The frozen base thaws fresh berries from below, turning them to cold mush within minutes, and fresh fruit spoils fast in the fridge. Freeze-dried fruit stays crunchy and bright against the base, is shelf-stable so the crunch is always on hand, and adds sweetness without watering the bowl down."
+        },
+        {
+          "q": "How do you keep an açaí bowl from getting soggy?",
+          "a": "Scatter freeze-dried fruit on right before eating and fold a little into the middle of the base so the crunch lasts to the bottom. Because freeze-dried fruit adds no water, you can be generous without turning the bowl into a purple puddle."
+        }
+      ]
+    },
+    {
+      "slug": "the-mini-dessert-trend",
+      "number": "205",
+      "title": "The <em>mini dessert</em> trend.",
+      "cardTitle": "The mini dessert trend.",
+      "excerpt": "The mini dessert trend is dessert reformatting itself as a snack: smaller, single-serving sweets built for a quick moment rather than a sit-down course.",
+      "date": "2026-07-27",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Better-for-You"
+      ],
+      "cta": "ohcrisp",
+      "theme": "trend",
+      "related": [
+        "why-snacks-keep-getting-smaller",
+        "permissible-indulgence-snacks-that-feel-allowed",
+        "everything-is-a-topping-now"
+      ],
+      "primaryKeyword": "mini dessert trend",
+      "secondaryKeywords": [
+        "small desserts",
+        "single-serve dessert",
+        "dessertification",
+        "portion control snacks",
+        "snackification",
+        "two-bite desserts"
+      ],
+      "dateModified": "2026-07-27",
+      "faqs": [
+        {
+          "q": "Why are desserts getting smaller?",
+          "a": "Because dessert is reformatting itself as a snack — a quick moment of sweetness rather than a sit-down course. Smaller, single-serving formats let people enjoy a treat without committing to a whole occasion or a large portion, which fits days that are broken into short gaps rather than long meals."
+        },
+        {
+          "q": "Is a mini dessert healthier than a full one?",
+          "a": "Not necessarily by ingredient, but the small format does the portioning for you, so it's easier to stop at one. The appeal is less about calories than about control and pacing — a mini feels like a considered yes rather than an all-or-nothing choice."
+        },
+        {
+          "q": "What makes a small dessert actually good?",
+          "a": "Contrast and clarity. With only two or three bites to work with, a mini has no room for filler, so it needs instant texture, bright colour, and one clear flavour. Crunch and colour that a large slice treats as garnish become the whole point at a small size."
+        }
+      ]
+    },
+    {
       "slug": "coffee-candy-for-picnics",
       "number": "200",
       "title": "Coffee candy for <em>picnics</em>.",
