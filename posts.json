@@ -17,6 +17,157 @@
   ],
   "posts": [
     {
+      "slug": "coffee-candy-for-night-markets",
+      "number": "209",
+      "title": "Coffee candy for <em>night markets</em>.",
+      "cardTitle": "Coffee candy for night markets.",
+      "excerpt": "Coffee candy for night markets is a hands-free palate reset between stalls: a slow melt that clears the last flavour and cools you down, no queue required.",
+      "date": "2026-08-01",
+      "readTime": "5 min",
+      "color": "tb-violet",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy",
+        "Travel & Work"
+      ],
+      "cta": "frozili",
+      "theme": "frozili",
+      "related": [
+        "coffee-candy-for-concerts",
+        "coffee-candy-for-rooftop-bars",
+        "coffee-candy-for-summer-evenings"
+      ],
+      "primaryKeyword": "coffee candy for night markets",
+      "secondaryKeywords": [
+        "night market snacks",
+        "palate cleanser candy",
+        "cooling candy",
+        "slow-melting candy",
+        "street food evening",
+        "refreshing candy"
+      ],
+      "dateModified": "2026-08-01",
+      "faqs": [
+        {
+          "q": "Why bring candy to a night market full of food?",
+          "a": "Not as food — as a reset. A slow-melting coffee candy clears the last stall's flavour, cools you down, and takes up no stomach space, so each new dish tastes like the first one of the night."
+        },
+        {
+          "q": "Will coffee candy keep me up after a late market?",
+          "a": "A piece of coffee candy is flavour-first, not a substitute for an actual coffee, so it gives you the taste and a small lift without an espresso's worth of late-night alertness. That's exactly why it fits the ten-pm hour a market keeps."
+        },
+        {
+          "q": "When during the market should I have one?",
+          "a": "Between contrasts: after something chilli-hot, before something sweet, or between two desserts. One piece per transition is plenty — it melts slowly, so a couple of candies cover a whole evening."
+        }
+      ]
+    },
+    {
+      "slug": "freeze-dried-fruit-for-smoothie-packs",
+      "number": "210",
+      "title": "Freeze-dried fruit for <em>smoothie packs</em>.",
+      "cardTitle": "Freeze-dried fruit for smoothie packs.",
+      "excerpt": "Freeze-dried fruit for smoothie packs concentrates flavour and colour without adding water — a handful per freezer bag turns a beige blend bright again.",
+      "date": "2026-08-01",
+      "readTime": "5 min",
+      "color": "tb-blush",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "smoothie-bowl-toppings-freeze-dried-fruit",
+        "freeze-dried-fruit-for-overnight-oats",
+        "how-to-store-freeze-dried-fruit-after-opening"
+      ],
+      "primaryKeyword": "freeze-dried fruit for smoothie packs",
+      "secondaryKeywords": [
+        "smoothie freezer packs",
+        "meal prep smoothies",
+        "smoothie ingredients",
+        "freeze-dried strawberries",
+        "make-ahead breakfast",
+        "smoothie pack recipes"
+      ],
+      "dateModified": "2026-08-01",
+      "faqs": [
+        {
+          "q": "Can you put freeze-dried fruit in a smoothie?",
+          "a": "Yes — add it to the blender or the freezer pack like any other fruit. Because its water is already removed, it concentrates flavour and slightly thickens the blend instead of watering it down."
+        },
+        {
+          "q": "How much freeze-dried fruit per smoothie pack?",
+          "a": "A small handful — roughly a quarter to half a cup — per single-serve bag. It's a flavour concentrate, so it supplements the frozen fruit rather than replacing it; keep frozen banana or berries for cold and body."
+        },
+        {
+          "q": "Do smoothie packs with freeze-dried fruit keep longer?",
+          "a": "The freeze-dried portion is shelf-stable and won't degrade in the freezer, so packs keep as long as their frozen ingredients allow — typically two to three months. You can also store the pouch at room temperature and add a handful at blending time instead."
+        }
+      ]
+    },
+    {
+      "slug": "why-every-snack-is-a-limited-edition",
+      "number": "211",
+      "title": "Why every snack is a <em>limited edition</em> now.",
+      "cardTitle": "Why every snack is a limited edition now.",
+      "excerpt": "Limited edition snacks put a timer on the shelf: why scarcity became the aisle's favourite flavour, what it does to taste, and how to enjoy the game.",
+      "date": "2026-08-01",
+      "readTime": "5 min",
+      "color": "tb-pop",
+      "categories": [
+        "Snack Ideas",
+        "Refreshing Snacks"
+      ],
+      "crumbs": [
+        "Snack Ideas",
+        "Refreshing Snacks"
+      ],
+      "cta": "frozili",
+      "theme": "trend",
+      "related": [
+        "the-seasonal-snack-creep",
+        "snacks-as-souvenirs",
+        "the-comfort-flavor-comeback"
+      ],
+      "primaryKeyword": "limited edition snacks",
+      "secondaryKeywords": [
+        "limited edition candy",
+        "snack drops",
+        "seasonal snack flavors",
+        "scarcity marketing snacks",
+        "snack trends",
+        "collector snacks"
+      ],
+      "dateModified": "2026-08-01",
+      "faqs": [
+        {
+          "q": "Why do snack brands release so many limited editions?",
+          "a": "Because a deadline is cheap and effective marketing: a flavour that will disappear gets bought faster, photographed more, and talked about more than a permanent one. The limited run also lets brands test bold flavours with less risk, since any misfire is gone in a season anyway."
+        },
+        {
+          "q": "Are limited edition snacks actually different or better?",
+          "a": "Often they're modest variations on the standard product — the biggest difference is the timer on the wrapper. They can still be worth trying; just know that part of what you're tasting is the urgency, not only the recipe."
+        },
+        {
+          "q": "Is it worth stockpiling a limited edition snack you love?",
+          "a": "Usually not. Most snacks have a short best-by window, and popular limited flavours tend to return in later runs precisely because demand was proven. Buy one extra to share, not a shelf to store."
+        }
+      ]
+    },
+    {
       "slug": "coffee-candy-for-evening-bike-rides",
       "number": "206",
       "title": "Coffee candy for <em>evening bike rides</em>.",
