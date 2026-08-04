@@ -2,6 +2,8 @@
 **/.github
 **/.DS_Store
 **/node_modules
+package.json
+package-lock.json
 .assetsignore
 wrangler.jsonc
 README.md
