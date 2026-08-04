@@ -5,6 +5,8 @@ Thumbs.db
 .idea/
 .vscode/
 node_modules/
+.wrangler/
+worker-startup.cpuprofile
 
 __pycache__/
 *.pyc

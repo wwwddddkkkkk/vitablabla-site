@@ -7,6 +7,7 @@ package.json
 package-lock.json
 .assetsignore
 wrangler.jsonc
+worker.js
 README.md
 vitablabla-content-rules.md
 scripts

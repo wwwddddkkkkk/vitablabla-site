@@ -4,6 +4,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Loading… — Vitablabla Journal</title>
+<meta name="robots" content="noindex,follow" />
+<script>
+  (function () {
+    var slug = new URLSearchParams(location.search).get('slug') || '';
+    if (/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
+      location.replace('/a/' + encodeURIComponent(slug) + '/');
+    }
+  })();
+</script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="stylesheet" href="styles.css" />
 <style>
@@ -358,7 +367,7 @@ function addJsonLd(obj) {
 }
 
 function injectSEO(post) {
-  const url = VB_SITE + '/post.html?slug=' + encodeURIComponent(post.slug);
+  const url = VB_SITE + '/a/' + encodeURIComponent(post.slug) + '/';
   const title = stripHTML(post.title);
   const desc = stripHTML(post.excerpt || '');
   const published = post.date || '';

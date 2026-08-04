@@ -37,7 +37,7 @@ window.VB = (function () {
   }
 
   function postURL(slug) {
-    return 'post.html?slug=' + encodeURIComponent(slug);
+    return '/a/' + encodeURIComponent(slug) + '/';
   }
 
   // Sort posts: newest first by date, ties broken by number desc.

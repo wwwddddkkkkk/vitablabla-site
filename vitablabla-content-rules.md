@@ -27,11 +27,9 @@ Every Vitablabla article should still have a useful search angle, but the writin
 
 ## Daily Publishing Shape
 
-Default cadence: **3 posts per day**, one of each type:
+Current default cadence: **1 OhCrisp post per day** — freeze-dried fruit, real fruit crunch, toppings, bowls, recipes, storage, travel, lunchboxes, or other useful long-tail search intent.
 
-1. **1 Frozili post** — coffee candy / cooling / workday / travel reset.
-2. **1 OhCrisp post** — freeze-dried fruit / crunch / toppings / bowls.
-3. **1 trend / analysis / fun post** — snack industry, culture, behaviour, or a playful observation. Not tied to one product; may mention both brands, or neither until the end. This is the "magazine" pillar — it should be genuinely interesting to read, not a product page.
+Frozili and broad trend/analysis posts are now published only when specifically planned. The daily automation must not create them unless its brief is intentionally changed.
 
 Ideas for the daily trend/analysis/fun post: snack-industry shifts (premiumisation, texture-as-flavour, the adult-candy aisle), behaviour pieces (why we snack at 3pm, the rise of the "small reset"), light analysis ("what 'better-for-you' actually means now"), or fun angles ("a taxonomy of desk snackers"). Keep it evidence-aware and specific — trend pieces are the most likely to be cited by AI engines, so anchor claims in concrete detail.
 
@@ -286,7 +284,7 @@ New SEO/GEO fields (add these to every new post):
 - `faqs`: array of 2–4 objects `{ "q": "...", "a": "..." }`, mirroring the body FAQ section. Plain text, no HTML.
 - `dateModified`: `YYYY-MM-DD`, set whenever the post is edited (defaults to `date` if absent).
 
-These power the meta description, Open Graph tags, and the Article + FAQ + Breadcrumb structured data injected by `post.html`. A post without `faqs` still works but loses its FAQ rich-result eligibility, so include them.
+These power the meta description, Open Graph tags, and the Article + FAQ + Breadcrumb structured data written into the generated static page. A post without `faqs` still works, but new posts should include visible FAQ copy and matching metadata.
 
 Use `cta: "frozili"` for Frozili and broad cooling/coffee/workday posts.
 Use `cta: "ohcrisp"` for fruit, crunch, toppings, bowls, and colorful snack posts.
@@ -306,14 +304,14 @@ If a new category is needed, add it to the top-level `categories` array in `post
 Each article should include **2–4 internal links** that feel like editorial references, not forced SEO links.
 
 - Link from descriptive phrases ("coffee candy for airport gates"), never "click here."
-- Use **root-relative** paths with a leading slash: `/frozili.html`, `/ohcrisp.html`, `/post.html?slug=<slug>`. These resolve correctly both inside the reader view and when an AI crawler fetches the raw body fragment directly.
+- Use **root-relative clean paths** with a leading slash: `/frozili`, `/ohcrisp`, `/a/<slug>/`. These resolve correctly inside the generated article and when an AI crawler fetches the raw body fragment directly.
 - Link to 1 brand page and 1–3 related posts.
 - Prefer linking the two `related` slugs from `posts.json` somewhere in the body so the link graph and the metadata agree.
-- Confirm every `post.html?slug=...` target actually exists before publishing.
+- Confirm every `/a/<slug>/` target exists in `posts.json` before publishing.
 
 ---
 
-## Publish Workflow (do this for all 3 daily posts)
+## Publish Workflow
 
 1. Generate the illustration: `python3 scripts/illustration.py <theme> <tb-color> <slug>`.
 2. Write `posts/<slug>.html` following the body structure above (incl. the illustration figure and the FAQ section).
@@ -324,8 +322,8 @@ Each article should include **2–4 internal links** that feel like editorial re
    python3 scripts/build-vitablabla.py
    ```
 
-   This validates `posts.json`, checks that every `slug` has a body file and every `related`/internal link resolves, and regenerates `sitemap.xml`. Fix anything it flags.
-5. Commit and push (this runs natively on the Mac — see Daily Automation).
+   This validates `posts.json`, checks every body and internal link, generates `a/<slug>/index.html` for every article, and regenerates `sitemap.xml`. Fix every error before publishing.
+5. Commit the body, registry, sitemap, and generated article page, then push and deploy through Wrangler.
 
 Never push if `build-vitablabla.py` reports an error — a broken `posts.json` takes the whole site down.
 
@@ -333,12 +331,7 @@ Never push if `build-vitablabla.py` reports an error — a broken `posts.json` t
 
 ## Daily Automation
 
-Content generation and publishing are split, because the content agent writes files but cannot run `git`:
-
-1. **Generation** — a daily scheduled task writes the 3 posts (+ illustrations), updates `posts.json`, and runs `build-vitablabla.py`. All of this is file creation/overwrite.
-2. **Publishing** — a native job on the Mac (`scripts/auto-push-vitablabla.sh`, scheduled ~2 hours after generation) runs `git add -A && git commit && git push`. Cloudflare Pages auto-deploys on push.
-
-Keep the two times staggered (generate first, push second). If posts ever stop appearing live, check that the native push job ran.
+The daily scheduled task creates one OhCrisp post, runs the build, stages only intended source and generated files, commits, pushes `main`, deploys with Wrangler, and verifies the clean article URL. If validation, push, or deployment fails, it stops and reports the exact step instead of repeatedly retrying.
 
 ---
 
@@ -348,10 +341,11 @@ These are already in place; keep them working:
 
 - `robots.txt` — allows Google/Bing and explicitly welcomes AI crawlers (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, anthropic-ai, PerplexityBot, Google-Extended, CCBot). Points to the sitemap. Edit only if a new crawler should be welcomed or blocked.
 - `sitemap.xml` — regenerated by the build script. Do not hand-edit.
-- `post.html` — injects per-post `<title>`, meta description, canonical, Open Graph/Twitter tags, and JSON-LD (`Article`, `BreadcrumbList`, and `FAQPage` when `faqs` exist).
+- `a/<slug>/index.html` — contains the complete article, per-post metadata, canonical, Open Graph/Twitter tags, and JSON-LD before JavaScript runs.
+- `post.html?slug=<slug>` — legacy URL only; Cloudflare permanently redirects it to `/a/<slug>/`.
 - `index.html` — carries `Organization` and `WebSite` JSON-LD.
 
-**Known limitation / next upgrade:** posts are rendered client-side via `post.html?slug=...`. Google and JS-rendering engines see the injected metadata, but pure non-JS AI crawlers (some GPTBot/PerplexityBot fetches) may not execute the JavaScript. The deepest GEO win is to pre-render each post as a static HTML page at a clean URL (e.g. `/a/<slug>`) with the metadata and body already in the HTML. This is the recommended next infrastructure step; until then, the FAQ text and key claims also live in the static `posts/<slug>.html` body so there is real content to read.
+Static pre-rendering is now the production architecture. Google, Bing, social unfurlers, and non-JavaScript AI crawlers receive the same title, metadata, structured data, visible FAQ, and article body.
 
 ---
 

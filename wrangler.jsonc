@@ -2,7 +2,22 @@
   "name": "vitablabla-site",
   "account_id": "a9ad1356b87d250e789dd0f19add54dc",
   "compatibility_date": "2026-08-03",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "worker.js",
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.01
+    }
+  },
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/post", "/post.html"]
   }
 }
