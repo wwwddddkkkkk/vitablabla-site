@@ -17,6 +17,60 @@
   ],
   "posts": [
     {
+      "slug": "freeze-dried-fruit-for-baked-oatmeal",
+      "number": "218",
+      "title": "Freeze-dried fruit for <em>baked oatmeal</em>.",
+      "cardTitle": "Freeze-dried fruit for baked oatmeal.",
+      "excerpt": "Freeze-dried fruit for baked oatmeal adds brighter flavor and a better finish without extra moisture - how to bake it in and when to add it on top.",
+      "date": "2026-08-07",
+      "readTime": "5 min",
+      "color": "tb-sage",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-oatmeal-toppings",
+        "freeze-dried-fruit-for-overnight-oats",
+        "freeze-dried-fruit-for-muffins"
+      ],
+      "primaryKeyword": "freeze-dried fruit for baked oatmeal",
+      "secondaryKeywords": [
+        "baked oatmeal toppings",
+        "freeze dried fruit breakfast",
+        "strawberry baked oatmeal",
+        "make ahead breakfast ideas",
+        "crunchy oatmeal topping"
+      ],
+      "dateModified": "2026-08-07",
+      "faqs": [
+        {
+          "q": "Is freeze-dried fruit good in baked oatmeal?",
+          "a": "Yes. Freeze-dried fruit is good in baked oatmeal because it adds concentrated fruit flavor and bright color without adding the extra moisture that can make the pan too soft."
+        },
+        {
+          "q": "Should you add freeze-dried fruit before or after baking baked oatmeal?",
+          "a": "Both can work, but they do different jobs. Stir smaller pieces in before baking for flavor through the pan, then add larger pieces on top right before serving if you want the best crunch."
+        },
+        {
+          "q": "Which freeze-dried fruit works best in baked oatmeal?",
+          "a": "Strawberry is the easiest all-purpose choice, while raspberry is best for sweeter oat bakes that need tartness. Apple, mango, and mixed berries also work well depending on whether you want the pan to feel cozier or brighter."
+        },
+        {
+          "q": "Does freeze-dried fruit stay crunchy in baked oatmeal?",
+          "a": "Not completely if it bakes inside the pan the whole time, because oven steam softens it. For the crispest finish, bake the oatmeal first and scatter freeze-dried fruit over each serving just before eating."
+        }
+      ]
+    },
+    {
       "slug": "freeze-dried-fruit-on-peanut-butter-toast",
       "number": "217",
       "title": "Freeze-dried fruit on <em>peanut butter toast</em>.",
