@@ -17,6 +17,60 @@
   ],
   "posts": [
     {
+      "slug": "freeze-dried-fruit-for-bagels",
+      "number": "222",
+      "title": "Freeze-dried fruit for <em>bagels</em>.",
+      "cardTitle": "Freeze-dried fruit for bagels.",
+      "excerpt": "Freeze-dried fruit for bagels adds bright crunch and real fruit flavor without sogginess - an easy topping for cream cheese, ricotta, and other soft breakfast spreads.",
+      "date": "2026-08-11",
+      "readTime": "6 min",
+      "color": "tb-cream",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "freeze-dried-fruit-for-cream-cheese-toast",
+        "freeze-dried-fruit-for-ricotta-toast",
+        "how-to-store-freeze-dried-fruit-after-opening"
+      ],
+      "primaryKeyword": "freeze-dried fruit for bagels",
+      "secondaryKeywords": [
+        "bagel topping ideas",
+        "freeze dried fruit breakfast",
+        "cream cheese bagel toppings",
+        "healthy sweet bagel topping",
+        "crunchy fruit topping"
+      ],
+      "dateModified": "2026-08-11",
+      "faqs": [
+        {
+          "q": "Is freeze-dried fruit good on bagels?",
+          "a": "Yes. Freeze-dried fruit is good on bagels because it adds real fruit flavor and crisp texture without making the bagel soggy or the spread watery."
+        },
+        {
+          "q": "What spread works best with freeze-dried fruit on bagels?",
+          "a": "Cream cheese is the easiest match because its cool, smooth texture makes the fruit crunch stand out. Ricotta, whipped cottage cheese, and mascarpone can work well too if you keep the rest of the toppings simple."
+        },
+        {
+          "q": "When should you add freeze-dried fruit to a bagel?",
+          "a": "Add freeze-dried fruit right before eating. That keeps the pieces crisp and prevents them from pulling moisture from the spread or the room air."
+        },
+        {
+          "q": "Which freeze-dried fruit tastes best on bagels?",
+          "a": "Strawberry is the most versatile choice because it tastes bright and familiar right away. Raspberry is better when you want more tartness, while mango works well if you prefer a softer, rounder fruit note."
+        }
+      ]
+    },
+    {
       "slug": "freeze-dried-fruit-for-diaper-bag-snacks",
       "number": "221",
       "title": "Freeze-dried fruit for <em>diaper bag snacks</em>.",
