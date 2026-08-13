@@ -17,6 +17,60 @@
   ],
   "posts": [
     {
+      "slug": "how-to-rehydrate-freeze-dried-fruit",
+      "number": "225",
+      "title": "How to rehydrate freeze-dried fruit without making it <em>mushy</em>.",
+      "cardTitle": "How to rehydrate freeze-dried fruit.",
+      "excerpt": "Learn how to rehydrate freeze-dried fruit with minimal liquid, better texture control, and practical tips for baking, sauces, and soft fruit fillings.",
+      "date": "2026-08-13",
+      "readTime": "6 min",
+      "color": "tb-peach",
+      "categories": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "OhCrisp",
+        "Freeze-Dried Fruit",
+        "Snack Ideas"
+      ],
+      "cta": "ohcrisp",
+      "theme": "ohcrisp",
+      "related": [
+        "how-to-store-freeze-dried-fruit-after-opening",
+        "freeze-dried-fruit-for-fruit-tarts",
+        "freeze-dried-fruit-powder"
+      ],
+      "primaryKeyword": "how to rehydrate freeze-dried fruit",
+      "secondaryKeywords": [
+        "rehydrating freeze dried fruit",
+        "how to soften freeze dried fruit",
+        "soak freeze dried fruit",
+        "rehydrated fruit for baking",
+        "freeze dried fruit texture"
+      ],
+      "dateModified": "2026-08-13",
+      "faqs": [
+        {
+          "q": "How do you rehydrate freeze-dried fruit without making it mushy?",
+          "a": "Place the fruit in one layer, drizzle on a small amount of cool or room-temperature liquid, turn the pieces once, and check them frequently. Drain the fruit as soon as it bends without breaking and still holds its shape."
+        },
+        {
+          "q": "How long does freeze-dried fruit take to rehydrate?",
+          "a": "There is no single soaking time because small crumbs, slices, and larger pieces absorb liquid at different rates. Check the fruit early and use texture as the guide rather than waiting for a fixed timer."
+        },
+        {
+          "q": "What liquid should you use to rehydrate freeze-dried fruit?",
+          "a": "Water is the most neutral choice, while juice or tea can add flavor when it suits the recipe. Cool or room-temperature liquid gives you more control than warm liquid, which softens the fruit faster."
+        },
+        {
+          "q": "Does rehydrated freeze-dried fruit need to be refrigerated?",
+          "a": "Yes, if you are not using it right away. Once water has been added, treat the fruit as a moist ingredient: refrigerate leftovers promptly and never return wet fruit to the dry pouch."
+        }
+      ]
+    },
+    {
       "slug": "how-to-keep-freeze-dried-fruit-crunchy-in-yogurt",
       "number": "224",
       "title": "How to keep freeze-dried fruit crunchy in <em>yogurt</em>.",
