@@ -25,11 +25,11 @@ Every Vitablabla article should still have a useful search angle, but the writin
 
 ---
 
-## Daily Publishing Shape
+## Publishing Shape
 
-Current default cadence: **1 OhCrisp post per day** — freeze-dried fruit, real fruit crunch, toppings, bowls, recipes, storage, travel, lunchboxes, or other useful long-tail search intent.
+For October 14–November 12, 2026, follow the approved recovery plan: **two new-content slots and five optimization/maintenance slots per week**. New URLs require a distinct verified intent; otherwise refresh an existing page. B2B and supply-chain topics are out of scope.
 
-Frozili and broad trend/analysis posts are now published only when specifically planned. The daily automation must not create them unless its brief is intentionally changed.
+Publishing frequency is not a quality signal by itself. If a proposed article does not add a distinct answer, observation, test, or perspective, improve an existing URL instead of creating a new one. B2B and supply-chain topics are out of scope unless the editorial strategy is explicitly changed.
 
 Ideas for the daily trend/analysis/fun post: snack-industry shifts (premiumisation, texture-as-flavour, the adult-candy aisle), behaviour pieces (why we snack at 3pm, the rise of the "small reset"), light analysis ("what 'better-for-you' actually means now"), or fun angles ("a taxonomy of desk snackers"). Keep it evidence-aware and specific — trend pieces are the most likely to be cited by AI engines, so anchor claims in concrete detail.
 
@@ -83,7 +83,7 @@ The two overlap, but GEO rewards a few specific things that ordinary blog writin
 
 2. **Write extractable, self-contained claims.** Each key sentence should make sense if it were lifted out of the article alone. Prefer "Frozili icy coffee candy melts slowly, so one piece lasts about as long as a short walk to a meeting" over "It lasts a while." Avoid pronouns that depend on the previous paragraph in your most quotable lines.
 
-3. **Use a real FAQ section.** Every post ends with 2–4 short Q&A pairs in an `h2`/`h3` + paragraph structure, and the same Q&A goes into `faqs` in `posts.json` (this powers FAQ structured data). Phrase questions the way a person types or speaks them ("Is coffee candy a good alternative to mints?").
+3. **Use Q&A only when it helps.** Add 2–4 short Q&A pairs only when readers have genuine follow-up questions that are not already answered cleanly in the body. If a visible Q&A section exists, mirror it exactly in `faqs` in `posts.json`. Do not manufacture FAQs as an SEO ritual.
 
 4. **Be concrete and specific.** Numbers, named occasions, comparisons, and sensory specifics get cited more than vague adjectives. "Three good hotel-lobby moments" and "crunch instead of chew" travel further than "great for many situations."
 
@@ -98,13 +98,13 @@ The primary keyword (or a close variation) should appear naturally in:
 - the first 2 paragraphs
 - at least one `h2`
 - one later paragraph near the brand mention
-- at least one FAQ question or answer
+- when a Q&A section exists, at least one question or answer
 
 Do not repeat the exact keyword awkwardly. Variations are better; engines understand synonyms.
 
 ### Word count + density
 
-- Target **600–900 words** of body copy. Long enough to be substantive, short enough to stay editorial.
+- Use enough body copy to satisfy the reader. **600–900 words is a common editorial range, not a quota or ranking factor.** A concise post can be complete; a complex guide can be longer.
 - 3–5 `h2` sections, each genuinely about a different sub-idea.
 - One useful list (ordered or unordered) per post — lists are highly extractable.
 
@@ -206,7 +206,7 @@ Required body order:
 6. One ordered or unordered list where useful.
 7. One `pull-quote` only if the idea is strong.
 8. A closing paragraph with a soft brand or related-post link.
-9. **FAQ section** (required): an `h2` like "Quick questions" followed by 2–4 `h3` questions, each with a 1–3 sentence answer. The same Q&A must be mirrored in `faqs` in `posts.json`.
+9. **Optional Q&A section:** when the topic naturally produces follow-up questions, use an `h2` like "Quick questions" followed by 2–4 `h3` questions with concise answers. Mirror the same Q&A in `faqs` in `posts.json`.
 
 Do not use a hard Shopify-style CTA block inside the body. The site renders the CTA from `posts.json`.
 
@@ -277,14 +277,14 @@ Required fields:
 - `cta`: `frozili` or `ohcrisp`.
 - `related`: 3 valid existing slugs.
 
-New SEO/GEO fields (add these to every new post):
+SEO/GEO fields:
 
 - `primaryKeyword`: the single search target, e.g. `"coffee candy for hotel lobbies"`.
 - `secondaryKeywords`: array of 3–6 supporting phrases.
-- `faqs`: array of 2–4 objects `{ "q": "...", "a": "..." }`, mirroring the body FAQ section. Plain text, no HTML.
-- `dateModified`: `YYYY-MM-DD`, set whenever the post is edited (defaults to `date` if absent).
+- `faqs`: optional array of 2–4 objects `{ "q": "...", "a": "..." }`, used only when the body contains the matching visible Q&A. Plain text, no HTML.
+- `dateModified`: `YYYY-MM-DD`, updated only when visible body content changes substantively (defaults to `date` if absent).
 
-These power the meta description, Open Graph tags, and the Article + FAQ + Breadcrumb structured data written into the generated static page. A post without `faqs` still works, but new posts should include visible FAQ copy and matching metadata.
+These power the meta description, Open Graph tags, and Article/Breadcrumb structured data. When genuine FAQs are present, the build also writes matching FAQ schema for non-Google consumers that may still use it. FAQ rich results are no longer a Google Search objective.
 
 Use `cta: "frozili"` for Frozili and broad cooling/coffee/workday posts.
 Use `cta: "ohcrisp"` for fruit, crunch, toppings, bowls, and colorful snack posts.
@@ -314,8 +314,8 @@ Each article should include **2–4 internal links** that feel like editorial re
 ## Publish Workflow
 
 1. Generate the illustration: `python3 scripts/illustration.py <theme> <tb-color> <slug>`.
-2. Write `posts/<slug>.html` following the body structure above (incl. the illustration figure and the FAQ section).
-3. Add the full metadata entry (incl. `primaryKeyword`, `secondaryKeywords`, `faqs`, `dateModified`) to the top of `posts` in `posts.json`. Numbers increment; the newest post sits at the top of the array.
+2. Write `posts/<slug>.html` following the body structure above, including the illustration figure and an optional Q&A section when useful.
+3. Add the full metadata entry (including `primaryKeyword`, `secondaryKeywords`, and `dateModified`, plus `faqs` only when visible Q&A exists) to the top of `posts` in `posts.json`. Numbers increment; the newest post sits at the top of the array.
 4. Run the build script from the repo root:
 
    ```
@@ -329,9 +329,9 @@ Never push if `build-vitablabla.py` reports an error — a broken `posts.json` t
 
 ---
 
-## Daily Automation
+## Scheduled Publishing
 
-The daily scheduled task creates one OhCrisp post, runs the build, stages only intended source and generated files, commits, pushes `main`, deploys with Wrangler, and verifies the clean article URL. If validation, push, or deployment fails, it stops and reports the exact step instead of repeatedly retrying.
+Scheduled runs prepare and validate local changes, then stop for explicit human approval. Only after approval in the current conversation may the agent commit intended files, push, deploy through Wrangler, and verify live URLs. GSC writes and consolidation, deletion, or redirects of published URLs require separate approval. Stop on validation, push, or deployment failure; never publish merely to preserve cadence.
 
 ---
 
@@ -356,7 +356,7 @@ Before finishing a Vitablabla post, check:
 - Is the title searchable and beautiful, and under ~70 visible characters?
 - Does the first paragraph create a scene, and does paragraph two plainly state the answer + primary keyword?
 - Are key sentences self-contained enough to be quoted alone?
-- Is there a real FAQ section, mirrored in `faqs`?
+- If the post has genuine follow-up questions, is the visible Q&A mirrored exactly in `faqs`?
 - Does the post have one useful idea, not just nice words?
 - Are Frozili or OhCrisp mentioned naturally where relevant (not stuffed)?
 - Are all internal links valid?

@@ -2,691 +2,125 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Vitablabla | Products for People Who Know What They Like</title>
-<meta name="description" content="Vitablabla creates small, thoughtful everyday brands for people with specific tastes — from crunchy fruit snacks to refreshing little rituals." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#faf6ed" />
+<title>Vitablabla — A Little More Oh! in Your Everyday</title>
+<meta name="description" content="Welcome to the Vitablabla house of brands. Discover OhCrisp fruit snacks, OHSIP coffee cubes, OHVIVA fruit tea and Frozili icy coffee candy. Small things. Big oh!" />
 <link rel="canonical" href="https://vitablabla.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Vitablabla" />
-<meta property="og:title" content="Vitablabla | Products for People Who Know What They Like" />
-<meta property="og:description" content="Vitablabla creates small, thoughtful everyday brands for people with specific tastes — from crunchy fruit snacks to refreshing little rituals." />
+<meta property="og:title" content="Vitablabla — A Little More Oh! in Your Everyday" />
+<meta property="og:description" content="Four little worlds of flavor. Meet OhCrisp, OHSIP, OHVIVA and Frozili — and find your kind of happy." />
 <meta property="og:url" content="https://vitablabla.com/" />
 <meta name="twitter:card" content="summary" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/home.css" />
+<noscript><style>.brand-house .menu-toggle{display:none}@media(max-width:680px){.brand-house .mobile-menu[hidden]{display:block!important}}</style></noscript>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Vitablabla",
-  "url": "https://vitablabla.com",
-  "logo": "https://vitablabla.com/favicon.svg",
-  "description": "Vitablabla creates small, thoughtful everyday brands for people with specific tastes — from icy coffee candy (Frozili) to freeze-dried fruit (OhCrisp).",
-  "brand": [
-    { "@type": "Brand", "name": "Frozili", "description": "Icy coffee candy — a slow-melting, cooling, non-gum refresher." },
-    { "@type": "Brand", "name": "OhCrisp", "description": "Freeze-dried fruit — real fruit crunch for bowls, boards, and everyday snacking." }
-  ],
-  "sameAs": [
-    "https://www.instagram.com/vitablabla",
-    "https://www.tiktok.com/@froziliofficial",
-    "https://www.pinterest.com/vitablabla/"
-  ]
+ "@context": "https://schema.org", "@type": "Organization", "@id": "https://vitablabla.com/#organization",
+ "name": "Vitablabla", "url": "https://vitablabla.com/", "logo": "https://vitablabla.com/favicon.svg",
+ "description": "A house of playful food and drink brands, making everyday moments a little more joyful.",
+ "brand": [
+  {"@type": "Brand", "name": "OhCrisp", "url": "https://www.ohcrisp.com", "description": "Colorful, crunchy freeze-dried fruit snacks."},
+  {"@type": "Brand", "name": "OHSIP", "url": "https://getohsip.com", "description": "Freeze-dried Arabica coffee cubes that dissolve in ice water."},
+  {"@type": "Brand", "name": "OHVIVA", "url": "https://drinkohviva.com", "description": "Freeze-dried fruit tea cubes with real fruit pieces."},
+  {"@type": "Brand", "name": "Frozili", "url": "https://www.frozili.com", "description": "Slow-melting icy coffee candy with a cooling finish."}
+ ],
+ "sameAs": ["https://www.instagram.com/vitablabla", "https://www.tiktok.com/@froziliofficial", "https://www.pinterest.com/vitablabla/"]
 }
 </script>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Vitablabla",
-  "url": "https://vitablabla.com",
-  "publisher": { "@type": "Organization", "name": "Vitablabla" }
-}
+{"@context": "https://schema.org", "@type": "WebSite", "name": "Vitablabla", "url": "https://vitablabla.com/", "publisher": {"@id": "https://vitablabla.com/#organization"}}
 </script>
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="stylesheet" href="styles.css" />
-<style>
-  /* ── Hero ── */
-  .hero {
-    position: relative;
-    padding: 56px 0 48px;
-    overflow: hidden;
-  }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 48px;
-    position: relative;
-    z-index: 2;
-  }
-  .hero-headline {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: clamp(64px, 10.5vw, 168px);
-    line-height: 0.92;
-    letter-spacing: -0.03em;
-    margin: 0;
-  }
-  .hero-headline .ital { font-style: italic; }
-  .hero-headline .underline {
-    display: inline-block;
-    border-bottom: 4px solid var(--sage-deep);
-    padding-bottom: 0.05em;
-    line-height: 0.85;
-  }
-  .hero-meta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: end;
-    margin-top: 24px;
-    padding-top: 32px;
-    border-top: 1px solid var(--line);
-  }
-  .hero-sub { font-size: 19px; line-height: 1.5; color: var(--ink-soft); max-width: 46ch; }
-  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
-
-  .hero-canvas {
-    position: relative;
-    height: 380px;
-    margin-top: 56px;
-    border-radius: var(--r-lg);
-    overflow: hidden;
-    background: linear-gradient(125deg, #E8DDC7 0%, #C8DEE7 38%, #F4CFD2 72%, #F2D26A 100%);
-  }
-  .hero-canvas .float {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.7;
-  }
-  .f1 { width: 280px; height: 280px; background: var(--ohcrisp-blush); top: -40px; left: 12%; }
-  .f2 { width: 360px; height: 360px; background: var(--frozili-ice-deep); bottom: -120px; left: 38%; opacity: 0.55; }
-  .f3 { width: 220px; height: 220px; background: var(--ohcrisp-sun); top: 20%; right: 10%; }
-  .f4 { width: 180px; height: 180px; background: var(--frozili-coffee); bottom: 10%; right: 25%; opacity: 0.35; }
-
-  .hero-canvas-overlay {
-    position: absolute; inset: 0;
-    display: flex; align-items: flex-end; justify-content: space-between;
-    padding: 24px 28px;
-    color: var(--ink);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
-  .hero-canvas-overlay .badge {
-    background: rgba(251,247,238,0.75);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(31,26,20,0.06);
-    padding: 8px 14px;
-    border-radius: 999px;
-  }
-
-  /* Marquee strip */
-  .marquee {
-    overflow: hidden;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    background: var(--paper);
-  }
-  .marquee-track {
-    display: flex;
-    gap: 56px;
-    padding: 18px 0;
-    animation: scroll 40s linear infinite;
-    white-space: nowrap;
-    font-family: 'DM Serif Display', serif;
-    font-size: 28px;
-    font-style: italic;
-    color: var(--ink-soft);
-  }
-  .marquee-track .dot { color: var(--sage-deep); font-style: normal; font-size: 18px; }
-  @keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-
-  /* ── Brand cards ── */
-  .brands-head {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 64px;
-    align-items: end;
-    margin-bottom: 56px;
-  }
-  .brands-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-  .brand-card {
-    position: relative;
-    border-radius: var(--r-lg);
-    overflow: hidden;
-    aspect-ratio: 4/5;
-    display: flex; flex-direction: column;
-    padding: 32px;
-    color: var(--ink);
-    transition: transform .3s ease;
-  }
-  .brand-card:hover { transform: translateY(-4px); }
-  .brand-card.frozili {
-    background: linear-gradient(165deg, #DCEAF0 0%, #9BBED0 60%, #6B8FA3 100%);
-    color: var(--frozili-coffee);
-  }
-  .brand-card.ohcrisp {
-    background: linear-gradient(165deg, #FBE4DD 0%, #F4CFD2 50%, #ECA08A 100%);
-    color: #5A2530;
-  }
-  .brand-card .num {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.16em;
-    opacity: 0.7;
-  }
-  .brand-card .stage {
-    flex: 1;
-    display: flex; align-items: center; justify-content: center;
-    position: relative;
-  }
-  /* Frozili: stylized candy/ice shape (geometric only) */
-  .frozili-art {
-    position: relative;
-    width: 60%; aspect-ratio: 1/1;
-  }
-  .frozili-art .ice-cube {
-    position: absolute;
-    width: 70%; height: 70%;
-    top: 15%; left: 15%;
-    background: linear-gradient(140deg, rgba(255,255,255,0.5), rgba(255,255,255,0.15));
-    border: 1px solid rgba(255,255,255,0.6);
-    border-radius: 24px;
-    backdrop-filter: blur(6px);
-    transform: rotate(-8deg);
-    box-shadow: 0 30px 60px -20px rgba(74,46,30,0.4);
-  }
-  .frozili-art .bean {
-    position: absolute;
-    width: 38%; height: 50%;
-    top: 25%; left: 31%;
-    background: radial-gradient(ellipse at 30% 30%, #8B5A3A 0%, #4A2E1E 70%);
-    border-radius: 50%;
-    transform: rotate(15deg);
-    box-shadow: inset -8px -8px 16px rgba(0,0,0,0.3);
-  }
-  .frozili-art .bean::after {
-    content: ''; position: absolute;
-    top: 10%; left: 50%; transform: translateX(-50%);
-    width: 2px; height: 80%;
-    background: rgba(0,0,0,0.4);
-    border-radius: 2px;
-  }
-
-  /* OhCrisp: layered fruit slice */
-  .ohcrisp-art { position: relative; width: 65%; aspect-ratio: 1/1; }
-  .ohcrisp-art .slice {
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: 0 20px 40px -15px rgba(90,37,48,0.35);
-  }
-  .ohcrisp-art .s1 { width: 55%; height: 55%; top: 5%; left: 5%; background: radial-gradient(circle at 35% 35%, #FAE7A6, #E8B748); }
-  .ohcrisp-art .s2 { width: 50%; height: 50%; bottom: 8%; right: 5%; background: radial-gradient(circle at 35% 35%, #F8DDE0, #E89AA1); }
-  .ohcrisp-art .s3 { width: 35%; height: 35%; top: 30%; right: 22%; background: radial-gradient(circle at 35% 35%, #FAD9BD, #E89A6F); }
-
-  .brand-card-foot {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 24px;
-    align-items: end;
-  }
-  .brand-card h3 {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    margin: 0 0 8px;
-  }
-  .brand-card .desc { font-size: 15px; max-width: 32ch; opacity: 0.85; }
-  .brand-card .visit {
-    display: inline-flex; align-items: center; gap: 8px;
-    justify-content: center;
-    padding: 12px 20px;
-    border-radius: 999px;
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(255,255,255,0.4);
-    font-size: 14px;
-    transition: background .2s ease;
-  }
-  .brand-card.frozili .visit { color: var(--frozili-coffee); }
-  .brand-card.ohcrisp .visit { color: #5A2530; }
-  .brand-card .visit:hover { background: rgba(255,255,255,0.85); }
-
-  /* Coming-soon brand placeholder */
-  .brands-row-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-    margin-top: 16px;
-  }
-  .coming-card {
-    border: 1px dashed var(--line);
-    border-radius: var(--r-md);
-    padding: 24px;
-    background: var(--paper);
-    display: flex; flex-direction: column; gap: 8px;
-    min-height: 160px;
-  }
-  .coming-card .cm-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); }
-  .coming-card .cm-name { font-family: 'DM Serif Display', serif; font-size: 32px; line-height: 1; margin-top: auto; color: var(--ink-mute); font-style: italic; }
-
-  /* ── Philosophy ── */
-  .philosophy {
-    background: var(--paper);
-    border-radius: var(--r-xl);
-    padding: 96px 64px;
-    margin: 0 32px;
-    position: relative;
-    overflow: hidden;
-  }
-  .philosophy-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: start;
-    position: relative;
-    z-index: 2;
-  }
-  .philosophy-attrs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px 32px;
-    margin-top: 32px;
-    font-family: 'DM Serif Display', serif;
-    font-size: 28px;
-    line-height: 1.3;
-    color: var(--sage-deep);
-    font-style: italic;
-  }
-  .philosophy-attrs span:nth-child(even) { font-style: normal; color: var(--ink); }
-  .philosophy-blob-1 { width: 320px; height: 320px; background: var(--ohcrisp-blush); top: -80px; right: -40px; }
-  .philosophy-blob-2 { width: 240px; height: 240px; background: var(--frozili-ice); bottom: -60px; left: 30%; opacity: 0.5; }
-
-  /* ── Journal preview ── */
-  .journal-head {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: end;
-    gap: 32px;
-    margin-bottom: 48px;
-  }
-  .journal-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 24px;
-  }
-  .article-card { display: flex; flex-direction: column; gap: 16px; }
-  .article-card .imgph {
-    aspect-ratio: 4/3;
-    border-radius: var(--r-md);
-  }
-  .article-card.feature .imgph { aspect-ratio: 4/4.4; }
-  .article-card .meta {
-    display: flex; gap: 12px; align-items: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-  }
-  .article-card h3 {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin: 0;
-  }
-  .article-card.feature h3 { font-size: 44px; }
-  .article-card .excerpt { font-size: 15px; color: var(--ink-soft); line-height: 1.5; }
-
-  /* ── CTA strip ── */
-  .cta-strip {
-    margin: 0 32px;
-    border-radius: var(--r-xl);
-    background: var(--ink);
-    color: var(--ivory);
-    padding: 80px 64px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 48px;
-    align-items: center;
-  }
-  .cta-strip h2 {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: clamp(40px, 5vw, 72px);
-    line-height: 1;
-    letter-spacing: -0.02em;
-    margin: 0;
-  }
-  .cta-strip .subscribe-form {
-    display: flex; gap: 8px;
-    background: rgba(244,238,224,0.1);
-    border: 1px solid rgba(244,238,224,0.2);
-    border-radius: 999px;
-    padding: 6px 6px 6px 22px;
-    align-items: center;
-    min-width: 360px;
-  }
-  .cta-strip input {
-    background: transparent; border: none; color: var(--ivory); flex: 1;
-    font-family: inherit; font-size: 15px; outline: none; padding: 12px 0;
-  }
-  .cta-strip input::placeholder { color: rgba(244,238,224,0.5); }
-  .cta-strip button {
-    background: var(--ohcrisp-blush);
-    color: #5A2530;
-    border-radius: 999px;
-    padding: 12px 22px;
-    font-size: 14px;
-  }
-
-  @media (max-width: 900px) {
-    .hero-meta { grid-template-columns: 1fr; gap: 24px; }
-    .hero-ctas { justify-content: flex-start; }
-    .brands-head, .brands-grid, .philosophy-grid, .journal-grid, .cta-strip { grid-template-columns: 1fr !important; }
-    .brand-card {
-      aspect-ratio: auto;
-      min-height: 560px;
-      padding: 28px 24px;
-    }
-    .brand-card .stage {
-      min-height: 190px;
-    }
-    .brand-card-foot {
-      grid-template-columns: 1fr;
-      gap: 18px;
-    }
-    .brand-card h3 {
-      font-size: clamp(42px, 14vw, 56px);
-    }
-    .brand-card .desc {
-      max-width: none;
-    }
-    .brand-card .visit {
-      width: fit-content;
-      max-width: 100%;
-      white-space: nowrap;
-    }
-    .brands-row-2 { grid-template-columns: 1fr; }
-    .philosophy { padding: 56px 32px; margin: 0 16px; }
-    .cta-strip { padding: 48px 32px; margin: 0 16px; }
-    .cta-strip .subscribe-form { min-width: 0; }
-  }
-</style>
 </head>
-<body>
-
-<div class="topstrip">
-  Frozili is now shipping online. <a href="frozili.html">Shop the first drop →</a>
-</div>
-
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="nav-left">
-      <a class="nav-link active" href="index.html">Home</a>
-      <a class="nav-link" href="index.html#brands">Brands</a>
-      <a class="nav-link" href="about.html">About</a>
-    </div>
-    <a class="logo" href="index.html">vitablabla<span class="dot">.</span></a>
-    <div class="nav-right">
-      <a class="nav-link" href="contact.html">Contact</a>
-      <a class="cta-pill" href="blog.html">Read Blog <span class="arrow">↗</span></a>
-    </div>
-  </div>
-</nav>
-
-<!-- ============== HERO ============== -->
-<header class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="eyebrow">Vitablabla — Taste-led everyday products</div>
-      <h1 class="hero-headline">
-        Products for people who <span class="ital">know what</span><br/>
-        <span class="underline">they like.</span>
-      </h1>
-      <div class="hero-meta">
-        <p class="hero-sub">
-          Vitablabla creates small, thoughtful everyday brands — from crunchy fruit snacks to refreshing little rituals — each one designed to feel personal, delightful, and worth sharing.
-        </p>
-        <div class="hero-ctas">
-          <a class="cta-pill" href="#brands">Explore Our Brands <span class="arrow">↗</span></a>
-          <a class="cta-ghost" href="blog.html">Read the Journal</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-canvas" aria-hidden="true">
-      <div class="float f1"></div>
-      <div class="float f2"></div>
-      <div class="float f3"></div>
-      <div class="float f4"></div>
-      <div class="hero-canvas-overlay">
-        <div class="badge">Taste-led products</div>
-        <div class="badge">Playful details · everyday joys</div>
-      </div>
-    </div>
-  </div>
+<body class="brand-house">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="house-header">
+ <div class="house-nav wrap">
+  <a class="house-logo" href="/" aria-label="Vitablabla home">vitablabla<span>✳</span></a>
+  <nav class="house-links" aria-label="Main navigation"><a href="#brands">Our brands</a><a href="#technology">The little science</a><a href="/about">Our story</a><a href="/blog">Journal</a></nav>
+  <a class="nav-hello" href="/contact">Say hello <span aria-hidden="true">↗</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button>
+ </div>
+ <nav id="mobile-menu" class="mobile-menu wrap" aria-label="Mobile navigation" hidden><a href="#brands">Our brands <span aria-hidden="true">↘</span></a><a href="#technology">The little science <span aria-hidden="true">↘</span></a><a href="/about">Our story <span aria-hidden="true">↗</span></a><a href="/blog">Journal <span aria-hidden="true">↗</span></a><a href="/contact">Say hello <span aria-hidden="true">↗</span></a></nav>
 </header>
-
-<!-- Marquee -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Taste-led products</span><span class="dot">✦</span>
-    <span>Crunchy fruit snacks</span><span class="dot">✦</span>
-    <span>Refreshing little rituals</span><span class="dot">✦</span>
-    <span>Playful details</span><span class="dot">✦</span>
-    <span>Everyday little joys</span><span class="dot">✦</span>
-    <span>Taste-led products</span><span class="dot">✦</span>
-    <span>Crunchy fruit snacks</span><span class="dot">✦</span>
-    <span>Refreshing little rituals</span><span class="dot">✦</span>
-    <span>Playful details</span><span class="dot">✦</span>
-    <span>Everyday little joys</span><span class="dot">✦</span>
+<main id="main" tabindex="-1">
+ <section class="welcome wrap" aria-labelledby="welcome-title">
+  <div class="welcome-top"><p class="little-label"><span class="status-dot"></span> A house of happy little discoveries</p><span class="welcome-note">Come on in. Find your thing.</span></div>
+  <div class="welcome-body">
+   <h1 id="welcome-title">A little more <span class="oh-word">oh!<svg viewBox="0 0 180 25" aria-hidden="true"><path d="M5 15 Q80 0 174 13 M27 23 Q98 10 158 20" /></svg></span><br />in your everyday.</h1>
+   <div class="welcome-aside"><div class="joy-stamp" aria-hidden="true"><span>SMALL THINGS</span><svg viewBox="0 0 80 56"><path d="M15 9v12 M65 9v12 M15 32Q40 64 65 32" /></svg><span>BIG FEELINGS</span></div><p>A bright crunch. A better sip.<br /> A tiny, icy reset.<br /> Four worlds of flavor. All yours to explore.</p><a class="text-link" href="#brands">Find your kind of happy <span aria-hidden="true">↘</span></a></div>
   </div>
-</div>
-
-<!-- ============== BRANDS ============== -->
-<section class="section" id="brands">
-  <div class="container">
-    <div class="brands-head">
-      <div>
-        <div class="eyebrow" style="margin-bottom:24px">Our Brands</div>
-        <h2 class="h-section">Small brands for <span class="italic">specific tastes.</span></h2>
-      </div>
-      <p class="lede">Each Vitablabla brand starts with a simple idea: a real craving, a clear product advantage, and a little more joy in the everyday.</p>
-    </div>
-
-    <div class="brands-grid">
-      <a class="brand-card frozili" href="frozili.html">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start">
-          <span class="num">01 / Frozili</span>
-          <span class="num">Icy · Coffee</span>
-        </div>
-        <div class="stage">
-          <div class="frozili-art" aria-hidden="true">
-            <div class="ice-cube"></div>
-            <div class="bean"></div>
-          </div>
-        </div>
-        <div class="brand-card-foot">
-          <div>
-            <h3>Frozili</h3>
-            <p class="desc">Icy coffee candy for long days. A slow-melting coffee candy made for refreshing little rituals — smooth, icy, and easy to keep close for work, study, driving, and everything in between.</p>
-          </div>
-          <span class="visit">Visit Frozili <span class="arrow">↗</span></span>
-        </div>
-      </a>
-
-      <a class="brand-card ohcrisp" href="ohcrisp.html">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start">
-          <span class="num">02 / OhCrisp</span>
-          <span class="num">Airy · Fruit</span>
-        </div>
-        <div class="stage">
-          <div class="ohcrisp-art" aria-hidden="true">
-            <div class="slice s1"></div>
-            <div class="slice s2"></div>
-            <div class="slice s3"></div>
-          </div>
-        </div>
-        <div class="brand-card-foot">
-          <div>
-            <h3>OhCrisp</h3>
-            <p class="desc">Colorful crunch from real fruit. Freeze-dried fruit snacks made for people who want something bright, crispy, and naturally fun — with real fruit, no added sugar, and discovery in every bag.</p>
-          </div>
-          <span class="visit">Visit OhCrisp <span class="arrow">↗</span></span>
-        </div>
-      </a>
-    </div>
-
-    <div class="brands-row-2">
-      <div class="coming-card">
-        <span class="cm-label">No. 03 · EMON</span>
-        <span class="cm-name">Handmade dorayaki &amp; matcha moments</span>
-      </div>
-      <div class="coming-card">
-        <span class="cm-label">No. 04 · In the kitchen</span>
-        <span class="cm-name">Refreshing little rituals</span>
-      </div>
-      <div class="coming-card">
-        <span class="cm-label">No. 05 · Notebook</span>
-        <span class="cm-name">Tell us your favorite taste →</span>
-      </div>
-    </div>
+ </section>
+ <nav class="brand-shortcuts wrap" aria-label="Go directly to a brand"><a href="https://www.ohcrisp.com"><span class="shortcut-crisp"></span>OhCrisp ↗</a><a href="https://getohsip.com"><span class="shortcut-sip"></span>OHSIP ↗</a><a href="https://drinkohviva.com"><span class="shortcut-viva"></span>OHVIVA ↗</a><a href="https://www.frozili.com"><span class="shortcut-frozili"></span>Frozili ↗</a></nav>
+ <section class="brand-gallery wrap" id="brands" aria-label="Explore our four brands">
+  <a class="brand-door door-crisp" href="https://www.ohcrisp.com" aria-label="Visit OhCrisp — freeze-dried fruit snacks">
+   <div class="door-top"><span>01 / THE HAPPY CRUNCH</span><span class="door-arrow" aria-hidden="true">↗</span></div>
+   <h2 class="brand-name name-crisp">OhCrisp<span>™</span></h2><p class="brand-one-liner">Fruit, with a playful crunch.</p>
+   <div class="brand-stage crisp-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-one">✳</span><img class="pack pack-crisp-back" src="/assets/brands/discovery.webp" width="620" height="780" alt="" fetchpriority="high" /><img class="pack pack-crisp" src="/assets/brands/classic.webp" width="620" height="802" alt="" fetchpriority="high" /><span class="tiny-sticker sticker-crunch">REAL FRUIT.<br />BIG CRUNCH.</span></div>
+   <div class="door-bottom"><span>Freeze-dried fruit snacks</span><span class="door-visit">Explore OhCrisp <span aria-hidden="true">↗</span></span></div>
+  </a>
+  <a class="brand-door door-sip" href="https://getohsip.com" aria-label="Visit OHSIP — freeze-dried coffee cubes">
+   <div class="door-top"><span>02 / THE COFFEE REBOOT</span><span class="door-arrow" aria-hidden="true">↗</span></div>
+   <h2 class="brand-name name-sip">OHSIP<span>✳</span></h2><p class="brand-one-liner">Not powder. A cube.</p>
+   <div class="brand-stage sip-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-two">✳</span><img class="pack pack-sip" src="/assets/brands/ohsip-pack.webp" width="620" height="620" alt="" /><img class="floating-cube coffee-cube" src="/assets/brands/coffee-cube.webp" width="200" height="200" alt="" /><span class="tiny-sticker sticker-sip">ICE WATER IN.<br />COFFEE OUT.</span></div>
+   <div class="door-bottom"><span>Freeze-dried coffee cubes</span><span class="door-visit">Explore OHSIP <span aria-hidden="true">↗</span></span></div>
+  </a>
+  <a class="brand-door door-viva" href="https://drinkohviva.com" aria-label="Visit OHVIVA — freeze-dried fruit tea cubes">
+   <div class="door-top"><span>03 / THE FRUIT TEA CAFÉ</span><span class="door-arrow" aria-hidden="true">↗</span></div>
+   <h2 class="brand-name name-viva">OHVIVA<span>✿</span></h2><p class="brand-one-liner">Your happy place, in a cup.</p>
+   <div class="brand-stage viva-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-three">✳</span><img class="pack pack-viva" src="/assets/brands/ohviva-pack.webp" width="620" height="620" alt="" /><img class="floating-cube tea-cube" src="/assets/brands/tea-cube.webp" width="200" height="200" alt="" /><span class="tiny-sticker sticker-viva">JUST ADD<br />WATER &amp; JOY.</span></div>
+   <div class="door-bottom"><span>Real-fruit tea cubes</span><span class="door-visit">Explore OHVIVA <span aria-hidden="true">↗</span></span></div>
+  </a>
+  <a class="brand-door door-frozili" href="https://www.frozili.com" aria-label="Visit Frozili — icy coffee candy">
+   <div class="door-top"><span>04 / THE LITTLE RESET</span><span class="door-arrow" aria-hidden="true">↗</span></div>
+   <h2 class="brand-name name-frozili">frozili<span>❋</span></h2><p class="brand-one-liner">Coffee flavor. Curiously icy.</p>
+   <div class="brand-stage frozili-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-four">❄</span><div class="tin-cutout tin-open"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" /></div><div class="tin-cutout tin-lid"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" /></div><span class="tiny-sticker sticker-frozili">YOUR POCKET<br />OF COOL.</span></div>
+   <div class="door-bottom"><span>Icy coffee candy</span><span class="door-visit">Explore Frozili <span aria-hidden="true">↗</span></span></div>
+  </a>
+  <p class="gallery-caption"><span>ONE HOUSE. FOUR VERY DIFFERENT PERSONALITIES.</span><span>Pick a world. Make yourself at home. ↑</span></p>
+ </section>
+ <div class="joy-ribbon" aria-hidden="true"><div class="ribbon-track"><span>SMALL THINGS. BIG OH!</span><span>✳</span><span>A CRUNCH. A SIP. A SMILE.</span><span>✳</span><span>EVERYDAY, A LITTLE BRIGHTER.</span><span>✳</span><span>SMALL THINGS. BIG OH!</span><span>✳</span><span>A CRUNCH. A SIP. A SMILE.</span><span>✳</span><span>EVERYDAY, A LITTLE BRIGHTER.</span><span>✳</span></div></div>
+ <section class="house-story wrap" aria-labelledby="story-title">
+  <div class="story-art" aria-hidden="true"><span class="story-doodle doodle-crunch">crunch.</span><span class="story-doodle doodle-sip">sip.</span><span class="story-doodle doodle-oh">oh!</span><span class="story-star">✳</span><span class="story-small">A FAMILY OF GOOD LITTLE IDEAS.</span></div>
+  <div class="story-copy"><p class="little-label">Hi, we're Vitablabla.</p><h2 id="story-title">Serious about flavor.<br /><em>Playful about life.</em></h2><p>We’re a house of food and drink brands built around one simple thought: the everyday deserves a little more delight.</p><p>So we follow our curiosity. Into real-fruit crunch, coffee by the cube, a fruit tea café in your bag, and candy with a surprisingly cool finish. Different personalities. The same love of a good little discovery.</p><a class="text-link" href="/about">Get to know our house <span aria-hidden="true">↗</span></a></div>
+ </section>
+ <section class="little-science" id="technology" aria-labelledby="science-title"><div class="wrap">
+  <div class="science-heading"><div><p class="little-label">A little science. A lot of possibility.</p><h2 id="science-title">Cold process.<br /><em>Bright ideas.</em></h2></div><p>Behind OhCrisp’s crunch, OHSIP’s coffee cubes and OHVIVA’s fruit tea is freeze-drying: a clever way to take out water and open up a whole new world of texture.</p></div>
+  <div class="science-lab">
+   <div class="science-visual" data-phase="freeze"><div class="lab-topline"><span>THE FREEZE-DRYING LAB</span><span class="lab-indicator">●</span></div><div class="lab-object" aria-hidden="true"><span class="lab-orbit orbit-outer"></span><span class="lab-orbit orbit-inner"></span><span class="lab-snow snow-one">✳</span><span class="lab-snow snow-two">✳</span><img src="/assets/brands/strawberry.webp" alt="" width="320" height="320" loading="lazy" /><span class="vapor vapor-one"></span><span class="vapor vapor-two"></span><span class="vapor vapor-three"></span></div><div class="lab-caption" aria-live="polite"><span id="phase-number">01 / FREEZE</span><strong id="phase-caption">First, a little chill.</strong></div></div>
+   <div class="science-steps" aria-label="Explore the freeze-drying process">
+    <button class="science-step is-active" type="button" data-phase="freeze" aria-pressed="true"><span class="step-number">01</span><span><strong>Freeze the good stuff.</strong><span>Fruit or a prepared drink is frozen, turning its water into ice.</span></span><span class="step-symbol" aria-hidden="true">❄</span></button>
+    <button class="science-step" type="button" data-phase="vacuum" aria-pressed="false"><span class="step-number">02</span><span><strong>Let the ice leave.</strong><span>Under vacuum, gentle energy turns ice directly into vapor. That’s sublimation — skipping the liquid stage.</span></span><span class="step-symbol" aria-hidden="true">↑</span></button>
+    <button class="science-step" type="button" data-phase="enjoy" aria-pressed="false"><span class="step-number">03</span><span><strong>Meet a whole new texture.</strong><span>A light, porous structure remains. Enjoy fruit as a crisp snack, or add water to bring a drink cube back to life.</span></span><span class="step-symbol" aria-hidden="true">✳</span></button>
+    <p class="lab-footnote">Tap a step. Follow the little transformation.</p>
+   </div>
   </div>
-</section>
-
-<!-- ============== PHILOSOPHY ============== -->
-<section class="section-tight">
-  <div class="philosophy">
-    <div class="blob philosophy-blob-1"></div>
-    <div class="blob philosophy-blob-2"></div>
-    <div class="philosophy-grid">
-      <div>
-        <div class="eyebrow" style="margin-bottom:24px">Philosophy</div>
-        <h2 class="h-section">Good products should feel <span class="italic">personal.</span></h2>
-      </div>
-      <div>
-        <p class="lede" style="font-size:21px;color:var(--ink)">
-          We believe the best products should feel personal, well-made, and easy to love from the first try. A slow-melting candy for a tiny reset. A bright fruit crunch for a better snack break. Little details that make everyday moments more joyful.
-        </p>
-        <div class="philosophy-attrs">
-          <span>Taste-led</span><span>products.</span>
-          <span>Playful</span><span>details.</span>
-          <span>Little</span><span>joys.</span>
-          <span>Worth</span><span>sharing.</span>
-        </div>
-      </div>
-    </div>
+  <div class="science-bottom"><p>Real fruit. Coffee. Tea. <strong>A few familiar things, full of new possibilities.</strong></p><a class="text-link" href="/a/freeze-drying-strawberry/">What freeze-drying does to a strawberry <span aria-hidden="true">↗</span></a></div>
+ </div></section>
+ <section class="house-journal wrap" aria-labelledby="journal-title">
+  <div class="journal-heading"><div><p class="little-label">The Vitablabla Journal</p><h2 id="journal-title">For the <em>curious ones.</em></h2></div><a class="text-link" href="/blog">All the good reads <span aria-hidden="true">↗</span></a></div>
+  <p class="journal-intro">Flavor rabbit holes, small rituals, and stories from around the house.</p>
+  <div class="home-journal-grid" id="journalGrid">
+   <a class="journal-story" href="/a/freeze-drying-strawberry/"><div class="journal-cover cover-fruit"><span class="cover-category">THE LITTLE SCIENCE</span><h3>What freeze-drying does to a <em>strawberry.</em></h3><span class="cover-arrow" aria-hidden="true">↗</span></div><p>A small explainer on sublimation, crunch, and color memory.</p></a>
+   <a class="journal-story" href="/a/slow-melt/"><div class="journal-cover cover-coffee"><span class="cover-category">EVERYDAY RITUALS</span><h3>The case for the <em>slow-melt.</em></h3><span class="cover-arrow" aria-hidden="true">↗</span></div><p>Why we built Frozili to be slow on purpose.</p></a>
+   <a class="journal-story" href="/a/healthy-snacks-should-still-feel-fun/"><div class="journal-cover cover-joy"><span class="cover-category">LITTLE DISCOVERIES</span><h3>Good snacks should still feel <em>fun.</em></h3><span class="cover-arrow" aria-hidden="true">↗</span></div><p>Color, real fruit, and the case for joyful crunch.</p></a>
   </div>
-</section>
-
-<!-- ============== JOURNAL ============== -->
-<section class="section">
-  <div class="container">
-    <div class="journal-head">
-      <div>
-        <div class="eyebrow" style="margin-bottom:24px">From the Journal</div>
-        <h2 class="h-section">Little stories about<br/><span class="italic">products, rituals &amp; the people who love them.</span></h2>
-      </div>
-      <a class="cta-ghost" href="blog.html">Read All Articles <span class="arrow">↗</span></a>
-    </div>
-
-    <div class="journal-grid" id="journalGrid">
-      <!-- Auto-rendered from posts.json — latest 3 posts. -->
-    </div>
-  </div>
-</section>
-
-<!-- ============== CTA Strip ============== -->
-<section class="section-tight">
-  <div class="cta-strip">
-    <h2>A little club for <span class="italic">taste-led discoveries.</span></h2>
-    <form class="subscribe-form" onsubmit="return subSubmit(event)">
-      <input type="email" id="subEmail" placeholder="you@somewhere.com" required />
-      <button type="submit">Join VitaClub</button>
-    </form>
-  </div>
-  <script>
-  function subSubmit(e) {
-    e.preventDefault();
-    const email = document.getElementById('subEmail').value || '';
-    const subject = encodeURIComponent('Join VitaClub');
-    const body = encodeURIComponent(
-      'Please add this email to VitaClub for brand updates, product drops, small perks, and the occasional surprise:\n\n' + email + '\n'
-    );
-    window.location.href = 'mailto:info@vitablabla.com?subject=' + subject + '&body=' + body;
-    e.target.querySelector('button').textContent = 'Opening email…';
-    return false;
-  }
-  </script>
-</section>
-
-<!-- ============== FOOTER ============== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand"><span class="italic">vita<br/>blabla.</span></div>
-        <p class="footer-tag">Made for specific tastes and little daily joys.</p>
-      </div>
-      <div>
-        <h4>Brands</h4>
-        <ul>
-          <li><a href="frozili.html">Frozili</a></li>
-          <li><a href="ohcrisp.html">OhCrisp</a></li>
-          <li><span style="color:var(--ink-mute)">More coming</span></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Journal</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Elsewhere</h4>
-        <ul>
-          <li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.pinterest.com/vitablabla/" target="_blank" rel="noopener">Pinterest</a></li>
-          <li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 Vitablabla, Inc. All rights reserved.</span>
-      <span>Made with care, for specific tastes.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="site.js"></script>
-<script>
-(async function () {
-  try {
-    const reg = await VB.loadRegistry();
-    const latest = VB.sortByDateDesc(reg.posts || []).slice(0, 3);
-    const grid = document.getElementById('journalGrid');
-    if (!latest.length) { grid.innerHTML = '<p style="color:var(--ink-mute)">No posts yet.</p>'; return; }
-    grid.innerHTML = VB.featureCardHTML(latest[0])
-      + (latest[1] ? VB.sidekickCardHTML(latest[1]) : '')
-      + (latest[2] ? VB.sidekickCardHTML(latest[2]) : '');
-  } catch (e) {
-    console.error('Could not load posts:', e);
-  }
-})();
-</script>
-
+ </section>
+ <section class="house-invitation wrap" aria-labelledby="hello-title"><span class="invitation-flower" aria-hidden="true">✳</span><div><p class="little-label">Good things start with a hello.</p><h2 id="hello-title">A little curious?<br /><em>Let’s talk.</em></h2></div><a class="round-button" href="/contact">Say hello <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="house-footer"><div class="wrap">
+ <div class="footer-top"><div><a class="house-logo" href="/">vitablabla<span>✳</span></a><p>A house of happy little discoveries.</p></div>
+  <div class="footer-column"><h2>Find your world</h2><a href="https://www.ohcrisp.com">OhCrisp ↗</a><a href="https://getohsip.com">OHSIP ↗</a><a href="https://drinkohviva.com">OHVIVA ↗</a><a href="https://www.frozili.com">Frozili ↗</a></div>
+  <div class="footer-column"><h2>Around the house</h2><a href="/ohcrisp">About OhCrisp</a><a href="/frozili">About Frozili</a><a href="/about">Our story</a><a href="#technology">Freeze-drying</a><a href="/blog">Journal</a><a href="/contact">Contact</a></div>
+  <div class="footer-column"><h2>Keep in touch</h2><a href="mailto:info@vitablabla.com">info@vitablabla.com</a><a href="https://www.instagram.com/vitablabla" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok ↗</a><a href="https://www.pinterest.com/vitablabla/" target="_blank" rel="noopener">Pinterest ↗</a></div>
+ </div>
+ <div class="house-footer-bottom"><span>© <span id="copyright-year">2026</span> Vitablabla, Inc.</span><span>SMALL THINGS. BIG OH! <span aria-hidden="true">✳</span></span><a href="#main">Back to the happy stuff ↑</a></div>
+</div></footer>
+<script src="/site.js" defer></script><script src="/home.js" defer></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ The generated article pages contain the complete body, title, description, canon
 
 1. Copy `posts/_template.html` to `posts/<slug>.html` and write the body.
 2. Add a matching entry to the top of the `posts` array in `posts.json`.
-3. Include `primaryKeyword`, `secondaryKeywords`, `faqs`, and `dateModified` for every new post.
+3. Include `primaryKeyword`, `secondaryKeywords`, and `dateModified` for every new post. Add `faqs` only when the body contains a useful matching Q&A section.
 4. Use `/a/<slug>/` for article links and root-relative clean links such as `/ohcrisp` and `/frozili`.
 5. Run:
 
@@ -42,7 +42,7 @@ New posts should also include:
 - `related`
 - `primaryKeyword`
 - `secondaryKeywords`
-- `faqs`
+- `faqs` (optional; must match visible Q&A copy when present)
 - `dateModified`
 
 FAQ metadata should mirror the visible FAQ section. The build uses visible FAQ copy for structured data when old metadata differs, and renders metadata as visible content when an older body has no FAQ section.
@@ -74,6 +74,10 @@ npx wrangler deploy
 Cloudflare account selection is fixed in `wrangler.jsonc`. Never commit secrets or authentication tokens.
 
 ## Important files
+
+- `index.html`, `home.css`, `home.js`: brand-first homepage, responsive navigation, interactive freeze-drying explainer, and Journal preview. The four brand doors link directly to ohcrisp.com, getohsip.com, drinkohviva.com, and frozili.com. Homepage styles are scoped to `.brand-house`.
+- `assets/brands/`: optimized WebP versions of the brands' existing public product imagery. Source URLs are recorded in `scripts/homepage-assets.json`. OHSIP's supplied front/back artwork is framed with CSS; product photography is not regenerated.
+- The homepage includes three static Journal cards for crawling and offline/error fallback; JavaScript refreshes them from published entries in `posts.json`.
 
 - `robots.txt`: crawler permissions and sitemap location.
 - `_headers`: prevents raw body fragments under `/posts/*` from being indexed.

@@ -18,16 +18,17 @@ ARTICLE_DIR = os.path.join(ROOT, "a")
 SITEMAP = os.path.join(ROOT, "sitemap.xml")
 
 STATIC_PAGES = [
-    ("", "1.0"),
-    ("blog", "0.9"),
-    ("frozili", "0.8"),
-    ("ohcrisp", "0.8"),
-    ("about", "0.5"),
-    ("contact", "0.5"),
+    # Update a lastmod value only when that page's visible content changes.
+    ("", "1.0", "2026-11-07"),
+    ("blog", "0.9", "2026-08-13"),
+    ("frozili", "0.8", "2026-08-13"),
+    ("ohcrisp", "0.8", "2026-08-13"),
+    ("about", "0.5", "2026-08-13"),
+    ("contact", "0.5", "2026-08-13"),
 ]
 
 REQUIRED_FIELDS = ["slug", "number", "title", "excerpt", "date", "categories", "cta"]
-SEO_FIELDS = ["primaryKeyword", "secondaryKeywords", "faqs"]
+SEO_FIELDS = ["primaryKeyword", "secondaryKeywords"]
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 OLD_POST_LINK_RE = re.compile(r"(?:/)?post\.html\?slug=([a-z0-9]+(?:-[a-z0-9]+)*)")
 CLEAN_POST_LINK_RE = re.compile(r"/a/([a-z0-9]+(?:-[a-z0-9]+)*)/?")
@@ -478,12 +479,12 @@ def build_sitemap(posts):
     lines = ['<?xml version="1.0" encoding="UTF-8"?>']
     lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
 
-    for path, priority in STATIC_PAGES:
+    for path, priority, lastmod in STATIC_PAGES:
         location = SITE + "/" + path if path else SITE + "/"
         lines.extend([
             "  <url>",
             f"    <loc>{location}</loc>",
-            f"    <lastmod>{today}</lastmod>",
+            f"    <lastmod>{lastmod}</lastmod>",
             f"    <priority>{priority}</priority>",
             "  </url>",
         ])

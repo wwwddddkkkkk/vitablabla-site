@@ -11,3 +11,9 @@ worker.js
 README.md
 vitablabla-content-rules.md
 scripts
+
+# Local planning and automation records are not public assets.
+**/*.md
+$CODEX_HOME
+$CODEX_HOME/**
+**/*.baiduyun.uploading.cfg
