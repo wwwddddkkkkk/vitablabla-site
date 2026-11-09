@@ -62,7 +62,7 @@ Then open `http://localhost:8000`. A generated article is available at `http://l
 
 ## Validation and deployment
 
-Install the exact locked dependencies with `npm ci`, then validate without publishing:
+The pinned Wrangler requires Node.js 22.12 or newer. Install the exact locked dependencies with `npm ci`, then validate without publishing:
 
 ```bash
 npm test

@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-09",
+  "timezone": "America/Los_Angeles",
+  "status": "published_and_verified",
+  "scope": "Upgrade dependencies, repair canonical routing/category filters/accessibility, and continue existing maintenance schedules.",
+  "sourceCommit": "0020a841ce1c7d4cb0a3dcd6fb437614f774b2c9",
+  "deployment": {
+    "committed": true,
+    "pushed": true,
+    "deployed": true,
+    "cloudflareVersion": "ad1e8efc-2f03-4957-b744-69000ddeafbc",
+    "previousCloudflareVersion": "7998922d-6614-4afe-bb2b-cd6a5b82b6fd",
+    "verifiedAtUtc": "2026-11-09T23:07:01.209152+00:00",
+    "url": "https://vitablabla.com"
+  },
+  "changes": [
+    "Pinned Wrangler 4.159.0 and updated lockfile; added npm test regression command.",
+    "Canonical HTTP/www requests return 308 to HTTPS without www and preserve path/query; legacy article links still return direct 301.",
+    "Run Worker before assets; local and Workers preview hosts continue serving normally.",
+    "Added missing Workday Snacks and Taste Notes category filters.",
+    "Play/Pause/Replay accessible labels follow process state.",
+    "Continued existing daily and weekly automations without an end date; retained approval before content publication."
+  ],
+  "validation": {
+    "npmAudit": {
+      "vulnerabilities": 0,
+      "previousHighDependencyAlerts": 4
+    },
+    "workerTestsPassed": 5,
+    "articleBuild": {
+      "passed": true,
+      "articlePages": 223,
+      "sitemapUrls": 227,
+      "legacyNonblockingWarnings": 199
+    },
+    "staticSeoPassed": true,
+    "coverViewsPassed": 243,
+    "wranglerTypesPassed": true,
+    "deploymentDryRunPassed": true,
+    "localIntegrationPassed": true,
+    "live": {
+      "allChecksPassed": true,
+      "sitemap": {
+        "status": 200,
+        "page_count": 227,
+        "article_count": 223,
+        "all_pages_200": true
+      },
+      "assets": {
+        "count": 30,
+        "all200": true
+      },
+      "canonicalRedirectChecks": [
+        {
+          "url": "http://vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "status": 308,
+          "location": "https://vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "x_robots_tag": null,
+          "content_type": null,
+          "expected_location": "https://vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "passed": true
+        },
+        {
+          "url": "http://www.vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "status": 308,
+          "location": "https://vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "x_robots_tag": null,
+          "content_type": null,
+          "expected_location": "https://vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "passed": true
+        },
+        {
+          "url": "https://www.vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "status": 308,
+          "location": "https://vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "x_robots_tag": null,
+          "content_type": null,
+          "expected_location": "https://vitablabla.com/a/coffee-candy-guide/?utm_source=test&next=%2Fblog",
+          "passed": true
+        }
+      ],
+      "legacyRedirectsPassed": true,
+      "brandRedirectsPassed": true,
+      "fragmentNoindexPassed": true,
+      "sourceExclusionCount": 11,
+      "unknownPageStatus": 404,
+      "productionHashes": {
+        "home.js": {
+          "status": 200,
+          "local_sha256": "d3782e06add9f6f56bf115dddcc292e96483c0ff6fa9daf44d23c1757c178e93",
+          "production_sha256": "d3782e06add9f6f56bf115dddcc292e96483c0ff6fa9daf44d23c1757c178e93",
+          "passed": true
+        },
+        "site.js": {
+          "status": 200,
+          "local_sha256": "70127744797326632d35957aeb8f5506f6b548217acde4a76430036eb60c9273",
+          "production_sha256": "70127744797326632d35957aeb8f5506f6b548217acde4a76430036eb60c9273",
+          "passed": true
+        },
+        "posts.json": {
+          "status": 200,
+          "local_sha256": "96a41ce44cce75265069e010f182be7b0f0e3b898875edbb6301560e6392078e",
+          "production_sha256": "96a41ce44cce75265069e010f182be7b0f0e3b898875edbb6301560e6392078e",
+          "passed": true
+        }
+      },
+      "categoryCheck": {
+        "count": 10,
+        "categories": [
+          "Frozili",
+          "Coffee Candy",
+          "Refreshing Snacks",
+          "OhCrisp",
+          "Freeze-Dried Fruit",
+          "Snack Ideas",
+          "Better-for-You",
+          "Travel & Work",
+          "Workday Snacks",
+          "Taste Notes"
+        ],
+        "matches_all_article_categories": true,
+        "article_count": 223
+      },
+      "anomalies": []
+    },
+    "browser": {
+      "livePlayPauseLabelsPassed": true,
+      "localReplayLabelPassed": true,
+      "workdaySnacksResults": 3,
+      "tasteNotesResults": 1,
+      "mobileViewportWidth": 390,
+      "mobileDocumentWidth": 390,
+      "consoleErrors": [],
+      "brokenImages": []
+    }
+  },
+  "automations": [
+    {
+      "id": "daily-vitablabla-journal-posts",
+      "status": "ACTIVE",
+      "rrule": "DTSTART;TZID=America/Los_Angeles:20261014T090000\nRRULE:FREQ=DAILY",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "execution_environment": "local",
+      "cwds": [
+        "/Users/dkwang/Documents/snackseogeo/vitablabla-site"
+      ]
+    },
+    {
+      "id": "vitablabla-weekly-seo-review",
+      "status": "ACTIVE",
+      "rrule": "DTSTART;TZID=America/Los_Angeles:20261115T160000\nRRULE:FREQ=WEEKLY;BYDAY=SU",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "execution_environment": "local",
+      "cwds": [
+        "/Users/dkwang/Documents/snackseogeo/vitablabla-site"
+      ]
+    }
+  ],
+  "remainingMaintenance": "Legacy content metadata and images continue through the bounded approval workflow. GSC Wizard still requires an active subscription for current search data; no search-performance claim was made.",
+  "screenshot": "/Users/dkwang/.codex/visualizations/2026/11/09/01a1c268-968f-7e61-a20a-5a828140254c/vitablabla-maintenance-live-journal.jpg"
+}
