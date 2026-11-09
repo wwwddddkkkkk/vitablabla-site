@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#faf6ed" />
+<meta name="theme-color" content="#DFC8E7" />
 <title>Vitablabla — A Little More Oh! in Your Everyday</title>
 <meta name="description" content="Welcome to the Vitablabla house of brands. Discover OhCrisp fruit snacks, OHSIP coffee cubes, OHVIVA fruit tea and Frozili icy coffee candy. Small things. Big oh!" />
 <link rel="canonical" href="https://vitablabla.com/" />
@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="/styles.css" />
 <link rel="stylesheet" href="/home.css" />
-<noscript><style>.brand-house .menu-toggle{display:none}@media(max-width:680px){.brand-house .mobile-menu[hidden]{display:block!important}}</style></noscript>
+<noscript><style>.brand-house .menu-toggle{display:none}@media(max-width:680px){.brand-house .house-header{position:relative}.brand-house .mobile-menu[hidden]{display:block!important}}</style></noscript>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org", "@type": "Organization", "@id": "https://vitablabla.com/#organization",
@@ -36,91 +36,173 @@
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebSite", "name": "Vitablabla", "url": "https://vitablabla.com/", "publisher": {"@id": "https://vitablabla.com/#organization"}}
 </script>
+<link rel="stylesheet" href="/covers.css"/>
 </head>
-<body class="brand-house">
+<body class="brand-house editions-house science-house">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="house-header">
  <div class="house-nav wrap">
-  <a class="house-logo" href="/" aria-label="Vitablabla home">vitablabla<span>✳</span></a>
-  <nav class="house-links" aria-label="Main navigation"><a href="#brands">Our brands</a><a href="#technology">The little science</a><a href="/about">Our story</a><a href="/blog">Journal</a></nav>
-  <a class="nav-hello" href="/contact">Say hello <span aria-hidden="true">↗</span></a>
-  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button>
+  <a class="house-logo" href="/" aria-label="Vitablabla home">vitablabla<span class="house-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(0 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(60 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(120 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(180 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(240 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(300 16 16)"/></svg></span></a>
+  <nav class="house-links" aria-label="Main navigation"><a href="#brands" data-chapter="brands" aria-current="location">Our brands</a><a href="#technology" data-chapter="technology">The little science</a><a href="#story" data-chapter="story">Our house</a><a href="#journal" data-chapter="journal">Journal</a></nav>
+  <div class="header-actions"><a class="nav-hello" href="/contact">Say hello <span aria-hidden="true">↗</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button></div>
  </div>
- <nav id="mobile-menu" class="mobile-menu wrap" aria-label="Mobile navigation" hidden><a href="#brands">Our brands <span aria-hidden="true">↘</span></a><a href="#technology">The little science <span aria-hidden="true">↘</span></a><a href="/about">Our story <span aria-hidden="true">↗</span></a><a href="/blog">Journal <span aria-hidden="true">↗</span></a><a href="/contact">Say hello <span aria-hidden="true">↗</span></a></nav>
+ <div class="reading-progress" aria-hidden="true"><span></span></div>
+ <nav id="mobile-menu" class="mobile-menu wrap" aria-label="Mobile navigation" hidden><a href="#brands" data-chapter="brands">Our brands <span aria-hidden="true">↘</span></a><a href="#technology" data-chapter="technology">The little science <span aria-hidden="true">↘</span></a><a href="#story" data-chapter="story">Our house <span aria-hidden="true">↘</span></a><a href="#journal" data-chapter="journal">Journal <span aria-hidden="true">↘</span></a><a href="/contact">Say hello <span aria-hidden="true">↗</span></a></nav>
 </header>
 <main id="main" tabindex="-1">
  <section class="welcome wrap" aria-labelledby="welcome-title">
-  <div class="welcome-top"><p class="little-label"><span class="status-dot"></span> A house of happy little discoveries</p><span class="welcome-note">Come on in. Find your thing.</span></div>
-  <div class="welcome-body">
-   <h1 id="welcome-title">A little more <span class="oh-word">oh!<svg viewBox="0 0 180 25" aria-hidden="true"><path d="M5 15 Q80 0 174 13 M27 23 Q98 10 158 20" /></svg></span><br />in your everyday.</h1>
-   <div class="welcome-aside"><div class="joy-stamp" aria-hidden="true"><span>SMALL THINGS</span><svg viewBox="0 0 80 56"><path d="M15 9v12 M65 9v12 M15 32Q40 64 65 32" /></svg><span>BIG FEELINGS</span></div><p>A bright crunch. A better sip.<br /> A tiny, icy reset.<br /> Four worlds of flavor. All yours to explore.</p><a class="text-link" href="#brands">Find your kind of happy <span aria-hidden="true">↘</span></a></div>
-  </div>
+  <div class="welcome-top"><p class="little-label"><span class="status-dot"></span> The Vitablabla collection</p><span class="welcome-note">Four brands. A world of little discoveries.</span></div>
+  <h1 id="welcome-title">Small things. <span>Big <em>oh!</em></span></h1>
+  <p class="welcome-intro">A bright crunch. A better sip. A curiously cool reset.<br />Find a little world that feels like you.</p>
+  <div class="collection-stamp" aria-hidden="true"><span>GOOD LITTLE</span><svg viewBox="0 0 80 55"><path d="M18 8v12M62 8v12M17 32q23 27 46 0" /></svg><span>THINGS INSIDE</span></div>
  </section>
  <nav class="brand-shortcuts wrap" aria-label="Go directly to a brand"><a href="https://www.ohcrisp.com"><span class="shortcut-crisp"></span>OhCrisp ↗</a><a href="https://getohsip.com"><span class="shortcut-sip"></span>OHSIP ↗</a><a href="https://drinkohviva.com"><span class="shortcut-viva"></span>OHVIVA ↗</a><a href="https://www.frozili.com"><span class="shortcut-frozili"></span>Frozili ↗</a></nav>
- <section class="brand-gallery wrap" id="brands" aria-label="Explore our four brands">
-  <a class="brand-door door-crisp" href="https://www.ohcrisp.com" aria-label="Visit OhCrisp — freeze-dried fruit snacks">
-   <div class="door-top"><span>01 / THE HAPPY CRUNCH</span><span class="door-arrow" aria-hidden="true">↗</span></div>
-   <h2 class="brand-name name-crisp">OhCrisp<span>™</span></h2><p class="brand-one-liner">Fruit, with a playful crunch.</p>
-   <div class="brand-stage crisp-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-one">✳</span><img class="pack pack-crisp-back" src="/assets/brands/discovery.webp" width="620" height="780" alt="" fetchpriority="high" /><img class="pack pack-crisp" src="/assets/brands/classic.webp" width="620" height="802" alt="" fetchpriority="high" /><span class="tiny-sticker sticker-crunch">REAL FRUIT.<br />BIG CRUNCH.</span></div>
-   <div class="door-bottom"><span>Freeze-dried fruit snacks</span><span class="door-visit">Explore OhCrisp <span aria-hidden="true">↗</span></span></div>
-  </a>
-  <a class="brand-door door-sip" href="https://getohsip.com" aria-label="Visit OHSIP — freeze-dried coffee cubes">
-   <div class="door-top"><span>02 / THE COFFEE REBOOT</span><span class="door-arrow" aria-hidden="true">↗</span></div>
-   <h2 class="brand-name name-sip">OHSIP<span>✳</span></h2><p class="brand-one-liner">Not powder. A cube.</p>
-   <div class="brand-stage sip-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-two">✳</span><img class="pack pack-sip" src="/assets/brands/ohsip-pack.webp" width="620" height="620" alt="" /><img class="floating-cube coffee-cube" src="/assets/brands/coffee-cube.webp" width="200" height="200" alt="" /><span class="tiny-sticker sticker-sip">ICE WATER IN.<br />COFFEE OUT.</span></div>
-   <div class="door-bottom"><span>Freeze-dried coffee cubes</span><span class="door-visit">Explore OHSIP <span aria-hidden="true">↗</span></span></div>
-  </a>
-  <a class="brand-door door-viva" href="https://drinkohviva.com" aria-label="Visit OHVIVA — freeze-dried fruit tea cubes">
-   <div class="door-top"><span>03 / THE FRUIT TEA CAFÉ</span><span class="door-arrow" aria-hidden="true">↗</span></div>
-   <h2 class="brand-name name-viva">OHVIVA<span>✿</span></h2><p class="brand-one-liner">Your happy place, in a cup.</p>
-   <div class="brand-stage viva-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-three">✳</span><img class="pack pack-viva" src="/assets/brands/ohviva-pack.webp" width="620" height="620" alt="" /><img class="floating-cube tea-cube" src="/assets/brands/tea-cube.webp" width="200" height="200" alt="" /><span class="tiny-sticker sticker-viva">JUST ADD<br />WATER &amp; JOY.</span></div>
-   <div class="door-bottom"><span>Real-fruit tea cubes</span><span class="door-visit">Explore OHVIVA <span aria-hidden="true">↗</span></span></div>
-  </a>
-  <a class="brand-door door-frozili" href="https://www.frozili.com" aria-label="Visit Frozili — icy coffee candy">
-   <div class="door-top"><span>04 / THE LITTLE RESET</span><span class="door-arrow" aria-hidden="true">↗</span></div>
-   <h2 class="brand-name name-frozili">frozili<span>❋</span></h2><p class="brand-one-liner">Coffee flavor. Curiously icy.</p>
-   <div class="brand-stage frozili-stage" aria-hidden="true"><span class="stage-orbit"></span><span class="little-spark spark-four">❄</span><div class="tin-cutout tin-open"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" /></div><div class="tin-cutout tin-lid"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" /></div><span class="tiny-sticker sticker-frozili">YOUR POCKET<br />OF COOL.</span></div>
-   <div class="door-bottom"><span>Icy coffee candy</span><span class="door-visit">Explore Frozili <span aria-hidden="true">↗</span></span></div>
-  </a>
-  <p class="gallery-caption"><span>ONE HOUSE. FOUR VERY DIFFERENT PERSONALITIES.</span><span>Pick a world. Make yourself at home. ↑</span></p>
+ <section class="brand-gallery wrap" id="brands" tabindex="-1" aria-label="Explore our four brands">
+  <div class="collection-rack">
+   <article class="brand-item" data-brand="ohcrisp"><a class="brand-door door-crisp" href="https://www.ohcrisp.com" aria-label="Visit OhCrisp — freeze-dried fruit snacks" data-world="Real fruit. A very happy crunch.">
+    <div class="album-cover cover-crisp" style="--rest-rotate:-6deg">
+     <div class="cover-top"><span>REAL FRUIT. REAL GOOD.</span><span>01</span></div>
+     <h2 class="brand-name name-crisp">OhCrisp<span>™</span></h2>
+     <p class="cover-headline crisp-headline">The<br /><em>crunch</em><br />club.</p>
+     <div class="cover-art crisp-art" aria-hidden="true"><span class="crisp-sun">✳</span><span class="crisp-picnic"></span><img class="pack pack-crisp-back" src="/assets/brands/discovery.webp" width="620" height="780" alt="" fetchpriority="high" /><img class="pack pack-crisp" src="/assets/brands/classic.webp" width="620" height="802" alt="" fetchpriority="high" /><span class="cover-sticker crisp-sticker">100%<br />FRUIT JOY</span></div>
+     <span class="cover-bottom">OPEN A BAG. TASTE VACATION.</span>
+    </div>
+    <div class="brand-meta"><div><span class="brand-index">01 / OHCRISP</span><p>Fruit, with a playful crunch.</p></div><span class="brand-visit" aria-hidden="true">↗</span></div>
+   </a><button class="brand-preview-button" type="button" data-preview="ohcrisp" aria-haspopup="dialog" aria-controls="brand-dialog" aria-label="Quick look at OhCrisp" hidden>Take a peek <span aria-hidden="true">+</span></button></article>
+   <article class="brand-item" data-brand="ohsip"><a class="brand-door door-sip" href="https://getohsip.com" aria-label="Visit OHSIP — freeze-dried coffee cubes" data-world="Not powder. A cube. Your coffee, reimagined.">
+    <div class="album-cover cover-sip" style="--rest-rotate:3deg">
+     <div class="cover-top"><span>YOUR COFFEE. REIMAGINED.</span><span>02</span></div>
+     <h2 class="brand-name name-sip">OHSIP<span>✳</span></h2>
+     <p class="cover-headline sip-headline">Coffee.<br /><em>Cubed.</em></p>
+     <div class="cover-art sip-art" aria-hidden="true"><span class="sip-orbit"></span><span class="sip-orbit orbit-two"></span><span class="sip-star">✳</span><img class="pack pack-sip" src="/assets/brands/ohsip-pack.webp" width="620" height="369" alt="" /><img class="coffee-cube" src="/assets/brands/coffee-cube.webp" width="240" height="229" alt="" /><span class="cube-trail trail-one"></span><span class="cube-trail trail-two"></span><span class="cover-sticker sip-sticker">JUST<br />COFFEE.</span></div>
+     <span class="cover-bottom">DROP. DISSOLVE. OHSIP.</span>
+    </div>
+    <div class="brand-meta"><div><span class="brand-index">02 / OHSIP</span><p>Your coffee. By the cube.</p></div><span class="brand-visit" aria-hidden="true">↗</span></div>
+   </a><button class="brand-preview-button" type="button" data-preview="ohsip" aria-haspopup="dialog" aria-controls="brand-dialog" aria-label="Quick look at OHSIP" hidden>Take a peek <span aria-hidden="true">+</span></button></article>
+   <article class="brand-item" data-brand="ohviva"><a class="brand-door door-viva" href="https://drinkohviva.com" aria-label="Visit OHVIVA — freeze-dried fruit tea cubes" data-world="A fruit tea café, tucked into one little cube.">
+    <div class="album-cover cover-viva" style="--rest-rotate:-3deg">
+     <div class="cover-top"><span>YOUR FRUIT TEA CAFÉ.</span><span>03</span></div>
+     <h2 class="brand-name name-viva">OHVIVA<span>✿</span></h2>
+     <p class="cover-headline viva-headline">Sip.<br /><em>Smile.</em></p>
+     <div class="cover-art viva-art" aria-hidden="true"><span class="viva-sun"></span><span class="viva-sun sun-two"></span><span class="viva-leaf leaf-one"></span><span class="viva-leaf leaf-two"></span><img class="pack pack-viva" src="/assets/brands/ohviva-pack.webp" width="620" height="639" alt="" /><img class="tea-cube" src="/assets/brands/tea-cube.webp" width="240" height="240" alt="" /><span class="cover-sticker viva-sticker">CAFÉ IN<br />A CUBE.</span></div>
+     <span class="cover-bottom">JUST ADD WATER &amp; A LITTLE JOY.</span>
+    </div>
+    <div class="brand-meta"><div><span class="brand-index">03 / OHVIVA</span><p>Your happy place, in a cup.</p></div><span class="brand-visit" aria-hidden="true">↗</span></div>
+   </a><button class="brand-preview-button" type="button" data-preview="ohviva" aria-haspopup="dialog" aria-controls="brand-dialog" aria-label="Quick look at OHVIVA" hidden>Take a peek <span aria-hidden="true">+</span></button></article>
+   <article class="brand-item" data-brand="frozili"><a class="brand-door door-frozili" href="https://www.frozili.com" aria-label="Visit Frozili — icy coffee candy" data-world="A slow melt. A cool finish. Your tiny reset.">
+    <div class="album-cover cover-frozili" style="--rest-rotate:6deg">
+     <div class="cover-top"><span>A CURIOUSLY COOL DISCOVERY.</span><span>04</span></div>
+     <h2 class="brand-name name-frozili">frozili<span>❋</span></h2>
+     <p class="cover-headline frozili-headline">Stay<br /><em>cool.</em></p>
+     <div class="cover-art frozili-art" aria-hidden="true"><span class="ice-ring ring-one"></span><span class="ice-ring ring-two"></span><span class="ice-star">❄</span><div class="tin-cutout tin-open"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" /></div><div class="tin-cutout tin-lid"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" /></div><span class="cover-sticker frozili-sticker">TAKE A<br />CHILL MOMENT.</span></div>
+     <span class="cover-bottom">COFFEE FLAVOR. ICY LITTLE RESET.</span>
+    </div>
+    <div class="brand-meta"><div><span class="brand-index">04 / FROZILI</span><p>A tiny, icy everyday reset.</p></div><span class="brand-visit" aria-hidden="true">↗</span></div>
+   </a><button class="brand-preview-button" type="button" data-preview="frozili" aria-haspopup="dialog" aria-controls="brand-dialog" aria-label="Quick look at Frozili" hidden>Take a peek <span aria-hidden="true">+</span></button></article>
+  </div>
+  <div class="gallery-caption"><span class="gallery-instruction">ENTER A WORLD. OR TAKE A LITTLE PEEK.</span><p id="collection-caption" aria-live="polite">Pick a world. Make yourself at home.</p><a class="gallery-scroll" href="#technology">THE LITTLE SCIENCE <span aria-hidden="true">↓</span></a></div>
  </section>
  <div class="joy-ribbon" aria-hidden="true"><div class="ribbon-track"><span>SMALL THINGS. BIG OH!</span><span>✳</span><span>A CRUNCH. A SIP. A SMILE.</span><span>✳</span><span>EVERYDAY, A LITTLE BRIGHTER.</span><span>✳</span><span>SMALL THINGS. BIG OH!</span><span>✳</span><span>A CRUNCH. A SIP. A SMILE.</span><span>✳</span><span>EVERYDAY, A LITTLE BRIGHTER.</span><span>✳</span></div></div>
- <section class="house-story wrap" aria-labelledby="story-title">
-  <div class="story-art" aria-hidden="true"><span class="story-doodle doodle-crunch">crunch.</span><span class="story-doodle doodle-sip">sip.</span><span class="story-doodle doodle-oh">oh!</span><span class="story-star">✳</span><span class="story-small">A FAMILY OF GOOD LITTLE IDEAS.</span></div>
-  <div class="story-copy"><p class="little-label">Hi, we're Vitablabla.</p><h2 id="story-title">Serious about flavor.<br /><em>Playful about life.</em></h2><p>We’re a house of food and drink brands built around one simple thought: the everyday deserves a little more delight.</p><p>So we follow our curiosity. Into real-fruit crunch, coffee by the cube, a fruit tea café in your bag, and candy with a surprisingly cool finish. Different personalities. The same love of a good little discovery.</p><a class="text-link" href="/about">Get to know our house <span aria-hidden="true">↗</span></a></div>
- </section>
- <section class="little-science" id="technology" aria-labelledby="science-title"><div class="wrap">
-  <div class="science-heading"><div><p class="little-label">A little science. A lot of possibility.</p><h2 id="science-title">Cold process.<br /><em>Bright ideas.</em></h2></div><p>Behind OhCrisp’s crunch, OHSIP’s coffee cubes and OHVIVA’s fruit tea is freeze-drying: a clever way to take out water and open up a whole new world of texture.</p></div>
+ <div class="tech-tail">
+ <section class="little-science" id="technology" tabindex="-1" aria-labelledby="science-title"><div class="wrap">
+  <div class="science-heading"><div><p class="little-label">01 / A little science. A lot of possibility.</p><h2 id="science-title">Cold process.<br /><em>Bright ideas.</em></h2></div><p>Behind OhCrisp’s crunch, OHSIP’s coffee cubes and OHVIVA’s fruit tea is freeze-drying: a clever way to take out water and open up a whole new world of texture.</p></div>
   <div class="science-lab">
-   <div class="science-visual" data-phase="freeze"><div class="lab-topline"><span>THE FREEZE-DRYING LAB</span><span class="lab-indicator">●</span></div><div class="lab-object" aria-hidden="true"><span class="lab-orbit orbit-outer"></span><span class="lab-orbit orbit-inner"></span><span class="lab-snow snow-one">✳</span><span class="lab-snow snow-two">✳</span><img src="/assets/brands/strawberry.webp" alt="" width="320" height="320" loading="lazy" /><span class="vapor vapor-one"></span><span class="vapor vapor-two"></span><span class="vapor vapor-three"></span></div><div class="lab-caption" aria-live="polite"><span id="phase-number">01 / FREEZE</span><strong id="phase-caption">First, a little chill.</strong></div></div>
-   <div class="science-steps" aria-label="Explore the freeze-drying process">
-    <button class="science-step is-active" type="button" data-phase="freeze" aria-pressed="true"><span class="step-number">01</span><span><strong>Freeze the good stuff.</strong><span>Fruit or a prepared drink is frozen, turning its water into ice.</span></span><span class="step-symbol" aria-hidden="true">❄</span></button>
-    <button class="science-step" type="button" data-phase="vacuum" aria-pressed="false"><span class="step-number">02</span><span><strong>Let the ice leave.</strong><span>Under vacuum, gentle energy turns ice directly into vapor. That’s sublimation — skipping the liquid stage.</span></span><span class="step-symbol" aria-hidden="true">↑</span></button>
-    <button class="science-step" type="button" data-phase="enjoy" aria-pressed="false"><span class="step-number">03</span><span><strong>Meet a whole new texture.</strong><span>A light, porous structure remains. Enjoy fruit as a crisp snack, or add water to bring a drink cube back to life.</span></span><span class="step-symbol" aria-hidden="true">✳</span></button>
-    <p class="lab-footnote">Tap a step. Follow the little transformation.</p>
+   <div class="lab-section-label"><span>EXPLORE THE FREEZE-DRYING PROCESS</span><span class="lab-model-note">Interactive explainer <span aria-hidden="true">↙</span></span></div>
+   <div class="science-visual" data-phase="freeze">
+    <div class="lab-topline"><span>CHOOSE YOUR INGREDIENT</span><span class="lab-indicator" aria-hidden="true">＋</span></div>
+    <fieldset class="lab-samples" hidden><legend class="visually-hidden">Choose an ingredient to explore</legend><label><input type="radio" name="lab-sample" value="fruit" checked /><span>Fruit</span></label><label><input type="radio" name="lab-sample" value="coffee" /><span>Coffee</span></label><label><input type="radio" name="lab-sample" value="tea" /><span>Fruit tea</span></label></fieldset>
+    <div class="lab-object" data-sample="fruit" aria-hidden="true">
+     <svg class="lab-chamber" viewBox="0 0 500 330" fill="none">
+      <defs><linearGradient id="chamber-fill" x1="90" y1="80" x2="410" y2="270" gradientUnits="userSpaceOnUse"><stop stop-color="#DFC8E7" stop-opacity=".06"/><stop offset=".5" stop-color="#DFC8E7" stop-opacity="0"/><stop offset="1" stop-color="#DFC8E7" stop-opacity=".09"/></linearGradient></defs>
+      <path class="chamber-glass" d="M94 65C94 11 406 11 406 65V262C406 316 94 316 94 262Z" fill="url(#chamber-fill)"/>
+      <g class="chamber-outline"><ellipse cx="250" cy="65" rx="156" ry="40"/><path d="M94 65V262M406 65V262M108 77V251M392 77V251"/><ellipse cx="250" cy="262" rx="156" ry="40"/><ellipse cx="250" cy="262" rx="138" ry="30"/><path d="M94 164H406" stroke-dasharray="3 7"/></g>
+      <g class="chamber-axis"><path d="M250 10V318M67 262H433" stroke-dasharray="2 7"/><path d="M57 164H74M426 164H443M250 3V15M244 9H256M250 313V325M244 319H256"/></g>
+      <g class="chamber-floor"><path d="M133 244L292 287M166 237L326 281M208 234L360 271M367 244L208 287M334 237L174 281M292 234L140 271"/></g>
+      <g class="chamber-scan"><ellipse cx="250" cy="75" rx="154" ry="39"/><path d="M95 75H405" stroke-dasharray="2 6"/></g>
+      <g class="chamber-brackets"><path d="M50 55V30H75M425 30H450V55M50 275V300H75M425 300H450V275"/></g>
+     </svg>
+     <span class="specimen-label">SAMPLE <span id="specimen-code">01</span></span><span class="specimen-scale">FORM / TEXTURE</span>
+     <img id="lab-ingredient-image" src="/assets/brands/fruit-specimen.webp" alt="" width="370" height="370" loading="lazy" />
+     <span class="vapor vapor-one"></span><span class="vapor vapor-two"></span><span class="vapor vapor-three"></span>
+    </div>
+    <div class="lab-caption" aria-live="polite"><span id="phase-number">01 / FREEZE</span><strong id="phase-caption">First, a little chill.</strong></div>
+    <dl class="lab-readouts"><div><dt>Ingredient</dt><dd id="lab-sample-name">Strawberry</dd></div><div><dt>Process</dt><dd id="lab-method">Freezing</dd></div><div><dt>Format</dt><dd id="lab-format">Frozen fruit</dd></div></dl>
    </div>
+   <div class="science-controls" hidden><div class="process-scrubber"><label for="process-range">Drag to explore the transformation</label><input id="process-range" type="range" min="0" max="100" step="1" value="0" aria-valuetext="Step 1 of 3: Freeze" /><div class="process-labels" aria-hidden="true"><span>Freeze</span><span>Sublimate</span><span>Rediscover</span></div></div><button class="process-play" type="button" aria-pressed="false"><span class="play-symbol" aria-hidden="true">▷</span><span class="play-label">Play the process</span></button></div>
+   <div class="science-steps" role="group" aria-label="Explore the freeze-drying process">
+    <div class="science-step-track">
+    <button class="science-step is-active" type="button" data-phase="freeze" aria-pressed="true"><span class="step-number">01</span><span><strong>Freeze the good stuff.</strong><span>Fruit or a prepared drink is frozen, turning its water into ice.</span></span><span class="step-symbol" aria-hidden="true">↘</span></button>
+    <button class="science-step" type="button" data-phase="vacuum" aria-pressed="false"><span class="step-number">02</span><span><strong>Let the ice leave.</strong><span>Under vacuum, gentle energy turns ice directly into vapor. That’s sublimation — skipping the liquid stage.</span></span><span class="step-symbol" aria-hidden="true">↑</span></button>
+    <button class="science-step" type="button" data-phase="enjoy" aria-pressed="false"><span class="step-number">03</span><span><strong>Meet a whole new texture.</strong><span>A light, porous structure remains. Enjoy fruit as a crisp snack, or add water to bring a drink cube back to life.</span></span><span class="step-symbol" aria-hidden="true">↗</span></button>
+    </div>
+    <p class="lab-footnote"><span class="lab-footnote-default">Choose a step. Follow the little transformation.</span><span class="lab-swipe-hint">Swipe the cards. Tap a step to explore. <span aria-hidden="true">← →</span></span></p>
+   </div>
+
   </div>
   <div class="science-bottom"><p>Real fruit. Coffee. Tea. <strong>A few familiar things, full of new possibilities.</strong></p><a class="text-link" href="/a/freeze-drying-strawberry/">What freeze-drying does to a strawberry <span aria-hidden="true">↗</span></a></div>
  </div></section>
- <section class="house-journal wrap" aria-labelledby="journal-title">
-  <div class="journal-heading"><div><p class="little-label">The Vitablabla Journal</p><h2 id="journal-title">For the <em>curious ones.</em></h2></div><a class="text-link" href="/blog">All the good reads <span aria-hidden="true">↗</span></a></div>
+ <div class="story-band">
+ <section class="house-story wrap" id="story" tabindex="-1" aria-labelledby="story-title">
+  <div class="brand-network" role="group" aria-label="Explore the four brands in the Vitablabla family">
+   <div class="network-topline"><span>THE VITABLABLA FAMILY</span><span aria-hidden="true">01—04</span></div>
+   <div class="network-map">
+    <span class="family-spark spark-one" aria-hidden="true">✳</span><span class="family-spark spark-two" aria-hidden="true">✳</span>
+    <div class="network-core">vitablabla<span aria-hidden="true">✳</span></div>
+    <div class="family-stickers">
+     <a class="family-sticker sticker-crisp" href="https://www.ohcrisp.com" aria-label="Visit OhCrisp — freeze-dried fruit snacks">
+      <span class="family-product product-crisp" aria-hidden="true"><img src="/assets/brands/classic.webp" width="620" height="802" alt="" loading="lazy" /></span>
+      <span class="family-label"><strong>OhCrisp</strong><span aria-hidden="true">↗</span></span>
+     </a>
+     <a class="family-sticker sticker-sip" href="https://getohsip.com" aria-label="Visit OHSIP — freeze-dried coffee cubes">
+      <span class="family-product product-sip" aria-hidden="true"><img src="/assets/brands/coffee-cube.webp" width="240" height="229" alt="" loading="lazy" /></span>
+      <span class="family-label"><strong>OHSIP</strong><span aria-hidden="true">↗</span></span>
+     </a>
+     <a class="family-sticker sticker-viva" href="https://drinkohviva.com" aria-label="Visit OHVIVA — freeze-dried fruit tea cubes">
+      <span class="family-product product-viva" aria-hidden="true"><img src="/assets/brands/tea-cube.webp" width="240" height="240" alt="" loading="lazy" /></span>
+      <span class="family-label"><strong>OHVIVA</strong><span aria-hidden="true">↗</span></span>
+     </a>
+     <a class="family-sticker sticker-frozili" href="https://www.frozili.com" aria-label="Visit Frozili — icy coffee candy">
+      <span class="family-product product-frozili" aria-hidden="true"><span class="family-tin family-tin-open"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" loading="lazy" /></span><span class="family-tin family-tin-lid"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" loading="lazy" /></span></span>
+      <span class="family-label"><strong>frozili</strong><span aria-hidden="true">↗</span></span>
+     </a>
+    </div>
+   </div>
+   <p class="network-bottomline">Four personalities. One curious house.</p>
+  </div>
+  <div class="story-copy"><p class="little-label">02 / The house behind the ideas</p><h2 id="story-title">Serious about flavor.<br /><em>Playful about life.</em></h2><p>We’re a house of food and drink brands built around one simple thought: the everyday deserves a little more delight.</p><p>So we follow our curiosity. Into real-fruit crunch, coffee by the cube, a fruit tea café in your bag, and candy with a surprisingly cool finish. Different personalities. The same love of a good little discovery.</p><a class="text-link" href="/about">Get to know our house <span aria-hidden="true">↗</span></a></div>
+ </section>
+ </div>
+ <div class="journal-band">
+ <section class="house-journal wrap" id="journal" tabindex="-1" aria-labelledby="journal-title">
+  <div class="journal-heading"><div><p class="little-label">03 / The Vitablabla Journal</p><h2 id="journal-title">For the <em>curious ones.</em></h2></div><a class="text-link" href="/blog">All the good reads <span aria-hidden="true">↗</span></a></div>
   <p class="journal-intro">Flavor rabbit holes, small rituals, and stories from around the house.</p>
   <div class="home-journal-grid" id="journalGrid">
-   <a class="journal-story" href="/a/freeze-drying-strawberry/"><div class="journal-cover cover-fruit"><span class="cover-category">THE LITTLE SCIENCE</span><h3>What freeze-drying does to a <em>strawberry.</em></h3><span class="cover-arrow" aria-hidden="true">↗</span></div><p>A small explainer on sublimation, crunch, and color memory.</p></a>
-   <a class="journal-story" href="/a/slow-melt/"><div class="journal-cover cover-coffee"><span class="cover-category">EVERYDAY RITUALS</span><h3>The case for the <em>slow-melt.</em></h3><span class="cover-arrow" aria-hidden="true">↗</span></div><p>Why we built Frozili to be slow on purpose.</p></a>
-   <a class="journal-story" href="/a/healthy-snacks-should-still-feel-fun/"><div class="journal-cover cover-joy"><span class="cover-category">LITTLE DISCOVERIES</span><h3>Good snacks should still feel <em>fun.</em></h3><span class="cover-arrow" aria-hidden="true">↗</span></div><p>Color, real fruit, and the case for joyful crunch.</p></a>
+   <a class="journal-story" href="/a/freeze-drying-strawberry/"><div class="journal-cover content-cover tb-cream pattern-pinstripe"><span class="cover-category">THE LITTLE SCIENCE</span><h3>What freeze-drying does to a <em>strawberry.</em></h3><span class="cover-arrow" aria-hidden="true">Read story ↗</span></div><p>A small explainer on sublimation, crunch, and color memory.</p></a>
+   <a class="journal-story" href="/a/slow-melt/"><div class="journal-cover content-cover tb-violet pattern-heart-gingham"><span class="cover-category">EVERYDAY RITUALS</span><h3>The case for the <em>slow-melt.</em></h3><span class="cover-arrow" aria-hidden="true">Read story ↗</span></div><p>Why we built Frozili to be slow on purpose.</p></a>
+   <a class="journal-story" href="/a/healthy-snacks-should-still-feel-fun/"><div class="journal-cover content-cover tb-ice pattern-cherry-check"><span class="cover-category">LITTLE DISCOVERIES</span><h3>Good snacks should still feel <em>fun.</em></h3><span class="cover-arrow" aria-hidden="true">Read story ↗</span></div><p>Color, real fruit, and the case for joyful crunch.</p></a>
   </div>
  </section>
- <section class="house-invitation wrap" aria-labelledby="hello-title"><span class="invitation-flower" aria-hidden="true">✳</span><div><p class="little-label">Good things start with a hello.</p><h2 id="hello-title">A little curious?<br /><em>Let’s talk.</em></h2></div><a class="round-button" href="/contact">Say hello <span aria-hidden="true">↗</span></a></section>
+ </div>
+ <div class="invitation-band">
+ <section class="house-invitation wrap" aria-labelledby="hello-title"><svg class="invitation-orbit" viewBox="0 0 120 120" fill="none" aria-hidden="true"><circle cx="60" cy="60" r="46"/><ellipse cx="60" cy="60" rx="55" ry="21" transform="rotate(-40 60 60)"/><ellipse cx="60" cy="60" rx="55" ry="21" transform="rotate(40 60 60)"/><path d="M48 60H72M60 48V72"/><circle cx="27" cy="23" r="4"/></svg><div><p class="little-label">04 / Good things start with a hello.</p><h2 id="hello-title">A little curious?<br /><em>Let’s talk.</em></h2></div><a class="round-button" href="/contact">Say hello <span aria-hidden="true">↗</span></a></section>
+ </div>
+ </div>
 </main>
 <footer class="house-footer"><div class="wrap">
- <div class="footer-top"><div><a class="house-logo" href="/">vitablabla<span>✳</span></a><p>A house of happy little discoveries.</p></div>
+ <div class="footer-top"><div><a class="house-logo" href="/">vitablabla<span class="house-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(0 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(60 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(120 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(180 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(240 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(300 16 16)"/></svg></span></a><p>A house of happy little discoveries.</p></div>
   <div class="footer-column"><h2>Find your world</h2><a href="https://www.ohcrisp.com">OhCrisp ↗</a><a href="https://getohsip.com">OHSIP ↗</a><a href="https://drinkohviva.com">OHVIVA ↗</a><a href="https://www.frozili.com">Frozili ↗</a></div>
-  <div class="footer-column"><h2>Around the house</h2><a href="/ohcrisp">About OhCrisp</a><a href="/frozili">About Frozili</a><a href="/about">Our story</a><a href="#technology">Freeze-drying</a><a href="/blog">Journal</a><a href="/contact">Contact</a></div>
+  <div class="footer-column"><h2>About the house</h2><a href="/about">Our story</a><a href="#technology">Freeze-drying</a><a href="/blog">Journal</a><a href="/contact">Contact</a></div>
   <div class="footer-column"><h2>Keep in touch</h2><a href="mailto:info@vitablabla.com">info@vitablabla.com</a><a href="https://www.instagram.com/vitablabla" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok ↗</a><a href="https://www.pinterest.com/vitablabla/" target="_blank" rel="noopener">Pinterest ↗</a></div>
  </div>
  <div class="house-footer-bottom"><span>© <span id="copyright-year">2026</span> Vitablabla, Inc.</span><span>SMALL THINGS. BIG OH! <span aria-hidden="true">✳</span></span><a href="#main">Back to the happy stuff ↑</a></div>
 </div></footer>
+
+<dialog class="brand-dialog" id="brand-dialog" aria-labelledby="world-title" aria-describedby="world-description" data-brand="ohcrisp">
+ <div class="world-header"><span class="little-label" id="world-edition">01 / THE EVERYDAY COLLECTION</span><button class="world-close" type="button" aria-label="Close brand preview" autofocus><span aria-hidden="true">×</span></button></div>
+ <div class="world-content"><div class="world-art" id="world-art" aria-hidden="true"></div><div class="world-copy"><p class="little-label">A little introduction</p><h2 id="world-title">OhCrisp</h2><h3 id="world-tagline">Real fruit. A very happy crunch.</h3><p id="world-description">Colorful freeze-dried fruit with a light, airy crunch. Straight from the bag, sprinkled over breakfast, or packed for your next little adventure.</p><ul class="world-facts" id="world-facts"></ul><a class="world-visit" id="world-visit" href="https://www.ohcrisp.com">Visit OhCrisp <span aria-hidden="true">↗</span></a><span class="world-link-note">Explore the full brand website</span></div></div>
+ <div class="world-footer"><div class="world-paging"><button type="button" class="world-previous" aria-label="Previous brand">←</button><span id="world-count">01 / 04</span><button type="button" class="world-next" aria-label="Next brand">→</button></div><span class="world-keyboard-hint" aria-hidden="true">← → to explore · Esc to close</span><span class="world-touch-hint" aria-hidden="true">Swipe the cover to explore</span><span class="visually-hidden" id="world-announcement" aria-live="polite"></span></div>
+</dialog>
 <script src="/site.js" defer></script><script src="/home.js" defer></script>
 </body>
 </html>

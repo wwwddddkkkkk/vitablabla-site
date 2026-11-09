@@ -1,244 +1,39 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>About Vitablabla | Products for People Who Know What They Like</title>
-<meta name="description" content="Vitablabla creates small, thoughtful everyday brands for people with specific tastes — from crunchy fruit snacks to refreshing little rituals." />
-<link rel="canonical" href="https://vitablabla.com/about" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Vitablabla" />
-<meta property="og:title" content="About Vitablabla" />
-<meta property="og:description" content="The story behind Vitablabla, Frozili icy coffee candy, and OhCrisp freeze-dried fruit." />
-<meta property="og:url" content="https://vitablabla.com/about" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="About Vitablabla" />
-<meta name="twitter:description" content="The story behind Vitablabla, Frozili icy coffee candy, and OhCrisp freeze-dried fruit." />
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="stylesheet" href="styles.css" />
-<style>
-  .about-hero { padding: 64px 0 80px; }
-  .about-hero h1 {
-    font-family: 'DM Serif Display', serif; font-weight: 400;
-    font-size: clamp(56px, 8.5vw, 132px); line-height: 0.96;
-    letter-spacing: -0.025em; margin: 0 0 32px; max-width: 18ch;
-  }
-  .about-hero h1 .ital { font-style: italic; color: var(--sage-deep); }
-  .about-meta {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
-    padding-top: 32px; border-top: 1px solid var(--line);
-  }
-  .about-meta .label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 8px; }
-
-  .feature-strip {
-    margin: 0 32px 96px;
-    border-radius: var(--r-xl);
-    aspect-ratio: 16/7;
-    background: linear-gradient(125deg, var(--frozili-ice) 0%, var(--ohcrisp-blush) 60%, var(--ohcrisp-sun) 100%);
-    position: relative; overflow: hidden;
-  }
-  .feature-strip .blob { filter: blur(60px); opacity: .6; }
-  .fs-b1 { width: 50%; height: 80%; background: var(--frozili-coffee); top: -20%; left: -10%; opacity: .3; }
-  .fs-b2 { width: 40%; height: 80%; background: var(--ohcrisp-melon); bottom: -20%; right: -5%; }
-  .fs-b3 { width: 30%; height: 60%; background: var(--sage); top: 20%; left: 35%; opacity: .35; }
-  .fs-overlay {
-    position: absolute; inset: 0;
-    display: flex; align-items: flex-end; justify-content: space-between;
-    padding: 32px 40px;
-    font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
-  }
-
-  .story-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
-  .story-grid h2 {
-    font-family: 'DM Serif Display', serif; font-weight: 400;
-    font-size: clamp(36px, 4.5vw, 64px); line-height: 1.02;
-    letter-spacing: -0.02em; margin: 0;
-  }
-  .story-grid p { font-size: 19px; line-height: 1.55; color: var(--ink-soft); }
-  .story-grid p + p { margin-top: 20px; }
-  .story-grid .pull {
-    border-left: 3px solid var(--sage-deep);
-    padding: 8px 0 8px 24px;
-    font-family: 'DM Serif Display', serif;
-    font-size: 32px; line-height: 1.2;
-    color: var(--ink); margin: 32px 0;
-    font-style: italic;
-  }
-
-  /* Values */
-  .values { background: var(--paper); padding: 96px 0; }
-  .values-head { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; margin-bottom: 64px; align-items: end; }
-  .values-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
-  .value-card { background: var(--paper); padding: 32px 24px; min-height: 240px; display: flex; flex-direction: column; gap: 16px; }
-  .value-card .num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--ink-mute); }
-  .value-card h3 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 28px; line-height: 1.05; margin: 0; }
-  .value-card .ital { font-style: italic; color: var(--sage-deep); }
-  .value-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.5; margin: auto 0 0; }
-
-  /* People / founders */
-  .people { padding: 96px 0; }
-  .people-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 48px; }
-  .person .imgph { aspect-ratio: 4/5; border-radius: var(--r-md); margin-bottom: 16px; }
-  .person .name { font-family: 'DM Serif Display', serif; font-size: 28px; line-height: 1; margin: 0 0 6px; }
-  .person .role { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 10px; }
-  .person p { font-size: 15px; color: var(--ink-soft); line-height: 1.5; margin: 0; }
-
-  /* Numbers row */
-  .numbers {
-    margin: 0 32px;
-    background: var(--ink); color: var(--ivory);
-    border-radius: var(--r-xl);
-    padding: 64px;
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
-  }
-  .numbers .stat { border-left: 1px solid rgba(244,238,224,0.2); padding-left: 24px; }
-  .numbers .stat:first-child { border-left: none; padding-left: 0; }
-  .numbers .v { font-family: 'DM Serif Display', serif; font-size: 64px; line-height: 1; letter-spacing: -0.02em; }
-  .numbers .v .ital { font-style: italic; color: var(--ohcrisp-blush); }
-  .numbers .l { font-size: 13px; color: rgba(244,238,224,0.6); margin-top: 8px; }
-
-  @media (max-width: 900px) {
-    .about-meta, .story-grid, .values-head, .people-grid, .values-grid, .numbers { grid-template-columns: 1fr !important; }
-    .values-grid { display: flex; flex-direction: column; }
-    .feature-strip { margin: 0 16px 64px; aspect-ratio: 4/3; }
-    .numbers { padding: 32px; margin: 0 16px; }
-    .numbers .stat { border-left: none; padding-left: 0; padding-top: 16px; border-top: 1px solid rgba(244,238,224,0.2); }
-    .numbers .stat:first-child { border-top: none; padding-top: 0; }
-  }
-</style>
-</head>
-<body>
-
-<div class="topstrip">A new note is up on the journal. <a href="blog.html">Read it →</a></div>
-
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="nav-left">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="index.html#brands">Brands</a>
-      <a class="nav-link active" href="about.html">About</a>
-    </div>
-    <a class="logo" href="index.html">vitablabla<span class="dot">.</span></a>
-    <div class="nav-right">
-      <a class="nav-link" href="contact.html">Contact</a>
-      <a class="cta-pill" href="blog.html">Read Blog <span class="arrow">↗</span></a>
-    </div>
-  </div>
-</nav>
-
-<header class="about-hero">
-  <div class="container">
-    <div class="eyebrow" style="margin-bottom:32px">About / Vitablabla</div>
-    <h1>Small, thoughtful products for <span class="ital">specific tastes.</span></h1>
-    <div class="about-meta">
-      <div>
-        <div class="label">What we are</div>
-        <p style="margin:0;font-size:18px;color:var(--ink-soft);max-width:46ch">A home for small, thoughtful products made to feel personal, delightful, and worth sharing.</p>
-      </div>
-      <div>
-        <div class="label">Where we're based</div>
-        <p style="margin:0;font-size:18px;color:var(--ink-soft);max-width:46ch">Started in a Yale kitchen during late-night study sessions. Now based in Bethesda, MD, still guided by the belief that everyday products deserve a little more thought.</p>
-      </div>
-    </div>
-  </div>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Our Story — The Vitablabla House of Brands</title><meta name="description" content="Meet the Vitablabla house of brands: OhCrisp fruit snacks, OHSIP coffee cubes, OHVIVA fruit tea and Frozili icy coffee candy."/>
+<link rel="canonical" href="https://vitablabla.com/about"/>
+<meta property="og:type" content="website"/><meta property="og:site_name" content="Vitablabla"/>
+<meta property="og:title" content="Our Story — The Vitablabla House of Brands"/><meta property="og:description" content="Meet the Vitablabla house of brands: OhCrisp fruit snacks, OHSIP coffee cubes, OHVIVA fruit tea and Frozili icy coffee candy."/><meta property="og:url" content="https://vitablabla.com/about"/>
+<meta name="twitter:card" content="summary"/><meta name="theme-color" content="#DFC8E7"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/home.css"/><link rel="stylesheet" href="/pages.css"/>
+<noscript><style>.interior-page .menu-toggle{display:none}@media(max-width:680px){.interior-page .mobile-menu[hidden]{display:block!important}}</style></noscript>
+<link rel="stylesheet" href="/covers.css"/>
+</head><body class="brand-house science-house interior-page"><a class="skip-link" href="#main">Skip to content</a>
+<header class="house-header" id="top">
+ <div class="house-nav wrap">
+  <a class="house-logo" href="/" aria-label="Vitablabla home">vitablabla<span class="house-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(0 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(60 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(120 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(180 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(240 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(300 16 16)"/></svg></span></a>
+  <nav class="house-links" aria-label="Main navigation"><a href="/#brands">Our brands</a><a href="/#technology">The little science</a><a href="/about" aria-current="page">Our story</a><a href="/blog">Journal</a></nav>
+  <div class="header-actions"><a class="nav-hello" href="/contact">Say hello <span aria-hidden="true">↗</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button></div>
+ </div>
+ <div class="reading-progress" aria-hidden="true"><span></span></div>
+ <nav id="mobile-menu" class="mobile-menu wrap" aria-label="Mobile navigation" hidden><a href="/#brands">Our brands <span aria-hidden="true">↘</span></a><a href="/#technology">The little science <span aria-hidden="true">↘</span></a><a href="/about" aria-current="page">Our story <span aria-hidden="true">↘</span></a><a href="/blog">Journal <span aria-hidden="true">↘</span></a><a href="/contact">Say hello <span aria-hidden="true">↗</span></a></nav>
 </header>
+<main id="main" class="interior-content" tabindex="-1">
 
-<div class="feature-strip" aria-hidden="true">
-  <div class="blob fs-b1"></div>
-  <div class="blob fs-b2"></div>
-  <div class="blob fs-b3"></div>
-  <div class="fs-overlay">
-    <span style="background:rgba(251,247,238,0.75);padding:8px 14px;border-radius:999px">Started at Yale · now based in Bethesda, MD</span>
-    <span style="background:rgba(251,247,238,0.75);padding:8px 14px;border-radius:999px">Taste-led products · little daily joys</span>
-  </div>
-</div>
-
-<section class="section-tight">
-  <div class="container">
-    <div class="story-grid">
-      <h2>The short <span style="font-style:italic;color:var(--sage-deep)">version.</span></h2>
-      <div>
-        <p>Vitablabla is a home for small, thoughtful products made for people with specific tastes. We create everyday brands around real cravings, clear product ideas, and playful details — from crunchy fruit snacks to refreshing little rituals.</p>
-        <div class="pull">"What is a small desire that deserves a better product?"</div>
-        <p>We believe the best products should feel personal, well-made, and easy to love from the first try.</p>
-        <p>Each Vitablabla brand starts with that simple question, then becomes something specific: a texture, a flavor, a ritual, and a set of little details people naturally want to share.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="values">
-  <div class="container">
-    <div class="values-head">
-      <div>
-        <div class="eyebrow" style="margin-bottom:24px">What we care about</div>
-        <h2 class="h-section">Five small <span class="italic">promises.</span></h2>
-      </div>
-      <p class="lede">These are the ideas we come back to whenever we make something new.</p>
-    </div>
-    <div class="values-grid">
-      <div class="value-card">
-        <span class="num">/ 01</span>
-        <h3>Specific, not <span class="ital">generic</span></h3>
-        <p>Products built around clear tastes and real moments.</p>
-      </div>
-      <div class="value-card">
-        <span class="num">/ 02</span>
-        <h3>Easy to <span class="ital">love</span></h3>
-        <p>Simple ideas, strong first impressions, and products people want to come back to.</p>
-      </div>
-      <div class="value-card">
-        <span class="num">/ 03</span>
-        <h3>Worth <span class="ital">sharing</span></h3>
-        <p>Playful details, beautiful textures, and little moments people naturally want to talk about.</p>
-      </div>
-      <div class="value-card">
-        <span class="num">/ 04</span>
-        <h3>Thoughtful <span class="ital">details</span></h3>
-        <p>Small choices in flavor, texture, packaging, and finish should make the product feel considered.</p>
-      </div>
-      <div class="value-card">
-        <span class="num">/ 05</span>
-        <h3>Everyday <span class="ital">joy</span></h3>
-        <p>Made for desk drawers, road trips, late nights, lunch breaks, and the moments that need a brighter little pause.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="section-tight">
-  <div class="numbers">
-    <div class="stat">
-      <div class="v">2 <span class="ital">brands</span></div>
-      <div class="l">Frozili and OhCrisp, with more little ideas in progress.</div>
-    </div>
-    <div class="stat">
-      <div class="v">All <span class="ital">50 states</span></div>
-      <div class="l">We ship across the U.S., from one tin to a case.</div>
-    </div>
-    <div class="stat">
-      <div class="v">∞ <span class="ital">tastings</span></div>
-      <div class="l">Small tastings, tiny tweaks, clearer products.</div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand"><span class="italic">vita<br/>blabla.</span></div>
-        <p class="footer-tag">Made for specific tastes and little daily joys.</p>
-      </div>
-      <div><h4>Brands</h4><ul><li><a href="frozili.html">Frozili</a></li><li><a href="ohcrisp.html">OhCrisp</a></li><li><span style="color:var(--ink-mute)">More coming</span></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h4>Elsewhere</h4><ul><li><a href="https://www.instagram.com/vitablabla?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.pinterest.com/vitablabla/" target="_blank" rel="noopener">Pinterest</a></li><li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><span>© 2025 Vitablabla, Inc.</span><span>Made with care, for specific tastes.</span></div>
-  </div>
-</footer>
-
-</body>
-</html>
+<header class="page-hero wrap"><p class="little-label">OUR STORY / THE HOUSE BEHIND THE IDEAS</p><h1>A house of<br/><span>little discoveries.</span></h1><p class="page-intro">Four personalities. One curious house. We make food and drink brands that bring a little more delight to everyday life.</p><nav class="brand-jump-links" aria-label="Meet a brand"><a href="#ohcrisp">OhCrisp ↓</a><a href="#ohsip">OHSIP ↓</a><a href="#ohviva">OHVIVA ↓</a><a href="#frozili">Frozili ↓</a></nav></header>
+<section class="origin-band"><div class="wrap origin-grid"><p class="little-label">A SMALL QUESTION. A GOOD PLACE TO START.</p><div><h2>What deserves<br/>a little more <em>oh?</em></h2><p>We follow our curiosity into real-fruit crunch, coffee by the cube, a fruit tea café in your bag, and candy with a surprisingly cool finish. Different ideas, each made around a specific taste, texture or everyday ritual.</p><p>Vitablabla started in a Yale kitchen during late-night study sessions. Now based in Bethesda, Maryland, we still believe that familiar things can become a good little discovery.</p></div></div></section>
+<section class="wrap story-collection" aria-labelledby="brand-stories-title"><div class="section-heading"><div><p class="little-label">MEET THE FAMILY</p><h2 id="brand-stories-title">Find your kind<br/>of happy.</h2></div><p>Explore the stories here, then step into each brand’s own world.</p></div><div class="brand-story-grid"><section class="brand-story-card" id="ohcrisp" aria-labelledby="ohcrisp-title"><div class="brand-story-art art-crisp" aria-hidden="true"><span class="family-product product-crisp"><img src="/assets/brands/classic.webp" width="620" height="802" alt="" loading="lazy"/></span><span class="brand-story-number">01</span></div><div class="brand-story-copy"><p class="little-label">01 / THE VITABLABLA FAMILY</p><h3 id="ohcrisp-title">OhCrisp</h3><p class="brand-story-tagline">Fruit, with a playful crunch.</p><p>Colorful freeze-dried fruit with a light, airy crunch. Straight from the bag, sprinkled over breakfast, or packed for your next little adventure.</p><p class="brand-facts">Real fruit / Crisp texture / Snack & sprinkle</p><a class="solid-link" href="https://www.ohcrisp.com">Visit OhCrisp <span aria-hidden="true">↗</span></a></div></section><section class="brand-story-card" id="ohsip" aria-labelledby="ohsip-title"><div class="brand-story-art art-sip" aria-hidden="true"><span class="family-product product-sip"><img src="/assets/brands/coffee-cube.webp" width="240" height="229" alt="" loading="lazy"/></span><span class="brand-story-number">02</span></div><div class="brand-story-copy"><p class="little-label">02 / THE VITABLABLA FAMILY</p><h3 id="ohsip-title">OHSIP</h3><p class="brand-story-tagline">Coffee. By the cube.</p><p>Already-brewed Arabica coffee, freeze-dried into one whole cube. Drop it into ice water, stir or shake until dissolved, and make the cup your own.</p><p class="brand-facts">Arabica coffee / Freeze-dried cubes / Just add water</p><a class="solid-link" href="https://getohsip.com">Visit OHSIP <span aria-hidden="true">↗</span></a></div></section><section class="brand-story-card" id="ohviva" aria-labelledby="ohviva-title"><div class="brand-story-art art-viva" aria-hidden="true"><span class="family-product product-viva"><img src="/assets/brands/tea-cube.webp" width="240" height="240" alt="" loading="lazy"/></span><span class="brand-story-number">03</span></div><div class="brand-story-copy"><p class="little-label">03 / THE VITABLABLA FAMILY</p><h3 id="ohviva-title">OHVIVA</h3><p class="brand-story-tagline">A fruit tea café. Anywhere.</p><p>Real fruit pieces and vibrant tea, brought together in a freeze-dried cube. Add liquid, stir and enjoy a bright little tea break. Follow your flavor’s pack for hot or cold preparation.</p><p class="brand-facts">Real fruit pieces / Fruit tea cubes / Stir & sip</p><a class="solid-link" href="https://drinkohviva.com">Visit OHVIVA <span aria-hidden="true">↗</span></a></div></section><section class="brand-story-card" id="frozili" aria-labelledby="frozili-title"><div class="brand-story-art art-frozili" aria-hidden="true"><span class="family-product product-frozili"><span class="family-tin family-tin-open"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" loading="lazy"/></span><span class="family-tin family-tin-lid"><img src="/assets/brands/frozili-tin.webp" width="620" height="620" alt="" loading="lazy"/></span></span><span class="brand-story-number">04</span></div><div class="brand-story-copy"><p class="little-label">04 / THE VITABLABLA FAMILY</p><h3 id="frozili-title">Frozili</h3><p class="brand-story-tagline">A tiny, icy everyday reset.</p><p>Icy coffee candy with a smooth, slow melt and a cooling finish. A pocket-sized ritual for the moments between everything else.</p><p class="brand-facts">Icy coffee candy / Slow melt / Cooling finish</p><a class="solid-link" href="https://www.frozili.com">Visit Frozili <span aria-hidden="true">↗</span></a></div></section></div></section>
+<section class="story-science-band"><div class="wrap section-heading"><div><p class="little-label">THE LITTLE SCIENCE</p><h2>Cold process.<br/>Bright possibilities.</h2><p>Freeze-drying connects OhCrisp’s crunch, OHSIP’s coffee cubes and OHVIVA’s fruit tea. See how freezing and sublimation open up a new world of texture.</p></div><a class="solid-link" href="/#technology">Explore freeze-drying <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="house-footer"><div class="wrap">
+ <div class="footer-top"><div><a class="house-logo" href="/">vitablabla<span class="house-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(0 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(60 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(120 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(180 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(240 16 16)"/><path d="M16 16V3M16 9l-4-4M16 9l4-4" transform="rotate(300 16 16)"/></svg></span></a><p>A house of happy little discoveries.</p></div>
+  <div class="footer-column"><h2>Find your world</h2><a href="https://www.ohcrisp.com">OhCrisp ↗</a><a href="https://getohsip.com">OHSIP ↗</a><a href="https://drinkohviva.com">OHVIVA ↗</a><a href="https://www.frozili.com">Frozili ↗</a></div>
+  <div class="footer-column"><h2>About the house</h2><a href="/about">Our story</a><a href="/#technology">Freeze-drying</a><a href="/blog">Journal</a><a href="/contact">Contact</a></div>
+  <div class="footer-column"><h2>Keep in touch</h2><a href="mailto:info@vitablabla.com">info@vitablabla.com</a><a href="https://www.instagram.com/vitablabla" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok ↗</a><a href="https://www.pinterest.com/vitablabla/" target="_blank" rel="noopener">Pinterest ↗</a></div>
+ </div>
+ <div class="house-footer-bottom"><span>© <span id="copyright-year">2026</span> Vitablabla, Inc.</span><span>SMALL THINGS. BIG OH! <span aria-hidden="true">✳</span></span><a href="#top">Back to the happy stuff ↑</a></div>
+</div></footer>
+<script src="/page.js" defer></script>
+</body></html>

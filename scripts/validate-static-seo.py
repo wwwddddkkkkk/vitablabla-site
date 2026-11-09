@@ -94,6 +94,16 @@ def main():
             fail(errors, f"[{slug}] missing BreadcrumbList JSON-LD")
         if post.get("faqs") and "FAQPage" not in schema_types:
             fail(errors, f"[{slug}] has FAQ metadata but no visible FAQ JSON-LD")
+        if post.get("image"):
+            image = post["image"]
+            image_url = SITE + image["src"]
+            if f'<meta property="og:image" content="{image_url}"' not in markup:
+                fail(errors, f"[{slug}] missing social image")
+            article_schema = next((schema for schema in schemas if schema.get("@type") == "Article"), {})
+            if article_schema.get("image", {}).get("url") != image_url:
+                fail(errors, f"[{slug}] Article image does not match the editorial asset")
+            if not body_match or image["src"] not in body_match[1]:
+                fail(errors, f"[{slug}] editorial image is missing from the visible article")
 
         for linked_slug in re.findall(r'href="/a/([a-z0-9]+(?:-[a-z0-9]+)*)/"', markup):
             if linked_slug not in slugs:
@@ -113,8 +123,6 @@ def main():
     static_pages = {
         "index.html": SITE + "/",
         "blog.html": SITE + "/blog",
-        "frozili.html": SITE + "/frozili",
-        "ohcrisp.html": SITE + "/ohcrisp",
         "about.html": SITE + "/about",
         "contact.html": SITE + "/contact",
     }
@@ -125,6 +133,30 @@ def main():
             fail(errors, f"[{filename}] missing meta description")
         if f'<link rel="canonical" href="{expected_canonical}"' not in markup:
             fail(errors, f"[{filename}] canonical mismatch")
+
+    # Brand browsing is direct; company introductions share one story page.
+    with open(os.path.join(ROOT, "about.html"), encoding="utf-8") as file:
+        about = file.read()
+    with open(os.path.join(ROOT, "_redirects"), encoding="utf-8") as file:
+        redirects = file.read().splitlines()
+    for brand in ("ohcrisp", "ohsip", "ohviva", "frozili"):
+        if f'id="{brand}"' not in about:
+            fail(errors, f"[about] missing {brand} introduction")
+    for brand in ("ohcrisp", "frozili"):
+        for old_path in (f"/{brand}", f"/{brand}/", f"/{brand}.html"):
+            if f"{old_path} /about#{brand} 301" not in redirects:
+                fail(errors, f"missing redirect for {old_path}")
+        if SITE + "/" + brand in locations:
+            fail(errors, f"retired brand page is still in the sitemap: {brand}")
+    expected_brands = {"https://www.ohcrisp.com", "https://getohsip.com", "https://drinkohviva.com", "https://www.frozili.com"}
+    paths = [os.path.join(ROOT, filename) for filename in static_pages]
+    paths += [os.path.join(ARTICLE_DIR, slug, "index.html") for slug in slugs]
+    for path in paths:
+        with open(path, encoding="utf-8") as file:
+            markup = file.read()
+        footer = re.search(r'<footer class="house-footer">(.*?)</footer>', markup, re.S)
+        if not footer or not expected_brands.issubset(set(re.findall(r'href="([^"]+)"', footer.group(1)))):
+            fail(errors, f"[{os.path.relpath(path, ROOT)}] footer must link to all four official brands")
 
     if errors:
         print(f"{len(errors)} static SEO error(s):")

@@ -7,6 +7,8 @@ import os
 import re
 import sys
 from datetime import date
+from site_chrome import chrome_header, chrome_footer
+from cover_theme import cover_class, arrange_covers
 
 
 SITE = "https://vitablabla.com"
@@ -19,12 +21,10 @@ SITEMAP = os.path.join(ROOT, "sitemap.xml")
 
 STATIC_PAGES = [
     # Update a lastmod value only when that page's visible content changes.
-    ("", "1.0", "2026-11-07"),
-    ("blog", "0.9", "2026-08-13"),
-    ("frozili", "0.8", "2026-08-13"),
-    ("ohcrisp", "0.8", "2026-08-13"),
-    ("about", "0.5", "2026-08-13"),
-    ("contact", "0.5", "2026-08-13"),
+    ("", "1.0", "2026-11-09"),
+    ("blog", "0.9", "2026-11-09"),
+    ("about", "0.7", "2026-11-08"),
+    ("contact", "0.5", "2026-11-08"),
 ]
 
 REQUIRED_FIELDS = ["slug", "number", "title", "excerpt", "date", "categories", "cta"]
@@ -81,6 +81,7 @@ def rewrite_internal_links(body_html):
         lambda match: f'href={match.group(1)}/{match.group(2)}{match.group(3)}{match.group(1)}',
         body_html,
     )
+    body_html = re.sub(r'href=(["\'])(?:/)?(ohcrisp|frozili)(?:\.html)?(?:#[^"\']*)?\1', lambda m: f'href={m.group(1)}/about#{m.group(2)}{m.group(1)}', body_html)
     return body_html
 
 
@@ -102,6 +103,16 @@ def validate(data):
         for field in REQUIRED_FIELDS:
             if not post.get(field):
                 err(f"[{label}] missing required field: {field}")
+        if post.get("cta") not in ("ohcrisp", "ohsip", "ohviva", "frozili"):
+            err(f"[{label}] cta must name one of the four house brands.")
+        image = post.get("image")
+        if image:
+            if not isinstance(image, dict) or not re.fullmatch(r"/assets/[a-zA-Z0-9/_-]+\.(?:webp|png|jpe?g)", image.get("src", "")):
+                err(f"[{label}] image must reference a local asset.")
+            elif not os.path.isfile(os.path.join(ROOT, image["src"].lstrip("/"))):
+                err(f"[{label}] image asset is missing: {image['src']}")
+            elif not image.get("alt") or any(not isinstance(image.get(edge), int) or image[edge] <= 0 for edge in ("width", "height")):
+                err(f"[{label}] image needs descriptive alt text and positive width/height.")
 
         slug = post.get("slug", "")
         if slug:
@@ -219,7 +230,7 @@ def render_card(post):
     title = title.replace("<em>", '<span class="ital">').replace("</em>", "</span>")
     primary_category = (post.get("categories") or [""])[0]
     return f'''<a class="article" href="{article_path(post['slug'])}">
-  <div class="title-block {html.escape(post.get('color') or 'tb-sage')}">
+  <div class="title-block {cover_class(post)}">
     <div class="tb-top"><span class="tb-num">No. {html.escape(str(post.get('number', '')))}</span><span class="tb-num">{html.escape(post.get('readTime', ''))}</span></div>
     <h3 class="tb-title">{title}</h3>
     <div class="tb-bottom"><span>{html.escape(primary_category)}</span><span>{html.escape(post.get('date', ''))}</span></div>
@@ -318,6 +329,17 @@ def render_article(post, posts_by_slug, post_css):
     }
     if keywords:
         article_schema["keywords"] = keywords
+    image = post.get("image")
+    image_meta = ""
+    if image:
+        image_url = SITE + image["src"]
+        article_schema["image"] = {"@type": "ImageObject", "url": image_url, "width": image["width"], "height": image["height"], "caption": image["alt"]}
+        image_meta = f'''<meta property="og:image" content="{html.escape(image_url, quote=True)}" />
+<meta property="og:image:width" content="{image['width']}" />
+<meta property="og:image:height" content="{image['height']}" />
+<meta property="og:image:alt" content="{html.escape(image['alt'], quote=True)}" />
+<meta name="twitter:image" content="{html.escape(image_url, quote=True)}" />
+<meta name="twitter:image:alt" content="{html.escape(image['alt'], quote=True)}" />'''
 
     breadcrumb_schema = {
         "@context": "https://schema.org",
@@ -347,7 +369,7 @@ def render_article(post, posts_by_slug, post_css):
 
     related_slugs = post.get("related") or [item["slug"] for item in posts_by_slug.values() if item["slug"] != slug][:3]
     related_posts = [posts_by_slug[item] for item in related_slugs if item in posts_by_slug][:3]
-    related_html = "\n".join(render_card(item) for item in related_posts)
+    related_html = "\n".join(render_card(item) for item in arrange_covers(related_posts))
 
     crumbs = ['<a href="/blog">Journal</a>']
     crumbs.extend(html.escape(item) for item in post.get("crumbs", []))
@@ -359,10 +381,17 @@ def render_article(post, posts_by_slug, post_css):
         cta_href = "https://www.ohcrisp.com"
         cta_attrs = ' target="_blank" rel="noopener" style="background:#5A2530;color:#FBEDEC"'
         cta_label = "Visit ohcrisp.com"
+    elif post.get("cta") in ("ohsip", "ohviva"):
+        is_coffee = post["cta"] == "ohsip"
+        cta_class = post["cta"]
+        cta_title = "Your next cup, <em>by the cube.</em>" if is_coffee else "Find your <em>fruit tea moment.</em>"
+        cta_href = "https://getohsip.com" if is_coffee else "https://drinkohviva.com"
+        cta_attrs = ' target="_blank" rel="noopener" style="background:var(--ink);color:var(--ivory)"'
+        cta_label = "Visit OHSIP" if is_coffee else "Visit OHVIVA"
     else:
         cta_class = "frozili"
         cta_title = "Try a slow-melt for <em>yourself.</em>"
-        cta_href = "/frozili"
+        cta_href = "https://www.frozili.com"
         cta_attrs = ' style="background:var(--frozili-coffee);color:var(--ivory)"'
         cta_label = "Visit Frozili"
 
@@ -385,25 +414,22 @@ def render_article(post, posts_by_slug, post_css):
 <meta property="og:url" content="{canonical}" />
 <meta property="article:published_time" content="{html.escape(published)}" />
 <meta property="article:modified_time" content="{html.escape(modified)}" />
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="{'summary_large_image' if image else 'summary'}" />
+{image_meta}
 <meta name="twitter:title" content="{html.escape(title, quote=True)}" />
 <meta name="twitter:description" content="{html.escape(description, quote=True)}" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/home.css" />
+<link rel="stylesheet" href="/pages.css" />
+<link rel="stylesheet" href="/covers.css" />
 {schema_html}
 <style>{post_css}</style>
 </head>
-<body>
+<body class="brand-house science-house interior-page">
+{chrome_header("blog")}
 <div class="progress"><div class="bar" id="bar"></div></div>
-<div class="topstrip">The Vitablabla Journal &middot; Product stories &amp; taste ideas &middot; <a href="/blog">Back to all articles</a></div>
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="nav-left"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/#brands">Brands</a><a class="nav-link" href="/about">About</a></div>
-    <a class="logo" href="/">vitablabla<span class="dot">.</span></a>
-    <div class="nav-right"><a class="nav-link" href="/contact">Contact</a><a class="cta-pill active" href="/blog">Read Blog <span class="arrow">↗</span></a></div>
-  </div>
-</nav>
-<main id="postRoot" data-state="ready">
+<main id="main" data-state="ready" tabindex="-1">
   <header class="post-hero"><div class="container">
     <div class="crumbs">{crumbs_html}</div>
     <h1>{post.get('title', '')}</h1>
@@ -420,15 +446,8 @@ def render_article(post, posts_by_slug, post_css):
     <div class="related-grid">{related_html}</div>
   </div></section>
 </main>
-<footer class="footer"><div class="container">
-  <div class="footer-grid">
-    <div><div class="footer-brand"><span class="italic">vita<br/>blabla.</span></div><p class="footer-tag">Made for specific tastes and little daily joys.</p></div>
-    <div><h4>Brands</h4><ul><li><a href="/frozili">Frozili</a></li><li><a href="/ohcrisp">OhCrisp</a></li><li><span style="color:var(--ink-mute)">More coming</span></li></ul></div>
-    <div><h4>Company</h4><ul><li><a href="/about">About</a></li><li><a href="/blog">Journal</a></li><li><a href="/contact">Contact</a></li></ul></div>
-    <div><h4>Elsewhere</h4><ul><li><a href="https://www.instagram.com/vitablabla" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@froziliofficial" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://www.pinterest.com/vitablabla/" target="_blank" rel="noopener">Pinterest</a></li><li><a href="mailto:info@vitablabla.com">info@vitablabla.com</a></li></ul></div>
-  </div>
-  <div class="footer-bottom"><span>&copy; 2026 Vitablabla, Inc.</span><span>Made with care, for specific tastes.</span></div>
-</div></footer>
+{chrome_footer()}
+<script src="/page.js" defer></script>
 <script>
 (() => {{
   const bar = document.getElementById('bar');
@@ -448,7 +467,31 @@ def render_article(post, posts_by_slug, post_css):
 '''
 
 
+def sync_page_chrome(posts):
+    posts_by_slug = {post["slug"]: post for post in posts}
+    # Keep authored fallback cards varied when JavaScript or the registry fails.
+    for filename in ("index.html", "blog.html"):
+        path = os.path.join(ROOT, filename)
+        with open(path, encoding="utf-8") as file:
+            markup = file.read()
+        card_pattern = r'(<a class="(?:journal-story|article)" href="/a/([^/]+)/"><div class="(?:journal-cover|title-block) )content-cover [^"]+'
+        matches = list(re.finditer(card_pattern, markup))
+        themes = {post["slug"]: cover_class(post) for post in arrange_covers([posts_by_slug[match[2]] for match in matches if match[2] in posts_by_slug])}
+        markup = re.sub(card_pattern, lambda match: match[1] + themes.get(match[2], match[0][len(match[1]):]), markup)
+        with open(path, "w", encoding="utf-8") as file:
+            file.write(markup)
+    for filename, active in (("about.html", "about"), ("blog.html", "blog"), ("contact.html", "contact")):
+        path = os.path.join(ROOT, filename)
+        with open(path, encoding="utf-8") as file:
+            markup = file.read()
+        markup = re.sub(r'<a class="skip-link".*?</a>\s*<header class="house-header".*?</header>', lambda _: chrome_header(active), markup, flags=re.S)
+        markup = re.sub(r'<footer class="house-footer">.*?</footer>', lambda _: chrome_footer(), markup, flags=re.S)
+        with open(path, "w", encoding="utf-8") as file:
+            file.write(markup)
+
+
 def build_articles(posts):
+    sync_page_chrome(posts)
     os.makedirs(ARTICLE_DIR, exist_ok=True)
     post_css = extract_post_css()
     posts_by_slug = {post["slug"]: post for post in posts if post.get("slug")}

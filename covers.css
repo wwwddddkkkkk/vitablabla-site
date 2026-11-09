@@ -1,0 +1,35 @@
+/* A small print collection: dense stripes, cloth checks, fruit and paper collage. */
+.content-cover { --cover-main:#DECFAE; --cover-rgb:222,207,174; --cover-paper:#FFFCF1; --cover-fg:var(--ink); --cover-grain:url('/assets/covers/paper-grain.svg'); }
+.content-cover.tb-ice { --cover-main:#C9E5EE; --cover-rgb:201,229,238; --cover-paper:#EFF9FC; }
+.content-cover.tb-coffee { --cover-main:#D4AC8C; --cover-rgb:212,172,140; --cover-paper:#FFF2DD; }
+.content-cover.tb-blush { --cover-main:#E9A7B9; --cover-rgb:233,167,185; --cover-paper:#FFF0E8; }
+.content-cover.tb-peach { --cover-main:#F2C69E; --cover-rgb:242,198,158; --cover-paper:#FFFAEB; }
+.content-cover.tb-sun { --cover-main:#F4D866; --cover-rgb:244,216,102; --cover-paper:#FFF8DC; }
+.content-cover.tb-sage { --cover-main:#BBD5AE; --cover-rgb:187,213,174; --cover-paper:#F4F8E9; }
+.content-cover.tb-violet { --cover-main:#C5B1DF; --cover-rgb:197,177,223; --cover-paper:#FBF2FD; }
+.content-cover.tb-cream { --cover-main:#DECFAE; --cover-rgb:222,207,174; --cover-paper:#FFFCF1; }
+.content-cover.tb-pop { --cover-main:#E99DAA; --cover-rgb:233,157,170; --cover-paper:#F5ED96; }
+:is(.tech-tail,.interior-page) .content-cover[class*="pattern-"] { color:var(--cover-fg); background-color:var(--cover-paper); }
+:is(.tech-tail,.interior-page) .content-cover :is(h3,.tb-title,.cover-category,.tb-top,.tb-bottom,.tb-num),
+:is(.tech-tail,.interior-page) .content-cover h3>em,
+:is(.tech-tail,.interior-page) .content-cover .tb-title .ital { color:var(--cover-fg); }
+:is(.tech-tail,.interior-page) .content-cover.pattern-checker { background-image:var(--cover-grain),conic-gradient(var(--cover-main) 25%,var(--cover-paper) 0 50%,var(--cover-main) 0 75%,var(--cover-paper) 0); background-size:128px 128px,72px 72px; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-stripes { background-image:var(--cover-grain),repeating-linear-gradient(90deg,var(--cover-main) 0 10px,var(--cover-paper) 10px 30px); background-size:128px 128px,auto; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-pinstripe { background-image:var(--cover-grain),repeating-linear-gradient(90deg,rgba(var(--cover-rgb),.75) 0 1.2px,transparent 1.2px 17px); background-size:128px 128px,auto; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-diagonal { background-image:var(--cover-grain),repeating-linear-gradient(-38deg,var(--cover-paper) 0 8px,var(--cover-main) 8px 10px,var(--cover-paper) 10px 13px,var(--cover-main) 13px 14px,var(--cover-paper) 14px 24px); background-size:128px 128px,auto; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-dots { background-image:var(--cover-grain),radial-gradient(circle,var(--cover-main) 1.8px,transparent 2.2px),radial-gradient(circle,var(--cover-main) 1.8px,transparent 2.2px); background-size:128px 128px,24px 24px,24px 24px; background-position:0 0,0 0,12px 12px; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-gingham { background-image:var(--cover-grain),repeating-linear-gradient(0deg,transparent 0 20px,rgba(var(--cover-rgb),.4) 20px 40px),repeating-linear-gradient(90deg,transparent 0 20px,rgba(var(--cover-rgb),.4) 20px 40px); background-size:128px 128px,auto,auto; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-heart-gingham { background-image:var(--cover-grain),url('/assets/covers/hearts.svg'),repeating-linear-gradient(0deg,transparent 0 17px,rgba(var(--cover-rgb),.4) 17px 34px),repeating-linear-gradient(90deg,transparent 0 17px,rgba(var(--cover-rgb),.4) 17px 34px); background-size:128px 128px,160px 152px,auto,auto; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-stars { background-color:#F3EAC6; background-image:var(--cover-grain),url('/assets/covers/stars.svg'); background-size:128px 128px,104px 88px; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-citrus { background-color:#FFF7E5; background-image:var(--cover-grain),url('/assets/covers/citrus.svg'),repeating-linear-gradient(0deg,transparent 0 19px,#EBC78466 19px 38px),repeating-linear-gradient(90deg,transparent 0 19px,#EBC78466 19px 38px); background-size:128px 128px,192px 176px,auto,auto; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-berry-ribbon { background-color:#FFF8ED; background-image:var(--cover-grain),url('/assets/covers/berry-ribbon.svg'),repeating-linear-gradient(90deg,#D596A480 0 1.5px,transparent 1.5px 5px,#D596A480 5px 6.5px,transparent 6.5px 10px,#D596A480 10px 11.5px,transparent 11.5px 46px); background-size:128px 128px,160px 176px,auto; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-cherry-check { background-color:#FCF6E7; background-image:var(--cover-grain),url('/assets/covers/cherry-check.svg'),url('/assets/covers/cherry-check-base.svg'); background-size:128px 128px,192px 184px,192px 184px; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-wavy-check { background-image:var(--cover-grain),url('/assets/covers/wavy-check.svg'); background-size:128px 128px,176px 176px; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-patchwork { background-color:#F1EDCD; background-image:var(--cover-grain),url('/assets/covers/patchwork.svg'); background-size:128px 128px,cover; background-position:0 0,right top; background-repeat:repeat,no-repeat; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-patchwork::before { display:none; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-cocoa-dots { --cover-fg:#FFF6EE; background-color:#70564F; background-image:var(--cover-grain),linear-gradient(0deg,#513B35B3,transparent 85%),radial-gradient(circle,#E9BDC6 1.9px,transparent 2.2px),radial-gradient(circle,#E9BDC6 1.9px,transparent 2.2px); background-size:128px 128px,auto,26px 26px,26px 26px; background-position:0 0,0 0,0 0,13px 13px; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-cocoa-dots :is(h3,.tb-title) { text-shadow:0 1px 1px #4E3933; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-cocoa-dots :is(.cover-category,.tb-top .tb-num) { width:fit-content; background:#70564F; padding:3px 5px; border-radius:4px; }
+:is(.tech-tail,.interior-page) .content-cover.pattern-cocoa-dots :is(.cover-arrow,.cta-pill) { background:#F8E8DC!important; color:#342522!important; border-color:#F8E8DC; }
+
+:is(.tech-tail,.interior-page) .content-cover.pattern-cocoa-dots::before { -webkit-text-stroke-color:#F3DDD455; }

@@ -1,6 +1,6 @@
 # Vitablabla Journal Content Rules
 
-Vitablabla Journal is the brand-house magazine for Vitablabla, Frozili, and OhCrisp. It should feel more editorial than a standard SEO blog: thoughtful, visual, lightly literary, and useful enough that someone would actually read it.
+Vitablabla Journal is the brand-house magazine for the Vitablabla house: OhCrisp, OHSIP, OHVIVA, and Frozili. It should feel more editorial than a standard SEO blog: thoughtful, visual, lightly literary, and useful enough that someone would actually read it.
 
 The goal is to build long-term brand taste while ranking in classic search **and** getting quoted by AI answer engines (ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot) for Frozili icy coffee candy and OhCrisp freeze-dried fruit.
 
@@ -10,6 +10,8 @@ This document has two jobs:
 2. Make every post structured so both Google and generative engines can find, trust, and cite it.
 
 Live site: `https://vitablabla.com`
+
+Site-design, editorial-image and publishing rules synchronized: November 9, 2026. The approved editorial recovery cadence below remains unchanged.
 
 ---
 
@@ -26,6 +28,8 @@ Every Vitablabla article should still have a useful search angle, but the writin
 ---
 
 ## Publishing Shape
+
+**Frozili policy effective November 10, 2026:** after the November 9 coffee-candy guide, do not commission or create new Frozili or coffee-candy URLs, occasion variants, unbranded substitutes, or substantially new coffee-candy articles under another name. Maintain existing Frozili articles: improve accuracy, usefulness and internal links, and replace old unattractive SVG/title-block pictures with attractive generated editorial images. Other house brands remain eligible for distinct, evidence-aware new briefs within the approved cadence. The November 9 guide is today’s explicitly requested exception; later preparation runs must not create another Frozili draft.
 
 For October 14–November 12, 2026, follow the approved recovery plan: **two new-content slots and five optimization/maintenance slots per week**. New URLs require a distinct verified intent; otherwise refresh an existing page. B2B and supply-chain topics are out of scope.
 
@@ -179,7 +183,7 @@ OhCrisp should feel colorful, textural, bright, and fun without becoming childis
 
 ## Broad Vitablabla Themes
 
-These articles can mention both brands or neither at first, then connect them near the end.
+These articles can mention the relevant house brands or start with the broader observation, then connect them near the end.
 
 Strong themes: why modern snacks are becoming more sensory; how snack brands move beyond basic candy; texture as a reason people remember snacks; the rise of small rituals in busy routines; how premium snacks use format, flavor, and occasion; why adults want playful snacks too; how convenience snacks are becoming more beautiful; snack culture for work, travel, and home.
 
@@ -201,7 +205,7 @@ Required body order:
 1. Opening scene with `p.dropcap` (1 paragraph).
 2. **Answer paragraph** — a plain paragraph that states what the article is about and the core takeaway, with the primary keyword and 1 internal link. (This is the GEO "answer first" move.)
 3. One memorable `blockquote`.
-4. One visual `figure` containing a **branded illustration** (see Illustrations below). Keep a descriptive `figcaption` with the `Fig. 0X` label — the figcaption acts as alt text and is crawlable.
+4. One visual `figure` containing an **image-generated editorial image** (see Editorial Images below). Use a descriptive `alt` attribute on the actual image and a concise visible `figcaption` with the `Fig. 0X` label.
 5. 3–5 `h2` sections of real substance. Put one extractable, self-contained claim near the top of each section.
 6. One ordered or unordered list where useful.
 7. One `pull-quote` only if the idea is strong.
@@ -212,49 +216,34 @@ Do not use a hard Shopify-style CTA block inside the body. The site renders the 
 
 ---
 
-## Illustrations
+## Editorial Images
 
-Every post gets one original, on-brand illustration in its `figure` — no stock photos by default, no empty title-blocks. The art is generated as inline SVG in the site's exact palette, so it is copyright-free (we own it), consistent, and tiny.
+New articles and substantially refreshed articles use attractive raster images made with the built-in image-generation tool. Do not use the old inline SVG motif generator, decorative title-block figures, vector stand-ins or repeated abstract charts as the default article art. `scripts/illustration.py` is retained only for legacy compatibility, not the new-article workflow.
 
-Default workflow — use the generator:
+- Art direction: tactile editorial photography or carefully made photographic illustration. Match the article’s real topic, food and occasion; use believable materials, attractive light and restrained styling that fits the house. Body-image colors can complement the print covers without repeating one palette for every story.
+- Generate the image with the built-in image-generation tool. Do not substitute a hand-coded SVG or silently switch to an API/CLI fallback if image generation is unavailable. Record the limitation and leave the draft for review.
+- Inspect every result. Avoid distorted objects, invented branding, false package labels, improbable food texture, fake data charts and medical or energy symbolism. Exact branded product photographs require faithful reference material; a generic AI still life must not be presented as a photograph of that product, an R&D test, or firsthand evidence.
+- Save the final selected image in the repository under `assets/editorial/<descriptive-name>.webp`, with an appropriate landscape composition and enough resolution for the article. Optimize encoding for the web while preserving image quality. Do not leave the article dependent on a file outside the project.
+- Add a real `<img>` to the body, with descriptive `alt`, explicit `width` and `height`, `decoding="async"`, and appropriate loading behavior. Use the shared `editorial-image` class. Preserve the intended crop and check it on a narrow phone.
+- Keep the caption useful and concise. Identify imagined photoreal scenes as AI-generated editorial illustrations so they cannot be confused with actual product photographs or documentary evidence.
+- Add matching `image` metadata to `posts.json`: `{ "src": "/assets/editorial/<name>.webp", "alt": "Visible scene description", "width": 1536, "height": 1024 }`. The article builder writes this image into Open Graph, Twitter and Article structured data; the visible body and metadata must use the same asset.
+- Record the tool, final prompt, source/reference information, file and generation date in `scripts/journal-image-assets.json`. Only use licensed or authorized photographic references; do not invent ownership or license guarantees.
 
-```
-python3 scripts/illustration.py <theme> <tb-color> <slug> [data.json]
-```
+Charts are reserved for real, cited figures. Never ask image generation to invent statistics, test results or chart labels to make an article look researched. When a factual chart or diagram is genuinely necessary, use an accurate readable artifact with its named source; this does not make generic vector art the default.
 
-- `theme`: `frozili`, `ohcrisp`, or `trend`.
-- `tb-color`: the same tone as the post's `color` field.
-- `slug`: the post slug (makes the layout deterministic).
+---
 
-Paste its `<figure>` output into the body and rewrite the `figcaption` to fit the article. Keep the inline `<svg>` in the body file so the image ships inside the HTML (good for non-JS AI crawlers).
+## Journal Covers and Shared Site Design
 
-What each theme draws:
+The article-body illustration and the Journal cover are separate elements. Do not paste a cover print into the body as a substitute for a meaningful illustration.
 
-- `frozili` / `ohcrisp` → a centred product motif (coffee/ice, fruit/bowl) in the palette.
-- `trend` → a clean **abstract editorial graphic** (arcs / dot-grid / strata). It is intentionally NOT a chart, because a chart shape implies data.
-
-### Charts: only with real, sourced data
-
-Draw an analysis **chart only when the post genuinely cites real figures from a named source.** Never fabricate numbers or draw a chart-shaped graphic to look analytical — that misleads readers and AI engines.
-
-When you do have real, sourced data, add a `chart` object to the post's `posts.json` entry and the generator renders a true labelled chart (axis, value labels, and a visible "Source: …" line):
-
-```json
-"chart": {
-  "type": "bar",            // "bar" or "line"
-  "labels": ["2019", "2021", "2023", "2025"],
-  "values": [18, 27, 41, 58],
-  "unit": "%",
-  "source": "Mintel, 2025",
-  "highlight": 3             // optional: index of the bar to emphasise
-}
-```
-
-Rules for charting: the figures must come from a real, citable source you actually found (e.g. via web search); cite that same source in the article body too; and the `figcaption` should describe the data, not overstate it. If you cannot source real numbers, use the abstract trend graphic and keep the analysis qualitative.
-
-Hybrid rule: this branded SVG is the default for every post. Only drop in a **real photo** when a literal product or scene shot genuinely adds something the illustration can't (e.g. a specific recipe or packaging shot). If you do, it must be **copyright-free** — original, or from a free-license library (Unsplash / Pexels / Pixabay), saved under `assets/photos/` with the source noted; add `alt` text. When in doubt, draw it, don't borrow it.
-
-If a custom illustration is needed beyond the generator's motifs, hand-build the SVG in the palette (see `scripts/illustration.py` for the tones and motif style).
+- Covers use the existing fourteen print styles in `covers.css` and `assets/covers/`, with nine soft color families. Keep the black outline, rounded frame and readable editorial typography.
+- Match prints to the article’s subject and scene: berry/ribbon or cherry checks for berry and yogurt pieces; gingham and breakfast prints for bowls and toast; warm cocoa dots or fine stripes for coffee/chocolate; cool checks for freeze-drying explainers; stars/collage for travel and evening rituals. Tropical/fruit-tea pieces can use citrus, butter yellow and sage.
+- `color` is a content-related starting tone, not a request to force every article in a category to use the same background. Never choose all-purple/all-white covers for an entire category.
+- `VB.arrangeCovers` in `site.js` and `arrange_covers` in `scripts/cover_theme.py` choose the final displayed cover mix. They avoid repeating the same print and visible palette across the previous three cards, covering horizontal and vertical neighbors in one-, two- and three-column layouts. Search and category changes must run the same selection again. Illustrated tiles with fixed colors count by their visible palette.
+- A cover mix must be deterministic for the same displayed article list. Apply the same rules to homepage previews, static fallback cards and related articles. Do not hand-add per-position classes or change article order to solve a visual repeat.
+- Check narrow phones as well as desktop: titles and CTA text stay inside their frames; the page must not overflow horizontally. Category chips and the explicitly designed process-step rail may scroll within their own tracks.
+- Preserve shared navigation/footer and the snowflake wordmark. Footer brand links lead directly to the official brand websites. Decorative animation respects the operating system’s reduced-motion preference; do not reintroduce a Motion on/off switch. The freeze-drying process keeps its explicit play/pause control.
 
 ---
 
@@ -274,7 +263,7 @@ Required fields:
 - `color`: one of `tb-ice`, `tb-coffee`, `tb-blush`, `tb-peach`, `tb-sun`, `tb-sage`, `tb-violet`, `tb-cream`, `tb-pop`.
 - `categories`: 1–3 categories.
 - `crumbs`: usually same as categories.
-- `cta`: `frozili` or `ohcrisp`.
+- `cta`: `frozili`, `ohcrisp`, `ohsip`, or `ohviva`, matched to the article’s actual subject. Each renders a direct official-brand CTA.
 - `related`: 3 valid existing slugs.
 
 SEO/GEO fields:
@@ -288,6 +277,7 @@ These power the meta description, Open Graph tags, and Article/Breadcrumb struct
 
 Use `cta: "frozili"` for Frozili and broad cooling/coffee/workday posts.
 Use `cta: "ohcrisp"` for fruit, crunch, toppings, bowls, and colorful snack posts.
+Use `cta: "ohsip"` for OHSIP coffee cubes; use `cta: "ohviva"` for OHVIVA fruit tea cubes. Do not describe OHSIP coffee cubes as candy, or give OHVIVA blanket hot/cold preparation advice: follow the relevant flavor’s verified package instructions. When adding a post about these brands, generate a matching editorial image; use faithful references if showing the actual branded product.
 
 ---
 
@@ -304,8 +294,8 @@ If a new category is needed, add it to the top-level `categories` array in `post
 Each article should include **2–4 internal links** that feel like editorial references, not forced SEO links.
 
 - Link from descriptive phrases ("coffee candy for airport gates"), never "click here."
-- Use **root-relative clean paths** with a leading slash: `/frozili`, `/ohcrisp`, `/a/<slug>/`. These resolve correctly inside the generated article and when an AI crawler fetches the raw body fragment directly.
-- Link to 1 brand page and 1–3 related posts.
+- Use **root-relative clean paths** with a leading slash for editorial links: `/a/<slug>/`, `/about`, or `/about#ohcrisp`, `/about#ohsip`, `/about#ohviva`, `/about#frozili`. Brand introductions live inside Our story; do not create standalone brand-introduction pages or new links to retired `/ohcrisp` and `/frozili` URLs.
+- Link to 1–3 relevant related articles, and to an in-house brand-story section when it adds context. Shopping and Visit-brand links go directly to the official websites: `https://www.ohcrisp.com`, `https://getohsip.com`, `https://drinkohviva.com`, and `https://www.frozili.com`. External brand links do not count toward the 2–4 internal editorial links.
 - Prefer linking the two `related` slugs from `posts.json` somewhere in the body so the link graph and the metadata agree.
 - Confirm every `/a/<slug>/` target exists in `posts.json` before publishing.
 
@@ -313,17 +303,20 @@ Each article should include **2–4 internal links** that feel like editorial re
 
 ## Publish Workflow
 
-1. Generate the illustration: `python3 scripts/illustration.py <theme> <tb-color> <slug>`.
-2. Write `posts/<slug>.html` following the body structure above, including the illustration figure and an optional Q&A section when useful.
-3. Add the full metadata entry (including `primaryKeyword`, `secondaryKeywords`, and `dateModified`, plus `faqs` only when visible Q&A exists) to the top of `posts` in `posts.json`. Numbers increment; the newest post sits at the top of the array.
+1. Generate and visually inspect the editorial image with the built-in image-generation tool; save the optimized asset under `assets/editorial/` and record its provenance and prompt.
+2. Write `posts/<slug>.html` following the body structure above, including the raster-image figure and an optional Q&A section when useful.
+3. Add the full metadata entry (including `primaryKeyword`, `secondaryKeywords`, and `dateModified`, plus `image` metadata and `faqs` only when visible Q&A exists) to the top of `posts` in `posts.json`. Numbers increment; the newest post sits at the top of the array.
 4. Run the build script from the repo root:
 
    ```
    python3 scripts/build-vitablabla.py
+   python3 scripts/validate-static-seo.py
+   python3 scripts/validate-cover-themes.py
    ```
 
    This validates `posts.json`, checks every body and internal link, generates `a/<slug>/index.html` for every article, and regenerates `sitemap.xml`. Fix every error before publishing.
-5. Commit the body, registry, sitemap, and generated article page, then push and deploy through Wrangler.
+5. Review the new cover in the unfiltered Journal, its category, search results, homepage preview where applicable, and related cards. Confirm adjacent print/palette variety and mobile title readability.
+6. After the applicable publishing approval, commit intended body, registry, sitemap, generated article and any changed cover/shared-chrome files, then push and deploy through Wrangler. A site-design update alone does not justify changing article `dateModified` values.
 
 Never push if `build-vitablabla.py` reports an error — a broken `posts.json` takes the whole site down.
 
@@ -360,7 +353,11 @@ Before finishing a Vitablabla post, check:
 - Does the post have one useful idea, not just nice words?
 - Are Frozili or OhCrisp mentioned naturally where relevant (not stuffed)?
 - Are all internal links valid?
-- Did `build-vitablabla.py` pass with no errors?
+- Did `build-vitablabla.py`, `validate-static-seo.py`, and `validate-cover-themes.py` pass with no errors?
+- Does the cover fit the topic, avoid neighboring print/color repeats, and remain readable on mobile?
+- Is the body image generated, visually checked, correctly attributed, optimized and represented in image metadata?
+- From November 10 onward, is every Frozili/coffee-candy change maintenance of an existing URL rather than new content?
+- Are brand introductions linked to Our story sections and shopping CTAs linked directly to the matching official brand website?
 - Does the post avoid repeating a topic or keyword already published?
 
 The reader should leave with a small new way of seeing snacks — and an AI engine should be able to quote one clean sentence from it.

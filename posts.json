@@ -17,6 +17,47 @@
   ],
   "posts": [
     {
+      "slug": "coffee-candy-guide",
+      "number": "226",
+      "title": "A coffee candy guide: flavor, texture and the <em>cool finish.</em>",
+      "cardTitle": "Coffee candy, with a little more clarity.",
+      "excerpt": "A coffee candy guide to textures, coffee notes, cooling finishes and label details, with practical ways to choose a sweet that suits your small ritual.",
+      "date": "2026-11-09",
+      "readTime": "5 min",
+      "color": "tb-coffee",
+      "categories": [
+        "Frozili",
+        "Coffee Candy",
+        "Snack Ideas"
+      ],
+      "crumbs": [
+        "Frozili",
+        "Coffee Candy"
+      ],
+      "cta": "frozili",
+      "theme": "frozili",
+      "related": [
+        "coffee-hard-candy-vs-slow-melt",
+        "slow-melt",
+        "how-to-store-coffee-candy-in-summer"
+      ],
+      "primaryKeyword": "coffee candy guide",
+      "secondaryKeywords": [
+        "what is coffee candy",
+        "coffee candy textures",
+        "cooling coffee candy",
+        "coffee candy caffeine information",
+        "choosing coffee flavored candy"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "src": "/assets/editorial/coffee-candy-guide.webp",
+        "alt": "Coffee-colored sweets on a cream saucer beside an icy blue glass, with yellow gingham cloth and a lavender backdrop.",
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
       "slug": "how-to-rehydrate-freeze-dried-fruit",
       "number": "225",
       "title": "How to rehydrate freeze-dried fruit without making it <em>mushy</em>.",
@@ -7702,11 +7743,11 @@
     {
       "slug": "coffee-hard-candy-vs-slow-melt",
       "number": "057",
-      "title": "Coffee hard candy vs slow-melt: which feels more refreshing — and why the <em>pace</em> matters.",
-      "cardTitle": "Coffee hard candy vs slow-melt: which feels more refreshing — and why the <em>pace</em> matters.",
-      "excerpt": "A calm comparison of coffee hard candy vs slow-melting coffee candy — how texture, pacing, and a cooling finish change the “refreshing candy” feeling, especially at work or on the go.",
+      "title": "Coffee hard candy and slow-melt: how the textures <em>overlap.</em>",
+      "cardTitle": "Hard candy. Slow melt. Different questions.",
+      "excerpt": "Coffee hard candy and slow-melt describe overlapping ideas. Learn how texture, pace and cooling finish help you choose the coffee sweet you actually want.",
       "date": "2026-05-28",
-      "readTime": "5 min",
+      "readTime": "4 min",
       "color": "tb-coffee",
       "categories": [
         "Frozili",
@@ -7719,10 +7760,23 @@
       ],
       "cta": "frozili",
       "related": [
+        "coffee-candy-guide",
         "slow-melt",
-        "workday-pick-me-up-candy",
-        "why-iced-coffee-candy-works"
-      ]
+        "how-to-store-coffee-candy-in-summer"
+      ],
+      "primaryKeyword": "coffee hard candy vs slow melt",
+      "secondaryKeywords": [
+        "coffee candy texture",
+        "hard coffee candy",
+        "slow melting coffee candy comparison"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "src": "/assets/editorial/coffee-candy-textures.webp",
+        "alt": "Glossy brown hard sweets, caramel chews in plain wax paper, and cocoa-dusted sweets arranged on small ceramic dishes.",
+        "width": 1536,
+        "height": 1024
+      }
     },
     {
       "slug": "freeze-dried-fruit-sparkling-water",
@@ -8002,11 +8056,11 @@
     {
       "slug": "how-to-store-coffee-candy-in-summer",
       "number": "045",
-      "title": "How to store coffee candy in summer: keep the slow melt <em>clean.</em>",
-      "cardTitle": "Store coffee candy in summer: keep the slow melt <em>clean.</em>",
-      "excerpt": "A practical guide to how to store coffee candy in summer — simple habits that keep iced coffee candy cool, consistent, and never accidentally sticky.",
+      "title": "How to store coffee candy in <em>warm weather.</em>",
+      "cardTitle": "A sensible home for the candy tin.",
+      "excerpt": "How to store coffee candy in warm weather: follow the package, choose a shaded dry spot, keep the label and separate an icy flavor from storage directions.",
       "date": "2026-05-22",
-      "readTime": "5 min",
+      "readTime": "4 min",
       "color": "tb-coffee",
       "categories": [
         "Frozili",
@@ -8019,10 +8073,23 @@
       ],
       "cta": "frozili",
       "related": [
-        "cooling-candy-for-summer",
-        "pocket-coffee-candy",
+        "coffee-candy-guide",
+        "coffee-hard-candy-vs-slow-melt",
         "slow-melt"
-      ]
+      ],
+      "primaryKeyword": "how to store coffee candy",
+      "secondaryKeywords": [
+        "coffee candy storage",
+        "store candy in warm weather",
+        "coffee candy refrigeration instructions"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "src": "/assets/editorial/coffee-candy-storage.webp",
+        "alt": "A plain brass candy tin and its lid on a shaded shelf, with coffee-colored sweets and a sage gingham cloth.",
+        "width": 1536,
+        "height": 1024
+      }
     },
     {
       "slug": "freeze-dried-fruit-dessert-toppings",
@@ -8775,11 +8842,11 @@
     {
       "slug": "slow-melt",
       "number": "014",
-      "title": "The case for the slow-melt: how a single piece of candy can <em>reset a workday.</em>",
-      "cardTitle": "The case for the <em>slow-melt.</em>",
-      "excerpt": "On chewing gum, mints, and the small rituals we reach for to mark time — plus why we built Frozili to be slow on purpose.",
+      "title": "Why slow-melting coffee candy feels like a <em>little pause.</em>",
+      "cardTitle": "A small pause can stay small.",
+      "excerpt": "Slow-melting coffee candy can be a small sensory ritual. Explore the texture, coffee note and cooling finish without turning a sweet into a wellness claim.",
       "date": "2025-11-12",
-      "readTime": "6 min",
+      "readTime": "4 min",
       "color": "tb-ice",
       "categories": [
         "Frozili",
@@ -8791,10 +8858,23 @@
       ],
       "cta": "frozili",
       "related": [
-        "cold-brew-tasting",
-        "five-things-cold",
-        "snack-drawer"
-      ]
+        "coffee-candy-guide",
+        "coffee-hard-candy-vs-slow-melt",
+        "how-to-store-coffee-candy-in-summer"
+      ],
+      "primaryKeyword": "slow melting coffee candy",
+      "secondaryKeywords": [
+        "slow melt coffee candy ritual",
+        "coffee candy sensory experience",
+        "coffee candy cooling finish"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "src": "/assets/editorial/coffee-candy-slow-ritual.webp",
+        "alt": "Two small coffee-colored sweets on a cream dish beside water, a lilac notebook and a silver pen in afternoon light.",
+        "width": 1536,
+        "height": 1024
+      }
     },
     {
       "slug": "freeze-drying-strawberry",

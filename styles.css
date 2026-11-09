@@ -3,15 +3,32 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  /* Canvas */
-  --ivory: #F4EEE0;
-  --ivory-deep: #ECE3D0;
-  --paper: #FBF7EE;
-  --ink: #1F1A14;
-  --ink-soft: #4A4034;
-  --ink-mute: #8A7E6E;
-  --line: rgba(31,26,20,0.12);
-  --line-soft: rgba(31,26,20,0.07);
+  /* Site palette: orchid, clean near-white, crisp ink and bright accents. */
+  --canvas: #F7F1F9;
+  --surface: #FFFFFF;
+  --surface-soft: #EFE5F3;
+  --lilac: #DFC8E7;
+  --lilac-soft: #EDE0F3;
+  --lilac-deep: #B597C5;
+  --violet: #3B31CE;
+  --lime: #C5FF89;
+  --lime-soft: #E5F4D4;
+  --ink: #211B25;
+  --ink-rgb: 33,27,37;
+  --ink-soft: #504657;
+  --ink-mute: #615466;
+  --on-dark: #FDFAFF;
+  --on-dark-rgb: 253,250,255;
+  --line: rgba(33,27,37,0.20);
+  --line-soft: rgba(33,27,37,0.10);
+  --nav-bg: #DFC8E7F2;
+  --footer-bg: var(--lilac);
+  --focus-color: var(--violet);
+
+  /* Existing editorial pages consume these aliases. */
+  --ivory: var(--canvas);
+  --ivory-deep: var(--lilac-soft);
+  --paper: var(--surface);
 
   /* Frozili palette */
   --frozili-ice: #C8DEE7;
@@ -26,9 +43,9 @@
   --ohcrisp-sun: #F2D26A;
   --ohcrisp-melon: #ECA08A;
 
-  /* Accent (sage) */
-  --sage: #8A9A7B;
-  --sage-deep: #5F6E54;
+  /* Editorial accent aliases; product brand palettes stay independent. */
+  --sage: var(--lilac-deep);
+  --sage-deep: var(--violet);
 
   --r-sm: 8px;
   --r-md: 16px;
@@ -74,7 +91,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(244,238,224,0.85);
+  background: var(--nav-bg);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line-soft);
@@ -121,7 +138,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 14px;
   transition: transform .15s ease, background .15s ease;
 }
-.cta-pill:hover { background: var(--frozili-coffee); transform: translateY(-1px); }
+.cta-pill:hover { background: var(--violet); transform: translateY(-1px); }
 .cta-pill .arrow { transition: transform .2s ease; }
 .cta-pill:hover .arrow { transform: translate(2px, -2px); }
 
@@ -192,8 +209,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ───────── Footer ───────── */
 .footer {
-  background: var(--ink);
-  color: var(--ivory);
+  background: var(--footer-bg);
+  color: var(--ink);
   padding: 80px 0 32px;
   margin-top: 64px;
 }
@@ -210,16 +227,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 0.9;
   letter-spacing: -0.025em;
 }
-.footer-tag { color: rgba(244,238,224,0.6); margin-top: 12px; max-width: 32ch; font-size: 14px; }
-.footer h4 { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(244,238,224,0.5); margin: 0 0 18px; font-weight: 500; }
+.footer-tag { color: var(--ink-soft); margin-top: 12px; max-width: 32ch; font-size: 14px; }
+.footer h4 { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); margin: 0 0 18px; font-weight: 500; }
 .footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
-.footer ul a:hover { color: var(--ohcrisp-blush); }
+.footer ul a:hover { color: var(--violet); }
 .footer-bottom {
   margin-top: 64px;
   padding-top: 24px;
-  border-top: 1px solid rgba(244,238,224,0.12);
+  border-top: 1px solid var(--line);
   display: flex; justify-content: space-between; align-items: center;
-  font-size: 12px; color: rgba(244,238,224,0.5);
+  font-size: 12px; color: var(--ink-mute);
 }
 
 @media (max-width: 900px) {
@@ -274,7 +291,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(31,26,20,0.4);
+  color: rgba(var(--ink-rgb),0.4);
 }
 .imgph::before {
   content: '';
@@ -282,10 +299,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background-image: repeating-linear-gradient(
     135deg,
     transparent 0 14px,
-    rgba(31,26,20,0.04) 14px 15px
+    rgba(var(--ink-rgb),0.04) 14px 15px
   );
 }
-.imgph span { position: relative; z-index: 1; padding: 4px 10px; background: rgba(244,238,224,0.85); border-radius: 4px; }
+.imgph span { position: relative; z-index: 1; padding: 4px 10px; background: var(--nav-bg); border-radius: 4px; }
 
 /* tinted variants */
 .imgph.ice { background: linear-gradient(160deg, #DCEAF0 0%, #A9CADB 100%); }
@@ -333,7 +350,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .title-block .tb-num {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--fg-soft, rgba(31,26,20,0.55));
+  color: var(--fg-soft, rgba(var(--ink-rgb),0.55));
 }
 .title-block h2,
 .title-block .tb-title {
@@ -354,20 +371,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 12px; margin-top: 16px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--fg-soft, rgba(31,26,20,0.55));
+  color: var(--fg-soft, rgba(var(--ink-rgb),0.55));
 }
 .title-block:hover { transform: translateY(-3px); }
 
-/* color tones */
-.tb-ice    { --bg: linear-gradient(165deg, #DCEAF0 0%, #A9CADB 100%); --fg: #1F3A48; --fg-soft: rgba(31,58,72,0.65); }
-.tb-coffee { --bg: linear-gradient(165deg, #DEC9AC 0%, #8B5A3A 100%); --fg: #2A1810; --fg-soft: rgba(42,24,16,0.7); }
-.tb-blush  { --bg: linear-gradient(165deg, #F8DDE0 0%, #E89AA1 100%); --fg: #5A2530; --fg-soft: rgba(90,37,48,0.65); }
-.tb-peach  { --bg: linear-gradient(165deg, #FAD9BD 0%, #E89A6F 100%); --fg: #5A2A14; --fg-soft: rgba(90,42,20,0.65); }
-.tb-sun    { --bg: linear-gradient(165deg, #FAE7A6 0%, #E8B748 100%); --fg: #5A3A0F; --fg-soft: rgba(90,58,15,0.65); }
-.tb-sage   { --bg: linear-gradient(165deg, #DAE2D0 0%, #8A9A7B 100%); --fg: #2F3A26; --fg-soft: rgba(47,58,38,0.7); }
-.tb-violet { --bg: linear-gradient(165deg, #E6DCEC 0%, #9F8CB8 100%); --fg: #3A2A4F; --fg-soft: rgba(58,42,79,0.65); }
-.tb-cream  { --bg: linear-gradient(165deg, #F4EEDD 0%, #D8C9A4 100%); --fg: #4A3A1E; --fg-soft: rgba(74,58,30,0.65); }
-.tb-pop    { --bg: linear-gradient(165deg, #F4CFD2 0%, #C76974 100%); --fg: #FBEDEC; --fg-soft: rgba(251,237,236,0.75); }
+/* Editorial covers draw from the shared pastel palette. */
+.tb-ice    { --bg:#DCEBF4; --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-coffee { --bg:#EDDDD6; --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-blush  { --bg:#F0D6E8; --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-peach  { --bg:#FFDEC7; --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-sun    { --bg:#F6EDAB; --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-sage   { --bg:var(--lime-soft); --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-violet { --bg:var(--lilac); --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-cream  { --bg:#FBF7ED; --fg:var(--ink); --fg-soft:var(--ink-soft); }
+.tb-pop    { --bg:#E9BFE0; --fg:var(--ink); --fg-soft:var(--ink-soft); }
 
 /* feature variants */
 .title-block.feature { aspect-ratio: 4/4.6; }
@@ -384,7 +401,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   filter: blur(6px);
 }
 
-/* in-article branded illustration (original SVG art, no photography) */
+/* Article art: generated editorial photography and retained legacy illustrations. */
 .post-illustration {
   border-radius: var(--r-md);
   overflow: hidden;
@@ -393,3 +410,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--ivory-deep);
 }
 .post-illustration svg { width: 100%; height: 100%; display: block; }
+.post-body .editorial-image { width:100%; height:auto; display:block; border-radius:20px; border:1px solid var(--line); }
+
+/* Shared chrome and page accents. Product scenes keep their brand-specific colors. */
+:focus-visible { outline:3px solid var(--focus-color); outline-offset:4px; }
+::selection { background:var(--lime); color:var(--ink); }
+body .cats { background:var(--nav-bg); }
+.ct-shell .ct-side { background:var(--lilac); color:var(--ink); }
+.ct-shell .ct-side::before { background:radial-gradient(circle,var(--lime) 0%,transparent 68%); }
+.ct-shell .ct-meta { border-color:var(--line); }
+.about-hero h1 .ital,.ct-hero h1 .ital,.blog-hero h1 .ital { color:var(--violet); }
+body .nav { background:var(--nav-bg); }
+body .feature-strip { background:linear-gradient(125deg,#DCEBF4 0%,var(--lilac) 58%,var(--canvas) 100%); }
+body .feature-strip .fs-b1 { background:var(--lilac-deep); opacity:.28; }
+body .feature-strip .fs-b2 { background:var(--lime); opacity:.45; }
+body .feature-strip .fs-b3 { background:var(--surface); opacity:.55; }
