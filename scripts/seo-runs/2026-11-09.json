@@ -1,8 +1,8 @@
 {
   "date": "2026-11-09",
   "timezone": "America/Los_Angeles",
-  "mode": "manual execution of the existing daily SEO preparation task, requested for local visual review",
-  "status": "approved_for_publication",
+  "mode": "Manual daily SEO task prepared for review, then published on the user’s explicit approval.",
+  "status": "published",
   "plan": "November 9: coffee-candy evergreen guide and three bidirectionally linked supporting Frozili pages",
   "scopeUpdate": "From 2026-11-10, no new Frozili or coffee-candy articles or URLs; maintain existing content and replace old images. Applied to the plan, writing rules and actual daily automation prompt.",
   "gsc": {
@@ -22,7 +22,7 @@
       "slug": "coffee-candy-guide",
       "title": "A coffee candy guide: flavor, texture and the cool finish.",
       "primaryKeyword": "coffee candy guide",
-      "action": "new draft",
+      "action": "new article published",
       "previewUrl": "http://127.0.0.1:8003/a/coffee-candy-guide/",
       "intendedCanonical": "https://vitablabla.com/a/coffee-candy-guide/",
       "datePublished": "2026-11-09",
@@ -32,13 +32,14 @@
         "alt": "Coffee-colored sweets on a cream saucer beside an icy blue glass, with yellow gingham cloth and a lavender backdrop.",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "liveUrl": "https://vitablabla.com/a/coffee-candy-guide/"
     },
     {
       "slug": "coffee-hard-candy-vs-slow-melt",
       "title": "Coffee hard candy and slow-melt: how the textures overlap.",
       "primaryKeyword": "coffee hard candy vs slow melt",
-      "action": "substantive maintenance of existing URL",
+      "action": "existing article maintained and published",
       "previewUrl": "http://127.0.0.1:8003/a/coffee-hard-candy-vs-slow-melt/",
       "intendedCanonical": "https://vitablabla.com/a/coffee-hard-candy-vs-slow-melt/",
       "datePublished": "2026-05-28",
@@ -48,13 +49,14 @@
         "alt": "Glossy brown hard sweets, caramel chews in plain wax paper, and cocoa-dusted sweets arranged on small ceramic dishes.",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "liveUrl": "https://vitablabla.com/a/coffee-hard-candy-vs-slow-melt/"
     },
     {
       "slug": "slow-melt",
       "title": "Why slow-melting coffee candy feels like a little pause.",
       "primaryKeyword": "slow melting coffee candy",
-      "action": "substantive maintenance of existing URL",
+      "action": "existing article maintained and published",
       "previewUrl": "http://127.0.0.1:8003/a/slow-melt/",
       "intendedCanonical": "https://vitablabla.com/a/slow-melt/",
       "datePublished": "2025-11-12",
@@ -64,13 +66,14 @@
         "alt": "Two small coffee-colored sweets on a cream dish beside water, a lilac notebook and a silver pen in afternoon light.",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "liveUrl": "https://vitablabla.com/a/slow-melt/"
     },
     {
       "slug": "how-to-store-coffee-candy-in-summer",
       "title": "How to store coffee candy in warm weather.",
       "primaryKeyword": "how to store coffee candy",
-      "action": "substantive maintenance of existing URL",
+      "action": "existing article maintained and published",
       "previewUrl": "http://127.0.0.1:8003/a/how-to-store-coffee-candy-in-summer/",
       "intendedCanonical": "https://vitablabla.com/a/how-to-store-coffee-candy-in-summer/",
       "datePublished": "2026-05-22",
@@ -80,7 +83,8 @@
         "alt": "A plain brass candy tin and its lid on a shaded shelf, with coffee-colored sweets and a sage gingham cloth.",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "liveUrl": "https://vitablabla.com/a/how-to-store-coffee-candy-in-summer/"
     }
   ],
   "maintenanceDetails": [
@@ -180,7 +184,73 @@
     "coverThemes": "passed: 241 views, including all categories, searches and related articles, plus browser/static parity",
     "browser": "passed: new guide featured, no adjacent print/palette repetition, all four images loaded at 1536x1024, no SVG/title-block body art, social/Article images agree, responsive bounds at 320/390/768/1440, homepage cover heights and title/CTA separation checked at 320/360/390/430",
     "diffWhitespace": "passed",
-    "automationReadback": "passed: generated-image policy, maintenance-only cutoff and cover validation saved; schedule, model, active status and project preserved"
+    "automationReadback": "passed: generated-image policy, maintenance-only cutoff and cover validation saved; schedule, model, active status and project preserved",
+    "liveHttp": {
+      "checks": [
+        "PASS live approved article, image metadata and links: coffee-candy-guide",
+        "PASS live approved article, image metadata and links: coffee-hard-candy-vs-slow-melt",
+        "PASS live approved article, image metadata and links: slow-melt",
+        "PASS live approved article, image metadata and links: how-to-store-coffee-candy-in-summer",
+        "PASS release asset: /posts.json",
+        "PASS release asset: /home.css",
+        "PASS release asset: /styles.css",
+        "PASS release asset: /site.js",
+        "PASS release asset: /home.js",
+        "PASS release asset: /covers.css",
+        "PASS release asset: /assets/editorial/coffee-candy-guide.webp",
+        "PASS release asset: /assets/editorial/coffee-candy-textures.webp",
+        "PASS release asset: /assets/editorial/coffee-candy-slow-ritual.webp",
+        "PASS release asset: /assets/editorial/coffee-candy-storage.webp"
+      ],
+      "sitemapUrls": 227,
+      "bodyNoindex": true,
+      "legacyRedirect": true,
+      "status": "passed"
+    },
+    "liveBrowser": {
+      "status": "passed",
+      "articleImages": [
+        "coffee-candy-guide",
+        "coffee-hard-candy-vs-slow-melt",
+        "slow-melt",
+        "how-to-store-coffee-candy-in-summer"
+      ],
+      "heights": [
+        {
+          "width": 320,
+          "heights": [
+            220,
+            220,
+            220
+          ],
+          "overflow": false,
+          "overlap": false
+        },
+        {
+          "width": 390,
+          "heights": [
+            240,
+            240,
+            240
+          ],
+          "overflow": false,
+          "overlap": false
+        },
+        {
+          "width": 430,
+          "heights": [
+            240,
+            240,
+            240
+          ],
+          "overflow": false,
+          "overlap": false
+        }
+      ],
+      "journalCount": 223,
+      "adjacentMix": "passed",
+      "runtimeErrors": []
+    }
   },
   "sources": [
     {
@@ -445,23 +515,29 @@
     "a/how-ohcrisp-is-made/index.html",
     "sitemap.xml"
   ],
-  "preexistingWork": "Preexisting approved site redesign changes were retained. No git pull, reset, commit, push or deployment was performed.",
+  "preexistingWork": "The previously approved and deployed brand-house redesign and the approved November 9 release were committed together. The unrelated local $CODEX_HOME directory was left untouched.",
   "publication": {
-    "committed": false,
-    "pushed": false,
-    "deployed": false,
+    "committed": true,
+    "pushed": true,
+    "deployed": true,
     "gscWrites": false,
-    "recommendation": "User approved publication in the current conversation; source release and deployment are in progress.",
+    "recommendation": "Published and verified on the production domain. Subsequent Frozili work is maintenance of existing content and images only.",
     "approved": true,
     "approvalDate": "2026-11-09",
     "approvalScope": "Publish the new guide, three maintained articles with four generated images, and mobile homepage Journal-cover height adjustment together.",
-    "previousCloudflareVersion": "3325635e-9805-4d09-8079-78fa162ac733"
+    "previousCloudflareVersion": "3325635e-9805-4d09-8079-78fa162ac733",
+    "sourceCommit": "bd0f632b7e23758b2fdf881aaa0a239c0ab3facb",
+    "cloudflareVersion": "abd52291-6541-4e95-9bb3-7a57cdb47af4",
+    "publishedAtUtc": "2026-11-09T20:15:41.796850+00:00",
+    "liveBaseUrl": "https://vitablabla.com"
   },
   "screenshots": [
     "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-seo-today-home-neighbors.png",
     "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-seo-today-home-mobile-cards.png",
     "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-seo-today-journal-neighbors.png",
     "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-seo-today-article-image.png",
-    "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-seo-today-article-image-mobile.png"
+    "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-seo-today-article-image-mobile.png",
+    "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-nov9-release-live-mobile.png",
+    "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-nov9-release-live-journal.png"
   ]
 }
