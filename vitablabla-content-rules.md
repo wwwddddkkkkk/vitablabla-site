@@ -11,7 +11,7 @@ This document has two jobs:
 
 Live site: `https://vitablabla.com`
 
-Site-design, editorial-image and publishing rules synchronized: November 9, 2026. The approved editorial recovery cadence below remains unchanged.
+Site-design, editorial-image and publishing rules synchronized: November 9, 2026. The recovery cadence applies through November 12; the approved continuing maintenance plan applies from November 13 without a fixed end date.
 
 ---
 
@@ -33,9 +33,11 @@ Every Vitablabla article should still have a useful search angle, but the writin
 
 For October 14–November 12, 2026, follow the approved recovery plan: **two new-content slots and five optimization/maintenance slots per week**. New URLs require a distinct verified intent; otherwise refresh an existing page. B2B and supply-chain topics are out of scope.
 
+From November 13, 2026, follow `content-maintenance-continuation.md`: prioritize existing articles, old images, metadata and internal links, with **at most two evidenced new-content briefs per week for other house brands**. The limit is not a publishing quota; maintenance may use every slot. Frozili/coffee-candy remains maintenance only. The October–November calendar becomes historical reference, and its end date does not stop the continuing tasks.
+
 Publishing frequency is not a quality signal by itself. If a proposed article does not add a distinct answer, observation, test, or perspective, improve an existing URL instead of creating a new one. B2B and supply-chain topics are out of scope unless the editorial strategy is explicitly changed.
 
-Ideas for the daily trend/analysis/fun post: snack-industry shifts (premiumisation, texture-as-flavour, the adult-candy aisle), behaviour pieces (why we snack at 3pm, the rise of the "small reset"), light analysis ("what 'better-for-you' actually means now"), or fun angles ("a taxonomy of desk snackers"). Keep it evidence-aware and specific — trend pieces are the most likely to be cited by AI engines, so anchor claims in concrete detail.
+Ideas for an eligible trend/analysis/fun brief: snack-industry shifts (premiumisation, texture-as-flavour, the adult-candy aisle), behaviour pieces (why we snack at 3pm, the rise of the "small reset"), light analysis ("what 'better-for-you' actually means now"), or fun angles ("a taxonomy of desk snackers"). Keep it evidence-aware and specific, within the current brand and cadence limits. Anchor claims in concrete detail; these ideas do not require a new article every day.
 
 If another site (Best Snack, a Shopify blog) already covered a topic that day, Vitablabla uses a different angle. If Best Snack publishes "best freeze-dried fruit snacks," Vitablabla might publish "Why fruit crunch feels more joyful than chewiness."
 
@@ -325,6 +327,8 @@ Never push if `build-vitablabla.py` reports an error — a broken `posts.json` t
 ## Scheduled Publishing
 
 Scheduled runs prepare and validate local changes, then stop for explicit human approval. Only after approval in the current conversation may the agent commit intended files, push, deploy through Wrangler, and verify live URLs. GSC writes and consolidation, deletion, or redirects of published URLs require separate approval. Stop on validation, push, or deployment failure; never publish merely to preserve cadence.
+
+From November 13, scheduled runs read `content-maintenance-continuation.md` instead of executing the expired recovery calendar. Determine pending work from the actual Git state and current approval evidence, not an obsolete memory entry. If GSC is unavailable, record the dated failure and continue useful evidence-supported maintenance without claiming current search metrics. Daily preparation and read-only weekly review continue until the user changes or pauses them; publication approval requirements remain in force.
 
 ---
 

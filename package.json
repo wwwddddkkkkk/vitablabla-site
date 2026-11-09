@@ -1,5 +1,10 @@
 {
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/test-worker.mjs"
+  },
   "devDependencies": {
-    "wrangler": "^4.118.0"
+    "wrangler": "4.159.0"
   }
 }

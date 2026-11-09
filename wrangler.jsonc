@@ -1,7 +1,7 @@
 {
   "name": "vitablabla-site",
   "account_id": "a9ad1356b87d250e789dd0f19add54dc",
-  "compatibility_date": "2026-08-03",
+  "compatibility_date": "2026-11-09",
   "compatibility_flags": ["nodejs_compat"],
   "main": "worker.js",
   "observability": {
@@ -18,6 +18,6 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
-    "run_worker_first": ["/post", "/post.html"]
+    "run_worker_first": true
   }
 }

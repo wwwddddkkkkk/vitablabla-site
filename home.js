@@ -281,7 +281,7 @@
   function updatePlayLabel() {
     if (motionReduced) playButton.removeAttribute('aria-pressed');
     else playButton.setAttribute('aria-pressed', String(playing));
-    playButton.setAttribute('aria-label', motionReduced ? 'Go to the next freeze-drying step' : 'Play the freeze-drying process');
+    playButton.setAttribute('aria-label', motionReduced ? 'Go to the next freeze-drying step' : playing ? 'Pause the freeze-drying process' : processProgress >= 100 ? 'Replay the freeze-drying process' : 'Play the freeze-drying process');
     playButton.querySelector('.play-symbol').textContent = motionReduced ? '→' : playing ? 'Ⅱ' : '▷';
     playButton.querySelector('.play-label').textContent = motionReduced ? 'Next step' : playing ? 'Pause the process' : processProgress >= 100 ? 'Play it again' : 'Play the process';
   }

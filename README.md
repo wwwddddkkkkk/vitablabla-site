@@ -9,6 +9,7 @@ Static Vitablabla brand site and Journal, deployed to Cloudflare Workers with st
 - `scripts/build-vitablabla.py` validates the registry and bodies, pre-renders a complete crawlable page at `a/<slug>/index.html`, and regenerates `sitemap.xml`.
 - Public article URLs use `https://vitablabla.com/a/<slug>/`.
 - `worker.js` permanently redirects legacy `post.html?slug=<slug>` links to the clean article URL.
+- Public HTTP and `www` requests redirect with 308 to `https://vitablabla.com`, preserving their path and query string. The Worker runs before assets so existing files cannot bypass normalization; localhost and Workers preview hosts remain usable.
 - `site.js` renders home, Journal, and related cards with clean article links.
 
 The generated article pages contain the complete body, title, description, canonical URL, Open Graph/Twitter metadata, and Article, Breadcrumb, and visible FAQ structured data before JavaScript runs.
@@ -61,9 +62,10 @@ Then open `http://localhost:8000`. A generated article is available at `http://l
 
 ## Validation and deployment
 
-Install the pinned Wrangler dependency once with `npm install`, then validate without publishing:
+Install the exact locked dependencies with `npm ci`, then validate without publishing:
 
 ```bash
+npm test
 npx wrangler deploy --dry-run
 ```
 
@@ -74,6 +76,12 @@ npx wrangler deploy
 ```
 
 Cloudflare account selection is fixed in `wrangler.jsonc`. Never commit secrets or authentication tokens.
+
+`npm test` checks canonical redirects, path/query preservation, legacy article redirects, local previews and asset 404 responses. Review dependency updates with `npm audit` before deployment.
+
+## Continuing maintenance
+
+The original recovery calendar runs through November 12, 2026. From November 13, follow `content-maintenance-continuation.md` for the rolling queue of article, image, metadata, internal-link and technical maintenance. Daily preparation runs at 09:00 and the read-only weekly review runs Sundays at 16:00, both in America/Los_Angeles, without a fixed end date. Scheduled changes still require human approval before publication. Determine pending work from current Git state and current approval evidence rather than an old automation memory entry.
 
 ## Important files
 
