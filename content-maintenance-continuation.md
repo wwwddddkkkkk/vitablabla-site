@@ -4,6 +4,60 @@ Approved continuation: November 9, 2026. Effective November 13, 2026, with no fi
 
 `content-plan-2026-10-14-to-2026-11-12.md` remains the historical recovery plan through November 12. From November 13, use this plan, the current `README.md`, and `vitablabla-content-rules.md`; do not repeat expired calendar slots or stop because the old cycle ended.
 
+## SEO audit update — November 9, 2026
+
+Use the audit priorities below when preparing the next work, including November 10–12. They take precedence over a calendar slot that would otherwise commission another new URL. Evidence is recorded in `scripts/seo-audits/2026-11-09.json`; recount after approved releases. This updates preparation priorities and does not authorize publication or online changes.
+
+The direct live HTTP scan checked all 227 sitemap URLs: 223 articles and four core pages. All returned 200, with unique titles/descriptions and self-canonical URLs; all articles had Article/Breadcrumb structured data. Those are verified technical results, not proof of Google indexing or traffic growth. The published source was `41f7d21`. Compared with the pre-recovery content baseline, only one new article and three existing article refreshes were verified as published; do not report the old eight-new/twenty-refresh targets as completed.
+
+The largest verified discovery gap is the Journal's initial HTML: it links to only three articles. Following raw HTML anchors from the homepage reaches 21 of 223 articles; the other 202 remain in the sitemap and JavaScript registry but are outside that navigation graph. This does not mean Google has deindexed them. Published image metadata exists on four articles; 219 lack Article/social images. The 86 articles missing custom keyword/date registry fields still have rendered HTML titles, descriptions and canonicals, so they must not be reported as pages missing basic SEO tags. Concurrent uncommitted image/content drafts are excluded from the published counts.
+
+### Verified search baseline and interpretation
+
+Source: native Google Search Console, property `sc-domain:vitablabla.com`, Web (text), October 11–November 7 versus September 13–October 10, 2026. Exact counts came from the report tables and full-value metric tooltips, with dates checked in the comparison dialog. GSC Wizard remains subscription-blocked, but native Chrome access succeeded after the user enabled Apple Events; TinyFish was not used.
+
+| Metric | Previous 28 days | Latest 28 days | Interpretation |
+| --- | ---: | ---: | --- |
+| Property clicks | 34 | 107 | +73 / +214.7% |
+| Property impressions | 3,235 | 3,373 | +138 / +4.3% |
+| Property CTR, computed from exact totals | 1.05% | 3.17% | +2.12 percentage points; mix changed |
+| Average position, rounded UI values | 6.9 | 6.6 | Modest improvement; lower is better |
+| Journal `/a/` page-row clicks | 14 | 18 | +4 / +28.6%, on a small base |
+| Journal `/a/` page-row impressions | 2,217 | 2,332 | +5.2%; cohort CTR 0.63% → 0.77% |
+
+The homepage's 57 versus five clicks and old `/ohcrisp` page's 29 versus 12 clicks account for 69 of the 73 net additional property clicks (94.5%). The exact `vitablabla` query alone rose from zero to 52 clicks. Growth is real but concentrated in brand/navigation demand. The Journal's entire net four-click gain comes from the existing rehydration page, which rose from two to six clicks and 522 to 776 page impressions; other article-page impressions combined fell by 139. Do not describe this as broad content growth or use the property CTR to claim the Journal achieved its target.
+
+Query rows disclose only 73 of 107 current clicks and 1,074 of 3,373 property impressions. All disclosed click-bearing queries are identifiable brand terms, but the remaining clicks are unattributed; do not label them all branded or all non-branded. Page-row impression sums differ from property impressions and must retain their own denominator. The November 9 redesign/new guide falls outside this report window, so its impact is not yet measured.
+
+The November 5 Page indexing snapshot reports 226 indexed and 726 excluded known URLs. Most exclusions are redirects (273), noindex (180), proper alternate canonicals (163) or robots blocks (82); do not call them 726 broken articles. The 12 crawled-not-indexed examples include only two current clean article URLs (`road-trip-snacks-freeze-dried-fruit` and `beach-bag-snacks-freeze-dried-fruit`), plus nine legacy query variants and an old `/pages/about` path. Review the two current articles individually rather than requesting indexing for every excluded URL. Eight duplicate-without-selected-canonical and eight 404 examples still need URL-level triage before action. This older, all-known-URL snapshot is not the coverage rate of the current 227 sitemap URLs.
+
+The native Sitemaps report has zero submitted sitemaps; `robots.txt` does advertise the live sitemap. Prepare the already validated `https://vitablabla.com/sitemap.xml` for submission after the existing separate approval. Mobile and desktop Core Web Vitals both report insufficient usage data over the last 90 days (report updated November 7); no field-performance pass/fail claim is supported.
+
+The old crunchy-query overlap is not currently reproduced: all 14 current impressions for `how to keep freeze dried fruit crunchy` go to the yogurt answer, while granola and storage have zero (previous period: 13, two and one). Preserve that answer as owner and improve its incoming links; do not merge the supporting URLs based on the old report. `frozili` still split pre-release impressions across homepage (24) and old brand page (14), with zero clicks and 36 property impressions. Observe the existing brand redirect and future `/about` cohort before proposing another routing change.
+
+Prepare work in this order for the next two weeks, using this baseline and revising the order when new settled data is available:
+
+| Priority | Bounded work | Acceptance evidence |
+| --- | --- | --- |
+| 1 | Preserve the verified Search Console baseline, monitor the old/new brand landing-page families together, and prepare the validated sitemap submission for separate approval. | Record exact dates, property, search type, totals and missing data. Use native Google Search Console as the user requested; do not use TinyFish. Do not retry subscription-blocked GSC Wizard repeatedly or treat expected exclusions as defects. Confirm post-release Google canonicals/indexing read-only. |
+| 2 | Prepare a complete crawlable Journal archive/list from `posts.json`, retaining the current design, category/search behavior and clean article URLs. | Every currently registered article is reachable from the homepage in at most three actual HTML anchor hops without JavaScript. Verify the full graph, future-post generation, canonicals, mobile layout and existing cover rules; sitemap presence alone is insufficient. |
+| 3 | Strengthen the existing rehydration, crunchy-yogurt, overnight-oats, chia-pudding, granola and oatmeal cluster, starting with the two useful answers lacking incoming body/related links. | Rehydration currently has 776 page impressions, six clicks and position 7.9; crunchy yogurt has 127, one and 8.0. Add useful incoming body links, clarify moist soaking versus last-minute dry toppings, and verify rendered links. Consider a bounded title/description test without changing the URL or promising a CTR benchmark; preserve strong answers rather than rewriting for length. |
+| 4 | Review `how-ohcrisp-is-made` and `why-snacks-keep-getting-smaller` for unsupported claims. | Obtain reliable evidence for manufacturing timing, product assortment, market-share numbers and causal trend claims, or remove/narrow them. Do not invent first-party tests or use generated images as evidence. |
+| 5 | Replace old article art within the selected useful refreshes, synchronizing visible images, `posts.json`, social/Article metadata and image provenance. | Validate each complete article change. Missing social images are an appearance/editorial gap, not a promised ranking gain; do not treat replacing all 219 images as the primary SEO outcome. Preserve the separate in-progress storage/snack-mix/coffee-candy drafts. |
+| 6 | Reassess eligible OhCrisp/OHSIP/OHVIVA briefs only after the discovery and useful-content work. | Require a distinct user question and reliable product facts; no new URL just to fill a calendar slot. Frozili/coffee-candy remains maintenance only. Similar titles alone never authorize merging or redirecting pages. |
+
+The former `/ohcrisp` and `/frozili` pages now redirect to `/about#ohcrisp` and `/about#frozili`. Track their historical URL families and the new `/about` page together, with brand-query splits: the fragment sections are not separate canonical pages. A successful redirect response does not prove the old landing-page traffic transferred. Confirm sitemap submission and selected Google canonical/indexing states read-only; any submission or routing change still needs its existing separate approval.
+
+Keep an outcome ledger distinct from the release ledger. Weekly results should report current organic clicks/impressions/CTR by comparable query and page cohorts, indexing evidence and any measured brand-site outbound clicks; a completed task, new picture or passed validator is not a conversion. Cloudflare's injected analytics beacon was observed, but dedicated brand-outbound events were not verified. Propose instrumentation separately if those business outcomes cannot be measured. Do not label missing analytics as zero traffic.
+
+Use weekly reviews to inspect discovery and processing. The first complete post-November-9-release cohort is November 10–December 7, compared with October 12–November 8, once both periods have settled; keep later release cohorts separate. These are review windows, not promises of ranking change. Google can take time to recrawl and process improvements. See [crawlable links](https://developers.google.com/search/docs/crawling-indexing/links-crawlable), [helpful content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), and [URL-migration monitoring](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes).
+
+## November 10 archive checkpoint
+
+The complete `/blog` archive has been prepared and locally verified from an isolated release snapshot based on `ab6578f`: all 223 registered articles are linked once in initial HTML and reachable from the homepage in at most two anchor hops. The build regenerates the featured article, list and cover mix for future registry entries. Search/category enhancement and the full static fallback passed browser checks. Publication evidence is recorded separately in `scripts/maintenance-runs/2026-11-10-journal-archive.json`; consult its status before repeating this task.
+
+The earlier audit inventory is historical. After the four approved November 9 article refreshes, the isolated baseline contains eight articles with editorial-image metadata and 215 without it. Keep any concurrent breakfast-article drafts separate from this archive release. Once the archive publication is verified, move to the useful existing-article link/answer work in priority 3; GSC-dependent checks remain limited by subscription access.
+
 ## Scope and priorities
 
 Keep the existing B2C brand, product, taste and snack-culture scope. Prioritize useful existing URLs, accurate copy, generated editorial images, metadata and internal links. Frozili and coffee-candy work is maintenance only: no new URLs, occasion variants, disguised unbranded substitutes or substantially new coffee-candy articles.

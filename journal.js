@@ -1,13 +1,16 @@
 (async function () {
-  const gridRoot = document.getElementById('articleGrid');
-  const countRoot = document.getElementById('countLabel');
   let reg;
 
   try {
     reg = await VB.loadRegistry();
+    // A broken but successful JSON response must not erase the built archive.
+    if (!reg || !Array.isArray(reg.categories) || !Array.isArray(reg.posts) || !reg.posts.length ||
+        !reg.posts.every(post => post && ['slug', 'date', 'number', 'title'].every(key => typeof post[key] === 'string') &&
+          Array.isArray(post.categories))) {
+      throw new Error('Invalid Journal registry');
+    }
   } catch (e) {
-    console.error('Could not load posts:', e);
-    countRoot.textContent = 'A FEW GOOD READS';
+    console.warn('Journal filters unavailable; keeping the complete static archive.', e);
     return;
   }
 
@@ -42,7 +45,7 @@
     const grid = document.getElementById('articleGrid');
     const count = document.getElementById('countLabel');
 
-    count.textContent = visible.length + ' ARTICLES · UPDATED WEEKLY';
+    count.textContent = visible.length + ' ARTICLES';
 
     if (visible.length === 0) {
       featSlot.innerHTML = '';
@@ -52,17 +55,15 @@
 
     // Featured = first match (when no filter, this is the latest post).
     const featured = visible[0];
-    const primaryCat = (featured.categories && featured.categories[0]) || '';
     featSlot.innerHTML = `
-      <div class="title-block hero ${VB.coverClass(featured)}" style="border-radius:var(--r-xl);margin-bottom:80px;margin-top:48px">
+      <div class="title-block hero ${VB.coverClass(featured)}">
         <div class="tb-top">
           <span class="tb-num">No. ${featured.number} &middot; ${(featured.categories || []).join(' / ')}</span>
           <span class="tb-num">${featured.readTime || ''} read &middot; ${VB.formatDateLong(featured.date)}</span>
         </div>
-        <div class="tb-glyph" style="width:160px;height:160px;right:-40px;top:-40px;"></div>
         <h2 class="tb-title">${(featured.title || '').replace(/<em>/g,'<span class="ital">').replace(/<\/em>/g,'</span>')}</h2>
-        <div class="tb-bottom" style="margin-top:24px">
-          <a href="${VB.postURL(featured.slug)}" class="cta-pill" style="background:var(--ink);color:var(--ivory)">Read the article <span class="arrow">↗</span></a>
+        <div class="tb-bottom">
+          <a href="${VB.postURL(featured.slug)}" class="cta-pill">Read the article <span class="arrow">↗</span></a>
           <span>The Vitablabla Journal</span>
         </div>
       </div>
@@ -91,4 +92,6 @@
   });
 
   render();
+  document.getElementById('searchInput').disabled = false;
+  chipsRoot.querySelectorAll('.chip').forEach(chip => { chip.disabled = false; });
 })();

@@ -11,6 +11,7 @@ Static Vitablabla brand site and Journal, deployed to Cloudflare Workers with st
 - `worker.js` permanently redirects legacy `post.html?slug=<slug>` links to the clean article URL.
 - Public HTTP and `www` requests redirect with 308 to `https://vitablabla.com`, preserving their path and query string. The Worker runs before assets so existing files cannot bypass normalization; localhost and Workers preview hosts remain usable.
 - `site.js` renders home, Journal, and related cards with clean article links.
+- The build also pre-renders the complete Journal archive in `blog.html`, including its featured article, ordered cards, cover mix and count. Every registered article is reachable from the homepage via `/blog` without JavaScript. `journal.js` enhances that same list with category filters and search; a registry failure leaves the full static archive available.
 
 The generated article pages contain the complete body, title, description, canonical URL, Open Graph/Twitter metadata, and Article, Breadcrumb, and visible FAQ structured data before JavaScript runs.
 
@@ -26,6 +27,7 @@ The generated article pages contain the complete body, title, description, canon
    python3 scripts/build-vitablabla.py
    python3 scripts/validate-static-seo.py
    python3 scripts/validate-cover-themes.py
+   python3 scripts/test-journal-build.py
    ```
 
 6. Do not publish if the build reports an error. Legacy metadata warnings are non-blocking.

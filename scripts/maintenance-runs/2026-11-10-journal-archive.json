@@ -1,0 +1,255 @@
+{
+  "date": "2026-11-10",
+  "timezone": "America/Los_Angeles",
+  "status": "locally_verified_ready_for_authorized_release",
+  "checkedAtUtc": "2026-11-10T23:43:15.166992+00:00",
+  "baseCommit": "ab6578fcc3bc33ea01a0b53ad64d72c5ad3d9124",
+  "approval": {
+    "text": "可以优化一下执行，先本地做确认没问题了就更新",
+    "scope": "Confirm existing audit priorities; implement and verify crawlable Journal archive locally, then commit/push/deploy this bounded maintenance update. No GSC writes or URL consolidation."
+  },
+  "plan": "Day 28 utility slot superseded by approved audit priority 2: crawlable existing Journal archive. No new article URL.",
+  "changedPage": {
+    "title": "The Vitablabla Journal",
+    "url": "https://vitablabla.com/blog",
+    "intent": "Browse and discover existing B2C Journal articles; preserve category and search behavior."
+  },
+  "changes": [
+    "Pre-render complete ordered archive and featured card from posts.json on each build",
+    "Use shared arrange_covers and cover_class; compare actual HTML with client cover choices",
+    "Keep complete static archive for JavaScript, network and malformed/empty registry failures",
+    "Use one/two/three columns for phone/tablet/desktop",
+    "Validate actual homepage HTML link graph and future-entry generation"
+  ],
+  "articleCount": 223,
+  "staticArchiveLinksBefore": 3,
+  "staticArchiveLinksAfter": 223,
+  "maxHomepageAnchorHops": 2,
+  "newArticleUrls": [],
+  "articleBodiesChanged": false,
+  "articleRegistryChanged": false,
+  "articleDatesChanged": false,
+  "sitemapChange": "Only /blog lastmod: 2026-11-09 -> 2026-11-10; 227 URL set unchanged",
+  "checks": {
+    "build": {
+      "passed": true,
+      "legacyWarnings": 191
+    },
+    "staticSeo": {
+      "passed": true,
+      "articles": 223
+    },
+    "covers": {
+      "passed": true,
+      "views": 243,
+      "actualArchiveParity": 223,
+      "neighborWindow": 3
+    },
+    "futureEntryAndIdempotenceTest": true,
+    "workerTests": {
+      "passed": true,
+      "tests": 5
+    },
+    "javascriptSyntax": true,
+    "browser": {
+      "url": "http://127.0.0.1:8791",
+      "viewports": [
+        {
+          "width": 320,
+          "scroll": 320,
+          "bad": []
+        },
+        {
+          "width": 375,
+          "scroll": 375,
+          "bad": []
+        },
+        {
+          "width": 768,
+          "scroll": 768,
+          "bad": []
+        },
+        {
+          "width": 1024,
+          "scroll": 1024,
+          "bad": []
+        },
+        {
+          "width": 1440,
+          "scroll": 1440,
+          "bad": []
+        }
+      ],
+      "filters": [
+        {
+          "category": "Frozili",
+          "count": 86
+        },
+        {
+          "category": "Coffee Candy",
+          "count": 79
+        },
+        {
+          "category": "Refreshing Snacks",
+          "count": 32
+        },
+        {
+          "category": "OhCrisp",
+          "count": 95
+        },
+        {
+          "category": "Freeze-Dried Fruit",
+          "count": 94
+        },
+        {
+          "category": "Snack Ideas",
+          "count": 115
+        },
+        {
+          "category": "Better-for-You",
+          "count": 43
+        },
+        {
+          "category": "Travel & Work",
+          "count": 74
+        },
+        {
+          "category": "Workday Snacks",
+          "count": 3
+        },
+        {
+          "category": "Taste Notes",
+          "count": 1
+        }
+      ],
+      "searches": [
+        {
+          "query": "coffee",
+          "count": 85
+        },
+        {
+          "query": "yogurt",
+          "count": 8
+        },
+        {
+          "query": "fruit",
+          "count": 95
+        },
+        {
+          "query": "freeze",
+          "count": 94
+        },
+        {
+          "query": "summer",
+          "count": 11
+        },
+        {
+          "query": "travel",
+          "count": 75
+        },
+        {
+          "query": "chocolate",
+          "count": 6
+        },
+        {
+          "query": "strawberry",
+          "count": 6
+        },
+        {
+          "query": "snack",
+          "count": 159
+        },
+        {
+          "query": "zzzz-no-such-article",
+          "count": 0
+        }
+      ],
+      "fallbacks": [
+        {
+          "mode": "no-js",
+          "count": 223,
+          "width": 375,
+          "scroll": 375,
+          "bad": []
+        },
+        {
+          "mode": "registry-failure",
+          "count": 223,
+          "width": 375,
+          "scroll": 375,
+          "bad": []
+        },
+        {
+          "mode": "malformed-json-shape",
+          "count": 223,
+          "width": 375,
+          "scroll": 375,
+          "bad": []
+        },
+        {
+          "mode": "empty-registry",
+          "count": 223,
+          "width": 375,
+          "scroll": 375,
+          "bad": []
+        }
+      ],
+      "runtimeErrors": []
+    },
+    "dryRun": {
+      "passed": true,
+      "snapshot": "/tmp/vitablabla-archive-release",
+      "wrangler": "4.159.0"
+    }
+  },
+  "coverExamples": [
+    {
+      "slug": "coffee-candy-guide",
+      "theme": "tb-coffee / cocoa-dots"
+    },
+    {
+      "slug": "how-to-rehydrate-freeze-dried-fruit",
+      "theme": "tb-cream / pinstripe"
+    },
+    {
+      "slug": "how-to-keep-freeze-dried-fruit-crunchy-in-yogurt",
+      "theme": "tb-blush / berry-ribbon"
+    },
+    {
+      "slug": "freeze-dried-fruit-for-grain-bowls",
+      "theme": "tb-ice / cherry-check"
+    }
+  ],
+  "evidence": {
+    "contentSource": "Existing approved posts.json and generated article pages only; no new food/product claims or generated image",
+    "gsc": "Earlier in this chat, 2026-11-10 list_sites failed payment_required/subscription_required; no retry and no fresh performance/indexing/demand claims",
+    "priorAudit": "scripts/seo-audits/2026-11-09.json is a historical pre-batch snapshot, not current performance evidence"
+  },
+  "risks": [
+    "Passed navigation checks do not prove Google indexing, traffic or ranking gains",
+    "191 existing legacy metadata/FAQ warnings remain outside this bounded change"
+  ],
+  "isolation": "Validate/deploy committed snapshot; exclude all concurrent article/registry/image changes and unused untracked files",
+  "files": [
+    "README.md",
+    "blog.html",
+    "content-maintenance-continuation.md",
+    "content-plan-2026-10-14-to-2026-11-12.md",
+    "journal.js",
+    "pages.css",
+    "scripts/build-vitablabla.py",
+    "scripts/validate-cover-themes.py",
+    "scripts/validate-static-seo.py",
+    "scripts/test-journal-build.py",
+    "scripts/seo-audits/2026-11-09.json",
+    "sitemap.xml",
+    "scripts/maintenance-runs/2026-11-10-journal-archive.json"
+  ],
+  "publication": {
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "gscWrites": false
+  },
+  "nextPriority": "After verified archive release: existing useful article cluster links and answers; preserve current concurrent drafts."
+}

@@ -22,7 +22,7 @@ SITEMAP = os.path.join(ROOT, "sitemap.xml")
 STATIC_PAGES = [
     # Update a lastmod value only when that page's visible content changes.
     ("", "1.0", "2026-11-09"),
-    ("blog", "0.9", "2026-11-09"),
+    ("blog", "0.9", "2026-11-10"),
     ("about", "0.7", "2026-11-08"),
     ("contact", "0.5", "2026-11-08"),
 ]
@@ -237,6 +237,39 @@ def render_card(post):
   </div>
   <p>{html.escape(post.get('excerpt', ''))}</p>
 </a>'''
+
+
+def render_journal_feature(post):
+    title = post.get("title", "").replace("<em>", '<span class="ital">').replace("</em>", "</span>")
+    categories = post.get("categories", [])
+    return f'''<div class="title-block hero {cover_class(post)}">
+  <div class="tb-top"><span class="tb-num">No. {html.escape(str(post['number']))} &middot; {html.escape(' / '.join(categories))}</span><span class="tb-num">{html.escape(post.get('readTime', ''))} read &middot; {format_date_long(post['date'])}</span></div>
+  <h2 class="tb-title">{title}</h2>
+  <div class="tb-bottom"><a href="{article_path(post['slug'])}" class="cta-pill">Read the article <span class="arrow">↗</span></a><span>The Vitablabla Journal</span></div>
+</div>'''
+
+
+def build_journal(posts):
+    """Pre-render the same complete, ordered list that journal.js enhances."""
+    ordered = sorted(posts, key=lambda post: (post['date'], post['number']), reverse=True)
+    visible = arrange_covers(ordered)
+    path = os.path.join(ROOT, "blog.html")
+    with open(path, encoding="utf-8") as file:
+        markup = file.read()
+    sections = {
+        "feature": render_journal_feature(visible[0]) if visible else "",
+        "grid": "\n".join(render_card(post) for post in visible[1:]),
+    }
+    for name, content in sections.items():
+        start, end = f"<!-- journal-{name}:start -->", f"<!-- journal-{name}:end -->"
+        if markup.count(start) != 1 or markup.count(end) != 1:
+            raise RuntimeError(f"blog.html needs exactly one journal-{name} marker pair")
+        markup = re.sub(re.escape(start) + r".*?" + re.escape(end), lambda _: start + "\n" + content + "\n" + end, markup, flags=re.S)
+    markup, count = re.subn(r'(<span class="count" id="countLabel"[^>]*>).*?(</span>)', lambda m: m[1] + f"{len(visible)} ARTICLES" + m[2], markup, flags=re.S)
+    if count != 1:
+        raise RuntimeError("blog.html needs exactly one countLabel")
+    with open(path, "w", encoding="utf-8") as file:
+        file.write(markup)
 
 
 def extract_visible_faqs(body_html):
@@ -470,7 +503,7 @@ def render_article(post, posts_by_slug, post_css):
 def sync_page_chrome(posts):
     posts_by_slug = {post["slug"]: post for post in posts}
     # Keep authored fallback cards varied when JavaScript or the registry fails.
-    for filename in ("index.html", "blog.html"):
+    for filename in ("index.html",):
         path = os.path.join(ROOT, filename)
         with open(path, encoding="utf-8") as file:
             markup = file.read()
@@ -492,6 +525,7 @@ def sync_page_chrome(posts):
 
 def build_articles(posts):
     sync_page_chrome(posts)
+    build_journal(posts)
     os.makedirs(ARTICLE_DIR, exist_ok=True)
     post_css = extract_post_css()
     posts_by_slug = {post["slug"]: post for post in posts if post.get("slug")}

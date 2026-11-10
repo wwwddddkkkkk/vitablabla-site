@@ -7,11 +7,120 @@ import os
 import re
 import sys
 import xml.etree.ElementTree as ET
+from collections import Counter, deque
+from html.parser import HTMLParser
+from urllib.parse import urljoin, urlsplit
 
 
 SITE = "https://vitablabla.com"
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 ARTICLE_DIR = os.path.join(ROOT, "a")
+ARTICLE_PATH = re.compile(r"^/a/([a-z0-9]+(?:-[a-z0-9]+)*)/$")
+
+
+class AnchorParser(HTMLParser):
+    """Read actual anchors, including archive scope, without executing scripts."""
+
+    VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
+
+    def __init__(self, markup):
+        super().__init__(convert_charrefs=True)
+        self.stack = []
+        self.links = []
+        self.archive_links = []
+        self.feed(markup)
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        archive = attrs.get("id") in {"featuredSlot", "articleGrid"} or any(item[1] for item in self.stack)
+        inert = tag == "template" or "hidden" in attrs or any(item[2] for item in self.stack)
+        if tag == "a" and "href" in attrs and not inert:
+            self.links.append(attrs["href"])
+            if archive:
+                self.archive_links.append(attrs["href"])
+        if tag not in self.VOID_TAGS:
+            self.stack.append((tag, archive, inert))
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                del self.stack[index:]
+                break
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID_TAGS:
+            self.handle_endtag(tag)
+
+
+def clean_link_path(href, current_path):
+    """Resolve same-origin anchors only; query aliases do not prove clean reachability."""
+    try:
+        target = urlsplit(urljoin(SITE + current_path, href))
+    except ValueError:
+        return None
+    if target.scheme != "https" or target.netloc != "vitablabla.com" or target.query:
+        return None
+    path = target.path or "/"
+    if "\\" in path or "%" in path or any(part in {".", ".."} for part in path.split("/")):
+        return None
+    return path
+
+
+def validate_discovery(slugs, errors):
+    expected = {f"/a/{slug}/" for slug in slugs}
+    cache = {}
+
+    def read_page(path):
+        if path in cache:
+            return cache[path]
+        relative = "index.html" if path == "/" else path.lstrip("/")
+        if path != "/" and path.endswith("/"):
+            relative += "index.html"
+        elif not os.path.splitext(relative)[1]:
+            relative += ".html"
+        filename = os.path.realpath(os.path.join(ROOT, relative))
+        if os.path.commonpath((ROOT, filename)) != ROOT or not filename.endswith(".html") or not os.path.isfile(filename):
+            cache[path] = None
+        else:
+            with open(filename, encoding="utf-8") as file:
+                cache[path] = AnchorParser(file.read())
+        return cache[path]
+
+    archive = read_page("/blog")
+    counts = Counter()
+    for href in archive.archive_links if archive else []:
+        path = clean_link_path(href, "/blog")
+        if path is None or not ARTICLE_PATH.fullmatch(path):
+            fail(errors, f"[blog] archive contains a non-clean article link: {href}")
+        else:
+            counts[path] += 1
+    missing = sorted(expected - counts.keys())
+    unknown = sorted(counts.keys() - expected)
+    duplicates = sorted(path for path, count in counts.items() if count != 1)
+    if missing:
+        fail(errors, f"[blog] static archive missing {len(missing)} registered articles: " + ", ".join(missing[:10]))
+    if unknown:
+        fail(errors, "[blog] static archive links to unknown articles: " + ", ".join(unknown))
+    if duplicates:
+        fail(errors, "[blog] static archive must link each article exactly once: " + ", ".join(duplicates))
+
+    depths = {"/": 0}
+    pending = deque(["/"])
+    while pending:
+        current = pending.popleft()
+        if depths[current] == 3:
+            continue
+        page = read_page(current)
+        for href in page.links if page else []:
+            target = clean_link_path(href, current)
+            if target is not None and target not in depths and read_page(target) is not None:
+                depths[target] = depths[current] + 1
+                pending.append(target)
+    unreachable = sorted(expected - depths.keys())
+    if unreachable:
+        fail(errors, f"{len(unreachable)} articles unreachable within three homepage HTML anchor hops: " + ", ".join(unreachable[:10]))
+    return max((depths[path] for path in expected if path in depths), default=0)
 
 
 def fail(errors, message):
@@ -158,6 +267,8 @@ def main():
         if not footer or not expected_brands.issubset(set(re.findall(r'href="([^"]+)"', footer.group(1)))):
             fail(errors, f"[{os.path.relpath(path, ROOT)}] footer must link to all four official brands")
 
+    maximum_hops = validate_discovery(slugs, errors)
+
     if errors:
         print(f"{len(errors)} static SEO error(s):")
         for message in errors:
@@ -168,6 +279,7 @@ def main():
     print(f"✓ clean canonicals and sitemap URLs: {len(expected_articles)}.")
     print("✓ Article/Breadcrumb/FAQ structured data and internal links validated.")
     print("✓ static page descriptions and canonicals validated.")
+    print(f"✓ complete static Journal archive: {len(slugs)} unique article links; all articles within {maximum_hops} homepage HTML anchor hops.")
 
 
 if __name__ == "__main__":
