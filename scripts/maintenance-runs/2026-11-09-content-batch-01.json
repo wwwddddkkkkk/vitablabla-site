@@ -1,20 +1,24 @@
 {
   "date": "2026-11-09",
   "timezone": "America/Los_Angeles",
-  "status": "approved_pending_publication",
+  "status": "published_and_verified",
   "baseCommit": "41f7d2178e731eeff039d35dbd601d5632a29a8d",
   "approvalScope": "First batch of four existing articles: metadata, replacement editorial images, accuracy corrections and contextual links. User requested review before publication.",
   "publication": {
-    "committed": false,
-    "pushed": false,
-    "deployed": false,
+    "committed": true,
+    "pushed": true,
+    "deployed": true,
     "gscWrites": false,
     "approvalRequired": true,
     "approved": true,
     "approvalDate": "2026-11-09",
     "approvalText": "可以，就按现在的版本，把这4篇发布上线。",
     "approvalScope": "Publish all four articles in their current reviewed state, including the final foil-pouch storage revision.",
-    "previousCloudflareVersion": "3819eba7-20dd-49bb-a717-ca4cf9a47431"
+    "previousCloudflareVersion": "3819eba7-20dd-49bb-a717-ca4cf9a47431",
+    "sourceCommit": "ab734aea7345523bad481d0a8ff2e2d50b77361d",
+    "cloudflareVersion": "1e356d12-c21f-4684-a35f-b2785ac06543",
+    "verifiedAtUtc": "2026-11-10T01:46:26.263831+00:00",
+    "liveBaseUrl": "https://vitablabla.com"
   },
   "selection": "All four lacked keyword/date metadata and used decorative title-block body art. Selected by existing content utility and concrete accuracy issues; no current search metrics or demand claims.",
   "articles": [
@@ -144,7 +148,8 @@
           "source": "User feedback in this review chat",
           "scopeLimit": "No specific film thickness, measured transmission rate or precise layer construction is inferred."
         }
-      ]
+      ],
+      "publishedUrl": "https://vitablabla.com/a/how-to-store-freeze-dried-fruit-after-opening/"
     },
     {
       "slug": "freeze-dried-fruit-snack-mix",
@@ -261,7 +266,8 @@
         "alt": "An overhead view of freeze-dried strawberry and mango with cashews, almonds, pumpkin seeds and dark chocolate in a pale-yellow bowl.",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "publishedUrl": "https://vitablabla.com/a/freeze-dried-fruit-snack-mix/"
     },
     {
       "slug": "coffee-candy-for-studying",
@@ -362,7 +368,8 @@
         "alt": "Two generic brown sweets on a cream saucer beside an open blank notebook, a silver pen and a glass of water on a lilac desk.",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "publishedUrl": "https://vitablabla.com/a/coffee-candy-for-studying/"
     },
     {
       "slug": "coffee-candy-for-long-drives",
@@ -471,7 +478,8 @@
         "alt": "Four generic brown sweets in an open metal tin beside a glass of water on a rest-area table, with a parked vehicle blurred in the background.",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "publishedUrl": "https://vitablabla.com/a/coffee-candy-for-long-drives/"
     }
   ],
   "beforeCounts": {
@@ -675,6 +683,232 @@
     "workerRegressionTests": {
       "passed": true,
       "tests": 5
+    },
+    "production": {
+      "checked_at_utc": "2026-11-10T01:46:26.263831+00:00",
+      "source_commit": "ab734aea7345523bad481d0a8ff2e2d50b77361d",
+      "deployment_version": "1e356d12-c21f-4684-a35f-b2785ac06543",
+      "all_checks_passed": true,
+      "selected_article_checks": [
+        {
+          "slug": "how-to-store-freeze-dried-fruit-after-opening",
+          "url": "https://vitablabla.com/a/how-to-store-freeze-dried-fruit-after-opening/",
+          "status": 200,
+          "body_matches_snapshot_source": true,
+          "title_matches_snapshot": true,
+          "description_matches_snapshot": true,
+          "canonical_matches_snapshot": true,
+          "published_date_preserved": true,
+          "modified_date_matches_snapshot": true,
+          "og_image_matches_snapshot": true,
+          "twitter_image_matches_snapshot": true,
+          "article_image_matches_snapshot": true,
+          "visible_image_matches_snapshot": true,
+          "visible_image_dimensions_match_snapshot": true,
+          "storage_direction_checks": {
+            "foil_pouch": true,
+            "no_added_sugar": true,
+            "apple_and_strawberry": true,
+            "no_old_jar_image": true,
+            "final_pouch_image": true
+          },
+          "passed": true,
+          "snapshot_html_title": "How to store freeze-dried fruit after opening. — Vitablabla Journal",
+          "production_html_title": "How to store freeze-dried fruit after opening. — Vitablabla Journal"
+        },
+        {
+          "slug": "freeze-dried-fruit-snack-mix",
+          "url": "https://vitablabla.com/a/freeze-dried-fruit-snack-mix/",
+          "status": 200,
+          "body_matches_snapshot_source": true,
+          "title_matches_snapshot": true,
+          "description_matches_snapshot": true,
+          "canonical_matches_snapshot": true,
+          "published_date_preserved": true,
+          "modified_date_matches_snapshot": true,
+          "og_image_matches_snapshot": true,
+          "twitter_image_matches_snapshot": true,
+          "article_image_matches_snapshot": true,
+          "visible_image_matches_snapshot": true,
+          "visible_image_dimensions_match_snapshot": true,
+          "passed": true,
+          "snapshot_html_title": "Freeze-dried fruit snack mix ideas for a better handful. — Vitablabla Journal",
+          "production_html_title": "Freeze-dried fruit snack mix ideas for a better handful. — Vitablabla Journal"
+        },
+        {
+          "slug": "coffee-candy-for-studying",
+          "url": "https://vitablabla.com/a/coffee-candy-for-studying/",
+          "status": 200,
+          "body_matches_snapshot_source": true,
+          "title_matches_snapshot": true,
+          "description_matches_snapshot": true,
+          "canonical_matches_snapshot": true,
+          "published_date_preserved": true,
+          "modified_date_matches_snapshot": true,
+          "og_image_matches_snapshot": true,
+          "twitter_image_matches_snapshot": true,
+          "article_image_matches_snapshot": true,
+          "visible_image_matches_snapshot": true,
+          "visible_image_dimensions_match_snapshot": true,
+          "passed": true,
+          "snapshot_html_title": "Coffee candy for studying: a little break between pages. — Vitablabla Journal",
+          "production_html_title": "Coffee candy for studying: a little break between pages. — Vitablabla Journal"
+        },
+        {
+          "slug": "coffee-candy-for-long-drives",
+          "url": "https://vitablabla.com/a/coffee-candy-for-long-drives/",
+          "status": 200,
+          "body_matches_snapshot_source": true,
+          "title_matches_snapshot": true,
+          "description_matches_snapshot": true,
+          "canonical_matches_snapshot": true,
+          "published_date_preserved": true,
+          "modified_date_matches_snapshot": true,
+          "og_image_matches_snapshot": true,
+          "twitter_image_matches_snapshot": true,
+          "article_image_matches_snapshot": true,
+          "visible_image_matches_snapshot": true,
+          "visible_image_dimensions_match_snapshot": true,
+          "passed": true,
+          "snapshot_html_title": "Coffee candy for long drives: a treat at the rest stop. — Vitablabla Journal",
+          "production_html_title": "Coffee candy for long drives: a treat at the rest stop. — Vitablabla Journal"
+        }
+      ],
+      "selected_image_checks": [
+        {
+          "path": "/assets/editorial/freeze-dried-fruit-storage-pouch.webp",
+          "status": 200,
+          "snapshot_sha256": "5d15b8be1165cf758a2bd70f9f8d9876e0d3c5493a9ba1e89ce3aa653cc48578",
+          "production_sha256": "5d15b8be1165cf758a2bd70f9f8d9876e0d3c5493a9ba1e89ce3aa653cc48578",
+          "bytes": 107068,
+          "passed": true
+        },
+        {
+          "path": "/assets/editorial/freeze-dried-fruit-snack-mix.webp",
+          "status": 200,
+          "snapshot_sha256": "25aad8d671dfed74b1678a2e727dffdf49af08c3be40341d7fe774ce2dbaaa19",
+          "production_sha256": "25aad8d671dfed74b1678a2e727dffdf49af08c3be40341d7fe774ce2dbaaa19",
+          "bytes": 281060,
+          "passed": true
+        },
+        {
+          "path": "/assets/editorial/coffee-candy-study-break.webp",
+          "status": 200,
+          "snapshot_sha256": "077ed8c95246460527f27e9c00d5640e0d3e3db825d48b39445a3fc637faedb1",
+          "production_sha256": "077ed8c95246460527f27e9c00d5640e0d3e3db825d48b39445a3fc637faedb1",
+          "bytes": 88418,
+          "passed": true
+        },
+        {
+          "path": "/assets/editorial/coffee-candy-road-break.webp",
+          "status": 200,
+          "snapshot_sha256": "c92333e9ee11c60521ea07327b4608e8ea30810e7dfee066cc2a2461f5c6b889",
+          "production_sha256": "c92333e9ee11c60521ea07327b4608e8ea30810e7dfee066cc2a2461f5c6b889",
+          "bytes": 244176,
+          "passed": true
+        }
+      ],
+      "posts_json_check": {
+        "status": 200,
+        "snapshot_sha256": "84151d8b47fb720b6d922d13b4155225dc4dfa5a05603d3dbd9e8cd4d90afc89",
+        "production_sha256": "84151d8b47fb720b6d922d13b4155225dc4dfa5a05603d3dbd9e8cd4d90afc89",
+        "passed": true
+      },
+      "sitemap_check": {
+        "status": 200,
+        "url_count": 227,
+        "article_count": 223,
+        "urls_match_snapshot": true,
+        "sha256_matches_snapshot": true,
+        "all_snapshot_pages_200": true,
+        "passed": true
+      },
+      "redirect_checks": [
+        {
+          "url": "https://vitablabla.com/post.html?slug=coffee-candy-for-studying",
+          "status": 301,
+          "location": "https://vitablabla.com/a/coffee-candy-for-studying/",
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        },
+        {
+          "url": "https://vitablabla.com/post?slug=coffee-candy-for-long-drives",
+          "status": 301,
+          "location": "https://vitablabla.com/a/coffee-candy-for-long-drives/",
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        },
+        {
+          "url": "https://vitablabla.com/ohcrisp",
+          "status": 301,
+          "location": "/about#ohcrisp",
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        },
+        {
+          "url": "https://vitablabla.com/frozili.html",
+          "status": 301,
+          "location": "/about#frozili",
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        }
+      ],
+      "noindex_check": {
+        "url": "https://vitablabla.com/posts/coffee-candy-for-studying",
+        "status": 200,
+        "location": null,
+        "x_robots_tag": "noindex",
+        "content_type": "text/html",
+        "passed": true
+      },
+      "not_found_checks": [
+        {
+          "url": "https://vitablabla.com/not-a-real-approved-batch-page-20261109",
+          "status": 404,
+          "location": null,
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        },
+        {
+          "url": "https://vitablabla.com/worker.js",
+          "status": 404,
+          "location": null,
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        },
+        {
+          "url": "https://vitablabla.com/scripts/maintenance-runs/2026-11-09-content-batch-01.json",
+          "status": 404,
+          "location": null,
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        },
+        {
+          "url": "https://vitablabla.com/content-maintenance-continuation.md",
+          "status": 404,
+          "location": null,
+          "x_robots_tag": null,
+          "content_type": null,
+          "passed": true
+        }
+      ],
+      "anomalies": [],
+      "allPagesChecked": 227,
+      "allPages200": true,
+      "browser": {
+        "storageImageLoaded": true,
+        "storageImage": "/assets/editorial/freeze-dried-fruit-storage-pouch.webp",
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "consoleErrors": []
+      }
     }
   },
   "files": [
@@ -735,7 +969,8 @@
   ],
   "screenshots": [
     "/Users/dkwang/.codex/visualizations/2026/11/09/01a1c268-968f-7e61-a20a-5a828140254c/old-articles-road-mobile.jpg",
-    "/Users/dkwang/.codex/visualizations/2026/11/09/01a1c268-968f-7e61-a20a-5a828140254c/old-articles-storage-pouch-desktop.jpg"
+    "/Users/dkwang/.codex/visualizations/2026/11/09/01a1c268-968f-7e61-a20a-5a828140254c/old-articles-storage-pouch-desktop.jpg",
+    "/Users/dkwang/.codex/visualizations/2026/11/09/01a1c268-968f-7e61-a20a-5a828140254c/content-batch-published-storage-desktop.jpg"
   ],
   "limitations": [
     "GSC Wizard currently requires an active subscription; keyword fields describe the existing page intent and are not presented as measured search demand.",
@@ -743,13 +978,13 @@
     "Coffee-candy-for-road-trips was not consolidated, redirected or edited; current query competition was not assessed.",
     "Images are generic AI editorial illustrations, explicitly disclosed in visible captions, not actual brand product photography or firsthand test evidence."
   ],
-  "recommendation": "Approved by the user; publish this exact source snapshot and verify all four production articles and images.",
+  "recommendation": "Published the four explicitly approved articles and final images; production checks passed. Original URLs, publication dates and article count preserved.",
   "reviewRevisions": [
     {
       "date": "2026-11-09",
       "article": "how-to-store-freeze-dried-fruit-after-opening",
       "userRequest": "Emphasize original foil-pouch storage for plain no-added-sugar fruit, particularly apple and strawberry; avoid decanting into ordinary zip bags, jars or boxes.",
-      "status": "prepared_for_review",
+      "status": "published",
       "sourceAndScopeReviewPassed": true,
       "validation": {
         "articleBuild": true,
@@ -775,9 +1010,10 @@
       "newImage": "assets/editorial/freeze-dried-fruit-storage-pouch.webp",
       "supersededImage": "assets/editorial/freeze-dried-fruit-storage.webp",
       "publication": {
-        "committed": false,
-        "pushed": false,
-        "deployed": false
+        "committed": true,
+        "pushed": true,
+        "deployed": true,
+        "cloudflareVersion": "1e356d12-c21f-4684-a35f-b2785ac06543"
       }
     }
   ],
@@ -838,5 +1074,6 @@
     "posts/how-to-store-freeze-dried-fruit-after-opening.html": "de8666e72e9984158030886057ca102b24964ca3ba9db790f52f0e3c056d09f0",
     "scripts/journal-image-assets.json": "e3cf228cfe15d0547fab4edd9c3a0041fd35568e19824c0b87d727b5c5ae367c",
     "sitemap.xml": "a38508fe82ba816b58737ae0ebd821345d21ef0220550e4a6cd0259706bace9c"
-  }
+  },
+  "sourceCommit": "ab734aea7345523bad481d0a8ff2e2d50b77361d"
 }
