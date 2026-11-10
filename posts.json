@@ -7983,11 +7983,11 @@
     {
       "slug": "how-to-store-freeze-dried-fruit-after-opening",
       "number": "048",
-      "title": "How to store freeze-dried fruit after opening: keep the crunch <em>loud.</em>",
-      "cardTitle": "Store freeze-dried fruit after opening: keep the crunch <em>loud.</em>",
-      "excerpt": "A practical guide to how to store freeze-dried fruit after opening — simple habits that keep OhCrisp-style fruit crunch crisp, dry, and ready for bowls, boards, and snacking.",
+      "title": "How to store freeze-dried fruit after opening.",
+      "cardTitle": "Store freeze-dried fruit after opening.",
+      "excerpt": "Store no-added-sugar freeze-dried fruit in its original foil pouch. Avoid pantry decanting and ordinary zip-top bags, especially for apple and strawberry.",
       "date": "2026-05-23",
-      "readTime": "5 min",
+      "readTime": "4 min",
       "color": "tb-cream",
       "categories": [
         "OhCrisp",
@@ -8000,19 +8000,34 @@
       ],
       "cta": "ohcrisp",
       "related": [
-        "shelf-stable-fruit-snacks",
-        "freeze-dried-fruit-oatmeal-toppings",
-        "freeze-dried-fruit-yogurt-toppings"
-      ]
+        "freeze-dried-fruit-snack-mix",
+        "freeze-drying-strawberry",
+        "how-to-keep-freeze-dried-fruit-crunchy-in-yogurt"
+      ],
+      "primaryKeyword": "how to store freeze-dried fruit after opening",
+      "secondaryKeywords": [
+        "freeze-dried fruit storage",
+        "freeze-dried apple storage",
+        "freeze-dried strawberry storage",
+        "foil pouch for freeze-dried fruit",
+        "freeze-dried fruit moisture"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "alt": "A closed, unprinted silver foil-laminate pouch beside a small cream dish holding two freeze-dried strawberry slices and a pale apple piece.",
+        "width": 1536,
+        "height": 1024,
+        "src": "/assets/editorial/freeze-dried-fruit-storage-pouch.webp"
+      }
     },
     {
       "slug": "coffee-candy-for-studying",
       "number": "047",
-      "title": "Coffee candy for studying: a slow-melt focus ritual with a <em>clean finish.</em>",
-      "cardTitle": "Coffee candy for studying: a slow-melt focus ritual with a <em>clean finish.</em>",
-      "excerpt": "A calm guide to coffee candy for studying — why slow-melting iced coffee candy with a cooling finish can mark focus blocks, reset attention, and feel cleaner than gum.",
+      "title": "Coffee candy for studying: a little <em>break between pages.</em>",
+      "cardTitle": "Coffee candy for studying, <em>between pages.</em>",
+      "excerpt": "Coffee candy for studying can be a small treat during a planned break, with practical notes on labels, caffeine information, storage and reading-room rules.",
       "date": "2026-05-23",
-      "readTime": "5 min",
+      "readTime": "3 min",
       "color": "tb-ice",
       "categories": [
         "Frozili",
@@ -8025,10 +8040,24 @@
       ],
       "cta": "frozili",
       "related": [
-        "slow-melt",
-        "snack-vs-reset",
-        "pocket-coffee-candy"
-      ]
+        "coffee-candy-guide",
+        "how-to-store-coffee-candy-in-summer",
+        "slow-melt"
+      ],
+      "primaryKeyword": "coffee candy for studying",
+      "secondaryKeywords": [
+        "study break candy",
+        "coffee candy caffeine information",
+        "coffee flavored sweets",
+        "study desk snacks"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "src": "/assets/editorial/coffee-candy-study-break.webp",
+        "alt": "Two generic brown sweets on a cream saucer beside an open blank notebook, a silver pen and a glass of water on a lilac desk.",
+        "width": 1536,
+        "height": 1024
+      }
     },
     {
       "slug": "freeze-dried-fruit-pancake-toppings",
@@ -8546,11 +8575,11 @@
     {
       "slug": "coffee-candy-for-long-drives",
       "number": "026",
-      "title": "Coffee candy for long drives: the pocket ritual that keeps you <em>steady.</em>",
-      "cardTitle": "Coffee candy for long drives: the pocket ritual that keeps you <em>steady.</em>",
-      "excerpt": "A sensory guide to coffee candy for long drives — why slow-melting iced coffee candy with a cooling finish feels cleaner than gum or mints in dry car air.",
+      "title": "Coffee candy for long drives: a treat <em>at the rest stop.</em>",
+      "cardTitle": "Coffee candy for long drives, <em>at the rest stop.</em>",
+      "excerpt": "Coffee candy for long drives belongs at a parked rest stop; this guide covers labels, storage and the clear limits of sweets when a driver feels sleepy.",
       "date": "2026-05-12",
-      "readTime": "5 min",
+      "readTime": "3 min",
       "color": "tb-coffee",
       "categories": [
         "Frozili",
@@ -8563,10 +8592,24 @@
       ],
       "cta": "frozili",
       "related": [
-        "slow-melt",
-        "why-iced-coffee-candy-works",
-        "snack-vs-reset"
-      ]
+        "coffee-candy-guide",
+        "how-to-store-coffee-candy-in-summer",
+        "coffee-candy-for-studying"
+      ],
+      "primaryKeyword": "coffee candy for long drives",
+      "secondaryKeywords": [
+        "coffee candy rest stop",
+        "parked road trip break",
+        "road trip candy storage",
+        "coffee candy caffeine information"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "src": "/assets/editorial/coffee-candy-road-break.webp",
+        "alt": "Four generic brown sweets in an open metal tin beside a glass of water on a rest-area table, with a parked vehicle blurred in the background.",
+        "width": 1536,
+        "height": 1024
+      }
     },
     {
       "slug": "freeze-dried-fruit-oatmeal-toppings",
@@ -8797,9 +8840,9 @@
       "number": "016",
       "title": "Freeze-dried fruit snack mix ideas for a <em>better handful.</em>",
       "cardTitle": "Freeze-dried fruit snack mix ideas for a <em>better handful.</em>",
-      "excerpt": "Why freeze-dried fruit makes snack mixes stay crisp, bright, and travel-friendly — plus five simple mix patterns to copy all summer.",
+      "excerpt": "Build a freeze-dried fruit snack mix with five flexible combinations, dry-storage tips, label checks for allergies and advice on packing chocolate.",
       "date": "2026-05-08",
-      "readTime": "5 min",
+      "readTime": "4 min",
       "color": "tb-blush",
       "categories": [
         "OhCrisp",
@@ -8812,10 +8855,25 @@
       ],
       "cta": "ohcrisp",
       "related": [
+        "how-to-store-freeze-dried-fruit-after-opening",
         "freeze-drying-strawberry",
-        "ugly-mango",
-        "twelve-hour-flight"
-      ]
+        "freeze-dried-fruit-for-trail-mix"
+      ],
+      "primaryKeyword": "freeze-dried fruit snack mix",
+      "secondaryKeywords": [
+        "freeze-dried fruit mix ideas",
+        "fruit and nut snack mix",
+        "crunchy fruit snack mix",
+        "packable snack mix",
+        "keep snack mix dry"
+      ],
+      "dateModified": "2026-11-09",
+      "image": {
+        "src": "/assets/editorial/freeze-dried-fruit-snack-mix.webp",
+        "alt": "An overhead view of freeze-dried strawberry and mango with cashews, almonds, pumpkin seeds and dark chocolate in a pale-yellow bowl.",
+        "width": 1536,
+        "height": 1024
+      }
     },
     {
       "slug": "modern-snacks-more-sensory",

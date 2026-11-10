@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-11-09",
   "tool": "built-in image_gen",
-  "usage": "AI-generated editorial still lifes; illustrative generic sweets, not literal branded product photographs",
+  "usage": "AI-generated editorial still lifes of generic fruit, snack mixes and sweets; not literal branded product photographs or firsthand test evidence",
   "images": [
     {
       "file": "assets/editorial/coffee-candy-guide.webp",
@@ -22,6 +22,80 @@
       "file": "assets/editorial/coffee-candy-slow-ritual.webp",
       "original": "/Users/dkwang/.codex/generated_images/01a1a0ae-d43b-7c90-a433-089fd21d239a/exec-6acba0b1-dc4c-45a3-a08a-a5b7943a3d6f.png",
       "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 editorial lifestyle still-life photograph-style illustration for Vitablabla Journal's slow-melt coffee-candy ritual article. A quiet adult desk in afternoon window light: a very small cream ceramic pinch dish containing two espresso-brown oval coffee sweets, a clear ribbed tumbler of water, and a closed muted-lilac cloth notebook without words, with a simple silver pen resting diagonally across it. On a warm cream tabletop, a little pale pink fine pinstripe cotton napkin brings playful texture under the dish. Leave generous breathing room, focus on the candy and the unhurried desk ritual rather than an office advertisement. Warm cocoa, lilac, cream, subtle blush and clear glass, natural camera depth and tactile believable materials, a beautiful long shadow, confident independent magazine styling, food-sized candies, no branding, no letters, no text or graphics, no people or hands, no vector art, no glossy CGI, no medical or energy claims, no coffee cup. The candies are a generic editorial illustration, not a literal branded product photograph."
+    },
+    {
+      "slug": "how-to-store-freeze-dried-fruit-after-opening",
+      "file": "assets/editorial/freeze-dried-fruit-storage.webp",
+      "alt": "A closed glass storage jar of freeze-dried strawberries and mango beside a small portion bowl and wooden spoon.",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 food-magazine editorial illustration, ideally 1536 by 1024, for Vitablabla Journal's practical guide to storing freeze-dried fruit after opening. Create an exceptionally beautiful tactile photographic still life on a warm cream kitchen counter with a softly sage-green backdrop: a dry clear glass preserving jar filled with physically believable porous freeze-dried strawberry slices and irregular chunky pieces of freeze-dried mango. The jar's hinged glass lid is CLOSED and the rubber gasket and metal clasp form a plausible airtight seal. Beside it, a small shallow cream ceramic bowl holds one modest portion of the same fruit, with a clean short wooden spoon and a folded unprinted sage cotton napkin. The strawberry slices have tiny seeds, natural red edges and pale porous centers, the mango pieces look like thick dry porous fruit cubes rather than potato chips. Restrained contemporary independent food-magazine art direction, 50mm natural camera perspective, soft directional daylight, delicately tactile glass/ceramic/cotton detail, gentle shadows, calm generous breathing room, appetizing food is the hero. This is an imagined AI editorial illustration, not a branded product photograph or storage experiment. No fresh fruit, no water, no ice, no moisture on the jar or fruit, no labels, no logos, no text or lettering, no watermark, no hands or people, no CGI shine, no vector graphic, no health symbols.",
+      "tool": "built-in image_gen",
+      "original": "/Users/dkwang/.codex/generated_images/01a1c2ad-90cc-7f31-b894-889ecb881aca/exec-57a12a32-5939-4f8e-a9bd-08c78ca21377.png",
+      "generatedAt": "2026-11-09",
+      "source": "Generated from a text prompt with no photographic reference; generic imagined editorial still life, not a branded product photograph.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 245246,
+      "visualInspection": "Passed: believable food/materials; no text, logos, hands, false product identity or energy/medical symbolism.",
+      "status": "superseded_in_review",
+      "supersededBy": "assets/editorial/freeze-dried-fruit-storage-pouch.webp",
+      "supersededReason": "User corrected storage guidance to retain the original foil pouch rather than decant into a jar."
+    },
+    {
+      "slug": "freeze-dried-fruit-snack-mix",
+      "file": "assets/editorial/freeze-dried-fruit-snack-mix.webp",
+      "alt": "Freeze-dried strawberry and mango pieces mixed with almonds, cashews, pumpkin seeds and dark chocolate in a pale yellow ceramic bowl.",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 food-magazine editorial illustration, ideally 1536 by 1024, for a practical freeze-dried-fruit snack-mix article. A carefully art-directed overhead photograph-style still life: a shallow pale butter-yellow ceramic bowl contains a modest, loose trail mix of clearly recognizable porous freeze-dried strawberry slices and chunky freeze-dried mango, roasted whole almonds and cashews, green pumpkin seeds and a few small irregular dark chocolate pieces. Each ingredient remains visually distinct; the red seeded strawberries and porous pale-yellow mango are unmistakably freeze-dried fruit, not fresh glossy fruit or fried chips. A few intentional loose pieces beside the bowl show scale. Place on a matte warm ivory tabletop with a softly folded unprinted oatmeal linen cloth entering one corner. Beautiful warm window light with natural soft-edged shadows and believable food texture, premium independent food-magazine photography, restrained asymmetry, close enough to see fruit pores while leaving clear breathing room. Warm cream, strawberry red, muted yellow and nut brown palette. This is an imagined generic editorial food composition, not a specific brand's product shot or firsthand recipe test. No text, no labels, no logos, no watermark, no people or hands, no floating food, no diagrams, no syrup, no CGI or plastic-looking food.",
+      "tool": "built-in image_gen",
+      "original": "/Users/dkwang/.codex/generated_images/01a1c2ad-90cc-7f31-b894-889ecb881aca/exec-4c4f033f-3c03-4b48-bdf8-175de513012d.png",
+      "generatedAt": "2026-11-09",
+      "source": "Generated from a text prompt with no photographic reference; generic imagined editorial still life, not a branded product photograph.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 281060,
+      "visualInspection": "Passed: believable food/materials; no text, logos, hands, false product identity or energy/medical symbolism."
+    },
+    {
+      "slug": "coffee-candy-for-studying",
+      "file": "assets/editorial/coffee-candy-study-break.webp",
+      "alt": "Two small brown coffee sweets on a cream dish beside a blank notebook, a pen and a glass of water on a lilac desk.",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 lifestyle food-magazine editorial illustration, ideally 1536 by 1024, for an existing article about coffee candy as a small study-break ritual. Create a quiet, tactile photograph-style still life on a pale muted-lilac desk. A very small warm cream ceramic pinch dish holds TWO realistic candy-sized espresso-brown oval sweets with a restrained smooth caramel sheen. Nearby are a plain open ivory notebook with completely BLANK unruled pages, a single simple silver pen, and a short clear glass of water. Afternoon window light makes beautiful calm oblique shadows; use a natural 50mm camera perspective, close detail on real-looking candy and ceramic, modest depth of field, independent editorial magazine styling. The candy is just one small part of a quiet break, with generous empty space and no implication of improved focus, performance, caffeine dosing or energy. Palette: pale lilac, ivory, cocoa brown and clear glass. These generic sweets are an imagined AI editorial illustration, not Frozili product photography. No readable text, no lines of fake writing, no timers, no clocks or numbers, no coffee cup, no packaging, no brand logos, no hands or people, no watermark, no medical or energy symbols, no CGI or vector look.",
+      "tool": "built-in image_gen",
+      "original": "/Users/dkwang/.codex/generated_images/01a1c2ad-90cc-7f31-b894-889ecb881aca/exec-81a787a2-5965-4599-a185-64f33dd5e2a4.png",
+      "generatedAt": "2026-11-09",
+      "source": "Generated from a text prompt with no photographic reference; generic imagined editorial still life, not a branded product photograph.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 88418,
+      "visualInspection": "Passed: believable food/materials; no text, logos, hands, false product identity or energy/medical symbolism."
+    },
+    {
+      "slug": "coffee-candy-for-long-drives",
+      "file": "assets/editorial/coffee-candy-road-break.webp",
+      "alt": "An unbranded tin of brown coffee sweets and a glass of water on a shaded rest-stop table, with a parked car softly blurred in the background.",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 editorial lifestyle food illustration, ideally 1536 by 1024, for an existing article about coffee candy enjoyed during a stopped road-trip break. An appealing close photograph-style still life on a light grey weathered wooden rest-stop picnic table in soft afternoon shade. A small unbranded brushed-metal candy tin is open, holding four small espresso-brown oval sweets; its plain fitted lid sits beside it. A simple clear glass of water and a neatly folded unprinted sage cotton cloth complete the minimal scene. In the far softly blurred background, only a small partial section of a clearly PARKED stationary car is visible, with no readable plate or emblem and no person. The food and tiny break ritual remain the sharp main subject. Tactile real metal, dry wood grain, glass and appetizing food-size candies, natural camera depth, refined independent travel/food magazine art direction, warm filtered daylight and restrained quiet colors. This generic imagined AI still life is NOT a specific candy product photograph or documentary travel image. Depict a complete stop: no driver, no active roadway, no motion blur, no in-car eating, no hands, no people, no keys in ignition, no package labels, no branding, no text or maps with writing, no alertness/energy/medical symbols, no watermark, no CGI or vector aesthetic.",
+      "tool": "built-in image_gen",
+      "original": "/Users/dkwang/.codex/generated_images/01a1c2ad-90cc-7f31-b894-889ecb881aca/exec-e9fcea14-40ff-4e49-9196-980faae9d63d.png",
+      "generatedAt": "2026-11-09",
+      "source": "Generated from a text prompt with no photographic reference; generic imagined editorial still life, not a branded product photograph.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 244176,
+      "visualInspection": "Passed: believable food/materials; no text, logos, hands, false product identity or energy/medical symbolism."
+    },
+    {
+      "generatedAt": "2026-11-09",
+      "tool": "built-in image_gen",
+      "file": "assets/editorial/freeze-dried-fruit-storage-pouch.webp",
+      "original": "/Users/dkwang/.codex/generated_images/01a1c2ad-90cc-7f31-b894-889ecb881aca/exec-487d95ed-1460-4840-be99-2c474742b667.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 food-magazine editorial illustration, 1536 by 1024, for an existing practical guide about keeping freeze-dried fruit in its ORIGINAL high-barrier foil pouch after opening. Create a beautiful restrained tactile photographic still life on a warm cream kitchen counter. The clear main subject is one small UNPRINTED, COMPLETELY OPAQUE, thick FOIL-LAMINATE STAND-UP FOOD POUCH, the kind used as moisture-barrier packaging for freeze-dried fruit. It has a stable gusseted bottom, real soft creases in laminated aluminum foil, a muted metallic-silver exterior with very subtle creamy-pink reflections, neatly crimped side seams, and its own resealable zipper across the upper edge visibly fully CLOSED and aligned. The pouch is dry, upright and closed; there is no open mouth and no food spilling out. Its opaque surface has NO transparent window. Beside the pouch is only a very SMALL shallow pale-cream ceramic pinch dish holding a modest ready-to-eat portion: TWO naturally porous freeze-dried strawberry slices and ONE small pale porous freeze-dried apple piece. The little dish is clearly for a few bites to eat now, not a vessel for bulk storage. The pouch is much more prominent than the dish. Independent food-magazine photography style, natural medium-format camera detail, soft directional morning window light and gentle attractive shadows, believable foil material and matte dry freeze-dried fruit texture, airy minimal composition, warm cream and quiet silver with a whisper of blush. Do not make the pouch look like an ordinary transparent plastic zip-top bag. This is a generic imagined AI editorial illustration of suitable packaging, NOT an actual OhCrisp package or product photograph. No glass jar, no storage container, no pantry decanting, no plastic box, no ordinary Ziplock bag, no clear packaging, no large bowl, no fresh or wet fruit, no water, no steam or condensation, no spoon, no text, no lettering, no logos, no invented label, no watermark, no hands or people, no glossy CGI or vector aesthetic.",
+      "alt": "A closed, unprinted silver foil-laminate pouch beside a small cream dish holding two freeze-dried strawberry slices and a pale apple piece.",
+      "source": "Generated from a text prompt with no photographic references; generic imagined editorial illustration, not a photograph of an actual OhCrisp package or product.",
+      "visualInspection": "Passed: opaque thick metallic foil-laminate stand-up pouch is the main subject; zipper appears fully closed; the small serving dish holds only two strawberry slices and one apple piece. No jar, storage box, transparent plastic bag, text, logo, people, moisture or food spill. Original previous jar asset retained.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 107068,
+      "slug": "how-to-store-freeze-dried-fruit-after-opening",
+      "status": "selected_for_review"
     }
   ]
 }
