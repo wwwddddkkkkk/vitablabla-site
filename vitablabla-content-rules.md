@@ -11,7 +11,7 @@ This document has two jobs:
 
 Live site: `https://vitablabla.com`
 
-Site-design, editorial-image and publishing rules synchronized: November 9, 2026. The recovery cadence applies through November 12; the approved continuing maintenance plan applies from November 13 without a fixed end date.
+Site-design and editorial-image rules synchronized: November 9, 2026. Standing publication authorization updated: November 10, 2026. The recovery cadence applies through November 12; the approved continuing maintenance plan applies from November 13 without a fixed end date.
 
 ---
 
@@ -318,7 +318,7 @@ Each article should include **2–4 internal links** that feel like editorial re
 
    This validates `posts.json`, checks every body and internal link, generates `a/<slug>/index.html` for every article, and regenerates `sitemap.xml`. Fix every error before publishing.
 5. Review the new cover in the unfiltered Journal, its category, search results, homepage preview where applicable, and related cards. Confirm adjacent print/palette variety and mobile title readability.
-6. After the applicable publishing approval, commit intended body, registry, sitemap, generated article and any changed cover/shared-chrome files, then push and deploy through Wrangler. A site-design update alone does not justify changing article `dateModified` values.
+6. For routine bounded B2C maintenance, use the November 10 standing authorization below: review the exact isolated release source, complete all applicable tests and deployment dry-run plus affected mobile/desktop browser checks, then commit only intended body, registry, image, sitemap, generated article and cover/shared-chrome files. Run `git push origin main`, deploy the verified source through Wrangler to the existing site, and verify production. A site-design update alone does not justify changing article `dateModified` values.
 
 Never push if `build-vitablabla.py` reports an error — a broken `posts.json` takes the whole site down.
 
@@ -326,9 +326,13 @@ Never push if `build-vitablabla.py` reports an error — a broken `posts.json` t
 
 ## Scheduled Publishing
 
-Scheduled runs prepare and validate local changes, then stop for explicit human approval. Only after approval in the current conversation may the agent commit intended files, push, deploy through Wrangler, and verify live URLs. GSC writes and consolidation, deletion, or redirects of published URLs require separate approval. Stop on validation, push, or deployment failure; never publish merely to preserve cadence.
+**Standing authorization effective November 10, 2026:** the user requested “批准更新，而且自动化也需要允许推送，我希望平常自动推送，我每周审核一下”. Routine bounded B2C maintenance may automatically commit intended files, run `git push origin main`, deploy to the existing Cloudflare site through Wrangler, and verify live URLs after local verification. Human review happens weekly; another approval is not required for each routine release. This supersedes the earlier prepare-only publication gate for that scope.
 
-From November 13, scheduled runs read `content-maintenance-continuation.md` instead of executing the expired recovery calendar. Determine pending work from the actual Git state and current approval evidence, not an obsolete memory entry. If GSC is unavailable, record the dated failure and continue useful evidence-supported maintenance without claiming current search metrics. Daily preparation and read-only weekly review continue until the user changes or pauses them; publication approval requirements remain in force.
+Before releasing, pass the build, static SEO and cover validators, applicable tests and deployment dry-run, affected mobile/desktop browser checks, and review of the exact isolated source being committed and deployed. Preserve concurrent drafts and unrelated edits; do not publish unknown-ownership earlier drafts or their generated artifacts. If required verification or safe source isolation is unavailable, retain the local change and report the blocker. Stop on validation, push, or deployment failure; never publish merely to preserve cadence.
+
+GSC writes (including sitemap submission), published-URL consolidation/deletion/redirects, permission/credential/Git-remote changes, and unrelated online Cloudflare configuration changes still need separate explicit approval. Existing B2C scope, Frozili maintenance-only restriction, cadence, facts, image/cover rules and original URLs/publication dates are unchanged. Both Sunday tasks are read-only: the daily check cleans the queue and the weekly review reports releases, evidence, risks and next priorities for the user.
+
+From November 13, scheduled runs read `content-maintenance-continuation.md` instead of executing the expired recovery calendar. Determine pending work from the actual Git state and current approval evidence, not an obsolete memory entry. If GSC is unavailable, record the dated failure and continue useful evidence-supported maintenance without claiming current search metrics. Daily maintenance and read-only weekly review continue until the user changes or pauses them under the standing authorization and separate-approval boundaries above.
 
 ---
 

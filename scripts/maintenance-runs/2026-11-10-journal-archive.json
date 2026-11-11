@@ -1,12 +1,13 @@
 {
   "date": "2026-11-10",
   "timezone": "America/Los_Angeles",
-  "status": "locally_verified_ready_for_authorized_release",
+  "status": "explicitly_authorized_release_and_standing_automation_policy",
   "checkedAtUtc": "2026-11-10T23:43:15.166992+00:00",
   "baseCommit": "ab6578fcc3bc33ea01a0b53ad64d72c5ad3d9124",
   "approval": {
-    "text": "可以优化一下执行，先本地做确认没问题了就更新",
-    "scope": "Confirm existing audit priorities; implement and verify crawlable Journal archive locally, then commit/push/deploy this bounded maintenance update. No GSC writes or URL consolidation."
+    "date": "2026-11-10",
+    "text": "批准更新，而且自动化也需要允许推送，我希望平常自动推送，我每周审核一下",
+    "scope": "Explicit approval to push the verified Journal archive to existing origin/main and deploy it; standing approval for validated routine daily releases with weekly human review. Existing separately gated actions remain gated."
   },
   "plan": "Day 28 utility slot superseded by approved audit priority 2: crawlable existing Journal archive. No new article URL.",
   "changedPage": {
@@ -243,13 +244,34 @@
     "scripts/test-journal-build.py",
     "scripts/seo-audits/2026-11-09.json",
     "sitemap.xml",
-    "scripts/maintenance-runs/2026-11-10-journal-archive.json"
+    "scripts/maintenance-runs/2026-11-10-journal-archive.json",
+    "vitablabla-content-rules.md"
   ],
   "publication": {
-    "committed": false,
+    "committed": true,
+    "sourceCommit": "c9e1421dcfeee7bfaedb65797af41ef94f281bdb",
     "pushed": false,
     "deployed": false,
-    "gscWrites": false
+    "gscWrites": false,
+    "previousPushReview": "Rejected before explicit authorization; user has now explicitly approved pushing origin/main and deployment.",
+    "authorizedAtUtc": "2026-11-11T00:55:07.433916+00:00"
   },
-  "nextPriority": "After verified archive release: existing useful article cluster links and answers; preserve current concurrent drafts."
+  "nextPriority": "After verified archive release: existing useful article cluster links and answers; preserve current concurrent drafts.",
+  "automationPolicy": {
+    "effectiveDate": "2026-11-10",
+    "dailyId": "daily-vitablabla-journal-posts",
+    "dailyName": "Vitablabla Daily SEO — Auto Publish",
+    "dailyTime": "09:00 America/Los_Angeles; Sunday read-only",
+    "weeklyId": "vitablabla-weekly-seo-review",
+    "weeklyTime": "Sunday 16:00 America/Los_Angeles; read-only human review",
+    "routineRelease": "Local verification -> explicit-file commit -> push origin/main -> deploy exact isolated source -> verify production",
+    "separateApproval": [
+      "GSC writes",
+      "Published URL delete/merge/redirect",
+      "Permissions, credentials and Git remote changes",
+      "Unrelated online Cloudflare configuration"
+    ],
+    "schedulesModelsProjectPreserved": true,
+    "updatedWith": "Codex app automation_update tool"
+  }
 }

@@ -83,7 +83,11 @@ Cloudflare account selection is fixed in `wrangler.jsonc`. Never commit secrets 
 
 ## Continuing maintenance
 
-The original recovery calendar runs through November 12, 2026. From November 13, follow `content-maintenance-continuation.md` for the rolling queue of article, image, metadata, internal-link and technical maintenance. Daily preparation runs at 09:00 and the read-only weekly review runs Sundays at 16:00, both in America/Los_Angeles, without a fixed end date. Scheduled changes still require human approval before publication. Determine pending work from current Git state and current approval evidence rather than an old automation memory entry.
+The original recovery calendar runs through November 12, 2026. From November 13, follow `content-maintenance-continuation.md` for the rolling queue of article, image, metadata, internal-link and technical maintenance. Daily maintenance runs at 09:00 and the read-only weekly review runs Sundays at 16:00, both in America/Los_Angeles, without a fixed end date. Both Sunday tasks remain read-only. Determine pending work from current Git state and current authorization evidence rather than an old automation memory entry.
+
+**Standing publication authorization — November 10, 2026:** the user authorized routine bounded B2C maintenance to run locally, verify, then automatically commit its intended files, run `git push origin main`, deploy to the existing Cloudflare site and verify production. Human review is weekly; routine releases do not wait for another approval. Before release, all applicable local builds, SEO/cover checks, tests and deployment dry-run must pass, along with affected mobile/desktop browser checks and review of the exact isolated release source. Preserve concurrent drafts and unrelated edits; never include an earlier draft of unknown ownership merely because it is in the workspace. If source isolation or required verification cannot be completed, leave the change local and report the blocker.
+
+GSC writes (including sitemap submission), published-URL deletion/merging/redirects, changes to permissions, credentials, Git remotes, and unrelated online Cloudflare configuration still require separate explicit approval. The Frozili restriction, content cadence, fact/image/cover rules and original article URLs/publication dates remain in force. See the current publication rules in `vitablabla-content-rules.md` and `content-maintenance-continuation.md`.
 
 ## Important files
 

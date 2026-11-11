@@ -1,12 +1,14 @@
 # Vitablabla continuing maintenance plan
 
-Approved continuation: November 9, 2026. Effective November 13, 2026, with no fixed end date.
+Approved continuation: November 9, 2026. Effective November 13, 2026, with no fixed end date. Standing authorization for routine maintenance releases: November 10, 2026, effective immediately for November 10–12 and the continuing queue.
+
+**Current release policy:** the user authorized routine bounded B2C maintenance to be locally verified, then automatically committed, pushed with `git push origin main`, deployed to the existing Cloudflare site and verified in production. The user reviews releases weekly. This replaces the earlier per-release approval gate only for that routine scope; both Sunday tasks remain read-only. Complete the isolated-source review, all applicable local checks and affected mobile/desktop browser checks before release. Preserve concurrent and unknown-ownership drafts. GSC writes, published-URL deletion/merging/redirects, permissions, credentials, Git remotes and unrelated online Cloudflare configuration still require separate explicit approval.
 
 `content-plan-2026-10-14-to-2026-11-12.md` remains the historical recovery plan through November 12. From November 13, use this plan, the current `README.md`, and `vitablabla-content-rules.md`; do not repeat expired calendar slots or stop because the old cycle ended.
 
 ## SEO audit update — November 9, 2026
 
-Use the audit priorities below when preparing the next work, including November 10–12. They take precedence over a calendar slot that would otherwise commission another new URL. Evidence is recorded in `scripts/seo-audits/2026-11-09.json`; recount after approved releases. This updates preparation priorities and does not authorize publication or online changes.
+Use the audit priorities below when preparing the next work, including November 10–12. They take precedence over a calendar slot that would otherwise commission another new URL. Evidence is recorded in `scripts/seo-audits/2026-11-09.json`; recount after approved releases. This November 9 audit recorded priorities rather than publication permission; routine releases now follow the separate November 10 standing authorization above. Its evidence and counts remain historical.
 
 The direct live HTTP scan checked all 227 sitemap URLs: 223 articles and four core pages. All returned 200, with unique titles/descriptions and self-canonical URLs; all articles had Article/Breadcrumb structured data. Those are verified technical results, not proof of Google indexing or traffic growth. The published source was `41f7d21`. Compared with the pre-recovery content baseline, only one new article and three existing article refreshes were verified as published; do not report the old eight-new/twenty-refresh targets as completed.
 
@@ -74,7 +76,7 @@ The November 9 inventory is a starting backlog, not a permanent count: 223 artic
 
 ## Rolling weekly queue
 
-The daily task prepares one bounded, reviewable unit at 09:00 America/Los_Angeles. The weekly task reviews results each Sunday at 16:00 in the same time zone. Both continue without an automatic end date.
+The daily task completes one bounded, reviewable unit at 09:00 America/Los_Angeles, automatically releasing routine maintenance after verification Monday through Saturday. On Sunday it performs read-only checks and queue cleanup. The weekly read-only task reviews results for the user each Sunday at 16:00 in the same time zone. Both continue without an automatic end date.
 
 | Day | Default daily work |
 | --- | --- |
@@ -84,17 +86,17 @@ The daily task prepares one bounded, reviewable unit at 09:00 America/Los_Angele
 | Thursday | Refresh another existing article or replace its old image. |
 | Friday | Check live availability, representative redirects/canonicals, assets, validation and dependency maintenance; prepare specific local fixes when authorized. |
 | Saturday | Finish the highest-priority reviewable item or an evidenced non-Frozili brief; do not accumulate another overlapping draft. |
-| Sunday | Daily: read-only checks and queue cleanup. Weekly: compare the last seven days, review pending approval items and set the next week's priorities. |
+| Sunday | Daily: read-only checks and queue cleanup. Weekly: compare the last seven days, review automatic releases and any separately gated items, and set the next week's priorities for human review. |
 
-A verified failure takes priority over the default day. Do not bulk-rewrite articles or change dates to meet a quota. Keep each prepared change small enough for one approval decision.
+A verified failure takes priority over the default day. Do not bulk-rewrite articles or change dates to meet a quota. Keep each change small enough for one traceable release and the weekly human review.
 
 ## Evidence, approvals and validation
 
-- Read current files and inspect `git status`, the branch, recent commits and the actual diff first. Memory is historical context. Do not keep an obsolete blocker after the relevant change has been committed or explicitly approved; do not treat an unrelated untracked file as an unapproved content draft. Preserve unrelated work and stop overlapping or unknown-ownership edits for review.
+- Read current files and inspect `git status`, the branch, recent commits and the actual diff first. Memory is historical context. Do not keep an obsolete blocker after the relevant change has been committed or explicitly approved; do not treat an unrelated untracked file as an unapproved content draft. Preserve unrelated work and isolate the intended release source from concurrent drafts. Do not automatically publish overlapping or unknown-ownership earlier edits; if ownership or safe isolation cannot be established, stop that release for review.
 - Read GSC only when available. On `payment_required`, `subscription_required`, permission or connection failures, record the dated error and missing metrics, then continue useful local checks and evidence-supported maintenance. Do not invent traffic, indexing, CTR, overlap or demand evidence, reuse old values as current, or repeatedly retry the same failure in a run.
-- Scheduled tasks prepare and validate only. They do not commit, push, deploy, delete published URLs, change credentials/permissions/remotes or online Cloudflare settings, or write to GSC. Publication needs explicit human approval in the current conversation; GSC writes and consolidation, deletion or redirects of published URLs need separate approval. This continuation does not grant automatic publication.
+- Under the user's November 10 standing authorization, routine bounded B2C maintenance can automatically commit only intended files, run `git push origin main`, deploy the exact verified source to the existing Cloudflare site and verify live responses. Do not wait for a new per-release approval within this scope. GSC writes (including sitemap submission), published-URL consolidation/deletion/redirects, permission/credential/Git-remote changes and unrelated online Cloudflare configuration still need separate explicit approval. Both Sunday tasks remain read-only.
 - Preserve original publication dates and URLs. Follow the current generated-image, caption, cover-variety, shared-navigation and direct official-brand-link rules. Source changing facts from reliable primary material; never invent product tests or measurements.
-- For content edits, run `python3 scripts/build-vitablabla.py`, `python3 scripts/validate-static-seo.py`, `python3 scripts/validate-cover-themes.py`, and `git diff --check`. Verify affected desktop/mobile pages, images and neighboring covers when browser access is available; record any validation limit. On a read-only review, do not run the build because it rewrites files. Stop on validation failure.
-- Report the prepared/published/blocked URLs separately, changed files, evidence and missing data, checks, remaining risks, and the exact next approval decision. A successful task run alone does not mean new content was published. Weekly reviews remain read-only and may propose zero new briefs.
+- For content edits, run `python3 scripts/build-vitablabla.py`, `python3 scripts/validate-static-seo.py`, `python3 scripts/validate-cover-themes.py`, and `git diff --check`. Before automatic publication, also pass applicable tests and the deployment dry-run, affected desktop/mobile browser checks of pages, images and neighboring covers, and review of the exact isolated source. If a required check is unavailable, retain the change locally and report the limitation. On a read-only review, do not run the build because it rewrites files. Stop on validation, push or deployment failure.
+- Report the prepared/published/blocked URLs separately, changed files, evidence and missing data, checks, remaining risks, commits, deployment/live verification and any action still requiring separate approval. Keep release records available for weekly human review. A successful task run alone does not mean new content was published. Weekly reviews remain read-only and may propose zero new briefs.
 
 Keep the November 12 recovery-cycle report as a historical checkpoint. Assess later results with settled data and rolling cohorts; never declare SEO success from a few days of movement. Continue until the user changes or pauses the tasks.
