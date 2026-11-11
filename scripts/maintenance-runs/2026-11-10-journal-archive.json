@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "timezone": "America/Los_Angeles",
-  "status": "explicitly_authorized_release_and_standing_automation_policy",
+  "status": "published_and_production_verified_automation_policy_updated",
   "checkedAtUtc": "2026-11-10T23:43:15.166992+00:00",
   "baseCommit": "ab6578fcc3bc33ea01a0b53ad64d72c5ad3d9124",
   "approval": {
@@ -201,6 +201,61 @@
       "passed": true,
       "snapshot": "/tmp/vitablabla-archive-release",
       "wrangler": "4.159.0"
+    },
+    "production": {
+      "base": "https://vitablabla.com",
+      "archive": {
+        "status": 200,
+        "uniqueArticleLinks": 223,
+        "matchesCommittedOrder": true,
+        "matchesCommittedCovers": true,
+        "maxHomepageAnchorHops": 2,
+        "canonical": "https://vitablabla.com/blog"
+      },
+      "exactAssets": [
+        {
+          "path": "/posts.json",
+          "status": 200,
+          "byteMatch": true,
+          "sha256": "84151d8b47fb720b6d922d13b4155225dc4dfa5a05603d3dbd9e8cd4d90afc89"
+        },
+        {
+          "path": "/journal.js",
+          "status": 200,
+          "byteMatch": true,
+          "sha256": "f1284fd808d3c093a721b071f0c7bace4b3208010436e253a3fa303aba1c6e4c"
+        },
+        {
+          "path": "/pages.css",
+          "status": 200,
+          "byteMatch": true,
+          "sha256": "97f3657803b54fd66c01b22bbd0df120eba6b2b2b08bc98093383ddd2acb7e29"
+        },
+        {
+          "path": "/sitemap.xml",
+          "status": 200,
+          "byteMatch": true,
+          "sha256": "9361bd1555c3f680edd2968fd7d4b443d1588f46ba8cf678127ff9f81a301109"
+        },
+        {
+          "path": "/site.js",
+          "status": 200,
+          "byteMatch": true,
+          "sha256": "70127744797326632d35957aeb8f5506f6b548217acde4a76430036eb60c9273"
+        },
+        {
+          "path": "/covers.css",
+          "status": 200,
+          "byteMatch": true,
+          "sha256": "a81256085da92cd0000d018884eb3f87f50a7c90ae53d4cbdb85391a5dc2b1b5"
+        }
+      ],
+      "articleCount": 223,
+      "allArticleHttp200": true,
+      "allArticleCanonicalsMatch": true,
+      "allArticleBodiesMatchCommittedSnapshot": true,
+      "articleImageMetadataCount": 8,
+      "fullResultsLocalPath": "/tmp/vitablabla-archive-live-results.json"
     }
   },
   "coverExamples": [
@@ -249,14 +304,25 @@
   ],
   "publication": {
     "committed": true,
-    "sourceCommit": "c9e1421dcfeee7bfaedb65797af41ef94f281bdb",
-    "pushed": false,
-    "deployed": false,
+    "sourceCommit": "eb59e74f6f964e1a0bad27876a66497ae167da3b",
+    "pushed": true,
+    "deployed": true,
     "gscWrites": false,
     "previousPushReview": "Rejected before explicit authorization; user has now explicitly approved pushing origin/main and deployment.",
-    "authorizedAtUtc": "2026-11-11T00:55:07.433916+00:00"
+    "authorizedAtUtc": "2026-11-11T00:55:07.433916+00:00",
+    "archiveCodeCommit": "c9e1421dcfeee7bfaedb65797af41ef94f281bdb",
+    "cloudflareVersion": "d1e8510f-6c6e-49d3-a128-264a79cd6a50",
+    "previousCloudflareVersions": [
+      {
+        "version_id": "7918ee2a-d577-4c68-ba7b-3294eac83748",
+        "percentage": 100
+      }
+    ],
+    "verifiedAtUtc": "2026-11-11T00:57:37.741604+00:00",
+    "deployedFrom": "/tmp/vitablabla-archive-authorized-release",
+    "keptRemoteVars": true
   },
-  "nextPriority": "After verified archive release: existing useful article cluster links and answers; preserve current concurrent drafts.",
+  "nextPriority": "Archive live and verified. Continue useful existing-article cluster links/answers. Concurrent breakfast drafts remain separate; Sunday human review uses the read-only weekly task.",
   "automationPolicy": {
     "effectiveDate": "2026-11-10",
     "dailyId": "daily-vitablabla-journal-posts",
@@ -272,6 +338,25 @@
       "Unrelated online Cloudflare configuration"
     ],
     "schedulesModelsProjectPreserved": true,
-    "updatedWith": "Codex app automation_update tool"
+    "updatedWith": "Codex app automation_update tool",
+    "verifiedStoredConfiguration": true,
+    "savedConfigurations": {
+      "daily-vitablabla-journal-posts": {
+        "name": "Vitablabla Daily SEO — Auto Publish",
+        "status": "ACTIVE",
+        "rrule": "DTSTART;TZID=America/Los_Angeles:20261014T090000\nRRULE:FREQ=DAILY",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "medium",
+        "promptSha256": "ba31cbe9a95379a2f52f683955e8747e94dd662451173432172c1f36829c00c6"
+      },
+      "vitablabla-weekly-seo-review": {
+        "name": "Vitablabla Weekly SEO Review",
+        "status": "ACTIVE",
+        "rrule": "DTSTART;TZID=America/Los_Angeles:20261115T160000\nRRULE:FREQ=WEEKLY;BYDAY=SU",
+        "model": "gpt-6.1-sol",
+        "reasoningEffort": "medium",
+        "promptSha256": "1c1302fcb40bc888b10eae237e6381094a73d0448d3311a55beba8e308c5b331"
+      }
+    }
   }
 }

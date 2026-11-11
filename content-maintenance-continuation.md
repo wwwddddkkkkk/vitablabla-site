@@ -56,9 +56,9 @@ Use weekly reviews to inspect discovery and processing. The first complete post-
 
 ## November 10 archive checkpoint
 
-The complete `/blog` archive has been prepared and locally verified from an isolated release snapshot based on `ab6578f`: all 223 registered articles are linked once in initial HTML and reachable from the homepage in at most two anchor hops. The build regenerates the featured article, list and cover mix for future registry entries. Search/category enhancement and the full static fallback passed browser checks. Publication evidence is recorded separately in `scripts/maintenance-runs/2026-11-10-journal-archive.json`; consult its status before repeating this task.
+The complete `/blog` archive was published and production-verified on November 10 from isolated committed source `eb59e74` (archive code `c9e1421`): all 223 registered articles are linked once in initial HTML and reachable from the homepage in at most two anchor hops. The build regenerates the featured article, list and cover mix for future registry entries. Search/category enhancement and the full static fallback passed browser checks. Publication evidence is recorded separately in `scripts/maintenance-runs/2026-11-10-journal-archive.json`; consult its status before repeating this task.
 
-The earlier audit inventory is historical. After the four approved November 9 article refreshes, the isolated baseline contains eight articles with editorial-image metadata and 215 without it. Keep any concurrent breakfast-article drafts separate from this archive release. Once the archive publication is verified, move to the useful existing-article link/answer work in priority 3; GSC-dependent checks remain limited by subscription access.
+The earlier audit inventory is historical. After the four approved November 9 article refreshes, the isolated baseline contains eight articles with editorial-image metadata and 215 without it. Keep any concurrent breakfast-article drafts separate from this archive release. The archive publication is verified; move to the useful existing-article link/answer work in priority 3; GSC-dependent checks remain limited by subscription access.
 
 ## Scope and priorities
 
