@@ -96,6 +96,21 @@
       "bytes": 107068,
       "slug": "how-to-store-freeze-dried-fruit-after-opening",
       "status": "selected_for_review"
+    },
+    {
+      "slug": "how-to-rehydrate-freeze-dried-fruit",
+      "file": "assets/editorial/freeze-dried-fruit-rehydration.webp",
+      "original": "/Users/dkwang/.codex/generated_images/01a1d423-38c2-79e3-893c-b2b0a84afe70/exec-4590f721-61dd-493c-9bba-4401b36a24e8.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape 3:2 editorial food photograph-style illustration for a practical guide to rehydrating freeze-dried fruit. Create an elegant, believable still life on a warm ivory stone kitchen table: in the foreground a small shallow unglazed cream ceramic dish contains five thin strawberry slices being moistened in a VERY SHALLOW amount of clear water, just enough to glisten around the fruit, not a deep bath. The red slices are slightly softened and flexible but retain natural strawberry outlines and recognizable tiny seeds, matte porous pale edges remain on one piece. Behind and to the left, a separate small dry cream saucer holds three clearly DRY freeze-dried strawberry slices: light pink-red, airy matte porous texture, never glossy fresh fruit. A simple stainless steel teaspoon rests beside the shallow dish. A folded muted peach linen napkin enters one corner. Natural soft window light from the side, gentle sculptural shadows, nuanced real ceramic, linen and fruit texture, refined independent food magazine styling, restrained ivory, blush, strawberry red and quiet peach palette. Near-overhead three-quarter camera angle, balanced generous breathing room, food is the hero. This is an imagined generic editorial scene, not a before-and-after experiment, measured test or actual branded product photo. No text, diagrams, labels, logos, packaging, measuring marks, hands, people, storage jars, zip bags, fresh whole strawberries, steam, CGI shine or vector aesthetic. Image resolution 1536 by 1024.",
+      "tool": "built-in image_gen",
+      "generatedAt": "2026-11-13",
+      "source": "Text-only generation without photographic references; generic imagined fruit scene, not actual OhCrisp photography or firsthand testing.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 259712,
+      "visualInspection": "Passed: dry porous strawberry slices on separate saucer; moist recognizable slices in shallow water, credible ceramic, linen and spoon, natural light; no logos, text or packaging. Caption expressly identifies AI illustration, not a measured test.",
+      "status": "selected_for_publication"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13"
 }

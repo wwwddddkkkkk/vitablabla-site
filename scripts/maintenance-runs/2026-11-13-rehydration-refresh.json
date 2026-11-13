@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-13",
+  "status": "validated_release_candidate",
+  "checkedAt": "2026-11-13T21:52:28.671350+00:00",
+  "authorization": "User explicitly requested optimize rehydration guide, incoming links, practical advice, image replacement and publish after validation; preserve other drafts",
+  "isolation": "/private/tmp/vitablabla-rehydration-release-2026-11-13",
+  "baseCommit": "0db7cea8acdb44720d98168891b526ee69261d28",
+  "url": "https://vitablabla.com/a/how-to-rehydrate-freeze-dried-fruit/",
+  "title": "How to rehydrate freeze-dried fruit without making it mushy.",
+  "intent": "How/can to rehydrate ready-to-eat freeze-dried fruit, including strawberry slices, texture control and handling the wet portion",
+  "dates": {
+    "datePublished": "2026-08-13",
+    "dateModified": "2026-11-13",
+    "incomingLinkOnlyArticlesDateModified": "unchanged"
+  },
+  "changes": [
+    "Preserve existing URL/title/order; practical texture-first steps; strawberry-specific section; optional dry versus wet uses; conservative handling; current source links; four matching visible/structured FAQs",
+    "Two contextual incoming body links from existing storage/snack-mix articles; no other draft included",
+    "Generated and inspected1536x1024 editorial image,259712bytes WebP; body/registry/OG/Twitter/Article use identical asset; generic illustration caption",
+    "Target related links include yogurt/storage/powder; original /ohcrisp body link updated to /about#ohcrisp; no routing/config changes"
+  ],
+  "gsc": {
+    "source": "Native logged-in Chrome Search Console only; no Wizard",
+    "type": "Web(text)",
+    "window": [
+      "2026-10-14",
+      "2026-11-10"
+    ],
+    "comparison": [
+      "2026-09-16",
+      "2026-10-13"
+    ],
+    "targetCurrent": {
+      "clicks": 7,
+      "impressions": 787,
+      "position": 8.1
+    },
+    "targetPrevious": {
+      "clicks": 2,
+      "impressions": 566,
+      "position": 8.0
+    },
+    "latestWeek": {
+      "window": [
+        "2026-11-04",
+        "2026-11-10"
+      ],
+      "clicks": 4,
+      "impressions": 209,
+      "position": 8.2
+    },
+    "disclosedQueries": {
+      "rows": 20,
+      "clicks": 0,
+      "impressions": 183
+    },
+    "interpretation": "Prioritization evidence, not a predicted uplift or attribution of seven page clicks to disclosed zero-click queries"
+  },
+  "sources": [
+    {
+      "url": "https://extension.umn.edu/food/preparing/cooking-at-home/food-preservation/freeze-drying",
+      "scope": "Dry versus rehydrated use, water activity and microbial survival"
+    },
+    {
+      "url": "https://extension.usu.edu/foodsafety/research/can-i-freeze-dry-that-a-practical-guide-to-safe-and-effective-freeze-drying",
+      "scope": "Microbial survival and ready-to-eat snack distinction"
+    },
+    {
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "scope": "General produce hygiene/separation/refrigeration; no claim of validated wet-fruit shelf-life"
+    }
+  ],
+  "sourcesCheckedAt": "2026-11-13",
+  "imageProvenance": "scripts/journal-image-assets.json; built-in image_gen, text-only; prompt/source/date/inspection recorded",
+  "checks": {
+    "build": "223 articles,227 sitemap URLs;191 pre-existing nonblocking warnings",
+    "staticSEO": "223 articles; all within2 real homepage HTML hops",
+    "coverValidator": "243 views;223 actual Journal cards/browser algorithm parity",
+    "journalBuildRegression": "passed",
+    "workerTests": 5,
+    "javascriptSyntax": [
+      "site.js",
+      "journal.js",
+      "home.js",
+      "page.js"
+    ],
+    "diffCheck": "passed",
+    "wrangler": "4.159.0 dry-run passed; logs redirected to writable /tmp after sandbox log-path error",
+    "browser": {
+      "viewports": [
+        320,
+        375,
+        768,
+        1024,
+        1440
+      ],
+      "categoryViews": 10,
+      "searchViews": 10,
+      "fallbacks": 4,
+      "articleWidthChecks": 15,
+      "homepageWidthChecks": 5,
+      "runtimeExceptions": 0,
+      "initialHarnessIssue": "Repeated same-URL navigation caused stale document checks; forced fresh navigation corrected test driver; complete suite reran successfully"
+    }
+  },
+  "covers": {
+    "target": "tb-cream / pinstripe",
+    "neighbors": [
+      "tb-coffee / cocoa-dots",
+      "tb-blush / berry-ribbon",
+      "tb-ice / cherry-check",
+      "tb-peach / gingham"
+    ],
+    "related": [
+      "tb-blush / berry-ribbon",
+      "tb-peach / gingham",
+      "tb-ice / cherry-check"
+    ],
+    "rules": "Unmodified VB.arrangeCovers/coverClass and Python arrange_covers/cover_class; previous-three distinct visible colors/patterns; no manual classes/order changes"
+  },
+  "screenshots": "/Users/dkwang/.codex/visualizations/2026/11/13/01a1d423-38c2-79e3-893c-b2b0a84afe70/",
+  "protectedWorkspaceFileCount": 15,
+  "files": [
+    "a/freeze-dried-fruit-snack-mix/index.html",
+    "a/how-to-rehydrate-freeze-dried-fruit/index.html",
+    "a/how-to-store-freeze-dried-fruit-after-opening/index.html",
+    "blog.html",
+    "posts.json",
+    "posts/freeze-dried-fruit-snack-mix.html",
+    "posts/how-to-rehydrate-freeze-dried-fruit.html",
+    "posts/how-to-store-freeze-dried-fruit-after-opening.html",
+    "scripts/journal-image-assets.json",
+    "sitemap.xml",
+    "assets/editorial/freeze-dried-fruit-rehydration.webp",
+    "scripts/maintenance-runs/2026-11-13-rehydration-refresh.json"
+  ],
+  "publication": {
+    "state": "Pending commit/push/deploy at time this candidate record was written",
+    "liveEvidence": "Final automation memory and release evidence record after production verification"
+  },
+  "risks": [
+    "No promised ranking/CTR improvement",
+    "No new real-product photo or firsthand recipe test",
+    "Other drafts remain in original workspace; do not deploy it",
+    "Original workspace main remains at base to keep draft files unchanged; use new published remote commit as next isolation baseline"
+  ]
+}
