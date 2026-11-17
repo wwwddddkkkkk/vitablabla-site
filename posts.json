@@ -171,7 +171,13 @@
           "q": "How much freeze-dried fruit should you add to yogurt?",
           "a": "About 1 to 2 tablespoons is usually enough. That amount gives yogurt a bright, crunchy topping without pressing too much fruit into the moisture and softening the whole layer too quickly."
         }
-      ]
+      ],
+      "image": {
+        "src": "/assets/editorial/freeze-dried-fruit-yogurt-crunch.webp",
+        "alt": "A cream bowl of plain yogurt topped with porous freeze-dried strawberry slices and apple pieces beside a silver spoon on blush linen.",
+        "width": 1536,
+        "height": 1024
+      }
     },
     {
       "slug": "freeze-dried-fruit-for-grain-bowls",

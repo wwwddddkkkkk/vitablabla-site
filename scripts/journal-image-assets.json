@@ -110,7 +110,20 @@
       "bytes": 259712,
       "visualInspection": "Passed: dry porous strawberry slices on separate saucer; moist recognizable slices in shallow water, credible ceramic, linen and spoon, natural light; no logos, text or packaging. Caption expressly identifies AI illustration, not a measured test.",
       "status": "selected_for_publication"
+    },
+    {
+      "slug": "how-to-keep-freeze-dried-fruit-crunchy-in-yogurt",
+      "file": "assets/editorial/freeze-dried-fruit-yogurt-crunch.webp",
+      "original": "/Users/dkwang/.codex/generated_images/01a1e8b9-7b85-7aa2-a96f-65f1519296c5/exec-63d2a024-fe80-4936-9339-a134d0b6e6fd.png",
+      "prompt": "Photographic food magazine editorial illustration, landscape 1536x1024. A low cream ceramic bowl of thick plain yogurt on a muted blush linen breakfast table, a modest freshly added topping of three dry porous freeze-dried strawberry slices and two small pale freeze-dried apple pieces, matte airy fruit texture visibly distinct from creamy yogurt. Small silver spoon alongside. Soft morning side window light, realistic tactile food, restrained elegant composition, gentle shadows, warm cream and berry red. Generic imagined food still life, not branded product photography or a kitchen test. No fresh glossy berries, no packaging, logos, text, watermarks, jars, bags, people or diagrams.",
+      "tool": "built-in image_gen",
+      "generatedAt": "2026-11-17",
+      "source": "Text-only generic AI still life; no product photographic references or test evidence.",
+      "visualInspection": "Passed: porous matte fruit, believable yogurt, ceramic and linen, natural window light, no branding.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 218908
     }
   ],
-  "updatedAt": "2026-11-13"
+  "updatedAt": "2026-11-17"
 }
