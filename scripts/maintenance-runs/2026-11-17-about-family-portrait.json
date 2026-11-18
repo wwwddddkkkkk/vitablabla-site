@@ -63,5 +63,75 @@
       }
     ]
   },
-  "releaseStatus": "Verified source prepared; production result recorded separately after deployment."
+  "releaseStatus": "Published and verified",
+  "production": {
+    "sourceCommit": "2f33ffb77c7e1cabc5ab5b9c08afc75832bc3a82",
+    "version": "8088e38a-9b3f-4096-9b24-f04b88ec0e7d",
+    "verifiedAtUTC": "2026-11-18T00:56:50.312407+00:00",
+    "url": "https://vitablabla.com/about",
+    "assetsUploaded": 6,
+    "responsiveImagesVerified": [
+      600,
+      1200,
+      1800,
+      2400
+    ],
+    "liveBrowserWidths": [
+      320,
+      375,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "liveRuntimeErrors": [],
+    "unrelatedPublicPagesPreserved": [
+      "posts.json",
+      "blog.html",
+      "sitemap.xml",
+      "index.html"
+    ],
+    "verification": {
+      "url": "https://vitablabla.com/about",
+      "sourceCommit": "2f33ffb77c7e1cabc5ab5b9c08afc75832bc3a82",
+      "files": [
+        {
+          "file": "about.html",
+          "status": 200,
+          "sha256": "eacbd0414aebfc6c9a3d9aea1073188cf3920688404b7f7b77d8d6881f37aa01"
+        },
+        {
+          "file": "pages.css",
+          "status": 200,
+          "sha256": "b01b8a6083b3147a31af350243f1e2f6c9a23ddc58d7761f65dae5c50b59904b"
+        },
+        {
+          "file": "assets/brands/vitablabla-family-portrait-600.webp",
+          "status": 200,
+          "sha256": "7816b070f126238e1b79665b9a53f5371ca7ef7a4010648faaf26b22daf49763"
+        },
+        {
+          "file": "assets/brands/vitablabla-family-portrait-1200.webp",
+          "status": 200,
+          "sha256": "795068a1292475b6480f14a8a8744b098ae83fd3da881c0cf51b3972469a8790"
+        },
+        {
+          "file": "assets/brands/vitablabla-family-portrait-1800.webp",
+          "status": 200,
+          "sha256": "4b519401bd3ac965c8f206f55b933f7939e0bd90d313f0991b37c3c4e989daa0"
+        },
+        {
+          "file": "assets/brands/vitablabla-family-portrait-2400.webp",
+          "status": 200,
+          "sha256": "afc3615930dc028aab230c794c5f2b8f6eb0b0c5863128bd9920d9bc8f46461d"
+        }
+      ],
+      "preserved": [
+        "posts.json",
+        "blog.html",
+        "sitemap.xml",
+        "index.html"
+      ]
+    }
+  }
 }
