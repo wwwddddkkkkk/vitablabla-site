@@ -18,6 +18,11 @@
 .brand-jump-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; }
 .brand-jump-links a { font-size:12px; padding:9px 17px; border:2px solid var(--frame-ink); border-radius:999px; }
 .brand-jump-links a:hover { background:var(--lilac); }
+.family-portrait { margin-block:0 65px; }
+.family-portrait-frame { overflow:hidden; border:2px solid var(--frame-ink); border-radius:24px; background:var(--lilac-soft); }
+.family-portrait img { display:block; width:100%; height:auto; }
+.family-portrait figcaption { display:flex; align-items:baseline; justify-content:space-between; gap:16px 30px; padding-top:18px; }
+.family-portrait figcaption p { font-size:13px; line-height:1.6; color:var(--ink-soft); }
 .origin-band { padding-block:65px; background:var(--lilac); border-block:2px solid var(--frame-ink); }
 .origin-grid { display:grid; grid-template-columns:1fr 1.6fr; gap:70px; }
 .origin-grid>.little-label { align-self:start; line-height:1.8; }
@@ -112,6 +117,9 @@
  .page-hero { padding-block:38px 40px; }
  .page-hero h1 { font-size:clamp(42px,11vw,64px); letter-spacing:-2px; margin-block:23px!important; }
  .page-intro { font-size:14px; line-height:1.8; }
+ .family-portrait { margin-bottom:40px; }
+ .family-portrait-frame { border-radius:18px; }
+ .family-portrait figcaption { flex-direction:column; gap:8px; padding-top:14px; }
  .section-heading { flex-direction:column; align-items:start; gap:22px; }
  .section-heading h2 { font-size:39px; letter-spacing:-1.4px; }
  .section-heading>p { font-size:14px; }

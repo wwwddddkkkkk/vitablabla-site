@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-17",
+  "task": "Add the approved Instagram product family portrait to Our story",
+  "url": "https://vitablabla.com/about",
+  "baselineCommit": "fa02bbf523e3861508a86386cb013eeaf412c735",
+  "scope": [
+    "about.html",
+    "pages.css",
+    "scripts/about-image-assets.json",
+    "assets/brands/vitablabla-family-portrait-600.webp",
+    "assets/brands/vitablabla-family-portrait-1200.webp",
+    "assets/brands/vitablabla-family-portrait-1800.webp",
+    "assets/brands/vitablabla-family-portrait-2400.webp"
+  ],
+  "sourceIsolation": {
+    "baselinePublicFilesMatched": 491,
+    "legacyTemplateException": "post.html returns the existing 302 redirect to /blog; remaining public files match production after removing Cloudflare-injected analytics.",
+    "concurrentWorkspaceEdits": "Preserved and excluded from release."
+  },
+  "checks": {
+    "build": "223 articles and 227 sitemap URLs; no unrelated generated output changes",
+    "staticSEO": "passed",
+    "coverThemes": "243 views passed",
+    "journalBuild": "passed",
+    "workerTests": "5 passed",
+    "dryRun": "passed",
+    "browser": "320, 375, 768, 1024, 1440 and 1920 CSS pixels; full 3:2 image visible; no horizontal overflow; no runtime errors"
+  },
+  "imageSource": {
+    "date": "2026-11-17",
+    "use": "Our story family portrait; approved Instagram product family photograph",
+    "source": "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-instagram-kit-2026-11-17-v16/photographs/all-product-lines-3000x2000.png",
+    "sourceSha256": "ca49fecbf6786faca2409139fcb4475387eb36a677a2788855e63e869633fc30",
+    "processing": "Proportional resize and WebP encoding only. Full 3:2 composition; original package colors and labels retained.",
+    "files": [
+      {
+        "file": "assets/brands/vitablabla-family-portrait-600.webp",
+        "width": 600,
+        "height": 400,
+        "bytes": 38278,
+        "sha256": "7816b070f126238e1b79665b9a53f5371ca7ef7a4010648faaf26b22daf49763"
+      },
+      {
+        "file": "assets/brands/vitablabla-family-portrait-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "bytes": 116212,
+        "sha256": "795068a1292475b6480f14a8a8744b098ae83fd3da881c0cf51b3972469a8790"
+      },
+      {
+        "file": "assets/brands/vitablabla-family-portrait-1800.webp",
+        "width": 1800,
+        "height": 1200,
+        "bytes": 218104,
+        "sha256": "4b519401bd3ac965c8f206f55b933f7939e0bd90d313f0991b37c3c4e989daa0"
+      },
+      {
+        "file": "assets/brands/vitablabla-family-portrait-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "bytes": 335380,
+        "sha256": "afc3615930dc028aab230c794c5f2b8f6eb0b0c5863128bd9920d9bc8f46461d"
+      }
+    ]
+  },
+  "releaseStatus": "Verified source prepared; production result recorded separately after deployment."
+}
