@@ -1,37 +1,64 @@
 {
-  "date": "2026-11-17",
-  "use": "Our story family portrait; approved Instagram product family photograph",
-  "source": "/Users/dkwang/.codex/visualizations/2026/11/03/01a1a0ae-d43b-7c90-a433-089fd21d239a/vitablabla-instagram-kit-2026-11-17-v16/photographs/all-product-lines-3000x2000.png",
-  "sourceSha256": "ca49fecbf6786faca2409139fcb4475387eb36a677a2788855e63e869633fc30",
-  "processing": "Proportional resize and WebP encoding only. Full 3:2 composition; original package colors and labels retained.",
+  "date": "2026-11-20",
+  "use": "Our story family portrait; latest Photoshop master with refined pouch edges, corrected overlap and four natural contact shadows",
+  "source": "/Users/dkwang/Documents/Codex/2026-11-19/ps/contact-shadow-refinement-2026-11-20/product-family-3000x2000.png",
+  "sourceSha256": "9fdce0ac39093ee938a156e3ace082c80cdb11d2c4cf294cb52e2ff4e09abc0d",
+  "processing": "Full 3:2 composition, proportional responsive resizing only. The full 3000×2000 WebP is lossless and pixel-identical to the Photoshop master. Smaller WebP variants use quality 92. Fingerprinted filenames ensure visitors receive the updated photograph.",
   "files": [
     {
-      "file": "assets/brands/vitablabla-family-portrait-600.webp",
+      "file": "assets/brands/vitablabla-family-portrait-20261120-9fdce0ac-600.webp",
       "width": 600,
       "height": 400,
-      "bytes": 38278,
-      "sha256": "7816b070f126238e1b79665b9a53f5371ca7ef7a4010648faaf26b22daf49763"
+      "bytes": 47622,
+      "sha256": "be5c7647d513bfb767dcfad427aca494d4459c3c1a63d5ea2938f147facc3a42",
+      "encoding": {
+        "quality": 92,
+        "effort": 6
+      }
     },
     {
-      "file": "assets/brands/vitablabla-family-portrait-1200.webp",
+      "file": "assets/brands/vitablabla-family-portrait-20261120-9fdce0ac-1200.webp",
       "width": 1200,
       "height": 800,
-      "bytes": 116212,
-      "sha256": "795068a1292475b6480f14a8a8744b098ae83fd3da881c0cf51b3972469a8790"
+      "bytes": 139766,
+      "sha256": "73aac9ee5399b0052a9484909c9693647788471e44fd38abe93d05da55fe8708",
+      "encoding": {
+        "quality": 92,
+        "effort": 6
+      }
     },
     {
-      "file": "assets/brands/vitablabla-family-portrait-1800.webp",
+      "file": "assets/brands/vitablabla-family-portrait-20261120-9fdce0ac-1800.webp",
       "width": 1800,
       "height": 1200,
-      "bytes": 218104,
-      "sha256": "4b519401bd3ac965c8f206f55b933f7939e0bd90d313f0991b37c3c4e989daa0"
+      "bytes": 264932,
+      "sha256": "b86f619bff5b48d19415e1d6d23bc5ab75a3f8dee7a702352072b4c7a8631be2",
+      "encoding": {
+        "quality": 92,
+        "effort": 6
+      }
     },
     {
-      "file": "assets/brands/vitablabla-family-portrait-2400.webp",
+      "file": "assets/brands/vitablabla-family-portrait-20261120-9fdce0ac-2400.webp",
       "width": 2400,
       "height": 1600,
-      "bytes": 335380,
-      "sha256": "afc3615930dc028aab230c794c5f2b8f6eb0b0c5863128bd9920d9bc8f46461d"
+      "bytes": 407188,
+      "sha256": "ac123a0565be0ee64c20c3b123f0716867f8d33fabe83e3c0bd7096b9d1c7283",
+      "encoding": {
+        "quality": 92,
+        "effort": 6
+      }
+    },
+    {
+      "file": "assets/brands/vitablabla-family-portrait-20261120-9fdce0ac-3000.webp",
+      "width": 3000,
+      "height": 2000,
+      "bytes": 3833234,
+      "sha256": "d977f93604db6e9cdd3590ae5b9ceaa697968ee1f5eea24b83bb846236c971de",
+      "encoding": {
+        "lossless": true,
+        "effort": 6
+      }
     }
   ]
 }
