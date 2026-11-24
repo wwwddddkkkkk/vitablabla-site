@@ -123,7 +123,21 @@
       "width": 1536,
       "height": 1024,
       "bytes": 218908
+    },
+    {
+      "slug": "how-ohcrisp-is-made",
+      "file": "assets/editorial/freeze-dried-berry-texture.webp",
+      "alt": "Freeze-dried strawberry slices and raspberries on an ivory plate, with a broken slice showing its porous interior.",
+      "prompt": "Photorealistic-natural landscape 3:2 food magazine editorial illustration for an existing article explaining how freeze-dried fruit gets airy and crisp. An appetizing close still life of a few recognizable freeze-dried strawberry slices on a small matte ivory ceramic plate, one clean broken slice in the foreground revealing a fine dry porous interior, natural seeds and edges, with two or three dry, wrinkled, recognizable freeze-dried raspberry pieces beside them. Simple warm ivory stone tabletop, very subtle blush tones, soft directional window daylight, gentle shadows, slight three-quarter close angle, enough depth of field to read the surface and broken texture, appetizing restrained art direction. Pale pink-red matte dry fruit with no juice, gloss, ice or frost. Generic imagined editorial scene. No branding, packages, text, people, machinery, documentary cues, graphics, or watermark.",
+      "tool": "built-in image_gen",
+      "original": "/Users/wdk/.codex/generated_images/01a20e80-7863-7731-83ad-02daecd17a74/exec-fe81aa4f-9d1b-47f4-9fa1-0747038bdc97.png",
+      "generatedAt": "2026-11-24",
+      "source": "Text-only editorial still life with no brand or product photography reference.",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 222314,
+      "visualInspection": "Passed: recognizable dry berries, visible porous fracture, believable ceramic and soft window light; caption identifies AI generation."
     }
   ],
-  "updatedAt": "2026-11-17"
+  "updatedAt": "2026-11-24"
 }

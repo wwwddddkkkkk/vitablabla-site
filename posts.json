@@ -9182,7 +9182,13 @@
         "freeze-drying-strawberry",
         "ugly-mango",
         "one-brand-to-two"
-      ]
+      ],
+      "image": {
+        "src": "/assets/editorial/freeze-dried-berry-texture.webp",
+        "alt": "Freeze-dried strawberry slices and raspberries on an ivory plate, with a broken slice showing its porous interior.",
+        "width": 1536,
+        "height": 1024
+      }
     }
   ]
 }
